@@ -35,7 +35,6 @@ public class MaximumSubarray {
         } else if(size == 2) {
         	return Math.max(A[0], A[1]);
         } else {
-        	System.out.println(A[left]);
         	int[] leftA = new int[left];
         	int[] rightA = new int[size-left];
         	for(int i=0; i<size; i++) {
@@ -45,8 +44,8 @@ public class MaximumSubarray {
         			rightA[i-left] = A[i];
         		}
         	}
-        	int leftMax = maxSubArrayDC(A);
-        	int rightMax = maxSubArrayDC(A);
+        	int leftMax = maxSubArrayDC(leftA);
+        	int rightMax = maxSubArrayDC(rightA);
         	int leftSum = 0;
         	int sum = 0;
         	for(int i=left; i>=0; i--) {
@@ -70,7 +69,7 @@ public class MaximumSubarray {
 	
 	public static void main(String[] args) {
 		MaximumSubarray test = new MaximumSubarray();
-		int[] a = {-2,1,-3,4,-1,2,1,-5,4};
+		int[] a = {-2, 1, -1};
 		int result = test.maxSubArrayDC(a);
 		System.out.println(result);
 
