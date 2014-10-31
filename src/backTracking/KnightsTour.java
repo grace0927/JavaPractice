@@ -1,6 +1,6 @@
 package backTracking;
 
-/*http://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/ */
+/* http://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/ */
 
 public class KnightsTour {
 	
