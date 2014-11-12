@@ -91,12 +91,15 @@ public class Sudoku {
 	}
 	
 	private boolean sudokuUtil(int[][] graph) {
-		int col=0;
-		int row=0;
+		int row = 0;
+		int col = 0;
+		int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 		
-		for(row=0; row<N; row++) {
-			for(col=0; col<N; col++) {
-				if(graph[row][col] == 0) {
+		for(int rowA : numbers) {
+			for(int colA : numbers) {
+				if(graph[rowA][colA] == 0) {
+					row = rowA;
+					col = colA;
 					break;
 				}
 			}
@@ -105,19 +108,14 @@ public class Sudoku {
 			}
 		}
 
-		if(row == N-1 && col == N-1 && graph[row][col] != 0) {
+		if(row == 0 && col == 0 && graph[row][col] != 0) {
 			return true;
 		}
 		
-		for(int num=1; num<N; num++) {
-			System.out.print(row);
-			System.out.print(" ");
-			System.out.print(col);
-			System.out.print("\n");
+		for(int num=1; num<N+1; num++) {
 			if(isSafe(graph, col, row, num)) {
 				graph[row][col]=num;
 				if(sudokuUtil(graph)) {
-					printSudoku(graph);
 					return true;
 				} else {
 					graph[row][col] = 0;
@@ -129,7 +127,8 @@ public class Sudoku {
 	}
 	
 	public static void main(String[] args) {
-		int[][] graph = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
+		int[][] graph = {
+				{3, 0, 6, 5, 0, 8, 4, 0, 0},
                 {5, 2, 0, 0, 0, 0, 0, 0, 0},
                 {0, 8, 7, 0, 0, 0, 0, 3, 1},
                 {0, 0, 3, 0, 1, 0, 0, 8, 0},
@@ -140,8 +139,11 @@ public class Sudoku {
                 {0, 0, 5, 2, 0, 6, 3, 0, 0}};
 		
 		Sudoku test = new Sudoku();
-		test.sudokuUtil(graph);
-
+		if(test.sudokuUtil(graph) == false) {
+			System.out.println("Solution no exists");
+		} else {
+			test.printSudoku(graph);
+		}
 	}
 
 }
