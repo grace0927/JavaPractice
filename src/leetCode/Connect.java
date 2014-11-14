@@ -41,7 +41,7 @@ public class Connect {
     }
     
     public void print(TreeLinkNode root) {
-        Queue queue = new LinkedList();
+        Queue<TreeLinkNode> queue = new LinkedList<>();
         queue.add(root);
         while(!queue.isEmpty()) {
             TreeLinkNode node = (TreeLinkNode) queue.remove();

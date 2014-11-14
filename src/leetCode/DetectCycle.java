@@ -1,5 +1,14 @@
 package leetCode;
 
+/*
+ * https://oj.leetcode.com/problems/linked-list-cycle/
+ * 
+ * Given a linked list, determine if it has a cycle in it.
+ * Follow up:
+ * Can you solve it without using extra space?
+ * 
+ */
+
 public class DetectCycle {
 
 	public ListNode detectCycle(ListNode head) {

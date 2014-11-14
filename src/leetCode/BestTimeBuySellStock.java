@@ -1,27 +1,20 @@
-package leetCode;
-
-/*
- * Input is guaranteed to be within the range from 1 to 3999.
- * You are climbing a stair case. It takes n steps to reach to the top.
- * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+/**
  * 
  */
+package leetCode;
 
-public class ClimbStairs {
-	public int climbStairs(int n) {
-		int[] res = new int[n];
-		if(n < 2) {
-			return n;
-		};
-		
-		res[0] = 1;
-		res[1] = 2;
-		for(int i = 0; i < n; i++) {
-			res[i] = res[i-1] + res[i-2];
-		}
-		
-		return res[n-1];
-    }
+/**
+ * 
+ * https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+ *
+ * Say you have an array for which the ith element is the price of a given stock on day i.
+ * Design an algorithm to find the maximum profit. You may complete as many transactions as you like 
+ * (ie, buy one and sell one share of the stock multiple times). However, 
+ * you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+ *
+ */
+public class BestTimeBuySellStock {
+
 	public int maxProfit(int[] prices) {
         int sum = 0;
         int[] buy = new int[2];
@@ -51,4 +44,13 @@ public class ClimbStairs {
 		
 		return sum;
     }
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
 }
