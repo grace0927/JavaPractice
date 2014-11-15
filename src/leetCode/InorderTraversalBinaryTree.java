@@ -34,10 +34,11 @@ import java.util.ArrayList;
  * The above binary tree is serialized as "{1,2,3,#,#,4,#,#,5}".
  * 
  */
+
 public class InorderTraversalBinaryTree {
 
 	public ArrayList<Integer> inorderTraversal(TreeNode root) {
-        ArrayList res = new ArrayList();
+        ArrayList<Integer> res = new ArrayList<>();
         if(root == null) {
         } else if(root.left == null && root.right != null) {
             res.add(root.val);

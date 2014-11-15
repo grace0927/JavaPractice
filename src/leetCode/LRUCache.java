@@ -3,6 +3,8 @@
  */
 package leetCode;
 
+import java.util.HashMap;
+
 /**
  * @author jianyu
  *
