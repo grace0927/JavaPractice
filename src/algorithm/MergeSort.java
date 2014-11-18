@@ -64,7 +64,7 @@ public class MergeSort implements Sort {
 	 */
 	public static void main(String[] args) {
 		MergeSort test = new MergeSort();
-		int[] arr = {5, 2, 1, 13, 6};
+		int[] arr = {5, 2, 4, 6, 1, 3};
 		test.sort(arr);
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i]);
