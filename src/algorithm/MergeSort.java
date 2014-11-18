@@ -8,7 +8,7 @@ package algorithm;
  *
  */
 public class MergeSort implements Sort {
-	private void mergeSort(int[] arr) {
+	public void sort(int[] arr) {
 		// special case 
 		if(arr == null) {
 			return;
@@ -32,8 +32,8 @@ public class MergeSort implements Sort {
 		}
 		
 		// conquer subsequences
-		mergeSort(arrLeft);
-		mergeSort(arrRight);
+		sort(arrLeft);
+		sort(arrRight);
 		
 		// combine conquered subsequences
 		int i=0;
@@ -65,7 +65,7 @@ public class MergeSort implements Sort {
 	public static void main(String[] args) {
 		MergeSort test = new MergeSort();
 		int[] arr = {5, 2, 1, 13, 6};
-		test.mergeSort(arr);
+		test.sort(arr);
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i]);
 			System.out.print(" ");

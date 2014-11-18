@@ -8,7 +8,7 @@ package algorithm;
  *
  */
 public class InsertionSort implements Sort {
-	private void insertionSort(int[] arr) {
+	public void sort(int[] arr) {
 		for(int i=1; i<arr.length; i++) {
 			int key = arr[i]; // get current key
 			int j = i-1;
@@ -35,7 +35,7 @@ public class InsertionSort implements Sort {
 	public static void main(String[] args) {
 		InsertionSort test = new InsertionSort();
 		int[] arr = {5, 2, 7, 3, 6};
-		test.insertionSort(arr);
+		test.sort(arr);
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i]);
 			System.out.print(" ");
