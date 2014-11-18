@@ -7,16 +7,19 @@ package algorithm;
  * @author jianyu
  *
  */
-public class InsertionSort {
-
+public class InsertionSort implements Sort {
 	private void insertionSort(int[] arr) {
 		for(int i=1; i<arr.length; i++) {
-			int key = arr[i];
-			int j=i-1;
-			while(j>0 && arr[j]>key) {
+			int key = arr[i]; // get current key
+			int j = i-1;
+			
+			// check forwarded
+			while(j > 0 && arr[j] > key) {
 				arr[j+1] = arr[j];
 				j--;
 			}
+			
+			// last key
 			if(arr[j]>key) {
 				arr[j+1] = arr[j];
 				arr[j] = key;
@@ -37,7 +40,6 @@ public class InsertionSort {
 			System.out.print(arr[i]);
 			System.out.print(" ");
 		}
-
 	}
 
 }
