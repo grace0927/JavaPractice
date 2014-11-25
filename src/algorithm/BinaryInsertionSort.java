@@ -18,18 +18,17 @@ public class BinaryInsertionSort extends BinarySearch implements Search, Sort {
 		if(size == 1) {
 			return;
 		}
-		if(arr[1] < arr[0]) {
-			int key = arr[1];
-			arr[1] = arr[0];
-			arr[0] = key;
-		}
 		for(int i=1; i<size; i++) {
 			int key = arr[i];
-			int index = binarySearch(arr, 0, i-1, key) + 1;
-			for(int k=i; k>index; k--) {
-				arr[k] = arr[k-1];
+			try{
+				int index = binarySearch(arr, 0, i-1, key) + 1;
+				for(int k=i; k>index; k--) {
+					arr[k] = arr[k-1];
+				}
+				arr[index] = key;
+			} catch(Exception e) {
+				System.out.println("Exception thrown  :" + e.getMessage());
 			}
-			arr[index] = key;
 		}
 	}
 	

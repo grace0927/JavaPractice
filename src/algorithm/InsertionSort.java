@@ -11,21 +11,15 @@ public class InsertionSort implements Sort {
 	public void sort(int[] arr) {
 		for(int i=1; i<arr.length; i++) {
 			int key = arr[i]; // get current key
-			int j = i-1;
-			
-			// check forwarded
-			while(j > 0 && arr[j] > key) {
-				arr[j+1] = arr[j];
-				j--;
+			int j;
+			for(j=i; j>0; j--) {
+				if(key > arr[j-1]) {
+					break;
+				} else {
+					arr[j] = arr[j-1];
+				}
 			}
-			
-			// last key
-			if(arr[j]>key) {
-				arr[j+1] = arr[j];
-				arr[j] = key;
-			} else {
-				arr[j+1] = key;
-			}
+			arr[j] = key;
 		}
 	}
 	
