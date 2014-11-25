@@ -63,7 +63,7 @@ public class MergeSort implements Sort {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		MergeSort test = new MergeSort();
+		Sort test = new MergeSort();
 		int[] arr = {5, 2, 4, 6, 1, 3};
 		test.sort(arr);
 		for(int i=0; i<arr.length; i++) {

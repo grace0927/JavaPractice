@@ -33,7 +33,7 @@ public class InsertionSort implements Sort {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		InsertionSort test = new InsertionSort();
+		Sort test = new InsertionSort();
 		int[] arr = {5, 2, 4, 6, 1, 3};
 		test.sort(arr);
 		for(int i=0; i<arr.length; i++) {
