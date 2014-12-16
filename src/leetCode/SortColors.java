@@ -66,6 +66,37 @@ public class SortColors {
         }
     }
     
+    // one-pass way
+    public void sortColorsAlternate(int[] A) {
+        // special case: array without value
+        if(A == null) {
+            return ;
+        }
+        // initial needed parameters
+        int zeroIndex = 0;
+        int oneIndex = 0;
+        int twoIndex = A.length-1;
+        
+        while(oneIndex <= twoIndex) {
+            if(A[oneIndex] == 0) {
+            	// move 0 to zeroIndex position, adjust oneIndex, zeroIndex
+                int temp = A[zeroIndex];
+                A[zeroIndex] = 0;
+                A[oneIndex] = temp;
+                zeroIndex++;
+                oneIndex++;
+            } else if(A[oneIndex] == 2) {
+            	// move 2 to twoIndex, then adjust twoIndex
+                int temp = A[twoIndex];
+                A[twoIndex] = 2;
+                A[oneIndex] = temp;
+                twoIndex--;
+            } else {
+                oneIndex++;
+            }
+        }
+    }
+    
 	/**
 	 * @param args
 	 */
