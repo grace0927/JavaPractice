@@ -15,34 +15,28 @@ package leetCode;
  */
 public class BestTimeBuySellStock {
 
-	public int maxProfit(int[] prices) {
-        int sum = 0;
-        int[] buy = new int[2];
-        buy[0] = 0;
-        buy[1] = 0;
-        for(int i = 0; i < prices.length-1; i++) {
-        	if(prices[i] <= prices[i+1]) {
-        		if(buy[0] == 0) {
-        			buy[0] = 1;
-        			buy[1] = prices[i];
-        		} else {
-        			continue;
-        		}
-        	} else {
-        		if(buy[0] == 1) {
-        			buy[0] = 0;
-        			sum += (prices[i] - buy[1]);
-        			buy[1] = 0;
-        		} else {
-        			continue;
-        		}
-        	}
+    public int maxProfit(int[] prices) {
+        if(prices == null) {
+            // special case 1: no price list
+            return 0;
+        } else if(prices.length == 0) {
+            // special case 2: no price list
+            return 0;
         }
-        if(buy[0] == 1) {
-        	sum += (prices[prices.length-1] - buy[1]);
+        
+        int max = 0;
+        int low = prices[0];
+        for(int i=1; i<prices.length; i++) {
+            if(prices[i] >= prices[i-1]) {
+            	// case 1: price goes up
+                int temp = prices[i] - low;
+                max = (temp>max)?temp:max;
+            } else {
+            	// case 2: price goes down
+                low = prices[i]>low?low:prices[i];
+            }
         }
-		
-		return sum;
+        return max;
     }
 	
 	/**
