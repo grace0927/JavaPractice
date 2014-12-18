@@ -14,7 +14,39 @@ package leetCode;
  *
  */
 public class ContainerWithMostWater {
+	
     public int maxArea(int[] height) {
+        if(height == null) {
+        	// special case
+            return 0;
+        } else if(height.length == 0) {
+        	// special case
+            return 0;
+        }
+        
+        // parameters initialization
+        int max = 0;
+        int start = 0;
+        int end = height.length - 1;
+        
+        while(start < end) {
+            if(height[start] > height[end]) {
+            	// case 1
+                int space = height[end] * (end-start);
+                max = (space>max)?space:max;
+                end--;
+            } else {
+            	// case 2
+                int space = height[start] * (end-start);
+                max = (space>max)?space:max;
+                start++;
+            }
+        }
+        
+        return max;
+    }
+    
+    public int maxAreaFaster(int[] height) {
         if(height == null) {
             return 0;
         } else if(height.length == 0) {
@@ -29,11 +61,17 @@ public class ContainerWithMostWater {
             if(height[start] > height[end]) {
                 int space = height[end] * (end-start);
                 max = (space>max)?space:max;
-                end--;
+                int now = height[end];
+                do {
+                    end--;
+                } while(height[end] < now && end > start);
             } else {
                 int space = height[start] * (end-start);
                 max = (space>max)?space:max;
-                start++;
+                int now = height[start];
+                do {
+                    start++;
+                } while(height[start] < now && end > start);
             }
         }
         
