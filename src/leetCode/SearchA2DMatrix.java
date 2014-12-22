@@ -24,37 +24,41 @@ public class SearchA2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
         int startRow = 0; 
         int endRow = matrix.length - 1;
+        
+        if(matrix[startRow][0] == target) {
+            return true;
+        }
+        if(matrix[endRow][0] == target) {
+            return true;
+        }
         if(target < matrix[startRow][0]) {
             return false;
-        } else if(target > matrix[endRow][0]) {
-            return searchSortedArray(matrix[endRow], target);
-        } else {
-            if(matrix[startRow][0] == target) {
-                return true;
-            }
-            if(matrix[endRow][0] == target) {
-                return true;
-            }
-            
-            while(startRow < endRow) {
-                int midRow = (startRow + endRow)/2;
-                int midValue = matrix[midRow][0];
-                if(midValue == target) {
-                    return true;
-                } 
-                if(endRow == startRow + 1) {
-                    break;
-                }
-                if(midValue > target) {
-                    endRow = midRow;
-                    continue;
-                } else {
-                    startRow = midRow;
-                    continue;
-                }
-            }
-            return searchSortedArray(matrix[startRow], target);
         }
+        if(target > matrix[endRow][0]) {
+            return searchSortedArray(matrix[endRow], target);
+        }
+        
+        // binary search the right row
+        while(startRow < endRow) {
+            if(endRow == startRow + 1) {
+                break;
+            }
+            int midRow = (startRow + endRow)/2;
+            int midValue = matrix[midRow][0];
+            
+            if(midValue == target) {
+                return true;
+            }
+            if(midValue > target) {
+                endRow = midRow;
+                continue;
+            } else {
+                startRow = midRow;
+                continue;
+            }
+        }
+        // binary search in right row
+        return searchSortedArray(matrix[startRow], target);
     }
     
     public boolean searchSortedArray(int[] row, int target) {
@@ -65,15 +69,16 @@ public class SearchA2DMatrix {
         } else {
             int start = 0;
             int end = row.length - 1;
+            // check boundary
+            if(row[start] == target) {
+                return true;
+            }
+            if(row[end] == target) {
+                return true;
+            }
             
+            // binary search in a sorted array
             while(start < end) {
-                if(row[start] == target) {
-                    return true;
-                }
-                if(row[end] == target) {
-                    return true;
-                }
-                
                 if(end == start + 1) {
                     return false;
                 }
