@@ -22,21 +22,22 @@ package leetCode;
  */
 public class SearchA2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
-        int startRow = 0; 
-        int endRow = matrix.length - 1;
-        
-        if(matrix[startRow][0] == target) {
+        // check boundary
+        if(matrix[0][0] == target) {
             return true;
         }
-        if(matrix[endRow][0] == target) {
+        if(matrix[matrix.length - 1][0] == target) {
             return true;
         }
-        if(target < matrix[startRow][0]) {
+        if(target < matrix[0][0]) {
             return false;
         }
-        if(target > matrix[endRow][0]) {
-            return searchSortedArray(matrix[endRow], target);
+        if(target > matrix[matrix.length - 1][0]) {
+            return searchSortedArray(matrix[matrix.length - 1], target);
         }
+        
+        int startRow = 0; 
+        int endRow = matrix.length - 1;
         
         // binary search the right row
         while(startRow < endRow) {
@@ -62,40 +63,40 @@ public class SearchA2DMatrix {
     }
     
     public boolean searchSortedArray(int[] row, int target) {
+        // check boundary
+        if(row[0] == target) {
+            return true;
+        }
+        if(row[row.length - 1] == target) {
+            return true;
+        }
         if(target < row[0]) {
             return false;
         } else if(target > row[row.length-1]) {
             return false;
-        } else {
-            int start = 0;
-            int end = row.length - 1;
-            // check boundary
-            if(row[start] == target) {
-                return true;
-            }
-            if(row[end] == target) {
-                return true;
-            }
+        }
+        
+        int start = 0;
+        int end = row.length - 1;
             
-            // binary search in a sorted array
-            while(start < end) {
-                if(end == start + 1) {
-                    return false;
-                }
+        // binary search in a sorted array
+        while(start < end) {
+            if(end == start + 1) {
+                return false;
+            }
                 
-                int mid = (start + end)/2;
-                int midValue = row[mid];
-                if(midValue == target) {
-                    return true;
-                }
+            int mid = (start + end)/2;
+            int midValue = row[mid];
+            if(midValue == target) {
+                return true;
+            }
                 
-                if(midValue > target) {
-                    end = mid;
-                    continue;
-                } else {
-                    start = mid;
-                    continue;
-                }
+            if(midValue > target) {
+                end = mid;
+                continue;
+            } else {
+                start = mid;
+                continue;
             }
         }
         return false;
