@@ -19,9 +19,12 @@ public class RemoveDuplicatesFromSortedArrayII {
     	// special case
         if (A.length <= 2) return A.length;
         
+        // initialize parameter
         int slow = 2;
         int fast = 2;
+        
         while (fast < A.length) {
+        	// use fast pointer to find proper value and replace the slow one.
             if (A[fast] > A[slow-2]) { 
                 A[slow] = A[fast];
                 slow++;
