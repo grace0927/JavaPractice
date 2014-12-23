@@ -16,6 +16,7 @@ import java.util.Stack;
  * Could you devise a constant space solution?
  *
  */
+
 public class SetMatrixZeros {
     public void setZeroes(int[][] matrix) {
         if(matrix == null || matrix.length == 0) {
