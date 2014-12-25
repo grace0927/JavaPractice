@@ -66,6 +66,29 @@ public class SumRootToLeafNumbers {
         row.remove(row.size()-1);
     }
     
+    public int sumNumbersLessSpace(TreeNode root) {
+        if(root == null) {
+            return 0;
+        }
+        
+        if(root.left == null && root.right == null) {
+            return root.val;
+        }
+        
+        int sum = 0;
+        
+        if(root.left != null) {
+            root.left.val += root.val*10;
+            sum += sumNumbers(root.left);
+        }
+        if(root.right != null) {
+            root.right.val += root.val*10;
+            sum += sumNumbers(root.right);
+        }
+        
+        return  sum;
+    }
+    
 	/**
 	 * @param args
 	 */
