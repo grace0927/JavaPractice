@@ -47,9 +47,9 @@ public class FindMinimumInRotatedSortedArray {
                 end = mid;
             }
         }
-        return start;
+        return num[start];
     }
-	
+    
 	/**
 	 * @param args
 	 */
