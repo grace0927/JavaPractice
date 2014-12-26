@@ -89,6 +89,42 @@ public class TrappingRainWater {
 		return sum;
 	}
 	
+    public int trapAltenate(int[] A) {
+        int sum = 0;
+        if(A.length < 3) {
+			return 0;
+		}
+		int left = 0;
+		int right = A.length-1;
+		
+		while(left < right && A[left] <= A[left+1]) {
+		    left++;
+		}
+		while(left < right && A[right] <= A[right-1]) {
+		    right--;
+		}
+		while(left < right) {
+		    if(A[left] <= A[right]) {
+		        // start from smaller one which is left
+		        int high = A[left];
+		        left++;
+		        while(left < right && A[left] < high) {
+		            sum += (high - A[left]);
+		            left++;
+		        }
+		    } else {
+		        // start from right
+		        int high = A[right];
+		        right--;
+		        while(left < right && A[right] < high) {
+		            sum += (high - A[right]);
+		            right--;
+		        }
+		    }
+		}
+		return sum;
+    }
+    
 	/**
 	 * @param args
 	 */
