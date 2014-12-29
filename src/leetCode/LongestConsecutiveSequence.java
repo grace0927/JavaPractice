@@ -25,7 +25,7 @@ public class LongestConsecutiveSequence {
 			if(map.containsKey(temp-1)) {
 				count += map.get(temp-1);
 			}
-			map.put(count, temp);
+			map.put(temp, count);
 			max = max<count?count:max;
 			
 			int j=1;
@@ -34,7 +34,7 @@ public class LongestConsecutiveSequence {
 			}
 			if(map.get(temp+j-1)!=null) {
 			    int tempCount = map.get(temp+j-1)+count;
-			    map.put(tempCount, temp+j-1);
+			    map.put(temp+j-1, tempCount);
 			    max = max<tempCount?tempCount:max;
 			}
 		}
