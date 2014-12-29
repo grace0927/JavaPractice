@@ -31,29 +31,19 @@ public class SearchInRotatedSortedArray {
 			int mid = (start+end)/2;
 			if(A[mid] == target) {
 				return mid;
-			} else if(A[mid] > target) {
-				if(target > A[start]) {
-					end = mid;
-				} else {
-					if(A[mid] > A[start]) {
-						start = mid;
-					} else {
-						end = mid;
-					}
-				}
-			} else {
-				if(target > A[start]) {
-					if(A[mid] > A[start]) {
-						start = mid;
-					} else {
-						end = mid;
-					}
-				} else {
-					start = mid;
-				}
 			}
-			if(end == start+1) {
-				return -1;
+			if(target > A[start]) {
+			    if(A[mid] < target && A[mid] > A[start]) {
+			        start = mid;
+			    } else {
+			        end = mid;
+			    }
+			} else {
+			    if(A[mid] > target && A[mid] < A[start]) {
+			        end = mid;
+			    } else {
+			        start = mid;
+			    }
 			}
 		}
 		
