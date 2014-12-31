@@ -21,7 +21,10 @@ public class SearchForARange {
 		}
 		
 		if(A.length == 1) {
-			return (A[0] == target)?new int[]{0,0}:new int[]{-1,-1};
+			if(A[0] == target) {
+		        return new int[]{0,0};
+		    }
+			return new int[]{-1,-1};
 		}
 		
 		int startTarget = -1;
