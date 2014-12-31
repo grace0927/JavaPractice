@@ -58,6 +58,10 @@ public class SearchForARange {
 				}
 			}
 		}
+
+		if(result[0] == -1) {
+		    return result;
+		}
 		
 		// find end
 		if(A[A.length - 1] == target) {
