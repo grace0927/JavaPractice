@@ -16,35 +16,37 @@ package leetCode;
  */
 public class SearchForARange {
     public int[] searchRange(int[] A, int target) {
+        int[] result = new int[]{-1,-1};
         if(A.length <=0 || A[A.length-1] < target || A[0] > target) {
-			return new int[]{-1, -1};
+			return result;
 		}
 		
 		if(A.length == 1) {
-			if(A[0] == target) {
-		        return new int[]{0,0};
+		    if(A[0] == target) {
+		        result[0] = 0;
+		        result[1] = 0;
+		        return result;
 		    }
-			return new int[]{-1,-1};
+			return result;
 		}
-		
-		int startTarget = -1;
-		int endTarget = -1;
 		
 		// find start
 		if(A[0] == target) {
-			startTarget = 0;
+			result[0] = 0;
 		} else {
 			int start = 0;
 			int end = A.length - 1;
 			
 			if(A[end]==target && A[end] > A[end-1]) {
-				return new int[]{end, end};
+			    result[0] = end;
+			    result[1] = end;
+				return result;
 			}
 			while(end > start+1) {
 				int mid = (start+end)/2;
 				if(A[mid] == target) {
 					if(A[mid] > A[mid-1]) {
-						startTarget = mid;
+						result[0] = mid;
 						start = end;
 					} else {
 						end = mid;
@@ -59,19 +61,21 @@ public class SearchForARange {
 		
 		// find end
 		if(A[A.length - 1] == target) {
-			endTarget = A.length - 1;
+			result[1] = A.length - 1;
 		} else {
 			int start = 0;
 			int end = A.length - 1;
 			
 			if(A[start]==target && A[start] < A[start+1]) {
-				return new int[]{start, start};
+			    result[0] = start;
+			    result[1] = start;
+				return result;
 			}
 			while(end > start+1) {
 				int mid = (start+end)/2;
 				if(A[mid] == target) {
 					if(A[mid] < A[mid+1]) {
-						endTarget = mid;
+						result[1] = mid;
 						start = end;
 					} else {
 						start = mid;
@@ -84,7 +88,7 @@ public class SearchForARange {
 			}
 		}
 		
-		return new int[]{startTarget, endTarget};
+		return result;
     }
     
 	/**
