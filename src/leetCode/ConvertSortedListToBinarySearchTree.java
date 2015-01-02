@@ -7,6 +7,7 @@ package leetCode;
  * @author jianyu
  * https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
  * Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+ * ref: http://www.geeksforgeeks.org/sorted-linked-list-to-balanced-bst/
  *
  */
 public class ConvertSortedListToBinarySearchTree {
