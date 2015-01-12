@@ -51,6 +51,30 @@ public class DistinctSubsequences {
 		return ret[lenT][lenS];
     }
 	
+	public int numDistinctAlternater(String S, String T) {
+        int lenS = S.length();
+		int lenT = T.length();
+		if(lenT > lenS) {
+			return 0;
+		}
+		int[] ret = new int[lenT+1];
+		
+		ret[0] = 1;
+		for(int i=1; i<lenT+1; i++) {
+			ret[i] = 0;
+		}
+		
+		for(int i=1; i<lenS+1; i++) {
+			for(int j=lenT; j>=1; j--) {
+				if(S.charAt(i-1) == T.charAt(j-1)) {
+					ret[j] += ret[j-1];
+				}
+			}
+		}
+		
+		return ret[lenT];
+    }
+	
 	/**
 	 * @param args
 	 */
