@@ -10,6 +10,8 @@ package leetCode;
  * Note:
  * A solution using O(n) space is pretty straight forward. 
  * Could you devise a constant space solution?
+ * Better Solution: Morris Traversal
+ * ref: http://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
  *
  */
 public class RecoverBinarySearchTree {
