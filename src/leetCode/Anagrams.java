@@ -44,7 +44,16 @@ public class Anagrams {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		Anagrams test = new Anagrams();
+		String[] a = {"tho","tin","erg","end","pug","ton","alb",
+				"mes","job","ads","soy","toe","tap","sen","ape",
+				"led","rig","rig","con","wac","gog","zen","hay",
+				"lie","pay","kid","oaf","arc","hay","vet","sat",
+				"gap","hop","ben","gem","dem","pie","eco","cub",
+				"coy","pep","wot","wee"};
+		//String[] b = {"cab","tin","pew","duh","may","ill","buy","bar","max","doc"};
+		//String[] c = {"", ""};
+		System.out.println(test.anagrams(a));
 	}
 
 }
