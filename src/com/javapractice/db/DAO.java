@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package leetCode;
+package com.javapractice.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
