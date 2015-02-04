@@ -4,11 +4,22 @@
 package leetCode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
 /**
  * @author feng
+ * https://oj.leetcode.com/problems/4sum/
+ * Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+ * Note:
+ * Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ¡Ü b ¡Ü c ¡Ü d)
+ * The solution set must not contain duplicate quadruplets.
+ *     For example, given array S = {1 0 -1 0 -2 2}, and target = 0.
+ *     A solution set is:
+ *     (-1,  0, 0, 1)
+ *     (-2, -1, 1, 2)
+ *     (-2,  0, 0, 2)
  *
  */
 public class FourSum {
@@ -45,13 +56,66 @@ public class FourSum {
         }
     }
     
+    /*
+     * ref: http://tech-wonderland.net/blog/4sum-problem-analysis-different-time-complexity.html
+     * convert to 3sum, then to 2sum. then use 2sum.
+     */
+    public List<List<Integer>> fourSumN3(int[] num, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+		
+		if(num.length < 4) {
+			return result;
+		}
+		
+		int len = num.length;
+		
+		Arrays.sort(num);
+		
+		for(int i=0; i<len-3; i++) {
+			if(i > 0 && num[i] == num[i-1]) {
+				continue;
+			}
+			for(int j=i+1; j<len-2; j++) {
+				if(j > i+1 && num[j] == num[j-1]) {
+					continue;
+				}
+				
+				int start = j+1;
+				int end = len-1;
+				
+				while(start < end) {
+					if(start > j+1 && num[start] == num[start-1]) {
+						start++;
+						continue;
+					}
+					int sum = num[i]+num[j]+num[start]+num[end];
+					if(sum == target) {
+						List<Integer> list = new ArrayList<>();
+						list.add(0, num[i]);
+						list.add(1, num[j]);
+						list.add(2, num[start++]);
+						list.add(3, num[end--]);
+						result.add(list);
+					} else if(sum > target) {
+						end--;
+					} else {
+						start++;
+					}
+					System.out.println(start);
+				}
+			}
+		}
+		
+		return result;
+    }
+    
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		FourSum test = new FourSum();
-		int[] num = {-493,-482,-482,-456,-427,-405,-392,-385,-351,-269,-259,-251,-235,-235,-202,-201,-194,-189,-187,-186,-180,-177,-175,-156,-150,-147,-140,-122,-112,-112,-105,-98,-49,-38,-35,-34,-18,20,52,53,57,76,124,126,128,132,142,147,157,180,207,227,274,296,311,334,336,337,339,349,354,363,372,378,383,413,431,471,474,481,492};
-		System.out.println(test.fourSum(num, 6189));
+		int[] num = {1,0,-1,0,-2,2};
+		System.out.println(test.fourSumN3(num, 0));
 
 	}
 
