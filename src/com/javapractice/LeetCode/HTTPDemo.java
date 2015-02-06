@@ -1,4 +1,4 @@
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

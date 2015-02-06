@@ -1,4 +1,4 @@
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 public class Maze extends Graph {
 

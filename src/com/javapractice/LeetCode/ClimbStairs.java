@@ -1,4 +1,4 @@
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 /*
  * Input is guaranteed to be within the range from 1 to 3999.

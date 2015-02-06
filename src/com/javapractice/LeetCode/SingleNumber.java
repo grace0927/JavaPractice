@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 /**
  *

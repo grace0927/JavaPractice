@@ -1,4 +1,4 @@
-package com.javapractice.Algorithm;
+package com.javapractice.algorithm;
 
 /**
  * @author jianyu

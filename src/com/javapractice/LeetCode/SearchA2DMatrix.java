@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 /**
  * @author feng

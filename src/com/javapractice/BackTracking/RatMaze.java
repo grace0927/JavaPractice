@@ -1,4 +1,4 @@
-package com.javapractice.BackTracking;
+package com.javapractice.backtracking;
 
 /*http://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/*/
 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 import java.util.Collections;
 import java.util.LinkedList;

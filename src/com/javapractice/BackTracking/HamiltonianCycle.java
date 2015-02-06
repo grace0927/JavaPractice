@@ -1,4 +1,4 @@
-package com.javapractice.BackTracking;
+package com.javapractice.backtracking;
 
 /* http://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/*/
 

@@ -1,4 +1,4 @@
-package com.javapractice.BackTracking;
+package com.javapractice.backtracking;
 
 /* http://www.geeksforgeeks.org/backttracking-set-5-m-coloring-problem/ */
 

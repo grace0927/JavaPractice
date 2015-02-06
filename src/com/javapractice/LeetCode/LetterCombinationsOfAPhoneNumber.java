@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

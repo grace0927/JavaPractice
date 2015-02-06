@@ -1,4 +1,4 @@
-package com.javapractice.BackTracking;
+package com.javapractice.backtracking;
 
 public class NQueen {
 

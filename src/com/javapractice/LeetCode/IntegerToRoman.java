@@ -1,4 +1,4 @@
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 /*
  * https://oj.leetcode.com/problems/integer-to-roman/

@@ -1,4 +1,4 @@
-package com.javapractice.LeetCode;
+package com.javapractice.leetcode;
 
 public class ValidNumber {
 	public boolean isNumber(String s) {
