@@ -8,11 +8,11 @@ package com.javapractice.leetcode;
  * https://oj.leetcode.com/problems/intersection-of-two-linked-lists/
  * Write a program to find the node at which the intersection of two singly linked lists begins.
  * For example, the following two linked lists:
- * A:          a1 ¡ú a2
- *                    ¨K
- *                     c1 ¡ú c2 ¡ú c3
- *                    ¨J
- * B:     b1 ¡ú b2 ¡ú b3
+ * A:          a1 ï¿½ï¿½ a2
+ *                    ï¿½K
+ *                     c1 ï¿½ï¿½ c2 ï¿½ï¿½ c3
+ *                    ï¿½J
+ * B:     b1 ï¿½ï¿½ b2 ï¿½ï¿½ b3
  * begin to intersect at node c1.
  * Notes:
  * If the two linked lists have no intersection at all, return null.

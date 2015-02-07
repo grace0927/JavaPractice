@@ -7,8 +7,8 @@ import java.util.Stack;
 /*
  * https://oj.leetcode.com/problems/reorder-list/
  *  
- * Given a singly linked list L: L0¡úL1¡ú¡­¡úLn-1¡úLn,
- * reorder it to: L0¡úLn¡úL1¡úLn-1¡úL2¡úLn-2¡ú¡­
+ * Given a singly linked list L: L0ï¿½ï¿½L1ï¿½ï¿½ï¿½Ln-1ï¿½ï¿½Ln,
+ * reorder it to: L0ï¿½ï¿½Lnï¿½ï¿½L1ï¿½ï¿½Ln-1ï¿½ï¿½L2ï¿½ï¿½Ln-2ï¿½ï¿½
  * You must do this in-place without altering the nodes' values.
  * For example,
  * Given {1,2,3,4}, reorder it to {1,4,2,3}.

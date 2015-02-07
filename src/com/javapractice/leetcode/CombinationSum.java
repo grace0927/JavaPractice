@@ -14,7 +14,7 @@ import java.util.List;
  * The same repeated number may be chosen from C unlimited number of times.
  * Note:
  * All numbers (including target) will be positive integers.
- * Elements in a combination (a1, a2, â€? , ak) must be in non-descending order. (ie, a1 â‰? a2 â‰? â€? â‰? ak).
+ * Elements in a combination (a1, a2, ï¿½? , ak) must be in non-descending order. (ie, a1 ï¿½? a2 ï¿½? ï¿½? ï¿½? ak).
  * The solution set must not contain duplicate combinations.
  * For example, given candidate set 2,3,6,7 and target 7, 
  * A solution set is: 

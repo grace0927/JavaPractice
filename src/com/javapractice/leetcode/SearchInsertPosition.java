@@ -16,10 +16,10 @@ package com.javapractice.leetcode;
  * If not, return the index where it would be if it were inserted in order.
  * You may assume no duplicates in the array.
  * Here are few examples.
- * [1,3,5,6], 5 ¡ú 2
- * [1,3,5,6], 2 ¡ú 1
- * [1,3,5,6], 7 ¡ú 4
- * [1,3,5,6], 0 ¡ú 0
+ * [1,3,5,6], 5 ï¿½ï¿½ 2
+ * [1,3,5,6], 2 ï¿½ï¿½ 1
+ * [1,3,5,6], 7 ï¿½ï¿½ 4
+ * [1,3,5,6], 0 ï¿½ï¿½ 0
  * 
  */
 public class SearchInsertPosition {
