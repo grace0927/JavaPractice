@@ -38,20 +38,20 @@ public class MedianOfTwoSortedArrays {
 			return A[startA]<B[startB]?A[startA]:B[startB];
 		}
 		
-		int midA = lenA*median/(lenA+lenB);
-		int midB = median-midA-1;
-		
-		midA = midA+startA;
-		midB = midB+startB;
+		int midA=median*lenA/(lenA+lenB);
+		int midB=median-midA-1;
+
+		midA+=startA;
+		midB+=startB;
 		
 		if(A[midA] > B[midB]) {
-			median -= (midB-startB+1);
-			endA = midA;
-			startB = midB+1;
+			median-=(midB-startB+1);
+			endA=midA;
+			startB=midB+1;
 		} else {
-			median -= (midA-startA+1);
-			endB = midB;
-			startA = midA+1;
+			median-=(midA-startA+1);
+			endB=midB;
+			startA=midA+1;
 		}
 		
 		return findMedian(A, B, median, startA, endA, startB, endB);
