@@ -12,6 +12,13 @@ import java.util.HashMap;
 public class BasicConcept {
 
 	/*
+	 * basic concept about string
+	 */
+	public void printString(String a) {
+		System.out.println(a.substring(2, 3));
+	}
+	
+	/*
 	 * basic concept proving regarding local variables
 	 */
 	public void changeData(Integer a) {
@@ -34,7 +41,7 @@ public class BasicConcept {
 	 */
 	public static void main(String[] args) {
 		BasicConcept test = new BasicConcept();
-		test.stringhash();
+		test.printString("abc");
 	}
 
 }
