@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author jianyu
  * 
@@ -20,10 +23,24 @@ package com.javapractice.leetcode;
  * For a given n, a gray code sequence is not uniquely defined.
  * For example, [0,2,3,1] is also a valid gray code sequence according to the above definition.
  * For now, the judge is able to judge based on one instance of gray code sequence. Sorry about that.
+ * ref: http://blog.csdn.net/u010500263/article/details/18209669
  * 
  */
 public class GrayCode {
-
+	public List<Integer> grayCode(int n) {
+        List<Integer> list = new ArrayList<>();
+		list.add(0);
+		
+		for(int i=0; i<n; i++) {
+			int cur = 1<<i;
+			for(int j=list.size()-1; j>=0; j--) {
+				list.add(list.get(j)+cur);
+			}
+		}
+		
+		return list;
+    }
+	
 	/**
 	 * @param args
 	 */
