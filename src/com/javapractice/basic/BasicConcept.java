@@ -36,12 +36,23 @@ public class BasicConcept {
 		System.out.println(temp.containsKey("hello"));
 	}
 	
+	/*
+	 * basic concept about XOR
+	 */
+	public void XOR() {
+		boolean one = false;
+		one ^= true;
+		System.out.println(one);
+		one ^= true;
+		System.out.println(one);
+	}
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		BasicConcept test = new BasicConcept();
-		test.printString("abc");
+		test.XOR();
 	}
 
 }
