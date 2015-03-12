@@ -12,6 +12,23 @@ import java.util.Set;
 
 /**
  * @author jianyu
+ * https://leetcode.com/problems/word-ladder-ii/
+ * Given two words (start and end), and a dictionary, find all shortest transformation sequence(s) from start to end, such that:
+ * Only one letter can be changed at a time
+ * Each intermediate word must exist in the dictionary
+ * For example,
+ * Given:
+ * start = "hit"
+ * end = "cog"
+ * dict = ["hot","dot","dog","lot","log"]
+ * Return
+ *   [
+ *     ["hit","hot","dot","dog","cog"],
+ *     ["hit","hot","lot","log","cog"]
+ *   ]
+ * Note:
+ * All words have the same length.
+ * All words contain only lowercase alphabetic characters.
  *
  */
 public class WordLadderII {
@@ -33,6 +50,16 @@ public class WordLadderII {
 			String cur = queue.poll();
 			List<String> curList = queueList.poll();
 			Integer curLevel = level.poll();
+
+			if(curLevel > lastLevel) {
+				lastLevel = curLevel;
+				for(String str:neighList) {
+					if(dict.contains(str)) {
+						dict.remove(str);
+					}
+				}
+				neighList.clear();
+			}
 			
 			if(isNeighbor(cur, end)) {
 				curList.add(end);
@@ -53,18 +80,8 @@ public class WordLadderII {
 						newList.add(neigh);
 						neighList.add(neigh);
 						queueList.add(newList);
-						System.out.println(newList);
 					}
 				}
-			}
-			if(curLevel > lastLevel) {
-				lastLevel = curLevel;
-				for(String str:neighList) {
-					if(dict.contains(str)) {
-						dict.remove(str);
-					}
-				}
-				neighList.clear();
 			}
 		}
 		
