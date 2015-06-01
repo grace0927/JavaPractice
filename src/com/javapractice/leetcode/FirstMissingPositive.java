@@ -54,6 +54,7 @@ public class FirstMissingPositive {
 			if(cur > 0) {
 				A[i] = A[cur-1];
 				A[cur-1] = cur;
+				i--;
 			}
 		}
 		
