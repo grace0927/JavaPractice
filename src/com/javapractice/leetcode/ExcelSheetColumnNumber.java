@@ -26,15 +26,4 @@ public class ExcelSheetColumnNumber {
         }
         return sum;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		ExcelSheetColumnNumber test = new ExcelSheetColumnNumber();
-		String s = "AB";
-		test.titleToNumber(s);
-
-	}
-
 }

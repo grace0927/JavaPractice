@@ -102,13 +102,4 @@ public class ScrambleString {
 		
 		return ret[0][0][len-1];
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		ScrambleString test = new ScrambleString();
-		System.out.println(test.isScrambleDP("abc", "bca"));
-	}
-
 }

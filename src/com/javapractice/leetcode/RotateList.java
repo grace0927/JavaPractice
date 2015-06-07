@@ -48,13 +48,5 @@ public class RotateList {
         
         return slow;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

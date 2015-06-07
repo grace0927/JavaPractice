@@ -45,14 +45,4 @@ public class Permutations {
 			}
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] num = {0, 1};
-		List<List<Integer>> result = permute(num);
-		System.out.println("result: " + result);
-	}
-
 }

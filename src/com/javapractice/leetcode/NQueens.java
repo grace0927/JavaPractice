@@ -77,14 +77,4 @@ public class NQueens {
         
         return true;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		NQueens test = new NQueens();
-		test.solveNQueens(1);
-
-	}
-
 }

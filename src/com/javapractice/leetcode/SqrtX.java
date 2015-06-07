@@ -47,14 +47,4 @@ public class SqrtX {
         }
         return (int)res;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		SqrtX test = new SqrtX();
-		System.out.println(test.sqrt(2147395599));
-
-	}
-
 }

@@ -13,13 +13,13 @@ package com.javapractice.leetcode;
  * The function prototype should be:
  * bool isMatch(const char *s, const char *p)
  * Some examples:
- * isMatch("aa","a") ¡ú false
- * isMatch("aa","aa") ¡ú true
- * isMatch("aaa","aa") ¡ú false
- * isMatch("aa", "*") ¡ú true
- * isMatch("aa", "a*") ¡ú true
- * isMatch("ab", "?*") ¡ú true
- * isMatch("aab", "c*a*b") ¡ú false
+ * isMatch("aa","a") ï¿½ï¿½ false
+ * isMatch("aa","aa") ï¿½ï¿½ true
+ * isMatch("aaa","aa") ï¿½ï¿½ false
+ * isMatch("aa", "*") ï¿½ï¿½ true
+ * isMatch("aa", "a*") ï¿½ï¿½ true
+ * isMatch("ab", "?*") ï¿½ï¿½ true
+ * isMatch("aab", "c*a*b") ï¿½ï¿½ false
  *
  */
 public class WildcardMatching {
@@ -59,13 +59,4 @@ public class WildcardMatching {
 		
 		return (indexP==lenP);
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

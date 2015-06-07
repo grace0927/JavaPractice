@@ -49,13 +49,5 @@ public class ThreeSumClosest {
         }
         return target-min;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

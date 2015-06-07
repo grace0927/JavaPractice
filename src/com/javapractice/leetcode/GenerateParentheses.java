@@ -51,13 +51,4 @@ public class GenerateParentheses {
             generator(left, right+1, res+')', result, max);
         }
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

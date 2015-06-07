@@ -48,24 +48,4 @@ public class MinStack {
     public int getMin() {
         return min.peek();
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		MinStack test = new MinStack();
-		test.push(512);
-		test.push(-1024);
-		test.push(-1024);
-		test.push(512);
-		test.pop();
-		System.out.println(test.getMin());
-		test.pop();
-		System.out.println(test.getMin());
-		test.pop();
-		System.out.println(test.getMin());
-		
-
-	}
-
 }

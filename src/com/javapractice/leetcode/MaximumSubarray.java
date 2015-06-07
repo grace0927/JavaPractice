@@ -77,13 +77,5 @@ public class MaximumSubarray {
         	return Math.max(Math.max(leftMax, rightMax), midMax);
         }
     }
-	
-	public static void main(String[] args) {
-		MaximumSubarray test = new MaximumSubarray();
-		int[] a = {-2, 1, -1};
-		int result = test.maxSubArrayDC(a);
-		System.out.println(result);
-
-	}
 
 }

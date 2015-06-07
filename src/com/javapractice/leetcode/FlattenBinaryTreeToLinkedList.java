@@ -59,18 +59,5 @@ public class FlattenBinaryTreeToLinkedList {
 			return right;
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		FlattenBinaryTreeToLinkedList test = new FlattenBinaryTreeToLinkedList();
-		TreeNode root = new TreeNode(1);
-		TreeNode right = new TreeNode(2);
-		root.right = right;
-		test.flatten(root);
-		System.out.println(root);
-
-	}
 
 }

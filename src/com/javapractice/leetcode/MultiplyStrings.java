@@ -95,13 +95,5 @@ public class MultiplyStrings {
 		
 		return result.toString();
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		MultiplyStrings test = new MultiplyStrings();
-		System.out.println(test.multiply("0", "52"));
-	}
 
 }

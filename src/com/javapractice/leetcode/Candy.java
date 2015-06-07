@@ -39,11 +39,4 @@ public class Candy {
         sum+=candyArr[size-1]; // handle the last one element
         return sum;
     }
-    
-    public static void main(String[] argv){
-    	Candy test = new Candy();
-    	int[] ratings = {1,2};
-    	int res = test.candy(ratings);
-    	System.out.println(res);
-    }
 }

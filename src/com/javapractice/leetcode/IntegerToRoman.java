@@ -21,13 +21,4 @@ public class IntegerToRoman {
         }
         return new String(ret);
     }
-
-	public static void main(String[] args) {
-		IntegerToRoman test = new IntegerToRoman();
-		
-		System.out.println(test.intToRoman(3999));
-		
-
-	}
-
 }

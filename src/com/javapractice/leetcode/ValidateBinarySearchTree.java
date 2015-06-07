@@ -68,20 +68,4 @@ public class ValidateBinarySearchTree {
 		}
 		return max;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		ValidateBinarySearchTree test = new ValidateBinarySearchTree();
-		TreeNode one = new TreeNode(5);
-		TreeNode two = new TreeNode(14);
-		TreeNode three = new TreeNode(1);
-		
-		one.left = two;
-		two.left = three;
-
-		test.isValidBST(one);
-	}
-
 }

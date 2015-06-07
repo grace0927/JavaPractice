@@ -91,15 +91,5 @@ public class LongestConsecutiveSequence {
         
         return max;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		LongestConsecutiveSequence test = new LongestConsecutiveSequence();
-		//int[] num = {4,0,-4,-2,2,5,2,0,-8,-8,-8,-8,-1,7,4,5,5,-4,6,6,-3};
-		int[] num = {1,0,-1};
-		test.longestConsecutive(num);
-	}
 
 }

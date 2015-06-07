@@ -8,7 +8,8 @@ package com.javapractice.leetcode;
  *
  * https://oj.leetcode.com/problems/merge-two-sorted-lists/
  * 
- * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+ * Merge two sorted linked lists and return it as a new list. 
+ * The new list should be made by splicing together the nodes of the first two lists.
  * 
  */
 
@@ -60,13 +61,5 @@ public class MergeTwoSortedLists {
             return res;
         }
     }
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

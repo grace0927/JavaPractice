@@ -86,16 +86,5 @@ public class PalindromePartitioningII {
 		}
 		return ret[0][len-1];
     }
-	
-	
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		PalindromePartitioningII test = new PalindromePartitioningII();
-		System.out.println(test.minCut("dde"));
-
-	}
 
 }

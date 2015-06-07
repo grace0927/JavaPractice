@@ -55,14 +55,4 @@ public class DivideTwoIntegers {
 		
 		return (int)resIndex;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		DivideTwoIntegers test = new DivideTwoIntegers();
-		System.out.println(test.divide(-2147483648, -1));
-
-	}
-
 }

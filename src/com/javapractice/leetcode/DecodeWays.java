@@ -46,13 +46,5 @@ public class DecodeWays {
 		
 		return ret[len];
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

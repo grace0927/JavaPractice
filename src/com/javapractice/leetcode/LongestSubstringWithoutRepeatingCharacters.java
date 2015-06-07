@@ -32,14 +32,5 @@ public class LongestSubstringWithoutRepeatingCharacters {
         
         return max;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		LongestSubstringWithoutRepeatingCharacters test = new LongestSubstringWithoutRepeatingCharacters();
-		System.out.println(test.lengthOfLongestSubstring("aa"));
-
-	}
 
 }

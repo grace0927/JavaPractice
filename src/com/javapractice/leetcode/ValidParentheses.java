@@ -35,14 +35,5 @@ public class ValidParentheses {
 		}
 		return string.empty();
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		ValidParentheses test = new ValidParentheses();
-		System.out.println(test.isValid("()[]{}"));
-
-	}
 
 }

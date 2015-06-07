@@ -55,17 +55,5 @@ public class PalindromePartitioning {
 		
 		return true;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		PalindromePartitioning test = new PalindromePartitioning();
-		String s = "eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj";
-		String si = "a";
-		System.out.println(test.partition(s));
-		System.out.println(test.partition(si));
-
-	}
 
 }

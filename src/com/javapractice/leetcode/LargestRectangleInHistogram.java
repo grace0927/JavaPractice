@@ -48,17 +48,8 @@ public class LargestRectangleInHistogram {
     }
 	
 	// ref: http://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/
-		public int largestRectangleAreaDC(int[] height) {
-	        // to be implemented
-			return 0;
-	    }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	public int largestRectangleAreaDC(int[] height) {
+        // to be implemented
+		return 0;
+    }
 }

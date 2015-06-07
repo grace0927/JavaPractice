@@ -42,14 +42,4 @@ Integer result = new Integer(Integer.MIN_VALUE);
 		
 		return max;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		BinaryTreeMaximumPathSum test = new BinaryTreeMaximumPathSum();
-		test.maxPathSum(new TreeNode(0));
-
-	}
-
 }

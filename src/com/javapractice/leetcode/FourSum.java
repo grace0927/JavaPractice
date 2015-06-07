@@ -108,15 +108,4 @@ public class FourSum {
 		
 		return result;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		FourSum test = new FourSum();
-		int[] num = {1,0,-1,0,-2,2};
-		System.out.println(test.fourSumN3(num, 0));
-
-	}
-
 }

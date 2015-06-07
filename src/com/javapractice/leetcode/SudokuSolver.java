@@ -57,59 +57,56 @@ public class SudokuSolver {
 		
 		if(areaC == 0) {
 			if(areaR == 0) {
-				if(board[row+1][column+1] == cur || board[row+1][column+2] == cur || board[row+2][column+1] == cur || board[row+2][column+2] == cur) {
+				if(board[row+1][column+1] == cur || board[row+1][column+2] == cur 
+						|| board[row+2][column+1] == cur || board[row+2][column+2] == cur) {
 					return false;
 				}
 			} else if(areaR == 1) {
-				if(board[row+1][column+1] == cur || board[row+1][column+2] == cur || board[row-1][column+1] == cur || board[row-1][column+2] == cur) {
+				if(board[row+1][column+1] == cur || board[row+1][column+2] == cur 
+						|| board[row-1][column+1] == cur || board[row-1][column+2] == cur) {
 					return false;
 				}
 			} else {
-				if(board[row-1][column+1] == cur || board[row-1][column+2] == cur || board[row-2][column+1] == cur || board[row-2][column+2] == cur) {
+				if(board[row-1][column+1] == cur || board[row-1][column+2] == cur 
+						|| board[row-2][column+1] == cur || board[row-2][column+2] == cur) {
 					return false;
 				}
 			}
 		} else if(areaC == 1) {
 			if(areaR == 0) {
-				if(board[row+1][column+1] == cur || board[row+1][column-1] == cur || board[row+2][column+1] == cur || board[row+2][column-1] == cur) {
+				if(board[row+1][column+1] == cur || board[row+1][column-1] == cur 
+						|| board[row+2][column+1] == cur || board[row+2][column-1] == cur) {
 					return false;
 				}
 			} else if(areaR == 1) {
-				if(board[row+1][column+1] == cur || board[row+1][column-1] == cur || board[row-1][column+1] == cur || board[row-1][column-1] == cur) {
+				if(board[row+1][column+1] == cur || board[row+1][column-1] == cur 
+						|| board[row-1][column+1] == cur || board[row-1][column-1] == cur) {
 					return false;
 				}
 			} else {
-				if(board[row-1][column+1] == cur || board[row-1][column-1] == cur || board[row-2][column+1] == cur || board[row-2][column-1] == cur) {
+				if(board[row-1][column+1] == cur || board[row-1][column-1] == cur 
+						|| board[row-2][column+1] == cur || board[row-2][column-1] == cur) {
 					return false;
 				}
 			}
 		} else {
 			if(areaR == 0) {
-				if(board[row+1][column-1] == cur || board[row+1][column-2] == cur || board[row+2][column-1] == cur || board[row+2][column-2] == cur) {
+				if(board[row+1][column-1] == cur || board[row+1][column-2] == cur 
+						|| board[row+2][column-1] == cur || board[row+2][column-2] == cur) {
 					return false;
 				}
 			} else if(areaR == 1) {
-				if(board[row+1][column-1] == cur || board[row+1][column-2] == cur || board[row-1][column-1] == cur || board[row-1][column-2] == cur) {
+				if(board[row+1][column-1] == cur || board[row+1][column-2] == cur 
+						|| board[row-1][column-1] == cur || board[row-1][column-2] == cur) {
 					return false;
 				}
 			} else {
-				if(board[row-1][column-1] == cur || board[row-1][column-2] == cur || board[row-2][column-1] == cur || board[row-2][column-2] == cur) {
+				if(board[row-1][column-1] == cur || board[row-1][column-2] == cur 
+						|| board[row-2][column-1] == cur || board[row-2][column-2] == cur) {
 					return false;
 				}
 			}
 		}
 		return true;
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		SudokuSolver test = new SudokuSolver();
-		char[][] board = {"..9748...".toCharArray(),"7........".toCharArray(),".2.1.9...".toCharArray(),"..7...24.".toCharArray(),
-				".64.1.59.".toCharArray(),".98...3..".toCharArray(),"...8.3.2.".toCharArray(),"........6".toCharArray(),"...2759..".toCharArray()};
-		test.solveSudoku(board);
-
-	}
-
 }

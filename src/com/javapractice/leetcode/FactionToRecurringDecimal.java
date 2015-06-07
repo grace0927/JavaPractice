@@ -58,14 +58,4 @@ public class FactionToRecurringDecimal {
 		}
 		return str.toString();
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		FactionToRecurringDecimal test = new FactionToRecurringDecimal();
-		System.out.println(test.fractionToDecimal(-2147483648, -1));
-
-	}
-
 }

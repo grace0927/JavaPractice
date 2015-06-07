@@ -88,14 +88,4 @@ public class PermutationSequence {
         
         return new String(ret);
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		PermutationSequence test = new PermutationSequence();
-		System.out.println(test.getPermutationMath(3, 5));
-
-	}
-
 }

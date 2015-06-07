@@ -52,14 +52,5 @@ public class ValidPalindrome {
         }
         return true;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		ValidPalindrome test = new ValidPalindrome();
-		test.isPalindrome("aA");
-
-	}
 
 }

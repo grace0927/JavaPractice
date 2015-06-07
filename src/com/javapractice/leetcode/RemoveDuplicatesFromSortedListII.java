@@ -56,19 +56,5 @@ public class RemoveDuplicatesFromSortedListII {
 			return result;
 		}
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		RemoveDuplicatesFromSortedListII test = new RemoveDuplicatesFromSortedListII();
-		ListNode one = new ListNode(1);
-		ListNode two = new ListNode(2);
-		ListNode three = new ListNode(2);
-		one.next = two;
-		two.next = three;
-		System.out.println(test.deleteDuplicates(one));
-
-	}
 
 }

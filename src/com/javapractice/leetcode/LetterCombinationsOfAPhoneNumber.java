@@ -85,13 +85,4 @@ public class LetterCombinationsOfAPhoneNumber {
 			}
 		}
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		LetterCombinationsOfAPhoneNumber test = new LetterCombinationsOfAPhoneNumber();
-		System.out.println(test.letterCombinations(""));
-	}
-
 }

@@ -103,13 +103,4 @@ public class SimplifyPath {
 		
 		return str.toString();
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		SimplifyPath test = new SimplifyPath();
-		System.out.println(test.simplifyPath("/home/../../.."));
-	}
-
 }

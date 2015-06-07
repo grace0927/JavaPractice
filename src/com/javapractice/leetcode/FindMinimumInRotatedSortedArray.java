@@ -49,13 +49,4 @@ public class FindMinimumInRotatedSortedArray {
         }
         return num[start];
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

@@ -60,28 +60,4 @@ public class ReorderList {
             }
         }
     }
-	
-	public static void main(String[] argv){
-		ListNode one = new ListNode(1);
-		ListNode two = new ListNode(2);
-		ListNode three = new ListNode(3);
-		ListNode four = new ListNode(4);
-		ListNode five = new ListNode(5);
-		
-		one.next = two;
-		two.next = three;
-		three.next = four;
-		four.next = five;
-		
-		ReorderList test = new ReorderList();
-		
-		test.reorderList(one);
-		
-		ListNode temp = one;
-		
-		while(temp!=null) {
-			System.out.println(temp.val);
-			temp = temp.next;
-		}
-	}
 }

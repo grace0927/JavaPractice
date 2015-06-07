@@ -43,15 +43,4 @@ public class PascalsTriangle {
 		
 		return result;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		PascalsTriangle test = new PascalsTriangle();
-		System.out.println(test.generate(3));
-		
-
-	}
-
 }

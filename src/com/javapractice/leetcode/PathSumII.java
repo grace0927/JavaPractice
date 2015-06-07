@@ -59,27 +59,4 @@ public class PathSumII {
             row.remove(row.size()-1);
         }
     }
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		PathSumII test = new PathSumII();
-		TreeNode one = new TreeNode(1);
-		TreeNode two = new TreeNode(-2);
-		TreeNode thr = new TreeNode(-3);
-		TreeNode fou = new TreeNode(1);
-		TreeNode fiv = new TreeNode(3);
-		TreeNode six = new TreeNode(-2);
-		TreeNode sev = new TreeNode(-1);
-		one.left = two;
-		one.right = thr;
-		two.left = fou;
-		two.right = fiv;
-		thr.left = six;
-		fou.left = sev;
-		int target = -1;
-		System.out.println(test.pathSum(one, target));
-
-	}
-
 }

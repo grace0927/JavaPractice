@@ -68,12 +68,5 @@ public class MaximalRectangle {
         
         return max;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-
-	}
 
 }

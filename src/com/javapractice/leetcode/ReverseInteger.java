@@ -29,10 +29,4 @@ public class ReverseInteger {
         }
         return newX;
     }
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

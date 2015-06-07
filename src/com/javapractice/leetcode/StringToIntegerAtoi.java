@@ -74,14 +74,4 @@ public class StringToIntegerAtoi {
 		}
 		return (int)res;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		StringToIntegerAtoi test = new StringToIntegerAtoi();
-		System.out.println(test.atoi("-1"));
-
-	}
-
 }

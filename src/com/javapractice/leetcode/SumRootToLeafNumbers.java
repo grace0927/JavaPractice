@@ -88,28 +88,4 @@ public class SumRootToLeafNumbers {
         
         return  sum;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		TreeNode root = new TreeNode(9);
-		TreeNode one = new TreeNode(0);
-		TreeNode two = new TreeNode(3);
-		TreeNode three = new TreeNode(2);
-		TreeNode four = new TreeNode(3);
-		TreeNode five = new TreeNode(4);
-		TreeNode six = new TreeNode(7);
-		root.left = one;
-		root.right = two;
-		two.left = three;
-		three.left = four;
-		three.right = five;
-		five.right = six;
-		
-		SumRootToLeafNumbers test = new SumRootToLeafNumbers();
-		System.out.println(test.sumNumbers(root));
-		
-	}
-
 }

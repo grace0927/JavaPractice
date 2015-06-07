@@ -33,18 +33,4 @@ public class RemoveDuplicatesFromSortedArrayII {
         }
         return slow;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		RemoveDuplicatesFromSortedArrayII test = new RemoveDuplicatesFromSortedArrayII();
-		int[] A = {1, 1, 1, 1, 1, 2, 2, 2};
-		int res = test.removeDuplicates(A);
-		System.out.println(res);
-		for(int i=0; i<A.length; i++) {
-			System.out.println(A[i]);
-		}
-	}
-
 }

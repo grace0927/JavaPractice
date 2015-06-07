@@ -71,14 +71,4 @@ public class CompareVersionNumbers {
 		
 		return 0;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		CompareVersionNumbers test = new CompareVersionNumbers();
-		System.out.println(test.compareVersion("01", "1"));
-
-	}
-
 }

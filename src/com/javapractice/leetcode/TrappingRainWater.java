@@ -124,14 +124,4 @@ public class TrappingRainWater {
 		}
 		return sum;
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		TrappingRainWater test = new TrappingRainWater();
-		int[] A = new int[] {4,2,0,3,2,4,3,4};
-		System.out.println(test.trap(A));
-	}
-
 }

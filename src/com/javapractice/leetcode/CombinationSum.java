@@ -53,15 +53,5 @@ public class CombinationSum {
             }
         }
     }
-    
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		CombinationSum test = new CombinationSum();
-		int[] candidates = new int[]{6,4,3,10,12};
-		int target = 28;
-		System.out.println(test.combinationSum(candidates, target));
-	}
 
 }

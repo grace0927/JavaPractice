@@ -81,13 +81,5 @@ public class CountAndSay {
 		
 		return result.toString();
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		CountAndSay test = new CountAndSay();
-		System.out.println(test.countAndSayIterative(2));
-	}
 
 }

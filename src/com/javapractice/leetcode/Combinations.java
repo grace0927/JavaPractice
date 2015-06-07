@@ -45,13 +45,5 @@ public class Combinations {
 			row.remove(current);
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

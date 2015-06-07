@@ -35,13 +35,4 @@ public class RemoveNthNodeFromEndOfList {
 		slow.next = slow.next.next;
 		return head;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

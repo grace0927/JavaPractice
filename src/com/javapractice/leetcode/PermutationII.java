@@ -52,15 +52,4 @@ public class PermutationII {
 			}
 		}
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		PermutationII test = new PermutationII();
-		int[] num = {1,1,0,0,1,-1,-1,1};
-		System.out.println(test.permuteUnique(num));
-
-	}
-
 }

@@ -55,13 +55,4 @@ public class ReverseLinkedListII {
 		last.next = end;
 		return top.next;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

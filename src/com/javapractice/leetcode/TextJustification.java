@@ -92,15 +92,5 @@ public class TextJustification {
 		
 		return list;
     }
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		TextJustification test = new TextJustification();
-		String[] str = {};
-		System.out.println(test.fullJustify(str, 15));
-
-	}
 
 }

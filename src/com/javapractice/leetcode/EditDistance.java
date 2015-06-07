@@ -40,12 +40,4 @@ public class EditDistance {
         return ret[row][column];
     }
 	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

@@ -81,13 +81,4 @@ public class RemoveElement {
 	    }
 	    return len;
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
