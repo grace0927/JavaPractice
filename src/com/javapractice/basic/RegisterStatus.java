@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.javapractice.leetcode;
+package com.javapractice.basic;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
