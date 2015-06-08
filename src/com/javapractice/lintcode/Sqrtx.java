@@ -29,7 +29,7 @@ public class Sqrtx {
         int end = start;
         start /= 2;
         while(start < end-1) {
-        	int mid = start/2+end/2;
+        	int mid = start + (end-start)/2;
         	if(mid==x/mid) {
         		return mid;
         	} else if(mid < x/mid) {
