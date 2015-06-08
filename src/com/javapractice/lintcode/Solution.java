@@ -4,10 +4,10 @@
 package com.javapractice.lintcode;
 
 /**
- * @author feng
+ * @author jianyu
  *
  */
-public class SolutionTest {
+public class Solution {
 
 	/**
 	 * @param args
@@ -15,7 +15,6 @@ public class SolutionTest {
 	public static void main(String[] args) {
 		Anagrams test = new Anagrams();
 		System.out.println(test.anagram("abcd", "aabd"));
-
 	}
 
 }
