@@ -33,11 +33,11 @@ public class FlipBits {
      *return: An integer
      */
     public static int bitSwapRequiredBetter(int a, int b) {
-        int cnt = 0;
-        for (int c = a ^ b; c != 0; c &= c - 1) {
-            ++cnt;
+        int res = 0;
+        for (int c=a^b; c!=0; c&=(c-1)) {
+            res++;
         }
-        return cnt;
+        return res;
     }
 }
 
