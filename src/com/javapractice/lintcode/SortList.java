@@ -21,41 +21,21 @@ public class SortList {
         if(head==null || head.next==null) {
             return head;
         }
-        int cnt = 0;
-        ListNode pnt = head;
-        while(pnt != null) {
-            cnt++;
-            pnt = pnt.next;
-        }
-        cnt /= 2;
-        pnt = head;
-        while(cnt > 1) {
-            cnt--;
-            pnt = pnt.next;
+        
+        ListNode slow = head;
+        ListNode fast = head;
+        while(fast.next!=null && fast.next.next!=null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
         
         // divide
-        ListNode right = sortList(pnt.next);
-        pnt.next = null;
+        ListNode right = sortList(slow.next);
+        slow.next = null;
         ListNode left = sortList(head);
         
         // merge
-        if(right == null) {
-            return left;
-        }
-        if(left == null){
-            return right;
-        }
-        if(right.next==null && left.next==null) {
-            if(left.val > right.val) {
-                right.next = left;
-                return right;
-            } else {
-                left.next = right;
-                return left;
-            }
-        }
-        pnt = new ListNode(0);
+        ListNode pnt = new ListNode(0);
         ListNode res = pnt;
         while(left!=null && right!=null) {
             if(left.val > right.val) {
