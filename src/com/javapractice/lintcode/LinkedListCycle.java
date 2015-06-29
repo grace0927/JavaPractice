@@ -5,6 +5,11 @@ package com.javapractice.lintcode;
 
 /**
  * @author jianyu
+ * http://www.lintcode.com/en/problem/linked-list-cycle/
+ * Given a linked list, determine if it has a cycle in it.
+ * Given -21->10->4->5, tail connects to node index 1, return true
+ * Follow up:
+ * Can you solve it without using extra space?
  *
  */
 public class LinkedListCycle {
