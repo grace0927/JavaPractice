@@ -51,7 +51,33 @@ public class TopologicalSorting {
 			}
 		}
 		
-		res.addAll(topSort(temp));
+		res.addAll(topSortBFS(temp));
+		
+		return res;
+    }
+    
+    /**
+     * @param graph: A list of Directed graph node
+     * @return: Any topological order for the given graph.
+     */    
+    public ArrayList<DirectedGraphNode> topSortDFS(ArrayList<DirectedGraphNode> graph) {
+        // write your code here
+		ArrayList<DirectedGraphNode> res = new ArrayList<>();
+		int len = graph.size();
+		
+		for(int i=0; i<len; i++) {
+			DirectedGraphNode node = graph.get(i);
+			if(!res.contains(node)) {
+				res.add(0, node);
+				ArrayList<DirectedGraphNode> cur = topSortDFS(node.neighbors);
+				for(int j=0; j<cur.size(); j++) {
+					if(res.contains(cur.get(j))) {
+						res.remove(cur.get(j));
+					}
+				}
+				res.addAll(cur);
+			}
+		}
 		
 		return res;
     }
