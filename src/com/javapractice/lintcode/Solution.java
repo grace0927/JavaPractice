@@ -3,6 +3,8 @@
  */
 package com.javapractice.lintcode;
 
+import java.util.Set;
+
 /**
  * @author jianyu
  *

@@ -51,8 +51,7 @@ public class BasicConcept {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		BasicConcept test = new BasicConcept();
-		test.XOR();
+		System.out.println((char)(97+25));
 	}
 
 }
