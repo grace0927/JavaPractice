@@ -3,6 +3,8 @@
  */
 package com.javapractice.lintcode;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Set;
 
 /**
@@ -30,28 +32,40 @@ public class WordLadder {
      * @param dict, a set of string
      * @return an integer
      */
-   public int ladderLength(String start, String end, Set<String> dict) {
-       // write your code here
-       if(start.equals(end)) {
-           return 1;
-       }
-		int min = 0;
-		char[] cur = start.toCharArray();
-		if(dict.contains(start)) {
-		    dict.remove(start);
-		}
-		for(int i=0; i<start.length(); i++) {
-			for(int j=0; j<26; j++) {
-				cur[i] = (char)(97+j);
-				String word = new String(cur);
-				if(dict.contains(word)) {
-					int temp = ladderLength(word, end, dict)+1;
-					min = (min==0)?temp:min;
-					min = (min>temp)?temp:min;
-				}
-			}
-		}
-		dict.add(start);
-		return min;
-   }
+    public int ladderLength(String start, String end, Set<String> dict) {
+        // write your code here
+	   Queue<String> strQueue = new LinkedList<>();
+	   Queue<Integer> cntQueue = new LinkedList<>();
+	   
+	   strQueue.add(start);
+	   cntQueue.add(1);
+	   if(dict.contains(start)) {
+		   dict.remove(start);
+	   }
+	   
+	   while(!strQueue.isEmpty()) {
+		   String str = strQueue.poll();
+		   int cnt = cntQueue.poll();
+		   if(str.equals(end)) {
+			   return cnt;
+		   }
+		   
+		   char[] arr = str.toCharArray();
+		   for(int i=0; i<arr.length; i++) {
+			   for(char j='a'; j<='z'; j++) {
+				   char temp = arr[i];
+				   arr[i] = j;
+				   String cur = new String(arr);
+				   if(dict.contains(cur)) {
+					   strQueue.add(cur);
+					   cntQueue.add(cnt+1);
+					   dict.remove(cur);
+				   }
+				   arr[i] = temp;
+			   }
+		   }
+	   }
+	   
+	   return 0;
+    }
 }
