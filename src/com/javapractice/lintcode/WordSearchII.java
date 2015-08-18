@@ -120,7 +120,7 @@ public class WordSearchII {
 		}
 	}
 	
-	private class Node {
+	class Node {
 		char val;
 		public HashMap<Character, Node> map = new HashMap<>();
 		public Node(char val) {
