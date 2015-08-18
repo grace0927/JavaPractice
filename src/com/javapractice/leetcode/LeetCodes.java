@@ -7,6 +7,7 @@ public class LeetCodes {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
+    	/*
 		AddTwoNumbers test = new AddTwoNumbers();
 		ListNode one = new ListNode(0);
 		ListNode two = new ListNode(9);
@@ -63,7 +64,11 @@ public class LeetCodes {
 		
 		ValidSudoku test3 = new ValidSudoku();
 		System.out.println(test3.isValidSudoku(graph));
-		
+		*/
+    	WordSearchII test = new WordSearchII();
+    	char[][] board = {{'a'}};
+    	String[] words = {"a"};
+    	System.out.println(test.findWords(board, words));
     }
     
 }
