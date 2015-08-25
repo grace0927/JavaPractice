@@ -64,11 +64,13 @@ public class LeetCodes {
 		
 		ValidSudoku test3 = new ValidSudoku();
 		System.out.println(test3.isValidSudoku(graph));
-		*/
     	WordSearchII test = new WordSearchII();
     	char[][] board = {{'a'}};
     	String[] words = {"a"};
     	System.out.println(test.findWords(board, words));
+		*/
+    	BasicCalculator test = new BasicCalculator();
+    	System.out.println(test.calculate("(3-(2-(5-(9-(4)))))"));
     }
     
 }
