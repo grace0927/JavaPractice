@@ -85,4 +85,60 @@ public class AddBinary {
 		
 		return result.toString();
     }
+    
+    public static String addBinaryHand(String a, String b) {
+    	int pntA = a.length();
+    	int pntB = b.length();
+    	boolean over = false;
+    	StringBuilder str = new StringBuilder();
+    	
+    	while(pntA>0 && pntB>0) {
+    		int sum = a.charAt(pntA-1) + b.charAt(pntB-1) - '0' - '0';
+    		if(over) {
+    			sum += 1;
+    			over = false;
+    		}
+    		if(sum > 1) {
+    			sum -= 2;
+    			over = true;
+    		}
+    		str.insert(0, (char)'0'+sum);
+    		pntA--;
+    		pntB--;
+    	}
+    	
+    	while(pntA>0) {
+    		int sum = a.charAt(pntA-1) - '0';
+    		if(over) {
+    			sum += 1;
+    			over = false;
+    		}
+    		if(sum > 1) {
+    			sum -= 2;
+    			over = true;
+    		}
+    		str.insert(0, (char)'0'+sum);
+    		pntA--;
+    	}
+
+    	while(pntB>0) {
+    		int sum = b.charAt(pntB-1) - '0';
+    		if(over) {
+    			sum += 1;
+    			over = false;
+    		}
+    		if(sum > 1) {
+    			sum -= 2;
+    			over = true;
+    		}
+    		str.insert(0, (char)'0'+sum);
+    		pntB--;
+    	}
+    	
+    	if(over) {
+    		str.insert(0, '1');
+    	}
+    	
+    	return str.toString();
+    }
 }
