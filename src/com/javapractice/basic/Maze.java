@@ -4,6 +4,7 @@
 package com.javapractice.basic;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -62,6 +63,7 @@ public class Maze {
 	/**
 	 * @param args
 	 */
+	/*
 	public static void main(String[] args) {
 		boolean[][] board = {{false, false, false, false, false, false, true, false, false},
 				{false, false, true, false, false, false, false, false, false},
@@ -97,5 +99,58 @@ public class Maze {
 		}
 		
 	}
+	*/
+	class Vertex {
+		int index;
+		boolean visit;
+		HashMap<Character, Vertex> neighbours;
+		
+		Vertex(int index) {
+			this.index = index;
+			this.neighbours = new HashMap<>();
+		}
+	}
 
+	List<Vertex> vertices = new ArrayList<>();
+
+	public void init() {
+		for(int i=0; i<9; i++) {
+			Vertex vertex = new Vertex(i);
+			vertices.add(vertex);
+		}
+		vertices.get(0).neighbours.put(Character.valueOf('d'), vertices.get(6));
+		vertices.get(0).neighbours.put(Character.valueOf('r'), vertices.get(1));
+		vertices.get(1).neighbours.put(Character.valueOf('d'), vertices.get(4));
+		vertices.get(4).neighbours.put(Character.valueOf('r'), vertices.get(5));
+		vertices.get(5).neighbours.put(Character.valueOf('d'), vertices.get(8));
+		vertices.get(2).neighbours.put(Character.valueOf('d'), vertices.get(8));
+		vertices.get(6).neighbours.put(Character.valueOf('r'), vertices.get(7));
+	}
+
+	public boolean DFS(int from, int to, StringBuilder builder) {
+		if(from == to) {
+			System.out.println(builder.toString());
+			return true;
+		}		
+
+		Vertex fromVertex = vertices.get(from);
+		for(Character direction:fromVertex.neighbours.keySet()) {
+			builder.append(direction);
+			Vertex toVertex = fromVertex.neighbours.get(direction);
+			toVertex.visit = true;
+			if(DFS(toVertex.index, to, builder)) {
+				return true;
+			}
+			toVertex.visit = false;
+			builder.deleteCharAt(builder.length()-1);
+		}
+		return false;
+	}
+
+	public static void main(String args[]) {
+		Maze maze = new Maze();
+		maze.init();
+		StringBuilder builder = new StringBuilder();
+		maze.DFS(0, 8, builder);
+	}
 }
