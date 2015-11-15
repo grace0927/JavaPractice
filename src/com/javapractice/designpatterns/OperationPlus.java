@@ -20,5 +20,13 @@ public class OperationPlus implements Operation {
 		// TODO Auto-generated method stub
 		return first+second;
 	}
+	
+	public void setFirst(double a) {
+		this.first = a;
+	}
+	
+	public void setSecond(double b) {
+		this.second = b;
+	}
 
 }
