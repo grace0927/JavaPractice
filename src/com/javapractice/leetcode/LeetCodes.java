@@ -69,8 +69,15 @@ public class LeetCodes {
     	String[] words = {"a"};
     	System.out.println(test.findWords(board, words));
 		*/
+    	/*
     	BasicCalculator test = new BasicCalculator();
     	System.out.println(test.calculate("(3-(2-(5-(9-(4)))))"));
+    	*/
+    	/*
+    	CoinChange test = new CoinChange();
+    	int[] coins = {186, 419, 83, 408};
+    	System.out.println(test.coinChangeItertive(coins, 6249));
+    	*/
     }
     
 }
