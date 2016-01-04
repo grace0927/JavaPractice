@@ -44,3 +44,5 @@ Temporary Items
 /bin/
 
 *.prefs
+
+.settings/org.eclipse.jdt.core.prefs
