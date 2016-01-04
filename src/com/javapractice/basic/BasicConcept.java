@@ -10,7 +10,14 @@ import java.util.HashMap;
  *
  */
 public class BasicConcept {
-
+	/*
+	 * basic concept about string
+	 */
+	public void calculateInteger() {
+		int res = 0+(1-0)/2;
+		System.out.println(res);
+	}
+	
 	/*
 	 * basic concept about string
 	 */
@@ -51,7 +58,8 @@ public class BasicConcept {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println((char)(97+25));
+		BasicConcept test = new BasicConcept();
+		test.calculateInteger();
 	}
 
 }
