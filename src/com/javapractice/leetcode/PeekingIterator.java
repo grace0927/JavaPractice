@@ -47,6 +47,11 @@ public class PeekingIterator implements Iterator<Integer> {
 	    return !queue.isEmpty();
 	}
 	
+	@Override
+	public void remove() {
+		
+	}
+	
 	/*    
 	 * guava: https://github.com/google/guava/blob/703ef758b8621cfbab16814f01ddcc5324bdea33/
 	 * guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/Iterators.java#L1125
