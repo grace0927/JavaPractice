@@ -78,6 +78,21 @@ public class LeetCodes {
     	int[] coins = {186, 419, 83, 408};
     	System.out.println(test.coinChangeItertive(coins, 6249));
     	*/
+    	/*
+    	TreeNode one = new TreeNode(1);
+    	TreeNode two = new TreeNode(2);
+    	TreeNode three = new TreeNode(3);
+    	TreeNode four = new TreeNode(4);
+    	TreeNode five = new TreeNode(5);
+    	one.left = two;
+    	one.right = three;
+    	three.left = four;
+    	three.right = five;
+    	Codec test = new Codec();
+    	String res = test.serialize(one);
+    	System.out.println(res);
+    	System.out.println(test.serialize(test.deserialize(res)));
+    	*/
     }
     
 }
