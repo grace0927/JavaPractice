@@ -8,6 +8,8 @@ public class LeetCodes {
      */
     public static void main(String[] args) throws Exception {
     	/*
+    	AdditiveNumber test = new AdditiveNumber();
+    	System.out.println(test.isAdditiveNumber("112358"));
 		AddTwoNumbers test = new AddTwoNumbers();
 		ListNode one = new ListNode(0);
 		ListNode two = new ListNode(9);
