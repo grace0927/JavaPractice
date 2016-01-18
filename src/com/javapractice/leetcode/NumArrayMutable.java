@@ -112,4 +112,49 @@ public class NumArrayMutable {
         return sumRange(root, i, j);
     }
      */
+    
+    /*
+     * binary index tree
+     * ref: https://www.topcoder.com/community/data-science/data-science-tutorials/binary-indexed-trees/
+    int[] bit;
+    int[] nums;
+    int len;
+
+    public NumArray(int[] nums) {
+        this.nums = nums;
+        len = nums.length;
+        bit = new int[len+1];
+        bit[0] = 0;
+        for(int i=0; i<len; i++) {
+            setBIT(i, nums[i]);
+        }
+    }
+    
+    public void setBIT(int idx, int val) {
+        idx++;
+        while(idx <= len) {
+            bit[idx] += val;
+            idx += idx & (-idx);
+        }
+    }
+
+    void update(int i, int val) {
+        setBIT(i, val-nums[i]);
+        nums[i] = val;
+    }
+    
+    public int getSum(int idx) {
+        int sum = 0;
+        idx++;
+        while(idx>0) {
+            sum += bit[idx];
+            idx -= idx & (-idx);
+        }
+        return sum;
+    }
+
+    public int sumRange(int i, int j) {
+        return getSum(j)-getSum(i-1);
+    }
+     */
 }
