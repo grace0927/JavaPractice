@@ -1,32 +1,44 @@
 # JavaPractice
 
-##algorithm
+## Algorithm
 practice algorithm implementation. algorithms are from:
 1. famous algorithm
 2. introduction to algorithm
 3. geeksforgeeks
 4. articles
 
-##backtracking
+## Backtracking
 special practice for backtracking algorithm
 
-##basic
+## Basic
 JAVA basic concept understanding.
 
-##cc150
+## cc150
 Cracking Code Interview Problems
 
-##db
+## Database
 JAVA Database Manager and Connection
 
-##designpatterns
-design pattern for JAVA. original idea from:
+## Design Patterns
+Design pattern for JAVA. Original ideas are from:
 1. GoF Design Pattern: Elements of Reusable Object-Oriented Software
 2. Head First Design Pattern
 3. ISBN: 9787302162063
 
-##leetcode
+Details:
+- Factory
+- Strategy
+
+## leetcode
 Leetcode Algorithm problems
 
-##lintcode
+##### Hash Table
+1. Two Sum
+use HashMap to map value to its index
+lookup map for target-value.
+
+ 
+
+
+## lintcode
 Lintcode Algorithm problems
