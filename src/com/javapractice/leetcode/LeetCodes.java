@@ -9,7 +9,7 @@ public class LeetCodes {
     public static void main(String[] args) throws Exception {
     	/*
     	BestTimeToBuyAndSellStockWithCooldown test = new BestTimeToBuyAndSellStockWithCooldown();
-    	int[] prices = {2, 1}; 
+    	int[] prices = {6,1,3,2,4,7}; 
     	test.maxProfit(prices);
     	AdditiveNumber test = new AdditiveNumber();
     	System.out.println(test.isAdditiveNumber("112358"));

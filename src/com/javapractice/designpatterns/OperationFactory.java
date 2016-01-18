@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javapractice.designpatterns.simplefactory;
+package com.javapractice.designpatterns;
 
 /**
  * @author feng

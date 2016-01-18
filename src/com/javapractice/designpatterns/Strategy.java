@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javapractice.designpatterns.strategy;
+package com.javapractice.designpatterns;
 
 /**
  * @author seawolf
