@@ -37,6 +37,7 @@ Leetcode Algorithm problems
 Q: Given an array of integers, find two numbers such that they add up to a specific target number.<br>
 A: use HashMap to map value to its index. O(n)<br>
 lookup map for target-value. O(1)<br>
+
 ```
 public int[] twoSum(int[] nums, int target) {
   int[] res = new int[2];
@@ -54,9 +55,11 @@ public int[] twoSum(int[] nums, int target) {
   return res;
 }
 ```
+
 2. Longest Substring Without Repeating Characters <br>
 Q: Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.<br>
 A: use hash map to record each character latest index. mark starting point of current substring. calculate length and compare<br>
+
 ```
 public int lengthOfLongestSubstring(String s) {
     HashMap<Character, Integer> map = new HashMap<>();
@@ -80,6 +83,7 @@ public int lengthOfLongestSubstring(String s) {
 1. Add Two Numbers<br>
 Q: You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.<br>
 A: iterative add from left to right, use flag to mark over 10 sum. O(n)<br>
+
 ```
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
    ListNode dummy = new ListNode(0);
