@@ -54,6 +54,25 @@ public int[] twoSum(int[] nums, int target) {
   return res;
 }
 ```
+2. Longest Substring Without Repeating Characters
+```
+public int lengthOfLongestSubstring(String s) {
+    HashMap<Character, Integer> map = new HashMap<>();
+    int len = 0;
+    int start = 0;
+    
+    for(int i=0; i<s.length(); i++) {
+        char cur = s.charAt(i);
+        if(map.containsKey(cur)) {
+            start = Math.max(map.get(cur)+1, start);
+        }
+        map.put(cur, i);
+        len = Math.max(len, i-start+1);
+    }
+    
+    return len;
+}
+```
 
 ##### Linked List
 1. Add Two Numbers<br>
