@@ -33,13 +33,32 @@ Details:
 Leetcode Algorithm problems
 
 ##### Hash Table
-1. Two Sum
-use HashMap to map value to its index
-lookup map for target-value.
+1. Two Sum<br>
+Q: Given an array of integers, find two numbers such that they add up to a specific target number.<br>
+use HashMap to map value to its index. O(n)<br>
+lookup map for target-value. O(1)<br>
+```
+public int[] twoSum(int[] nums, int target) {
+  int[] res = new int[2];
+  HashMap<Integer, Integer> map = new HashMap<>();
+  
+  for(int i=0; i<nums.length; i++) {
+      if(map.containsKey(target-nums[i])) {
+          int idx = map.get(target-nums[i]);
+          res[0] = (idx>i)?i+1:idx+1;
+          res[1] = (idx>i)?idx+1:i+1;
+      }
+      map.put(nums[i], i);
+  }
+  
+  return res;
+}
+```
 
 ##### Linked List
-1. Add Two Numbers
-iterative add from left to right, use flag to mark over 10 sum
+1. Add Two Numbers<br>
+Q: You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.<br>
+iterative add from left to right, use flag to mark over 10 sum. O(n)<br>
 ```
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
    ListNode dummy = new ListNode(0);
