@@ -17,6 +17,9 @@ package com.javapractice.leetcode;
  *
  */
 public class SuperUglyNumber {
+	/*
+	 * key point is use idx array to keep track every primes' base number
+	 */
     public int nthSuperUglyNumber(int n, int[] primes) {
         int[] res = new int[n];
         int[] idx = new int[primes.length];
