@@ -127,7 +127,42 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
    return dummy.next;
 }
 ```
+##### String
 
+1. Longest Palindromic Substring
+Q: Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+A: My thought is to use dp to store the possible substring that is palindrome. With incresing length, we can mark the later one as the longest palindrome.
+```
+public String longestPalindrome(String s) {
+    int len = s.length();
+    boolean[][] dp = new boolean[len][len];
+    int start = 0;
+    int end = 0;
+    
+    for(int i=0; i<len; i++) {
+        dp[i][i] = true;
+        start = i;
+        end = i+1;
+    }
+    
+    for(int i=1; i<len; i++) {
+        for(int j=0; j<len && i+j<len; j++) {
+            if(s.charAt(j)==s.charAt(i+j)) {
+                dp[j][i+j] = true;
+                if(i>1) {
+                    dp[j][i+j] &= dp[j+1][i+j-1];
+                }
+                if(dp[j][i+j]) {
+                    start = j;
+                    end = i+j+1;
+                }
+            }
+        }
+    }
+    
+    return s.substring(start, end);
+}
+```
 
 ## lintcode
 Lintcode Algorithm problems
