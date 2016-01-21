@@ -2,7 +2,6 @@ package com.javapractice.leetcode;
 
 
 public class LeetCodes {
-    
     /**
      * @param args the command line arguments
      */
