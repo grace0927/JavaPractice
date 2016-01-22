@@ -164,5 +164,73 @@ public String longestPalindrome(String s) {
 }
 ```
 
+2. ZigZag Conversion
+Q: The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+
+P   A   H   N
+A P L S I I G
+Y   I   R
+And then read line by line: "PAHNAPLSIIGYIR"
+Write the code that will take a string and make this conversion given a number of rows:
+
+string convert(string text, int nRows);
+convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
+```
+public String convert(String s, int numRows) {
+    if(numRows == 1) {
+        return s;
+    }
+    int len = s.length();
+    List<StringBuilder> list = new ArrayList<>();
+    StringBuilder sb = new StringBuilder();
+    
+    for(int i=0; i<numRows; i++) {
+        list.add(new StringBuilder());
+    }
+    for(int i=0; i<len; i++) {
+        int idx = i%(numRows+numRows-2);
+        if(idx>=numRows) {
+            idx = numRows+numRows-2-idx;
+        }
+        list.get(idx).append(s.charAt(i));
+    }
+    for(int i=0; i<numRows; i++) {
+        sb.append(list.get(i));
+    }
+    
+    return sb.toString();
+}
+```
+
+##### Math
+1. Reverse Integer
+Q: Reverse digits of an integer.
+
+Example1: x = 123, return 321
+Example2: x = -123, return -321
+
+
+```
+public int reverse(int x) {
+    long res = 0;
+    boolean flag = (x<0)?true:false;
+    x = (flag)?-x:x;
+    
+    while(x>0) {
+        res = res*10+(x%10);
+        x /= 10;
+    }
+    
+    if(res > Integer.MAX_VALUE) {
+        return 0;
+    }
+    if(-res < Integer.MIN_VALUE) {
+        return 0;
+    }
+    
+    return (flag)?(int)-res:(int)res;
+}
+```
+
 ## lintcode
 Lintcode Algorithm problems
