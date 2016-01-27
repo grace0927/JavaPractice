@@ -8,5 +8,5 @@ package com.javapractice.datastructure;
  *
  */
 public interface DataStructure {
-	public void display();
+	public void run();
 }

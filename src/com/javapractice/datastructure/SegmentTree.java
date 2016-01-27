@@ -14,7 +14,10 @@ public class SegmentTree implements DataStructure{
 	int height;
 	int length;
 	
-	public SegmentTree(int[] arr) {
+	public SegmentTree() {
+	}
+	
+	public void init(int[] arr) {
 		length = arr.length;
 		height = (int) (Math.ceil(Math.log(arr.length)/Math.log(2)));
 		size = 2*((int) Math.pow(2, height))-1;
@@ -84,5 +87,13 @@ public class SegmentTree implements DataStructure{
 			updateUtil(start, mid, ui, diff, idx*2+1);
 			updateUtil(mid+1, end, ui, diff, idx*2+2);
 		}
+	}
+	
+	public void run() {
+		int[] arr = {1, 3, 5, 7, 9, 11};
+		this.init(arr);
+		System.out.println(this.getSum(1, 3));
+		this.update(arr, 1, 10);
+		System.out.println(this.getSum(1, 3));
 	}
 }
