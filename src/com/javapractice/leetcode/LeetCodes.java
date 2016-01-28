@@ -7,6 +7,9 @@ public class LeetCodes {
      */
     public static void main(String[] args) throws Exception {
     	/*
+    	PatchingArray test = new PatchingArray();
+    	int[] arr = {1,5,10};
+    	System.out.println(test.minPatches(arr, 50));
     	BestTimeToBuyAndSellStockWithCooldown test = new BestTimeToBuyAndSellStockWithCooldown();
     	int[] prices = {6,1,3,2,4,7}; 
     	test.maxProfit(prices);
