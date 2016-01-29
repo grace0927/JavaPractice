@@ -6,6 +6,9 @@ public class LeetCodes {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
+    	CountOfSmallerNumbersAfterSelf test = new CountOfSmallerNumbersAfterSelf();
+    	int[] nums = {1,0,2};
+    	System.out.println(test.countSmaller(nums));
     	/*
     	PatchingArray test = new PatchingArray();
     	int[] arr = {1,5,10};

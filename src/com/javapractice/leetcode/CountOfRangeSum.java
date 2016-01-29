@@ -18,7 +18,7 @@ package com.javapractice.leetcode;
  * The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2, -1, 2.
  *
  */
-public class CountofRangeSum {
+public class CountOfRangeSum {
     public int countRangeSumTrivial(int[] nums, int lower, int upper) {
         // O(n^2) trivial
         int[] sums = new int[nums.length];
