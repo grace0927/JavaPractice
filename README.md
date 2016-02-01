@@ -201,7 +201,27 @@ public String convert(String s, int numRows) {
     return sb.toString();
 }
 ```
-
+Longest Common Prefix
+```
+public String longestCommonPrefix(String[] strs) {
+    if(strs.length <= 0) {
+        return "";
+    }
+    
+    for(int i=1; i<strs.length; i++) {
+        if(strs[i].length()<strs[0].length()) {
+            strs[0] = strs[0].substring(0, strs[i].length());
+        }
+        for(int j=0; j<strs[i].length(); j++) {
+            if(j<strs[0].length() && strs[0].charAt(j)!=strs[i].charAt(j)) {
+                strs[0] = strs[0].substring(0, j);
+                break;
+            }
+        }
+    }
+    return strs[0];
+}
+```
 ##### Math
 1. Reverse Integer
 Q: Reverse digits of an integer.
