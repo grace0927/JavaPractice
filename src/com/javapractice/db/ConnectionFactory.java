@@ -13,9 +13,9 @@ import java.sql.SQLException;
  */
 public class ConnectionFactory {
 	private static ConnectionFactory instance = new ConnectionFactory();
-	private static final String URL = "jdbc:mysql://localhost/employee_manager";
+	private static final String URL = "jdbc:mysql://localhost/test";
 	private static final String USER = "root";
-	private static final String PASS = "admin123";
+	private static final String PASS = "";
 	private static final String DRIVER_CLASS = "com.mysql.jdbc.Driver";
 	
 	public ConnectionFactory() {

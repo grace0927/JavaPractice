@@ -16,6 +16,7 @@ import java.util.List;
  * "()())()" -> ["()()()", "(())()"]
  * "(a)())()" -> ["(a)()()", "(a())()"]
  * ")(" -> [""]
+ * dfs: https://leetcode.com/discuss/72208/easiest-9ms-java-solution
  *
  */
 public class RemoveInvalidParentheses {
