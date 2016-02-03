@@ -1,11 +1,12 @@
 package com.javapractice.leetcode;
 
-
 public class LeetCodes {
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
+    	CreateMaximumNumber test = new CreateMaximumNumber();
+    	test.maxNumber(new int[]{8,6,9}, new int[]{1,7,5}, 3);
     	/*
     	CountOfSmallerNumbersAfterSelf test = new CountOfSmallerNumbersAfterSelf();
     	int[] nums = {1,0,2};
