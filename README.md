@@ -201,7 +201,8 @@ public String convert(String s, int numRows) {
     return sb.toString();
 }
 ```
-Longest Common Prefix
+
+3. Longest Common Prefix
 ```
 public String longestCommonPrefix(String[] strs) {
     if(strs.length <= 0) {
@@ -222,6 +223,35 @@ public String longestCommonPrefix(String[] strs) {
     return strs[0];
 }
 ```
+
+4. String to Integer (atoi)
+```
+public int myAtoi(String str) {
+    int len = str.length();
+    if(len==0) {
+        return 0;
+    }
+    int pnt = 0;
+    long sum = 0;
+    int sign = 1;
+    while(pnt<len && str.charAt(pnt)==' ') {
+        pnt++;
+    }
+    if(pnt<len && (str.charAt(pnt)=='+' || str.charAt(pnt)=='-')) {
+        sign = (str.charAt(pnt)=='+')?1:-1;
+        pnt++;
+    }
+    while(pnt<len && str.charAt(pnt)>='0' && str.charAt(pnt)<='9') {
+        sum = sum*10+str.charAt(pnt)-'0';
+        if(sum>Integer.MAX_VALUE || sum*sign<Integer.MIN_VALUE) {
+            return (sign<0)?Integer.MIN_VALUE:Integer.MAX_VALUE;
+        }
+        pnt++;
+    }
+    return (int)sum*sign;
+}
+```
+
 ##### Math
 1. Reverse Integer
 Q: Reverse digits of an integer.
@@ -249,6 +279,80 @@ public int reverse(int x) {
     }
     
     return (flag)?(int)-res:(int)res;
+}
+```
+
+2. Palindrome Number
+Q: Determine whether an integer is a palindrome. Do this without extra space.
+A: reverse the number and compare.
+Better Idea:
+ref: https://leetcode.com/discuss/23563/line-accepted-java-code-without-the-need-handling-overflow
+reverse half of the number and compare.
+```
+public boolean isPalindrome(int x) {
+    long res = reverse(x);
+    if(res>Integer.MAX_VALUE || res<Integer.MIN_VALUE) {
+        return false;
+    }
+    return ((int)res==x);
+}
+
+public long reverse(int x) {
+    long res = 0;
+    while(x>0) {
+        res = res*10+(x%10);
+        x /= 10;
+    }
+    return res;
+}
+```
+
+##### Divide and Conquer
+1. Median of Two Sorted Arrays
+Q: There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+```
+public double findMedianSortedArrays(int A[], int B[]) {
+    int lenA = A.length;
+	int lenB = B.length;
+	
+	if((lenA+lenB)%2 != 0) {
+		return (double)findMedian(A, B, (lenA+lenB)/2, 0, lenA-1, 0, lenB-1);
+	} else {
+		return (findMedian(A, B, (lenA+lenB)/2, 0, lenA-1, 0, lenB-1)+findMedian(A, B, (lenA+lenB)/2-1, 0, lenA-1, 0, lenB-1))*0.5;
+	}
+}
+
+public int findMedian(int A[], int B[], int k, int startA, int endA, int startB, int endB) {
+	int lenA = endA-startA+1;
+	int lenB = endB-startB+1;
+	
+	if(lenA == 0) {
+		return B[startB+k];
+	}
+	if(lenB == 0) {
+		return A[startA+k];
+	}
+	if(k == 0) {
+		return A[startA]<B[startB]?A[startA]:B[startB];
+	}
+	
+	int midA = lenA*k/(lenA+lenB);
+	int midB = k-midA-1;
+	
+	midA = midA+startA;
+	midB = midB+startB;
+	
+	if(A[midA] > B[midB]) {
+		k -= (midB-startB+1);
+		endA = midA;
+		startB = midB+1;
+	} else {
+		k -= (midA-startA+1);
+		endB = midB;
+		startA = midA+1;
+	}
+	
+	return findMedian(A, B, k, startA, endA, startB, endB);
 }
 ```
 
