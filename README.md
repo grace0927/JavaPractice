@@ -307,6 +307,96 @@ public long reverse(int x) {
 }
 ```
 
+3. Integer to Roman
+Q: Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
+```
+public String intToRoman(int num) {
+    HashMap<Integer, Character> map = new HashMap<>();
+    char[] vals = new char[]{'I', 'V', 'X', 'L', 'C', 'D', 'M'};
+    int[] keys = new int[] {1, 5, 10, 50, 100, 500, 1000};
+    for(int i=0; i<keys.length; i++) {
+        map.put(keys[i], vals[i]);
+    }
+    
+    StringBuilder sb = new StringBuilder();
+    int[] base = new int[]{1000, 100, 10, 1};
+    
+    for(int i=0; i<4; i++) {
+        int b = base[i];
+        int m = num/b;
+        while(m>0) {
+            if(m==9) {
+                num -= 9*b;
+                sb.append(map.get(b));
+                sb.append(map.get(b*10));
+                m-=9;
+            } else if(m==4) {
+                num -= 4*b;
+                sb.append(map.get(b));
+                sb.append(map.get(b*5));
+                m-=4;
+            } else if(m>=5) {
+                num -= 5*b;
+                sb.append(map.get(b*5));
+                m-=5;
+            } else {
+                num -= 1*b;
+                sb.append(map.get(b));
+                m--;
+            }
+        }   
+    }
+    
+    return sb.toString();
+}
+```
+
+4. Roman to Integer
+Q: Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
+```
+public int romanToInt(String s) {
+    int res = 0;
+    for(int i=0; i<s.length(); i++) {
+        switch(s.charAt(i)) {
+            case 'M':
+                res += 1000;
+                break;
+            case 'D':
+                res += 500;
+                break;
+            case 'C':
+                if(i+1<s.length() && (s.charAt(i+1)=='M' || s.charAt(i+1)=='D')) {
+                    res -= 100;
+                } else {
+                    res += 100;
+                }
+                break;
+            case 'L':
+                res += 50;
+                break;
+            case 'X':
+                if(i+1<s.length() && (s.charAt(i+1)=='L' || s.charAt(i+1)=='C')) {
+                    res -= 10;
+                } else {
+                    res += 10;
+                }
+                break;
+            case 'V':
+                res += 5;
+                break;
+            case 'I':
+                if(i+1<s.length() && (s.charAt(i+1)=='V' || s.charAt(i+1)=='X')) {
+                    res -= 1;
+                } else {
+                    res += 1;
+                }
+                break;
+        }
+    }
+    return res;
+}
+```
+
 ##### Divide and Conquer
 1. Median of Two Sorted Arrays
 Q: There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
@@ -353,6 +443,28 @@ public int findMedian(int A[], int B[], int k, int startA, int endA, int startB,
 	}
 	
 	return findMedian(A, B, k, startA, endA, startB, endB);
+}
+```
+
+##### Two Pointer
+1. Container With Most Water
+Q: Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+```
+public int maxArea(int[] height) {
+    int start=0, end=height.length-1, sum=0, h=0;
+    
+    while(start<end) {
+        if(height[start]>height[end]) {
+            h = Math.max(h, height[end]);
+            end--;
+        } else {
+            h = Math.max(h, height[start]);
+            start++;
+        }
+        sum = Math.max(sum, h*(end-start+1));
+    }
+    
+    return sum;
 }
 ```
 
