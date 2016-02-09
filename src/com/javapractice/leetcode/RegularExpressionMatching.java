@@ -24,7 +24,8 @@ package com.javapractice.leetcode;
  */
 public class RegularExpressionMatching {
 	/*
-	 * DP, ref: https://oj.leetcode.com/discuss/18970/concise-recursive-and-dp-solutions-with-full-explanation-in
+	 * DP, ref: https://oj.leetcode.com/discuss/18970/concise-recursive-
+	 * and-dp-solutions-with-full-explanation-in
 	 */
 	public boolean isMatch(String s, String p) {
         int lenS = s.length();
@@ -46,7 +47,9 @@ public class RegularExpressionMatching {
 				if(curP != '*') {
 					table[i+1][j+1] = (table[i][j] && (curS==curP || curP=='.'));
 				} else {
-					table[i+1][j+1] = ((j>0 && table[i+1][j-1]) || table[i+1][j] || (j>0 && table[i][j+1] && (p.charAt(j-1)=='.' || curS == p.charAt(j-1))));
+					table[i+1][j+1] = ((j>0 && table[i+1][j-1]) || table[i+1][j] 
+							|| (j>0 && table[i][j+1] && (p.charAt(j-1)=='.' 
+							|| curS == p.charAt(j-1))));
 				}
 			}
 		}

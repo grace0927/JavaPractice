@@ -468,5 +468,47 @@ public int maxArea(int[] height) {
 }
 ```
 
+2. 3Sum
+Q: Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+Note:
+Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+The solution set must not contain duplicate triplets.
+
+```
+public List<List<Integer>> threeSum(int[] nums) {
+    List<List<Integer>> res = new ArrayList<>();
+    Arrays.sort(nums);
+    
+    for(int i=0; i<nums.length-2; i++) {
+        if(i>0 && nums[i]==nums[i-1]) {
+            continue;
+        }
+        int start = i+1;
+        int end = nums.length-1;
+        while(start<end) {
+            if(start>i+1 && nums[start]==nums[start-1]) {
+                start++;
+                continue;
+            }
+            int sum = nums[start]+nums[end]+nums[i];
+            if(sum==0) {
+                List<Integer> row = new ArrayList<>();
+                row.add(nums[i]);
+                row.add(nums[start++]);
+                row.add(nums[end--]);
+                res.add(row);
+            } else if(sum>0) {
+                end--;
+            } else {
+                start++;
+            }
+        }
+    }
+    
+    return res;
+}
+```
+
 ## lintcode
 Lintcode Algorithm problems
