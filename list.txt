@@ -13,8 +13,8 @@ Regular Expression Matching	21.5%	Hard
 // Roman to Integer	37.7%	Easy
 // Longest Common Prefix	27.2%	Easy
 // 3Sum	18.1%	Medium
-3Sum Closest	28.3%	Medium
-Letter Combinations of a Phone Number	27.6%	Medium
+// 3Sum Closest	28.3%	Medium
+// Letter Combinations of a Phone Number	27.6%	Medium
 4Sum	23.0%	Medium
 Remove Nth Node From End of List	28.6%	Easy
 Valid Parentheses	28.4%	Easy

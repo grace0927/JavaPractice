@@ -510,5 +510,80 @@ public List<List<Integer>> threeSum(int[] nums) {
 }
 ```
 
+3. 3Sum Closest
+Q: Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+```
+public int threeSumClosest(int[] nums, int target) {
+    int min = Integer.MAX_VALUE;
+    int res = 0;
+    Arrays.sort(nums);
+    for(int i=0; i<nums.length-2; i++) {
+        if(i>0 && nums[i]==nums[i-1]) {
+            continue;
+        }
+        int start = i+1;
+        int end = nums.length-1;
+        while(start<end) {
+            int sum = nums[i]+nums[start]+nums[end];
+            int diff = Math.abs(sum-target);
+            if(diff<min) {
+                min = diff;
+                res = sum;
+            }
+            if(min==0) {
+                return target;
+            }
+            if(sum>target) {
+                end--;
+            } else {
+                start++;
+            }
+        }
+    }
+    
+    return res;
+}
+```
+
+##### Backtracking
+1. Letter Combinations of a Phone Number
+Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.
+```
+public List<String> letterCombinations(String digits) {
+    if(digits.length()==0) {
+        return new ArrayList<>();
+    }
+    
+    int[] num = new int[]{2, 3, 4, 5, 6, 7, 8, 9};
+    String[] s = new String[]{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    HashMap<Integer, char[]> map = new HashMap<>();
+    for(int i=0; i<num.length; i++) {
+        map.put(num[i], s[i].toCharArray());
+    }
+    
+    return helper(digits, map);
+}
+
+public List<String> helper(String digits, HashMap<Integer, char[]> map) {
+    if(digits.length()==1) {
+        char head = digits.charAt(0);
+        List<String> res = new ArrayList<>();
+        for(Character c:map.get(head-'0')) {
+            res.add(c+"");
+        }
+        return res;
+    }
+    char head = digits.charAt(0);
+    List<String> res = new ArrayList<>();
+    for(String s:helper(digits.substring(1), map)) {
+        for(Character c:map.get(head-'0')) {
+            res.add(c+s);
+        }
+    }
+    return res;
+}
+```
+
+
 ## lintcode
 Lintcode Algorithm problems
