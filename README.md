@@ -545,6 +545,76 @@ public int threeSumClosest(int[] nums, int target) {
 }
 ```
 
+4. 4Sum
+Q: Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+Note:
+Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d)
+The solution set must not contain duplicate quadruplets.
+```
+public List<List<Integer>> fourSum(int[] nums, int target) {
+    List<List<Integer>> res = new ArrayList<>();
+    Arrays.sort(nums);
+    for(int i=0; i<nums.length-3; i++) {
+        if(i>0 && nums[i]==nums[i-1]) {
+            continue;
+        }
+        for(int j=i+1; j<nums.length-2; j++) {
+            if(j>i+1 && nums[j]==nums[j-1]) {
+                continue;
+            }
+            int start = j+1;
+            int end = nums.length-1;
+            while(start<end) {
+                if(start>j+1 && nums[start]==nums[start-1]) {
+                    start++;
+                    continue;
+                }
+                int sum = nums[i]+nums[j]+nums[start]+nums[end];
+                if(sum==target) {
+                    List<Integer> entry = new ArrayList<>();
+                    entry.add(nums[i]);
+                    entry.add(nums[j]);
+                    entry.add(nums[start]);
+                    entry.add(nums[end]);
+                    res.add(entry);
+                    start++;
+                    end--;
+                } else if(sum>target) {
+                    end--;
+                } else {
+                    start++;
+                }
+            }
+        }
+    }
+    return res;
+}
+```
+
+5. Remove Nth Node From End of List
+Q: Given a linked list, remove the nth node from the end of list and return its head.
+```
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode fast = head;
+    for(int i=0; i<=n; i++) {
+        if(fast==null) {
+            return head.next;
+        }
+        fast = fast.next;
+    }
+    
+    ListNode slow = head;
+    while(fast!=null) {
+        fast = fast.next;
+        slow = slow.next;
+    }
+    slow.next = slow.next.next;
+    
+    return head;
+}
+```
+
 ##### Backtracking
 1. Letter Combinations of a Phone Number
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.
@@ -584,6 +654,25 @@ public List<String> helper(String digits, HashMap<Integer, char[]> map) {
 }
 ```
 
+##### Stack
+1. Valid Parentheses
+Q: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+```
+public boolean isValid(String s) {
+    Stack<Character> stack = new Stack<>();
+    
+    for(Character c:s.toCharArray()) {
+        if(c=='(' || c=='[' || c=='{') {
+            stack.push(c);
+        } else {
+            if(stack.isEmpty() || Math.abs(c-stack.pop())>2) {
+                return false;
+            }
+        }
+    }
+    return stack.isEmpty();
+}
+```
 
 ## lintcode
 Lintcode Algorithm problems
