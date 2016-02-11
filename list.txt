@@ -18,11 +18,11 @@ Regular Expression Matching	21.5%	Hard
 // 4Sum	23.0%	Medium
 // Remove Nth Node From End of List	28.6%	Easy
 // Valid Parentheses	28.4%	Easy
-Merge Two Sorted Lists	34.5%	Easy
-Generate Parentheses	35.5%	Medium
-Merge k Sorted Lists	22.6%	Hard
-Swap Nodes in Pairs	34.3%	Medium
-Reverse Nodes in k-Group	26.8%	Hard
+// Merge Two Sorted Lists	34.5%	Easy
+// Generate Parentheses	35.5%	Medium
+// Merge k Sorted Lists	22.6%	Hard
+// Swap Nodes in Pairs	34.3%	Medium
+// Reverse Nodes in k-Group	26.8%	Hard
 Remove Duplicates from Sorted Array	32.7%	Easy
 Remove Element	32.9%	Easy
 Implement strStr()	24.1%	Easy

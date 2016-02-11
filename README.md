@@ -127,6 +127,105 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
    return dummy.next;
 }
 ```
+
+2. Merge Two Sorted Lists
+Q: Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+```
+public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    ListNode pnt = new ListNode(0);
+    ListNode head = pnt;
+    
+    while(l1!=null && l2!=null) {
+        if(l1.val>l2.val) {
+            pnt.next = l2;
+            l2 = l2.next;
+        } else {
+            pnt.next = l1;
+            l1 = l1.next;
+        }
+        pnt = pnt.next;
+    }
+    while(l1!=null) {
+        pnt.next = l1;
+        l1 = l1.next;
+        pnt = pnt.next;
+    }
+    while(l2!=null) {
+        pnt.next = l2;
+        l2 = l2.next;
+        pnt = pnt.next;
+    }
+    
+    return head.next;
+}
+```
+
+3.Swap Nodes in Pairs
+Q: Given a linked list, swap every two adjacent nodes and return its head.
+For example, Given 1->2->3->4, you should return the list as 2->1->4->3. Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+```
+public ListNode swapPairs(ListNode head) {
+    if(head==null || head.next==null) {
+        return head;
+    }
+    
+    ListNode dummy = new ListNode(0);
+    ListNode pnt = dummy;
+    dummy.next = head;
+    ListNode prev = head;
+    while(prev!=null && prev.next!=null) {
+        pnt.next = prev.next;
+        ListNode next = prev.next.next;
+        prev.next.next = prev;
+        prev.next = next;
+        pnt = prev;
+        prev = prev.next;
+    }
+    
+    return dummy.next;
+}
+```
+
+4. Reverse Nodes in k-Group
+Q: Given a linked list, reverse the nodes of a linked list k at a time and return its modified list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is. You may not alter the values in the nodes, only nodes itself may be changed. Only constant memory is allowed.
+For example,
+Given this linked list: 1->2->3->4->5
+For k = 2, you should return: 2->1->4->3->5
+For k = 3, you should return: 3->2->1->4->5
+```
+public ListNode reverseKGroup(ListNode head, int k) {
+    if(count(head)<k) {
+        return head;
+    }
+    
+    ListNode dummy = head;
+    ListNode pnt = head.next;
+    ListNode prev = null;
+    head.next = prev;
+    prev = head;
+    head = pnt;
+    for(int i=1; i<k; i++) {
+        pnt = head.next;
+        head.next = prev;
+        prev = head;
+        head = pnt;
+    }
+    dummy.next = reverseKGroup(head, k);
+    
+    return prev;
+}
+
+private int count(ListNode head) {
+    ListNode pnt = head;
+    int cnt = 0;
+    while(pnt!=null) {
+        pnt = pnt.next;
+        cnt++;
+    }
+    return cnt;
+}
+```
+
 ##### String
 
 1. Longest Palindromic Substring
@@ -446,6 +545,54 @@ public int findMedian(int A[], int B[], int k, int startA, int endA, int startB,
 }
 ```
 
+2. Merge k Sorted Lists
+Q: Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+heap solution ref: https://leetcode.com/discuss/9279/a-java-solution-based-on-priority-queue
+```
+public ListNode mergeKLists(ListNode[] lists) {
+    int len = lists.length;
+    return mergeTwo(merge(lists, 0, len/2), merge(lists, len/2, len));
+}
+
+private ListNode merge(ListNode[] lists, int start, int end) {
+    if(end<=start) {
+        return null;
+    } else if(end-start==1) {
+        return lists[start];
+    } else if(end-start==2) {
+        return mergeTwo(lists[start], lists[start+1]);
+    }
+    int mid = start+(end-start)/2;
+    return mergeTwo(merge(lists, start, mid), merge(lists, mid, end));
+}
+
+private ListNode mergeTwo(ListNode one, ListNode two) {
+    ListNode head = new ListNode(0);
+    ListNode pnt = head;
+    while(one!=null && two!=null) {
+        if(one.val>two.val) {
+            pnt.next = two;
+            two = two.next;
+        } else {
+            pnt.next = one;
+            one = one.next;
+        }
+        pnt = pnt.next;
+    }
+    while(one!=null) {
+        pnt.next = one;
+        one = one.next;
+        pnt = pnt.next;
+    }
+    while(two!=null) {
+        pnt.next = two;
+        two = two.next;
+        pnt = pnt.next;
+    }
+    return head.next;
+}
+```
+
 ##### Two Pointer
 1. Container With Most Water
 Q: Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
@@ -651,6 +798,38 @@ public List<String> helper(String digits, HashMap<Integer, char[]> map) {
         }
     }
     return res;
+}
+```
+
+2. Generate Parentheses
+Q: Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: "((()))", "(()())", "(())()", "()(())", "()()()"
+```
+public List<String> generateParenthesis(int n) {
+    List<String> list = new ArrayList<>();
+    if(n==0) {
+        list.add("");
+        return list;
+    }
+    StringBuilder sb = new StringBuilder();
+    helper(n, n, sb, list);
+    return list;
+}
+
+private void helper(int left, int right, StringBuilder sb, List<String> list) {
+    if(left==0 && right==0) {
+        String str = sb.toString();
+        if(!list.contains(str)) {
+            list.add(str);
+        }
+    }
+    if(left>0) {
+        helper(left-1, right, sb.append('('), list);
+        sb.deleteCharAt(sb.length()-1);
+    }
+    if(right>0 && right>left) {
+        helper(left, right-1, sb.append(')'), list);
+        sb.deleteCharAt(sb.length()-1);
+    }
 }
 ```
 
