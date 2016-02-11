@@ -138,6 +138,8 @@ public class ControllingExecution {
 		generateFibonacci(10);
 		findVampireNumber();
 		generateVampireNumber(4);
+		AccessControl ac = new AccessControl();
+		System.out.println(ac.a);
 	}
 
 }

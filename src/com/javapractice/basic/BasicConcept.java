@@ -4,6 +4,9 @@
 package com.javapractice.basic;
 
 import java.util.HashMap;
+import java.util.Vector;
+
+import com.javapractice.thinking.*;
 
 /**
  * @author jianyu
@@ -60,6 +63,8 @@ public class BasicConcept {
 	public static void main(String[] args) {
 		BasicConcept test = new BasicConcept();
 		test.calculateInteger();
+		AccessControl ac = new AccessControl();
+		// System.out.println(ac.a);
 	}
 
 }
