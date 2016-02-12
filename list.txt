@@ -24,9 +24,9 @@ Regular Expression Matching	21.5%	Hard
 // Swap Nodes in Pairs	34.3%	Medium
 // Reverse Nodes in k-Group	26.8%	Hard
 // Remove Duplicates from Sorted Array	32.7%	Easy
-Remove Element	32.9%	Easy
-Implement strStr()	24.1%	Easy
-Divide Two Integers	15.4%	Medium
+// Remove Element	32.9%	Easy
+// Implement strStr()	24.1%	Easy
+// Divide Two Integers	15.4%	Medium
 Substring with Concatenation of All Words	20.4%	Hard
 Next Permutation	25.9%	Medium
 Longest Valid Parentheses	22.0%	Hard

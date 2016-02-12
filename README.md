@@ -785,6 +785,53 @@ public int removeDuplicates(int[] nums) {
 }
 ```
 
+7. Remove Element
+Q: Given an array and a value, remove all instances of that value in place and return the new length. The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+```
+public int removeElement(int[] nums, int val) {
+    int cnt = 0;
+    int start = 0;
+    int end = nums.length-1;
+    while(start<end) {
+        if(nums[start]==val) {
+            int tmp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = tmp;
+            end--;
+        } else {
+            cnt++;
+            start++;
+        }
+    }
+    if(start<nums.length && nums[start]!=val) {
+        cnt++;
+    }
+    return cnt;
+}
+```
+
+8. Implement strStr()
+Q: Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+KMP algorithm ref: https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
+```
+public int strStr(String haystack, String needle) {
+    char[] nee = needle.toCharArray();
+    char[] hay = haystack.toCharArray();
+    int pnt = 0;
+    
+    for(int i=0; i<=hay.length-nee.length; i++) {
+        while(pnt<nee.length && hay[i+pnt]==nee[pnt]) {
+            pnt++;
+        }
+        if(pnt==nee.length) {
+            return i;
+        }
+        pnt = 0;
+    }
+    return -1;
+}
+```
+
 ##### Backtracking
 1. Letter Combinations of a Phone Number
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.
@@ -873,6 +920,59 @@ public boolean isValid(String s) {
         }
     }
     return stack.isEmpty();
+}
+```
+
+##### Binary Search
+1. Divide Two Integers
+Q: Divide two integers without using multiplication, division and mod operator. If it is overflow, return MAX_INT.
+```
+public int divide(int dividend, int divisor) {
+    if(divisor==0) {
+        return Integer.MAX_VALUE;
+    }
+    long sum = 0;
+    int cnt = 0;
+    boolean sign = false;
+    long end = dividend;
+    long sor = divisor;
+    if(sor<0&&end>0 || sor>0&&end<0) {
+        sign = true;
+        if(sor<0) {
+            sor = -sor;
+        } else {
+            end = -end;
+        }
+    }
+    if(sor<0&&end<0) {
+        sor = -sor;
+        end = -end;
+    }
+    
+    while(sum<=end) {
+        long base = sor;
+        long prev = 0;
+        int cBase = 1;
+        int cPrev = 0;
+        while(end-base>=sum) {
+            prev = base;
+            base += base;
+            cPrev = cBase;
+            cBase += cBase;
+        }
+        if(prev == 0) {
+            break;
+        }
+        sum += prev;
+        if(sign&&Integer.MAX_VALUE-cPrev+1<=cnt) {
+            return Integer.MIN_VALUE;
+        } else if(Integer.MAX_VALUE-cPrev<=cnt) {
+            return Integer.MAX_VALUE;
+        }
+        cnt += cPrev;
+    }
+    
+    return (sign)?-cnt:cnt;
 }
 ```
 
