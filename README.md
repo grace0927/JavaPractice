@@ -762,6 +762,29 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 }
 ```
 
+6. Remove Duplicates from Sorted Array
+Q: Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this in place with constant memory.
+For example,
+Given input array nums = [1,1,2],
+Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
+```
+public int removeDuplicates(int[] nums) {
+    int len = 0;
+    int pnt = 1;
+    for(int i=len+1; i<nums.length; i++, len++) {
+        while(nums[i]<=nums[i-1]) {
+            if(pnt==nums.length) {
+                return len+1;
+            }
+            int tmp = nums[pnt];
+            nums[i] = nums[pnt];
+            nums[pnt++] = tmp;
+        }
+    }
+    return len+1;
+}
+```
+
 ##### Backtracking
 1. Letter Combinations of a Phone Number
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.
