@@ -976,5 +976,46 @@ public int divide(int dividend, int divisor) {
 }
 ```
 
+2. Search for a Range
+Q: Given a sorted array of integers, find the starting and ending position of a given target value. Your algorithm's runtime complexity must be in the order of O(log n). If the target is not found in the array, return [-1, -1].
+For example,
+Given [5, 7, 7, 8, 8, 10] and target value 8,
+return [3, 4].
+```
+public int[] searchRange(int[] nums, int target) {
+    int[] res = new int[]{-1, -1};
+    if(nums.length==0 || nums[0]>target || nums[nums.length-1]<target) {
+        return res;
+    }
+    int left = findTarget(nums, target, true);
+    int right = findTarget(nums, target, false);
+    if(nums[left]==target) {
+        res[0]=left;
+        res[1]=right;
+    }
+    
+    return res;
+}
+
+private int findTarget(int[] nums, int target, boolean direction) {
+    int start = 0;
+    int end = nums.length;
+    while(start<end-1) {
+        int mid = start+(end-start)/2;
+        if(nums[mid]>target) {
+            end = mid;
+        } else if(nums[mid]<target) {
+            start = mid;
+        } else {
+            if(direction) {
+                end = mid;
+            } else {
+                start = mid;
+            }
+        }
+    }
+    return (nums[start]==target)?start:end;
+}
+```
 ## lintcode
 Lintcode Algorithm problems

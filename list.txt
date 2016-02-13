@@ -31,7 +31,7 @@ Substring with Concatenation of All Words	20.4%	Hard
 Next Permutation	25.9%	Medium
 Longest Valid Parentheses	22.0%	Hard
 Search in Rotated Sorted Array	29.8%	Hard
-Search for a Range	28.5%	Medium
+// Search for a Range	28.5%	Medium
 Search Insert Position	36.7%	Medium
 Valid Sudoku	29.5%	Easy
 Sudoku Solver	24.0%	Hard
