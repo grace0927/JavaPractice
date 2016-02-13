@@ -1017,5 +1017,34 @@ private int findTarget(int[] nums, int target, boolean direction) {
     return (nums[start]==target)?start:end;
 }
 ```
+
+3. Search Insert Position
+Q: Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. You may assume no duplicates in the array.
+Here are few examples.
+[1,3,5,6], 5 → 2
+[1,3,5,6], 2 → 1
+[1,3,5,6], 7 → 4
+[1,3,5,6], 0 → 0
+```
+public int searchInsert(int[] nums, int target) {
+    if(nums.length==0 || nums[0]>=target) {
+        return 0;
+    }
+    int start = 0;
+    int end = nums.length-1;
+    while(start<end-1) {
+        int mid = start + (end-start)/2;
+        if(nums[mid]==target) {
+            return mid;
+        } else if(nums[mid]>target) {
+            end = mid;
+        } else {
+            start = mid;
+        }
+    }
+    return (nums[end]>=target)?end:end+1;
+}
+```
+
 ## lintcode
 Lintcode Algorithm problems

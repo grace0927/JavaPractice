@@ -32,7 +32,7 @@ Next Permutation	25.9%	Medium
 Longest Valid Parentheses	22.0%	Hard
 Search in Rotated Sorted Array	29.8%	Hard
 // Search for a Range	28.5%	Medium
-Search Insert Position	36.7%	Medium
+// Search Insert Position	36.7%	Medium
 Valid Sudoku	29.5%	Easy
 Sudoku Solver	24.0%	Hard
 Count and Say	27.8%	Easy
