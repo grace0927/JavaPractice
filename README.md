@@ -1046,5 +1046,48 @@ public int searchInsert(int[] nums, int target) {
 }
 ```
 
+4. Search in Rotated Sorted Array
+Q: Suppose a sorted array is rotated at some pivot unknown to you beforehand. (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2). You are given a target value to search. If found in the array return its index, otherwise return -1. You may assume no duplicate exists in the array.
+```
+public int search(int[] nums, int target) {
+    int start=0, end=nums.length-1;
+    if(nums[start]<nums[end]) {
+        return binarySearch(nums, target, start, end);
+    }
+    while(start<end-1 && nums[start]>nums[end]) {
+        int pivot = start + (end-start)/2;
+        if(nums[pivot]>nums[end]) {
+            start = pivot;
+        } else {
+            end = pivot;
+        }
+    }
+    int left = binarySearch(nums, target, 0, start);
+    int right = binarySearch(nums, target, end, nums.length-1);
+    return (left==-1&&right==-1)?-1:Math.max(left, right);
+}
+
+private int binarySearch(int[] nums, int target, int start, int end) {
+    if(nums[start]>target||nums[end]<target) {
+        return -1;
+    }
+    if(nums[start]==target) {
+        return start;
+    } else if(nums[end]==target) {
+        return end;
+    }
+    while(start<end-1) {
+        int mid = start+(end-start)/2;
+        if(nums[mid]==target) {
+            return mid;
+        } else if(nums[mid]>target) {
+            end = mid;
+        } else {
+            start = mid;
+        }
+    }
+    return -1;
+}
+```
 ## lintcode
 Lintcode Algorithm problems
