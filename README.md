@@ -79,6 +79,56 @@ public int lengthOfLongestSubstring(String s) {
 }
 ```
 
+3. Valid Sudoku
+Q: Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules. The Sudoku board could be partially filled, where empty cells are filled with the character '.'. A partially filled sudoku which is valid. Note: A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
+```
+public boolean isValidSudoku(char[][] board) {
+    for(int i=0; i<9; i++) {
+        for(int j=0; j<9; j++) {
+            if(board[i][j]=='.') {
+                continue;
+            }
+            
+            if(!isValid(board, i, j, board[i][j])) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+private boolean isValid(char[][] board, int row, int col, char val) {
+    // row check
+    for(int i=0; i<9; i++) {
+        if(i!=col && board[row][i]!='.' && board[row][i]==val) {
+            return false;
+        }
+    }
+    
+    // col check
+    for(int i=0; i<9; i++) {
+        if(i!=row && board[i][col]!='.' && board[i][col]==val) {
+            return false;
+        }
+    }
+    
+    // block check
+    int r1 = (row%3==2)?3:0;
+    int r2 = (row%3==0)?0:3;
+    int c1 = (col%3==2)?3:0;
+    int c2 = (col%3==0)?0:3;
+    if(board[row+1-r1][col+1-c1]==val
+        || board[row+1-r1][col+2-c2]==val
+        || board[row+2-r2][col+1-c1]==val
+        || board[row+2-r2][col+2-c2]==val
+    ) {
+        return false;
+    }
+    
+    return true;
+}
+```
+
 ##### Linked List
 1. Add Two Numbers<br>
 Q: You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.<br>
@@ -348,6 +398,41 @@ public int myAtoi(String str) {
         pnt++;
     }
     return (int)sum*sign;
+}
+```
+
+5. Count and Say
+Q: The count-and-say sequence is the sequence of integers beginning as follows:
+1, 11, 21, 1211, 111221, ... 1 is read off as "one 1" or 11. 11 is read off as "two 1s" or 21. 21 is read off as "one 2, then one 1" or 1211. Given an integer n, generate the nth sequence. Note: The sequence of integers will be represented as a string.
+```
+public String countAndSay(int n) {
+    if(n==0) {
+        return new String("");
+    }
+    String str = "1";
+    for(int i=1; i<n; i++) {
+        char c = 0;
+        long cnt = 0;
+        StringBuilder sb = new StringBuilder();
+        for(char a:str.toCharArray()) {
+            if(a==c) {
+                cnt++;
+            } else {
+                if(cnt!=0) {
+                    sb.append(Long.toString(cnt));
+                    sb.append(c);
+                }
+                c = a;
+                cnt = 1;
+            }
+        }
+        if(cnt!=0) {
+            sb.append(Long.toString(cnt));
+            sb.append(c);
+        }
+        str = sb.toString();
+    }
+    return str;
 }
 ```
 
@@ -902,6 +987,139 @@ private void helper(int left, int right, StringBuilder sb, List<String> list) {
     }
 }
 ```
+
+3. Sudoku Solver
+Q: Write a program to solve a Sudoku puzzle by filling the empty cells. Empty cells are indicated by the character '.'. You may assume that there will be only one unique solution.
+```
+public void solveSudoku(char[][] board) {
+    solver(board);
+}
+
+private boolean solver(char[][] board) {
+    for(int i=0; i<9; i++) {
+        for(int j=0; j<9; j++) {
+            if(board[i][j]!='.') {
+                continue;
+            }
+            for(char k='1'; k<='9'; k++) {
+                if(isValid(board, i, j, k)) {
+                    board[i][j] = k;
+                    if(solver(board)) {
+                        return true;
+                    }
+                    board[i][j] = '.';
+                }
+            }
+            return false;
+        }
+    }
+    return true;
+}
+
+private boolean isValid(char[][] board, int row, int col, char val) {
+    // row check
+    for(int i=0; i<9; i++) {
+        if(i!=col && board[row][i]!='.' && board[row][i]==val) {
+            return false;
+        }
+    }
+    
+    // col check
+    for(int i=0; i<9; i++) {
+        if(i!=row && board[i][col]!='.' && board[i][col]==val) {
+            return false;
+        }
+    }
+    
+    // block check
+    int r1 = (row%3==2)?3:0;
+    int r2 = (row%3==0)?0:3;
+    int c1 = (col%3==2)?3:0;
+    int c2 = (col%3==0)?0:3;
+    if(board[row+1-r1][col+1-c1]==val
+        || board[row+1-r1][col+2-c2]==val
+        || board[row+2-r2][col+1-c1]==val
+        || board[row+2-r2][col+2-c2]==val
+    ) {
+        return false;
+    }
+    
+    return true;
+}
+```
+
+4. Combination Sum
+Q: Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times. Note: All numbers (including target) will be positive integers. Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak). The solution set must not contain duplicate combinations. For example, given candidate set 2,3,6,7 and target 7, A solution set is: [7] [2, 2, 3] 
+```
+public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    Arrays.sort(candidates);
+    List<List<Integer>> list = new ArrayList<>();
+    for(int i=0; i<candidates.length; i++) {
+        ArrayList<Integer> row = new ArrayList<>();
+        if(target>=candidates[i]) {
+            row.add(candidates[i]);
+            helper(list, row, candidates, target-candidates[i], i);
+        }
+    }
+    return list;
+}
+
+private void helper(List<List<Integer>> list, ArrayList<Integer> row, int[] candidates, int target,int start) {
+    if(target==0) {
+        list.add(new ArrayList<>(row));
+        return ;
+    }
+    for(int i=start; i<candidates.length; i++) {
+        if(target>=candidates[i]) {
+            row.add(candidates[i]);
+            helper(list, row, candidates, target-candidates[i], i);
+            row.remove(row.size()-1);
+        } else {
+            return ;
+        }
+    }
+}
+```
+
+5. Combination Sum II
+Q: Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. Each number in C may only be used once in the combination. Note: All numbers (including target) will be positive integers. Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak). The solution set must not contain duplicate combinations. For example, given candidate set 10,1,2,7,6,1,5 and target 8, A solution set is: [1, 7] [1, 2, 5] [2, 6] [1, 1, 6] 
+```
+public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates);
+    List<List<Integer>> list = new ArrayList<>();
+    for(int i=0; i<candidates.length; i++) {
+        if(i>0 && candidates[i]==candidates[i-1]) {
+            continue;
+        }
+        ArrayList<Integer> row = new ArrayList<>();
+        if(target>=candidates[i]) {
+            row.add(candidates[i]);
+            helper(list, row, candidates, target-candidates[i], i+1);
+        }
+    }
+    return list;
+}
+
+private void helper(List<List<Integer>> list, ArrayList<Integer> row, int[] candidates, int target,int start) {
+    if(target==0) {
+        list.add(new ArrayList<>(row));
+        return ;
+    }
+    for(int i=start; i<candidates.length; i++) {
+        if(i>start && candidates[i]==candidates[i-1]) {
+            continue;
+        }
+        if(target>=candidates[i]) {
+            row.add(candidates[i]);
+            helper(list, row, candidates, target-candidates[i], i+1);
+            row.remove(row.size()-1);
+        } else {
+            return ;
+        }
+    }
+}
+```
+
 
 ##### Stack
 1. Valid Parentheses

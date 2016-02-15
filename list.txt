@@ -33,11 +33,11 @@ Next Permutation	25.9%	Medium
 // Search in Rotated Sorted Array	29.8%	Hard
 // Search for a Range	28.5%	Medium
 // Search Insert Position	36.7%	Medium
-Valid Sudoku	29.5%	Easy
-Sudoku Solver	24.0%	Hard
-Count and Say	27.8%	Easy
-Combination Sum	29.9%	Medium
-Combination Sum II	26.8%	Medium
+// Valid Sudoku	29.5%	Easy
+// Sudoku Solver	24.0%	Hard
+// Count and Say	27.8%	Easy
+// Combination Sum	29.9%	Medium
+// Combination Sum II	26.8%	Medium
 First Missing Positive	23.5%	Hard
 Trapping Rain Water	31.5%	Hard
 Multiply Strings	22.6%	Medium
