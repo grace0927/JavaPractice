@@ -1089,5 +1089,36 @@ private int binarySearch(int[] nums, int target, int start, int end) {
     return -1;
 }
 ```
+
+##### Dynamic Programming
+
+1. Longest Valid Parentheses
+Q: Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring. For "(()", the longest valid parentheses substring is "()", which has length = 2. Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
+```
+public int longestValidParentheses(String s) {
+    if(s.length()<=1) {
+        return 0;
+    }
+    int len = 0;
+    int[] dp = new int[s.length()];
+    int left = 0;
+    int right = 0;
+    for(int i=0; i<s.length(); i++) {
+        char c = s.charAt(i);
+        if(c=='(') {
+            left++;
+        } else {
+            if(left>0) {
+                dp[i] = dp[i-1]+2;
+                left--;
+                dp[i] += (i-dp[i]>0)?dp[i-dp[i]]:0;
+            }
+        }
+        len = Math.max(len, dp[i]);
+    }
+    return len;
+}
+```
+
 ## lintcode
 Lintcode Algorithm problems
