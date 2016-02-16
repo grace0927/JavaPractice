@@ -1013,6 +1013,27 @@ public int strStr(String haystack, String needle) {
 }
 ```
 
+9. Trapping Rain Water
+Q: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. For example, Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
+ref: https://leetcode.com/discuss/10046/share-my-short-solution
+```
+public int trap(int[] height) {
+    int left=0, right=0, pntL=0, pntR=height.length-1, sum=0;
+    while(pntL<=pntR) {
+        left = Math.max(left, height[pntL]);
+        right = Math.max(right, height[pntR]);
+        if(left<right) {
+            sum += (left-height[pntL]);
+            pntL++;
+        } else {
+            sum += (right-height[pntR]);
+            pntR--;
+        }
+    }
+    return sum;
+}
+```
+
 ##### Backtracking
 1. Letter Combinations of a Phone Number
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.
