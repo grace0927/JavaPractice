@@ -436,6 +436,102 @@ public String countAndSay(int n) {
 }
 ```
 
+6. Multiply Strings
+Q: Given two numbers represented as strings, return multiplication of the numbers as a string. Note: The numbers can be arbitrarily large and are non-negative.
+```
+public String multiply(String num1, String num2) {
+    if(num1.equals("0") || num2.equals("0")) {
+        return "0";
+    }
+    String res = new String("");
+    
+    for(int i=0; i<num2.length(); i++) {
+        StringBuilder sb = new StringBuilder();
+        for(int j=i+1; j<num2.length(); j++) {
+            sb.append('0');
+        }
+        res = add(res, multiply(num1, num2.charAt(i))+sb.toString());
+    }
+    
+    return res;
+}
+
+private String multiply(String num, char a) {
+    StringBuilder sb = new StringBuilder();
+    int cur2 = a-'0';
+    int pnt = num.length()-1;
+    int cur = 0;
+    
+    while(pnt>=0) {
+        int cur1 = num.charAt(pnt)-'0';
+        cur += cur1*cur2;
+        sb.insert(0, cur%10);
+        cur /= 10;
+        pnt--;
+    }
+    if(cur>0) {
+        sb.insert(0, cur);
+    }
+    
+    return sb.toString();
+}
+
+private String add(String a, String b) {
+    int pntA = a.length()-1;
+    int pntB = b.length()-1;
+    StringBuilder sb = new StringBuilder();
+    int cur = 0;
+    boolean flag = false;
+    while(pntA>=0 && pntB>=0) {
+        int curA = a.charAt(pntA)-'0';
+        int curB = b.charAt(pntB)-'0';
+        cur = curA+curB;
+        if(flag) {
+            cur += 1;
+            flag = false;
+        }
+        if(cur>=10) {
+            cur -= 10;
+            flag = true;
+        }
+        sb.insert(0, cur);
+        pntA--;
+        pntB--;
+    }
+    while(pntA>=0) {
+        int curA = a.charAt(pntA)-'0';
+        if(flag) {
+            curA += 1;
+            flag = false;
+        }
+        if(curA>=10) {
+            curA -= 10;
+            flag = true;
+        }
+        sb.insert(0, curA);
+        pntA--;
+    }
+    while(pntB>=0) {
+        int curB = b.charAt(pntB)-'0';
+        if(flag) {
+            curB += 1;
+            flag = false;
+        }
+        if(curB>=10) {
+            curB -= 10;
+            flag = true;
+        }
+        sb.insert(0, curB);
+        pntB--;
+    }
+    if(flag) {
+        sb.insert(0, '1');
+    }
+    
+    return sb.toString();
+}
+```
+
 ##### Math
 1. Reverse Integer
 Q: Reverse digits of an integer.
