@@ -46,7 +46,7 @@ Jump Game II	24.9%	Hard
 // Permutations	34.5%	Medium
 // Permutations II	27.3%	Medium
 // Rotate Image	33.8%	Medium
-Group Anagrams	26.3%	Medium
+// Group Anagrams	26.3%	Medium
 // Pow(x, n)	27.8%	Medium
 N-Queens	26.2%	Hard
 N-Queens II	38.3%	Hard
