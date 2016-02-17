@@ -129,6 +129,37 @@ private boolean isValid(char[][] board, int row, int col, char val) {
 }
 ```
 
+4. Group Anagrams
+Q:Given an array of strings, group anagrams together. For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], Return:
+[
+  ["ate", "eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+] 
+Note: For the return value, each inner list's elements must follow the lexicographic order. All inputs will be in lower-case. 
+```
+public List<List<String>> groupAnagrams(String[] strs) {
+    HashMap<String, List<String>> map = new HashMap<>();
+    Arrays.sort(strs);
+    for(String s:strs) {
+        int[] set = new int[26];
+        for(int i=0; i<s.length(); i++) {
+            set[s.charAt(i)-'a']++;
+        }
+        String res = Arrays.toString(set);
+        if(!map.containsKey(res)) {
+            map.put(res, new ArrayList<String>());
+        }
+        map.get(res).add(s);
+    }
+    List<List<String>> lists = new ArrayList<>();
+    for(String s:map.keySet()) {
+        lists.add(map.get(s));
+    }
+    return lists;
+}
+```
+
 ##### Linked List
 1. Add Two Numbers<br>
 Q: You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.<br>
@@ -1262,6 +1293,37 @@ private void helper(List<List<Integer>> lists, LinkedList<Integer> list, int[] n
 }
 ```
 
+7. Permutations II
+Q: 
+```
+public List<List<Integer>> permuteUnique(int[] nums) {
+    Arrays.sort(nums);
+    List<List<Integer>> lists = new ArrayList<>();
+    lists.add(new ArrayList<Integer>());
+    helper(lists, nums, 0);
+    return lists;
+}
+
+private void helper(List<List<Integer>> lists, int[] nums, int start) {
+    if(start == nums.length) {
+        return ;
+    }
+    List<List<Integer>> updates = new ArrayList<>();
+    for(List<Integer> list:lists) {
+        for(int i=0; i<=list.size(); i++) {
+            ArrayList<Integer> update = new ArrayList<>(list);
+            update.add(i, nums[start]);
+            if(!updates.contains(update)) {
+                updates.add(update);
+            }
+        }
+    }
+    lists.clear();
+    lists.addAll(updates);
+    helper(lists, nums, start+1);
+}
+```
+
 ##### Stack
 1. Valid Parentheses
 Q: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
@@ -1449,6 +1511,32 @@ private int binarySearch(int[] nums, int target, int start, int end) {
 }
 ```
 
+5. Pow(x, n)
+Q: Implement pow(x, n).
+```
+public double myPow(double x, int n) {
+    if(n<0) {
+        n = -n;
+        x = 1/x;
+    }
+    double[] base = new double[32];
+    base[0] = x;
+    double sum = 1;
+    int mask = 1;
+    if((mask&n) != 0) {
+        sum *= base[0];
+    }
+    for(int i=1; i<32; i++) {
+        mask *= 2;
+        base[i] = base[i-1]*base[i-1];
+        if((mask&n) != 0) {
+            sum *= base[i];
+        }
+    }
+    return sum;
+}
+```
+
 ##### Dynamic Programming
 
 1. Longest Valid Parentheses
@@ -1498,6 +1586,24 @@ public int firstMissingPositive(int[] nums) {
         }
     }
     return nums.length+1;
+}
+```
+
+2. Rotate Image
+Q: You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise).
+```
+public void rotate(int[][] matrix) {
+    int n = matrix.length;
+    for(int i=0; i<n/2; i++) {
+        int boundary = n-i-1;
+        for(int j=i; j<boundary; j++) {
+            int tmp = matrix[i][j];
+            matrix[i][j] = matrix[n-j-1][i];
+            matrix[n-j-1][i] = matrix[boundary][n-j-1];
+            matrix[boundary][n-j-1] = matrix[j][boundary];
+            matrix[j][boundary] = tmp;
+        }
+    }
 }
 ```
 
