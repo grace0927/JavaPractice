@@ -1324,7 +1324,7 @@ private void helper(List<List<Integer>> lists, int[] nums, int start) {
 }
 ```
 
-8. N-Queens
+8. N-Queens, N-Queens II
 Q: The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
 ```
 public List<List<String>> solveNQueens(int n) {
@@ -1660,6 +1660,66 @@ public void rotate(int[][] matrix) {
             matrix[j][boundary] = tmp;
         }
     }
+}
+```
+
+3. Spiral Matrix
+Q: Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+```
+public List<Integer> spiralOrder(int[][] matrix) {
+    List<Integer> list = new ArrayList<>();
+    if(matrix.length==0 || matrix[0].length==0) {
+        return list;
+    }
+    int maxR=matrix.length-1, minR=0;
+    int maxC=matrix[0].length-1, minC=0;
+    int pnt=0, pntR=0, pntC=0, side=0;
+    int max=(maxC+1)*(maxR+1);
+    
+    while(pnt<max) {
+        list.add(matrix[pntR][pntC]);
+        switch(side) {
+            case 0:
+                if(pntC==maxC) {
+                    pntR++;
+                    side=1;
+                    minR++;
+                } else {
+                    pntC++;
+                }
+                break;
+            case 1:
+                if(pntR==maxR) {
+                    pntC--;
+                    side=2;
+                } else {
+                    pntR++;
+                }
+                break;
+            case 2:
+                if(pntC==minC) {
+                    pntR--;
+                    side=3;
+                } else {
+                    pntC--;
+                }
+                break;
+            case 3:
+                if(pntR==minR) {
+                    pntC++;
+                    side=0;
+                    maxR--;
+                    minC++;
+                    maxC--;
+                } else {
+                    pntR--;
+                }
+                break;
+        }
+        pnt++;
+    }
+    
+    return list;
 }
 ```
 
