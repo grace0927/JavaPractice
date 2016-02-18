@@ -48,7 +48,7 @@ Jump Game II	24.9%	Hard
 // Rotate Image	33.8%	Medium
 // Group Anagrams	26.3%	Medium
 // Pow(x, n)	27.8%	Medium
-N-Queens	26.2%	Hard
+// N-Queens	26.2%	Hard
 N-Queens II	38.3%	Hard
 Maximum Subarray	36.0%	Medium
 Spiral Matrix	21.9%	Medium

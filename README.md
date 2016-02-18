@@ -1324,6 +1324,62 @@ private void helper(List<List<Integer>> lists, int[] nums, int start) {
 }
 ```
 
+8. N-Queens
+Q: The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
+```
+public List<List<String>> solveNQueens(int n) {
+    List<List<String>> lists = new ArrayList<>();
+    LinkedList<String> list = new LinkedList<>();
+    boolean[][] visit = new boolean[n][n];
+    char[][] board = new char[n][n];
+    
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<n; j++) {
+            board[i][j] = '.';
+        }
+    }
+    
+    helper(lists, list, visit, board, 0, n);
+    
+    return lists;
+}
+
+private void helper(List<List<String>> lists, LinkedList<String> list, boolean[][] visit, char[][] board, int row, int n) {
+    if(row==n) {
+        lists.add(new LinkedList<String>(list));
+        return ;
+    }
+    for(int i=0; i<n; i++) {
+        if(isValid(visit, row, i)) {
+            visit[row][i] = true;
+            board[row][i] = 'Q';
+            list.add(new String(board[row]));
+            helper(lists, list, visit, board, row+1, n);
+            list.removeLast();
+            board[row][i] = '.';
+            visit[row][i] = false;
+        }
+    }
+}
+
+private boolean isValid(boolean[][] visit, int row, int col) {
+    int n = visit.length;
+    for(int i=0; i<n; i++) {
+        if(visit[row][i] || visit[i][col]) {
+            return false;
+        }
+        // no need to check row >= current row because they stay with no changes
+        if(row-i>=0 && col-i>=0 && visit[row-i][col-i]) {
+            return false;
+        }
+        if(row-i>=0 && col+i<n && visit[row-i][col+i]) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
 ##### Stack
 1. Valid Parentheses
 Q: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
