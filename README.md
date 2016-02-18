@@ -1723,5 +1723,86 @@ public List<Integer> spiralOrder(int[][] matrix) {
 }
 ```
 
+4. Next Permutation
+Q:Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers. If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order). The replacement must be in-place, do not allocate extra memory. Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
+```
+public void nextPermutation(int[] nums) {
+    int pnt = nums.length-2;
+    // find abnormal idx
+    while(pnt>=0 && nums[pnt]>=nums[pnt+1]) {
+        pnt--;
+    }
+    
+    // swap abnormal idx when there is one
+    int start = pnt;
+    if(start>=0) {
+        pnt = nums.length-1;
+        while(nums[start]>=nums[pnt]) {
+            pnt--;
+        }
+        swap(nums, pnt, start);
+    }
+    
+    // reverse tail
+    start++;
+    pnt = nums.length-1;
+    while(start<pnt) {
+        swap(nums, start, pnt);
+        start++;
+        pnt--;
+    }
+}
+
+private void swap(int[] nums, int i, int j) {
+    int tmp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = tmp;
+}
+```
+
+##### Greedy
+1. Jump Game
+Q: Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. For example:A = [2,3,1,1,4], return true.A = [3,2,1,0,4], return false.
+```
+public boolean canJump(int[] nums) {
+    int max=0, pnt=0;
+    
+    while(pnt<=max) {
+        max = Math.max(max, pnt+nums[pnt]);
+        if(max>=nums.length-1) {
+            return true;
+        }
+        pnt++;
+    }
+    
+    return false;
+}
+```
+
+2. Jump Game II
+Q: Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Your goal is to reach the last index in the minimum number of jumps.
+For example:
+Given array A = [2,3,1,1,4]
+The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
+```
+public int jump(int[] nums) {
+    int step=0, max=0, prev=0;
+    
+    for(int i=0; i<nums.length-1; i++) {
+        if(i>prev) {
+            step++;
+            prev = max;
+        }
+        int reach = i+nums[i];
+        if(reach>=nums.length-1) {
+            return step+1;
+        }
+        max = Math.max(max, reach);
+    }
+    
+    return step;
+}
+```
+
 ## lintcode
 Lintcode Algorithm problems

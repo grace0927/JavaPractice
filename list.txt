@@ -28,7 +28,7 @@ Regular Expression Matching	21.5%	Hard
 // Implement strStr()	24.1%	Easy
 // Divide Two Integers	15.4%	Medium
 Substring with Concatenation of All Words	20.4%	Hard
-Next Permutation	25.9%	Medium
+// Next Permutation	25.9%	Medium
 // Longest Valid Parentheses	22.0%	Hard
 // Search in Rotated Sorted Array	29.8%	Hard
 // Search for a Range	28.5%	Medium
@@ -42,7 +42,7 @@ Next Permutation	25.9%	Medium
 // Trapping Rain Water	31.5%	Hard
 // Multiply Strings	22.6%	Medium
 Wildcard Matching	16.9%	Hard
-Jump Game II	24.9%	Hard
+// Jump Game II	24.9%	Hard
 // Permutations	34.5%	Medium
 // Permutations II	27.3%	Medium
 // Rotate Image	33.8%	Medium
@@ -52,7 +52,7 @@ Jump Game II	24.9%	Hard
 // N-Queens II	38.3%	Hard
 Maximum Subarray	36.0%	Medium
 // Spiral Matrix	21.9%	Medium
-Jump Game	27.8%	Medium
+// Jump Game	27.8%	Medium
 Merge Intervals	24.4%	Hard
 Insert Interval	23.1%	Hard
 Length of Last Word	28.6%	Easy
