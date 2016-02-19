@@ -55,8 +55,8 @@ Maximum Subarray	36.0%	Medium
 // Jump Game	27.8%	Medium
 Merge Intervals	24.4%	Hard
 Insert Interval	23.1%	Hard
-Length of Last Word	28.6%	Easy
-Spiral Matrix II	33.9%	Medium
+// Length of Last Word	28.6%	Easy
+// Spiral Matrix II	33.9%	Medium
 Permutation Sequence	24.4%	Medium
 Rotate List	22.5%	Medium
 Unique Paths	35.2%	Medium

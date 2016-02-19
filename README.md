@@ -563,6 +563,28 @@ private String add(String a, String b) {
 }
 ```
 
+7. Length of Last Word
+Q:Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string. If the last word does not exist, return 0. Note: A word is defined as a character sequence consists of non-space characters only.
+```
+public int lengthOfLastWord(String s) {
+    char[] c = s.toCharArray();
+    int len = 0;
+    boolean start = false;
+    for(int i=c.length-1; i>=0; i--) {
+        if(c[i]==' ') {
+            if(start) {
+                return len;
+            }
+            continue;
+        } else {
+            start = true;
+            len++;
+        }
+    }
+    return len;
+}
+```
+
 ##### Math
 1. Reverse Integer
 Q: Reverse digits of an integer.
@@ -1757,6 +1779,58 @@ private void swap(int[] nums, int i, int j) {
     int tmp = nums[i];
     nums[i] = nums[j];
     nums[j] = tmp;
+}
+```
+
+5. Spiral Matrix II
+Q: Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+```
+public int[][] generateMatrix(int n) {
+    int side = 0, max = n-1, min = 0, len = n*n, pnt = 1, row=0, col=0;
+    int[][] res = new int[n][n];
+    
+    while(pnt<=len) {
+        res[row][col] = pnt;
+        switch(side) {
+            case 0:
+                if(col==max) {
+                    side = 1;
+                    row++;
+                } else {
+                    col++;
+                }
+                break;
+            case 1:
+                if(row==max) {
+                    side = 2;
+                    col--;
+                } else {
+                    row++;
+                }
+                break;
+            case 2:
+                if(col==min) {
+                    side = 3;
+                    row--;
+                    min++;
+                } else {
+                    col--;
+                }
+                break;
+            case 3:
+                if(row==min) {
+                    side = 0;
+                    col++;
+                    max--;
+                } else {
+                    row--;
+                }
+                break;
+        }
+        pnt++;
+    }
+    
+    return res;
 }
 ```
 
