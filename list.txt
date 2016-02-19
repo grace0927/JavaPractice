@@ -50,7 +50,7 @@ Wildcard Matching	16.9%	Hard
 // Pow(x, n)	27.8%	Medium
 // N-Queens	26.2%	Hard
 // N-Queens II	38.3%	Hard
-Maximum Subarray	36.0%	Medium
+// Maximum Subarray	36.0%	Medium
 // Spiral Matrix	21.9%	Medium
 // Jump Game	27.8%	Medium
 // Merge Intervals	24.4%	Hard

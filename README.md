@@ -1938,6 +1938,24 @@ public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
 }
 ```
 
+8. Maximum Subarray
+Q: Find the contiguous subarray within an array (containing at least one number) which has the largest sum. For example, given the array [−2,1,−3,4,−1,2,1,−5,4], the contiguous subarray [4,−1,2,1] has the largest sum = 6.
+```
+public int maxSubArray(int[] nums) {
+    int max = nums[0], sum = nums[0];
+    
+    for(int i=1; i<nums.length; i++) {
+        if(sum<0) {
+            sum = 0;
+        }
+        sum += nums[i];
+        max = Math.max(max, sum);
+    }
+    
+    return max;
+}
+```
+
 ##### Greedy
 1. Jump Game
 Q: Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. For example:A = [2,3,1,1,4], return true.A = [3,2,1,0,4], return false.
