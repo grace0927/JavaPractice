@@ -53,8 +53,8 @@ Wildcard Matching	16.9%	Hard
 Maximum Subarray	36.0%	Medium
 // Spiral Matrix	21.9%	Medium
 // Jump Game	27.8%	Medium
-Merge Intervals	24.4%	Hard
-Insert Interval	23.1%	Hard
+// Merge Intervals	24.4%	Hard
+// Insert Interval	23.1%	Hard
 // Length of Last Word	28.6%	Easy
 // Spiral Matrix II	33.9%	Medium
 Permutation Sequence	24.4%	Medium

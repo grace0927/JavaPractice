@@ -1834,6 +1834,110 @@ public int[][] generateMatrix(int n) {
 }
 ```
 
+6. Merge Intervals
+Q: Given a collection of intervals, merge all overlapping intervals.
+good ref: https://leetcode.com/discuss/13953/a-simple-java-solution
+```
+public List<Interval> merge(List<Interval> intervals) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    for(Interval interval:intervals) {
+        if(!map.containsKey(interval.start)) {
+            map.put(interval.start, interval.end);
+        } else {
+            map.put(interval.start, Math.max(map.get(interval.start),interval.end));
+        }
+    }
+    
+    LinkedList<Interval> list = new LinkedList<>();
+    Integer[] set = new Integer[map.size()];
+    map.keySet().toArray(set);
+    Arrays.sort(set);
+    for(Integer key:set) {
+        if(list.isEmpty()) {
+            list.add(new Interval(key, map.get(key)));
+        } else {
+            if(key>list.peekLast().end) {
+                list.add(new Interval(key, map.get(key)));
+            } else {
+                Interval last = list.pollLast();
+                list.add(new Interval(last.start, Math.max(last.end, map.get(key))));
+            }
+        }
+    }
+    
+    return list;
+}
+```
+
+7. Insert Interval
+Q: Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.
+```
+public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+    LinkedList<Interval> list = new LinkedList<>();
+    for(Interval interval:intervals) {
+        if(newInterval.start>interval.end) {
+            list.add(interval);
+        } else if(newInterval.end<interval.start) {
+            if(list.isEmpty() || list.peekLast().end<newInterval.start) {
+                list.add(newInterval);
+            }
+            list.add(interval);
+        }else {
+            if(!list.isEmpty() && list.peekLast().end>newInterval.start) {
+                Interval prev = list.pollLast();
+                list.add(new Interval(prev.start, Math.max(prev.end, interval.end)));
+            } else {
+                list.add(new Interval(Math.min(interval.start, newInterval.start), 
+                    Math.max(interval.end, newInterval.end)));
+            }
+        }
+    }
+    if(list.isEmpty() || list.peekLast().end<newInterval.start) {
+        list.add(newInterval);
+    }
+    return list;
+}
+// more concise
+public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+    int pnt=0;
+    
+    while(pnt<intervals.size() && intervals.get(pnt).end<newInterval.start) {
+        pnt++;
+    }
+    while(pnt<intervals.size() && intervals.get(pnt).start<=newInterval.end) {
+        newInterval.start = Math.min(newInterval.start, intervals.get(pnt).start);
+        newInterval.end = Math.max(newInterval.end, intervals.get(pnt).end);
+        intervals.remove(pnt);
+    }
+    intervals.add(pnt, newInterval);
+    
+    return intervals;
+}
+// use iterator
+public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+    ListIterator<Interval> iter = intervals.listIterator();
+    
+    while(iter.hasNext()) {
+        Interval cur = iter.next();
+        if(cur.start>newInterval.end) {
+            iter.previous();
+            break;
+        }
+        if(cur.end<newInterval.start) {
+            continue;
+        }
+        if(cur.start<=newInterval.end) {
+            newInterval.start = Math.min(newInterval.start, cur.start);
+            newInterval.end = Math.max(newInterval.end, cur.end);
+            iter.remove();    
+        }
+    }
+    iter.add(newInterval);
+    
+    return intervals;
+}
+```
+
 ##### Greedy
 1. Jump Game
 Q: Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. For example:A = [2,3,1,1,4], return true.A = [3,2,1,0,4], return false.
