@@ -585,6 +585,33 @@ public int lengthOfLastWord(String s) {
 }
 ```
 
+8. Add Binary
+Q: Given two binary strings, return their sum (also a binary string).
+```
+public String addBinary(String a, String b) {
+    int pntA=a.length()-1, pntB=b.length()-1, offset=0;
+    StringBuilder sb = new StringBuilder();
+    while(pntA>=0 || pntB>=0) {
+        int cur = offset;
+        if(pntA>=0) {
+            cur += a.charAt(pntA)-'0';
+            pntA--;
+        }
+        if(pntB>=0) {
+            cur += b.charAt(pntB)-'0';
+            pntB--;
+        }
+        offset = cur/2;
+        cur %= 2;
+        sb.insert(0, (char)(cur+'0'));
+    }
+    if(offset>0) {
+        sb.insert(0, '1');
+    }
+    return sb.toString();
+}
+```
+
 ##### Math
 1. Reverse Integer
 Q: Reverse digits of an integer.
@@ -1084,6 +1111,39 @@ public int trap(int[] height) {
         }
     }
     return sum;
+}
+```
+10. Rotate List
+Q: Given a list, rotate the list to the right by k places, where k is non-negative.
+```
+public ListNode rotateRight(ListNode head, int k) {
+    if(head==null || head.next==null || k==0) {
+        return head;
+    }
+    ListNode fast = head;
+    int len = 0;
+    while(k>0) {
+        if(fast==null) {
+            fast = head;
+            k %= len;
+            continue;
+        }
+        fast = fast.next;
+        k--;
+        len++;
+    }
+    if(fast!=null) {
+        ListNode slow = head;
+        while(fast!=null && fast.next!=null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        fast.next = head;
+        head = slow.next;
+        slow.next = null;
+    }
+    
+    return head;
 }
 ```
 
@@ -1645,6 +1705,91 @@ public int longestValidParentheses(String s) {
 }
 ```
 
+2. Unique Paths
+Q: A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there?
+```
+public int uniquePaths(int m, int n) {
+    int[][] dp = new int[m][n];
+    
+    // initialize
+    for(int i=0; i<m; i++) {
+        dp[i][0] = 1;
+    }
+    for(int i=0; i<n; i++) {
+        dp[0][i] = 1;
+    }
+    
+    // dynamic programming
+    for(int i=1; i<m; i++) {
+        for(int j=1; j<n; j++) {
+            dp[i][j] = dp[i-1][j]+dp[i][j-1];
+        }
+    }
+    
+    return dp[m-1][n-1];
+}
+```
+
+3. Unique Paths II
+Q: Follow up for "Unique Paths": Now consider if some obstacles are added to the grids. How many unique paths would there be? An obstacle and empty space is marked as 1 and 0 respectively in the grid.
+```
+public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+    int row=obstacleGrid.length;
+    if(row==0) {
+        return 0;
+    }
+    int col=obstacleGrid[0].length;
+    int[][] dp = new int[row][col];
+    
+    // initialize
+    boolean block = false;
+    for(int i=0; i<row; i++) {
+        if(obstacleGrid[i][0]==1) {
+            block = true;
+        }
+        dp[i][0] = (block)?0:1;
+    }
+    block = false;
+    for(int i=0; i<col; i++) {
+        if(obstacleGrid[0][i]==1) {
+            block = true;
+        }
+        dp[0][i] = (block)?0:1;
+    }
+    
+    // dynamic programming
+    for(int i=1; i<row; i++) {
+        for(int j=1; j<col; j++) {
+            dp[i][j] = (obstacleGrid[i][j]==1)?0:dp[i-1][j]+dp[i][j-1];
+        }
+    }
+    
+    return dp[row-1][col-1];
+}
+```
+
+4. Minimum Path Sum
+Q: Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Note: You can only move either down or right at any point in time.
+```
+public int minPathSum(int[][] grid) {
+    if(grid.length==0) {
+        return 0;
+    }
+    int row = grid.length;
+    int col = grid[0].length;
+    int[] dp = new int[col];
+    
+    for(int i=0; i<row; i++) {
+        dp[0] += grid[i][0];
+        for(int j=1; j<col; j++) {
+            int offset = (i==0)?dp[j-1]:Math.min(dp[j-1], dp[j]);
+            dp[j] = offset+grid[i][j];
+        }
+    }
+    
+    return dp[col-1];
+}
+```
 
 ##### Array
 1. First Missing Positive
@@ -1953,6 +2098,25 @@ public int maxSubArray(int[] nums) {
     }
     
     return max;
+}
+```
+
+9. Plus One
+Q: Given a non-negative number represented as an array of digits, plus one to the number. The digits are stored such that the most significant digit is at the head of the list.
+```
+public int[] plusOne(int[] digits) {
+    int pnt = digits.length-1;
+    while(pnt>=0 && digits[pnt]==9) {
+        digits[pnt] = 0;
+        pnt--;
+    }
+    if(pnt<0) {
+        int[] res = new int[digits.length+1];
+        res[0] = 1;
+        return res;
+    }
+    digits[pnt]++;
+    return digits;
 }
 ```
 

@@ -58,13 +58,13 @@ Wildcard Matching	16.9%	Hard
 // Length of Last Word	28.6%	Easy
 // Spiral Matrix II	33.9%	Medium
 Permutation Sequence	24.4%	Medium
-Rotate List	22.5%	Medium
-Unique Paths	35.2%	Medium
-Unique Paths II	28.9%	Medium
-Minimum Path Sum	34.0%	Medium
-Valid Number	11.9%	Hard
-Plus One	32.5%	Easy
-Add Binary	26.4%	Easy
+// Rotate List	22.5%	Medium
+// Unique Paths	35.2%	Medium
+// Unique Paths II	28.9%	Medium
+// Minimum Path Sum	34.0%	Medium
+// Valid Number	11.9%	Hard
+// Plus One	32.5%	Easy
+// Add Binary	26.4%	Easy
 Text Justification	15.7%	Hard
 Sqrt(x)	24.7%	Medium
 Climbing Stairs	36.0%	Easy
