@@ -3,11 +3,43 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.ArrayList;
+
 /**
  * @author feng
  *
  */
-public class PermutationSequence {
+public class PermutationSequence implements Solution {
+	public void test() {
+		PermutationSequence test = new PermutationSequence();
+		test.getPer(8, 8259);
+	}
+	
+	public String getPer(int n, int k) {
+        if(n==1) {
+            return "1";
+        }
+        int[] res = new int[n];
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i=0; i<n; i++) {
+            res[i] = i+1;
+            res[i] *= (i>0)?res[i-1]:1;
+            list.add(i+1);
+        }
+        
+        k %= res[n-1];
+        StringBuilder sb = new StringBuilder();
+        for(int i=n-2; i>=0; i--) {
+        	System.out.println(k);
+            int idx = k/res[i];
+            sb.append(list.get(idx));
+            list.remove(idx);
+            k %= res[i];
+        }
+        
+        return sb.toString();
+	}
+	
 	public String getPermutation(int n, int k) {
         char[] ret = new char[n];
         for(int i=0; i<n; i++) {

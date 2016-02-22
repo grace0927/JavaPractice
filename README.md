@@ -757,6 +757,33 @@ public int romanToInt(String s) {
 }
 ```
 
+5. Permutation Sequence
+Q: The set [1,2,3,…,n] contains a total of n! unique permutations. Given n and k, return the kth permutation sequence. Note: Given n will be between 1 and 9 inclusive.
+```
+public String getPermutation(int n, int k) {
+    int[] res = new int[n];
+    ArrayList<Integer> list = new ArrayList<>();
+    for(int i=0; i<n; i++) {
+        res[i] = i+1;
+        res[i] *= (i>0)?res[i-1]:1;
+        list.add(i+1);
+    }
+    
+    k--;
+    k %= res[n-1];
+    StringBuilder sb = new StringBuilder();
+    for(int i=n-2; i>=0; i--) {
+        int idx = k/res[i];
+        sb.append(list.get(idx));
+        list.remove(idx);
+        k %= res[i];
+    }
+    sb.append(list.get(0));
+    
+    return sb.toString();
+}
+```
+
 ##### Divide and Conquer
 1. Median of Two Sorted Arrays
 Q: There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
@@ -1672,6 +1699,26 @@ public double myPow(double x, int n) {
         }
     }
     return sum;
+}
+```
+
+6. Sqrt(x)
+Q: Implement int sqrt(int x). Compute and return the square root of x.
+```
+public int mySqrt(int x) {
+    if(x==0) return 0;
+    int start = 1, end = x;
+    
+    while(start<end-1) {
+        int mid = start+(end-start)/2;
+        if(mid>x/mid) {
+            end = mid;
+        } else {
+            start = mid;
+        }
+    }
+    
+    return start;
 }
 ```
 
