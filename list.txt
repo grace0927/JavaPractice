@@ -67,7 +67,7 @@ Permutation Sequence	24.4%	Medium
 // Add Binary	26.4%	Easy
 Text Justification	15.7%	Hard
 Sqrt(x)	24.7%	Medium
-Climbing Stairs	36.0%	Easy
+// Climbing Stairs	36.0%	Easy
 Simplify Path	21.3%	Medium
 Edit Distance	27.9%	Hard
 Set Matrix Zeroes	32.8%	Medium

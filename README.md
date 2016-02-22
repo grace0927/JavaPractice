@@ -1791,6 +1791,25 @@ public int minPathSum(int[][] grid) {
 }
 ```
 
+5. Climbing Stairs
+Q: You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+```
+public int climbStairs(int n) {
+    if(n<=1) {
+        return 1;
+    }
+    
+    int prev=1, cur=2;
+    for(int i=2; i<n; i++) {
+        int tmp = cur+prev;
+        prev = cur;
+        cur = tmp;
+    }
+    
+    return cur;
+}
+```
+
 ##### Array
 1. First Missing Positive
 Q: Given an unsorted integer array, find the first missing positive integer. For example, Given [1,2,0] return 3, and [3,4,-1,1] return 2. Your algorithm should run in O(n) time and uses constant space.
