@@ -612,6 +612,66 @@ public String addBinary(String a, String b) {
 }
 ```
 
+9. Text Justification
+Q: Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified. You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ' ' when necessary so that each line has exactly L characters. Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right. For the last line of text, it should be left justified and no extra space is inserted between words.
+```
+public List<String> fullJustify(String[] words, int maxWidth) {
+    int cnt=0, len=0;
+    List<String> list = new ArrayList<>();
+    
+    for(int i=0; i<words.length; i++) {
+        int next = len+words[i].length();
+        if(next==maxWidth) {
+            StringBuilder sb = new StringBuilder();
+            for(int j=i-cnt; j<i; j++) {
+                sb.append(words[j]);
+                sb.append(' ');
+            }
+            sb.append(words[i]);
+            list.add(sb.toString());
+            cnt = 0;
+            len = 0;
+        } else if(next>maxWidth) {
+            int mnt = maxWidth-len+1;
+            StringBuilder sb = new StringBuilder();
+            for(int j=i-cnt; j<i-1; j++) {
+                sb.append(words[j]);
+                sb.append(' ');
+                for(int k=0,limit=(mnt%(i-j-1)==0)?mnt/(i-j-1):mnt/(i-j-1)+1; k<limit; k++) {
+                    sb.append(' ');
+                }
+                mnt -= (mnt%(i-j-1)==0)?mnt/(i-j-1):mnt/(i-j-1)+1;
+            }
+            sb.append(words[i-1]);
+            while(sb.length()<maxWidth) {
+                sb.append(' ');
+            }
+            list.add(sb.toString());
+            len = words[i].length()+1;
+            cnt = 1;
+        } else {
+            len += words[i].length()+1;
+            cnt++;
+        }
+    }
+    if(len>0) {
+        int i = words.length;
+        StringBuilder sb = new StringBuilder();
+        for(int j=i-cnt; j<i-1; j++) {
+            sb.append(words[j]);
+            sb.append(' ');
+        }
+        sb.append(words[i-1]);
+        while(sb.length()<maxWidth) {
+            sb.append(' ');
+        }
+        list.add(sb.toString());
+    }
+    
+    return list;
+}
+```
+
 ##### Math
 1. Reverse Integer
 Q: Reverse digits of an integer.
