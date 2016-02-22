@@ -21,7 +21,13 @@ import java.util.Arrays;
  * You may assume that you have an infinite number of each kind of coin.
  *
  */
-public class CoinChange {
+public class CoinChange implements Solution {
+	public void test() {
+		CoinChange test = new CoinChange();
+    	int[] coins = {186, 419, 83, 408};
+    	System.out.println(test.coinChangeItertive(coins, 6249));
+	}
+	
 	public int coinChangeItertive(int[] coins, int amount) {
 		if(amount <= 0) {
 			return 0;

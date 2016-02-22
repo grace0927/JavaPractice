@@ -9,7 +9,8 @@ import java.util.Stack;
  * @author jianyu
  * https://leetcode.com/problems/basic-calculator/
  * Implement a basic calculator to evaluate a simple expression string.
- * The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces .
+ * The expression string may contain open ( and closing parentheses ), 
+ * the plus + or minus sign -, non-negative integers and empty spaces .
  * You may assume that the given expression is always valid.
  * Some examples:
  * "1 + 1" = 2
@@ -18,7 +19,12 @@ import java.util.Stack;
  * Note: Do not use the eval built-in library function.
  *
  */
-public class BasicCalculator {
+public class BasicCalculator implements Solution {
+	public void test() {
+		BasicCalculator test = new BasicCalculator();
+    	System.out.println(test.calculate("(3-(2-(5-(9-(4)))))"));
+	}
+	
     public int calculate(String s) {
         Stack<Integer> num = new Stack<>();
         num.push(0);

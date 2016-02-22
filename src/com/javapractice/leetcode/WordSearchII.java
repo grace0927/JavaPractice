@@ -26,7 +26,14 @@ import java.util.List;
  * You may assume that all inputs are consist of lowercase letters a-z.
  *
  */
-public class WordSearchII {
+public class WordSearchII implements Solution {
+	public void test() {
+		WordSearchII test = new WordSearchII();
+    	char[][] board = {{'a'}};
+    	String[] words = {"a"};
+    	System.out.println(test.findWords(board, words));
+	}
+	
     class Node {
 		char val;
 		HashMap<Character, Node> map;

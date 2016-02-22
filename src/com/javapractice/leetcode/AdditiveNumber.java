@@ -23,7 +23,13 @@ package com.javapractice.leetcode;
  * How would you handle overflow for very large input integers?
  *
  */
-public class AdditiveNumber {
+public class AdditiveNumber implements Solution {
+	@Override
+	public void test() {
+		AdditiveNumber test = new AdditiveNumber();
+    	System.out.println(test.isAdditiveNumber("112358"));
+	}
+	
 	public boolean isAdditiveNumber(String num) {
         int len = num.length();
         

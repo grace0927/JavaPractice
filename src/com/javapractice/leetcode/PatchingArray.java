@@ -30,7 +30,13 @@ import java.util.HashSet;
  * Return 0.
  *
  */
-public class PatchingArray {
+public class PatchingArray implements Solution {
+	public void test() {
+		PatchingArray test = new PatchingArray();
+    	int[] arr = {1,5,10};
+    	System.out.println(test.minPatches(arr, 50));
+	}
+	
 	/*
 	 * Greedy
 	 */

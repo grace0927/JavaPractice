@@ -28,7 +28,23 @@ import java.util.Queue;
  * and come up with different approaches yourself.
  *
  */
-public class Codec {
+public class Codec implements Solution {
+	public void test() {
+		TreeNode one = new TreeNode(1);
+    	TreeNode two = new TreeNode(2);
+    	TreeNode three = new TreeNode(3);
+    	TreeNode four = new TreeNode(4);
+    	TreeNode five = new TreeNode(5);
+    	one.left = two;
+    	one.right = three;
+    	three.left = four;
+    	three.right = five;
+    	Codec test = new Codec();
+    	String res = test.serialize(one);
+    	System.out.println(res);
+    	System.out.println(test.serialize(test.deserialize(res)));
+	}
+	
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();

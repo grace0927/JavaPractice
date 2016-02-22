@@ -29,7 +29,12 @@ package com.javapractice.leetcode;
  * return [9, 8, 9]
  *
  */
-public class CreateMaximumNumber {
+public class CreateMaximumNumber implements Solution{
+	public void test() {
+		CreateMaximumNumber test = new CreateMaximumNumber();
+    	test.maxNumber(new int[]{8,6,9}, new int[]{1,7,5}, 3);
+	}
+	
     public int[] maxNumberTrivial(int[] nums1, int[] nums2, int k) {
         int[] res = new int[k];
         maxNumberHelper(nums1, 0, nums2, 0, k, res);

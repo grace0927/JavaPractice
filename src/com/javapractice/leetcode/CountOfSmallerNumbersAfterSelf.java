@@ -21,7 +21,13 @@ import java.util.List;
  * Return the array [2, 1, 1, 0].
  *
  */
-public class CountOfSmallerNumbersAfterSelf {
+public class CountOfSmallerNumbersAfterSelf implements Solution {
+	public void test() {
+		CountOfSmallerNumbersAfterSelf test = new CountOfSmallerNumbersAfterSelf();
+    	int[] nums = {1,0,2};
+    	System.out.println(test.countSmaller(nums));
+	}
+	
     public List<Integer> countSmaller(int[] nums) {
         int len = nums.length;
         List<Integer> list = new ArrayList<>();

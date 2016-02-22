@@ -18,7 +18,13 @@ package com.javapractice.leetcode;
  * maxProfit = 3transactions = [buy, sell, cooldown, buy, sell]
  *
  */
-public class BestTimeToBuyAndSellStockWithCooldown {
+public class BestTimeToBuyAndSellStockWithCooldown implements Solution {
+	public void test() {
+		BestTimeToBuyAndSellStockWithCooldown test = new BestTimeToBuyAndSellStockWithCooldown();
+    	int[] prices = {6,1,3,2,4,7}; 
+    	test.maxProfit(prices);
+	}
+	
 	/*
 	 * ref: https://leetcode.com/discuss/71354/share-my-thinking-process
     int sell = 0, prev_sell = 0, buy = Integer.MIN_VALUE, prev_buy;

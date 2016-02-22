@@ -10,12 +10,30 @@ import java.util.HashMap;
  * @author jianyu
  * https://oj.leetcode.com/problems/valid-sudoku/
  * Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
- * The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
+ * The Sudoku board could be partially filled, 
+ * where empty cells are filled with the character '.'.
  * Note:
- * A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
+ * A valid Sudoku board (partially filled) is not necessarily solvable. 
+ * Only the filled cells need to be validated.
  *
  */
-public class ValidSudoku {
+public class ValidSudoku implements Solution {
+	public void test() {
+		char[][] graph = {
+				{0,8,7,6,5,4,3,2,1},
+                {2,0,0,0,0,0,0,0,0},
+                {3,0,0,0,0,0,0,0,0},
+                {4,0,0,0,0,0,0,0,0},
+                {5,0,0,0,0,0,0,0,0},
+                {6,0,0,0,0,0,0,0,0},
+                {7,0,0,0,0,0,0,0,0},
+                {8,0,0,0,0,0,0,0,0},
+                {9,0,0,0,0,0,0,0,0}};
+		
+		ValidSudoku test = new ValidSudoku();
+		System.out.println(test.isValidSudoku(graph));
+	}
+	
     public boolean isValidSudoku(char[][] board) {
         if(board == null) {
 			return false;
@@ -60,17 +78,20 @@ public class ValidSudoku {
 						case 0:
 					        switch(i%3) {
 						        case 0:
-						        	if(board[i+1][j+1] == temp || board[i+2][j+1] == temp || board[i+1][j+2] == temp || board[i+2][j+2] == temp) {
+						        	if(board[i+1][j+1] == temp || board[i+2][j+1] == temp 
+						        		|| board[i+1][j+2] == temp || board[i+2][j+2] == temp) {
 						    		return false;
 						           	}
 						        	break;
 					        	case 1:
-					        		if(board[i-1][j+1] == temp || board[i+1][j+1] == temp || board[i-1][j+2] == temp || board[i+1][j+2] == temp) {
+					        		if(board[i-1][j+1] == temp || board[i+1][j+1] == temp 
+					        			|| board[i-1][j+2] == temp || board[i+1][j+2] == temp) {
 							        	return false;
 							        }
 							        break;
 						        case 2: 
-							        if(board[i-1][j+1] == temp || board[i-1][j+1] == temp || board[i-2][j+2] == temp || board[i-2][j+2] == temp) {
+							        if(board[i-1][j+1] == temp || board[i-1][j+1] == temp 
+							        	|| board[i-2][j+2] == temp || board[i-2][j+2] == temp) {
 								        return false;
 							        }
 							        break;
@@ -79,17 +100,20 @@ public class ValidSudoku {
 						case 1:
 					        switch(i%3) {
 						        case 0:
-						        	if(board[i+1][j-1] == temp || board[i+2][j-1] == temp || board[i+1][j+1] == temp || board[i+2][j+1] == temp) {
+						        	if(board[i+1][j-1] == temp || board[i+2][j-1] == temp 
+						        		|| board[i+1][j+1] == temp || board[i+2][j+1] == temp) {
 						    		return false;
 						           	}
 						        	break;
 					        	case 1:
-					        		if(board[i-1][j+1] == temp || board[i+1][j+1] == temp || board[i-1][j-1] == temp || board[i+1][j-1] == temp) {
+					        		if(board[i-1][j+1] == temp || board[i+1][j+1] == temp 
+					        			|| board[i-1][j-1] == temp || board[i+1][j-1] == temp) {
 							        	return false;
 							        }
 							        break;
 						        case 2: 
-							        if(board[i-1][j-1] == temp || board[i-1][j+1] == temp || board[i-2][j-1] == temp || board[i-2][j+1] == temp) {
+							        if(board[i-1][j-1] == temp || board[i-1][j+1] == temp 
+							        	|| board[i-2][j-1] == temp || board[i-2][j+1] == temp) {
 								        return false;
 							        }
 							        break;
@@ -98,17 +122,20 @@ public class ValidSudoku {
 						case 2:
 					        switch(i%3) {
 						        case 0:
-						        	if(board[i+1][j-2] == temp || board[i+1][j-1] == temp || board[i+2][j-2] == temp || board[i+2][j-1] == temp) {
+						        	if(board[i+1][j-2] == temp || board[i+1][j-1] == temp 
+						        		|| board[i+2][j-2] == temp || board[i+2][j-1] == temp) {
 						    		return false;
 						           	}
 						        	break;
 					        	case 1:
-					        		if(board[i-1][j-2] == temp || board[i-1][j-1] == temp || board[i+1][j-2] == temp || board[i+1][j-1] == temp) {
+					        		if(board[i-1][j-2] == temp || board[i-1][j-1] == temp 
+					        			|| board[i+1][j-2] == temp || board[i+1][j-1] == temp) {
 							        	return false;
 							        }
 							        break;
 						        case 2: 
-							        if(board[i-1][j-2] == temp || board[i-1][j-1] == temp || board[i-2][j-2] == temp || board[i-2][j-1] == temp) {
+							        if(board[i-1][j-2] == temp || board[i-1][j-1] == temp 
+							        	|| board[i-2][j-2] == temp || board[i-2][j-1] == temp) {
 								        return false;
 							        }
 							        break;

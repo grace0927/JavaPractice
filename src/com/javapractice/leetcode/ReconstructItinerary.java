@@ -32,7 +32,20 @@ import java.util.List;
  * But it is larger in lexical order.
  *
  */
-public class ReconstructItinerary {
+public class ReconstructItinerary implements Solution {
+	@Override
+	public void test() {
+    	ReconstructItinerary test = new ReconstructItinerary();
+    	String[][] tickets = new String[][] {
+    		{"EZE","TIA"},{"EZE","HBA"},{"AXA","TIA"},{"JFK","AXA"},
+    		{"ANU","JFK"},{"ADL","ANU"},{"TIA","AUA"},{"ANU","AUA"},
+    		{"ADL","EZE"},{"ADL","EZE"},{"EZE","ADL"},{"AXA","EZE"},
+    		{"AUA","AXA"},{"JFK","AXA"},{"AXA","AUA"},{"AUA","ADL"},
+    		{"ANU","EZE"},{"TIA","ADL"},{"EZE","ANU"},{"AUA","ANU"}
+    	};
+    	test.findItinerary(tickets);
+	}
+	
     public List<String> findItinerary(String[][] tickets) {
         LinkedList<String> list = new LinkedList<>();
         HashMap<String, ArrayList<String>> map = new HashMap<>();

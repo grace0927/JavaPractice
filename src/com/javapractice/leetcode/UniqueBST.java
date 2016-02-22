@@ -14,7 +14,23 @@ package com.javapractice.leetcode;
  *  
  */
 
-public class UniqueBST {
+public class UniqueBST implements Solution {
+	public void test() {
+		long begintime = System.nanoTime();
+    	UniqueBST test = new UniqueBST();
+    	int res = test.numTrees(20);
+    	long endtime=System.nanoTime();
+    	long costTime1 = (endtime - begintime)/1000;
+
+    	begintime = System.nanoTime();
+    	res = test.numTreesDP(20);
+    	endtime=System.nanoTime();
+    	long costTime2 = (endtime - begintime)/1000;
+    	
+    	System.out.println("result is: " + res + " cost time: " + costTime1 + "ms" 
+    			+ " cost time 2: " + costTime2 + "ms");
+	}
+	
     public int numTrees(int n) {
     	/* recursive */
         switch(n) {

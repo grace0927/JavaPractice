@@ -14,7 +14,22 @@ import java.util.List;
  * Note: All inputs will be in lower-case.
  *
  */
-public class Anagrams {
+public class Anagrams implements Solution {
+	public void test() {
+		Anagrams test = new Anagrams();
+		String[] a = {"tho","tin","erg","end","pug","ton","alb",
+				"mes","job","ads","soy","toe","tap","sen","ape",
+				"led","rig","rig","con","wac","gog","zen","hay",
+				"lie","pay","kid","oaf","arc","hay","vet","sat",
+				"gap","hop","ben","gem","dem","pie","eco","cub",
+				"coy","pep","wot","wee"};
+		String[] b = {"cab","tin","pew","duh","may","ill","buy","bar","max","doc"};
+		String[] c = {"", ""};
+		System.out.println(test.anagrams(a));
+		System.out.println(test.anagrams(b));
+		System.out.println(test.anagrams(c));
+	}
+	
 	public List<String> anagrams(String[] strs) {
         List<String> result = new ArrayList<>();
         HashMap<String, String> map = new HashMap<>();
