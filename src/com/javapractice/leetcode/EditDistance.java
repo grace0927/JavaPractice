@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author jianyu
  * https://oj.leetcode.com/problems/edit-distance/
@@ -14,7 +16,11 @@ package com.javapractice.leetcode;
  * c) Replace a character
  *
  */
-public class EditDistance {
+public class EditDistance implements Solution {
+	public void test() {
+		minDistanceSecond("sea", "ate");
+	}
+	
 	public int minDistance(String word1, String word2) {
         int row = word1.length();
         int column = word2.length();
@@ -40,4 +46,25 @@ public class EditDistance {
         return ret[row][column];
     }
 	
+    public int minDistanceSecond(String word1, String word2) {
+        int row=word1.length(), col=word2.length();
+        int[][] dp = new int[row+1][col+1];
+        
+        for(int i=0; i<=col; i++) {
+            dp[0][i] = i;
+        }
+        System.out.println(Arrays.toString(dp[0]));
+        for(int i=1; i<=row; i++) {
+            dp[i][0] = i;
+            for(int j=1; j<=col; j++) {
+                dp[i][j] = (word1.charAt(i-1)==word2.charAt(j-1))?dp[i-1][j-1]:dp[i-1][j-1]+1;
+                dp[i][j] = Math.min(dp[i][j], dp[i-1][j]+1);
+            }
+            System.out.println(Arrays.toString(dp[i]));
+        }
+
+        
+        
+        return dp[row][col];
+    }
 }

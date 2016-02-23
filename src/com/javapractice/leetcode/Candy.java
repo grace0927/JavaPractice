@@ -13,9 +13,8 @@ package com.javapractice.leetcode;
 
 public class Candy implements Solution {
 	public void test() {
-		Candy test = new Candy();
     	int[] ratings = {1,2};
-    	int res = test.candy(ratings);
+    	int res = candy(ratings);
     	System.out.println(res);
 	}
 	
