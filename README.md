@@ -1200,6 +1200,7 @@ public int trap(int[] height) {
     return sum;
 }
 ```
+
 10. Rotate List
 Q: Given a list, rotate the list to the right by k places, where k is non-negative.
 ```
@@ -1231,6 +1232,37 @@ public ListNode rotateRight(ListNode head, int k) {
     }
     
     return head;
+}
+```
+
+11. Sort Colors
+Q: Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Note: You are not suppose to use the library's sort function for this problem. Follow up: A rather straight forward solution is a two-pass algorithm using counting sort.
+First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's. Could you come up with an one-pass algorithm using only constant space?
+```
+public void sortColors(int[] nums) {
+    int start = 0, len=nums.length;
+    while(start<len && nums[start]==0) {
+        start++;
+    }
+    int end=len-1, pnt=start;
+    while(pnt<=end) {
+        switch(nums[pnt]) {
+            case 0:
+                nums[pnt] = nums[start];
+                nums[start] = 0;
+                start++;
+                pnt = Math.max(pnt, start);
+                break;
+            case 1:
+                pnt++;
+                break;
+            case 2:
+                nums[pnt] = nums[end];
+                nums[end] = 2;
+                end--;
+                break;
+        }
+    }
 }
 ```
 
@@ -1812,6 +1844,51 @@ public int mySqrt(int x) {
 }
 ```
 
+7. Search a 2D Matrix
+Q: Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted from left to right. The first integer of each row is greater than the last integer of the previous row.
+```
+public boolean searchMatrix(int[][] matrix, int target) {
+    int row = matrix.length;
+    if(row==0) {
+        return false;
+    }
+    int col = matrix[0].length;
+    
+    // search in row
+    int[] arr = new int[row];
+    for(int i=0; i<row; i++) {
+        arr[i] = matrix[i][0];
+    }
+    int rIdx = search(arr, target);
+    
+    // search in col
+    int cIdx = search(matrix[rIdx], target);
+    
+    return (matrix[rIdx][cIdx]==target);
+}
+
+private int search(int[] arr, int target) {
+    if(target<=arr[0]) {
+        return 0;
+    } else if(target>=arr[arr.length-1]) {
+        return arr.length-1;
+    }
+    int start = 0;
+    int end = arr.length-1;
+    while(start<end-1) {
+        int mid = start + (end-start)/2;
+        if(arr[mid]==target) {
+            return mid;
+        } else if(arr[mid]>target) {
+            end = mid;
+        } else {
+            start = mid;
+        }
+    }
+    return start;
+}
+```
+
 ##### Dynamic Programming
 
 1. Longest Valid Parentheses
@@ -2273,6 +2350,42 @@ public int[] plusOne(int[] digits) {
     }
     digits[pnt]++;
     return digits;
+}
+```
+
+10. Set Matrix Zeroes
+Q: Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
+```
+public void setZeroes(int[][] matrix) {
+    int row = matrix.length;
+    int col = matrix[0].length;
+    boolean[] rows = new boolean[row];
+    boolean[] cols = new boolean[col];
+    
+    for(int i=0; i<row; i++) {
+        for(int j=0; j<col; j++) {
+            if(matrix[i][j] == 0) {
+                rows[i] = true;
+                cols[j] = true;
+            }
+        }
+    }
+    
+    for(int i=0; i<row; i++) {
+        if(rows[i]) {
+            for(int j=0; j<col; j++) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
+    
+    for(int i=0; i<col; i++) {
+        if(cols[i]) {
+            for(int j=0; j<row; j++) {
+                matrix[j][i] = 0;
+            }
+        }
+    }
 }
 ```
 
