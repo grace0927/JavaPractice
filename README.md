@@ -1569,6 +1569,36 @@ public boolean isValid(String s) {
 }
 ```
 
+2. Simplify Path
+Q: Given an absolute path for a file (Unix-style), simplify it.
+```
+public String simplifyPath(String path) {
+    Stack<String> stack = new Stack<>();
+    for(String str:path.split("/")) {
+        if(str.equals(".") || str.equals("")) {
+            continue;
+        } else if(str.equals("..")) {
+            if(!stack.empty()) {
+                stack.pop();
+            }
+        } else {
+            stack.push(str);
+        }
+    }
+    
+    StringBuilder sb = new StringBuilder();
+    if(stack.empty() && path.length()>0) {
+        sb.append('/');
+    }
+    while(!stack.empty()) {
+        sb.insert(0,stack.pop());
+        sb.insert(0,'/');
+    }
+    
+    return sb.toString();
+}
+```
+
 ##### Binary Search
 1. Divide Two Integers
 Q: Divide two integers without using multiplication, division and mod operator. If it is overflow, return MAX_INT.

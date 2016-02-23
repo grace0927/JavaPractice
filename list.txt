@@ -68,7 +68,7 @@ Wildcard Matching	16.9%	Hard
 // Text Justification	15.7%	Hard
 // Sqrt(x)	24.7%	Medium
 // Climbing Stairs	36.0%	Easy
-Simplify Path	21.3%	Medium
+// Simplify Path	21.3%	Medium
 Edit Distance	27.9%	Hard
 Set Matrix Zeroes	32.8%	Medium
 Search a 2D Matrix	33.1%	Medium
