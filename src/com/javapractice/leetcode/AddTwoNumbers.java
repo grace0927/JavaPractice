@@ -19,14 +19,13 @@ import java.util.Queue;
 public class AddTwoNumbers implements Solution {
 	@Override
 	public void test() {
-		AddTwoNumbers test = new AddTwoNumbers();
 		ListNode one = new ListNode(0);
 		ListNode two = new ListNode(9);
 		ListNode three = new ListNode(1);
 		ListNode four = new ListNode(6);
 		two.next = three;
 		three.next = four;
-		ListNode cur = test.addTwoNumbersAlter(one, two);
+		ListNode cur = addTwoNumbersAlter(one, two);
 		while(cur != null) {
 			System.out.println(cur.val);
 			cur = cur.next;

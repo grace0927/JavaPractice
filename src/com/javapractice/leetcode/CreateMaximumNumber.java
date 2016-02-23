@@ -31,8 +31,7 @@ package com.javapractice.leetcode;
  */
 public class CreateMaximumNumber implements Solution{
 	public void test() {
-		CreateMaximumNumber test = new CreateMaximumNumber();
-    	test.maxNumber(new int[]{8,6,9}, new int[]{1,7,5}, 3);
+    	maxNumber(new int[]{8,6,9}, new int[]{1,7,5}, 3);
 	}
 	
     public int[] maxNumberTrivial(int[] nums1, int[] nums2, int k) {

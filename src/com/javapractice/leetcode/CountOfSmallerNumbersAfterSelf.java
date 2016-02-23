@@ -23,9 +23,8 @@ import java.util.List;
  */
 public class CountOfSmallerNumbersAfterSelf implements Solution {
 	public void test() {
-		CountOfSmallerNumbersAfterSelf test = new CountOfSmallerNumbersAfterSelf();
     	int[] nums = {1,0,2};
-    	System.out.println(test.countSmaller(nums));
+    	System.out.println(countSmaller(nums));
 	}
 	
     public List<Integer> countSmaller(int[] nums) {

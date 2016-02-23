@@ -26,8 +26,7 @@ package com.javapractice.leetcode;
 public class AdditiveNumber implements Solution {
 	@Override
 	public void test() {
-		AdditiveNumber test = new AdditiveNumber();
-    	System.out.println(test.isAdditiveNumber("112358"));
+    	System.out.println(isAdditiveNumber("112358"));
 	}
 	
 	public boolean isAdditiveNumber(String num) {

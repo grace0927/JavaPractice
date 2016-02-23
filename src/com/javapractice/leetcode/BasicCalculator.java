@@ -21,8 +21,7 @@ import java.util.Stack;
  */
 public class BasicCalculator implements Solution {
 	public void test() {
-		BasicCalculator test = new BasicCalculator();
-    	System.out.println(test.calculate("(3-(2-(5-(9-(4)))))"));
+    	System.out.println(calculate("(3-(2-(5-(9-(4)))))"));
 	}
 	
     public int calculate(String s) {

@@ -17,13 +17,12 @@ package com.javapractice.leetcode;
 public class UniqueBST implements Solution {
 	public void test() {
 		long begintime = System.nanoTime();
-    	UniqueBST test = new UniqueBST();
-    	int res = test.numTrees(20);
+    	int res = numTrees(20);
     	long endtime=System.nanoTime();
     	long costTime1 = (endtime - begintime)/1000;
 
     	begintime = System.nanoTime();
-    	res = test.numTreesDP(20);
+    	res = numTreesDP(20);
     	endtime=System.nanoTime();
     	long costTime2 = (endtime - begintime)/1000;
     	

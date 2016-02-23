@@ -32,9 +32,8 @@ import java.util.HashSet;
  */
 public class PatchingArray implements Solution {
 	public void test() {
-		PatchingArray test = new PatchingArray();
     	int[] arr = {1,5,10};
-    	System.out.println(test.minPatches(arr, 50));
+    	System.out.println(minPatches(arr, 50));
 	}
 	
 	/*

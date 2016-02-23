@@ -23,9 +23,8 @@ import java.util.Arrays;
  */
 public class CoinChange implements Solution {
 	public void test() {
-		CoinChange test = new CoinChange();
     	int[] coins = {186, 419, 83, 408};
-    	System.out.println(test.coinChangeItertive(coins, 6249));
+    	System.out.println(coinChangeItertive(coins, 6249));
 	}
 	
 	public int coinChangeItertive(int[] coins, int amount) {

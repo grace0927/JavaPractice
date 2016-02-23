@@ -39,10 +39,9 @@ public class Codec implements Solution {
     	one.right = three;
     	three.left = four;
     	three.right = five;
-    	Codec test = new Codec();
-    	String res = test.serialize(one);
+    	String res = serialize(one);
     	System.out.println(res);
-    	System.out.println(test.serialize(test.deserialize(res)));
+    	System.out.println(serialize(deserialize(res)));
 	}
 	
     // Encodes a tree to a single string.

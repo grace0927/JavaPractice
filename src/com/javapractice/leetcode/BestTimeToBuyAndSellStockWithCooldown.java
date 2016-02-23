@@ -20,9 +20,8 @@ package com.javapractice.leetcode;
  */
 public class BestTimeToBuyAndSellStockWithCooldown implements Solution {
 	public void test() {
-		BestTimeToBuyAndSellStockWithCooldown test = new BestTimeToBuyAndSellStockWithCooldown();
     	int[] prices = {6,1,3,2,4,7}; 
-    	test.maxProfit(prices);
+    	maxProfit(prices);
 	}
 	
 	/*

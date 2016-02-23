@@ -30,8 +30,7 @@ public class ValidSudoku implements Solution {
                 {8,0,0,0,0,0,0,0,0},
                 {9,0,0,0,0,0,0,0,0}};
 		
-		ValidSudoku test = new ValidSudoku();
-		System.out.println(test.isValidSudoku(graph));
+		System.out.println(isValidSudoku(graph));
 	}
 	
     public boolean isValidSudoku(char[][] board) {
