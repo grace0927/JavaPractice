@@ -1581,6 +1581,31 @@ private boolean isValid(boolean[][] visit, int row, int col) {
 }
 ```
 
+9. Combinations
+Q: Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+```
+public List<List<Integer>> combine(int n, int k) {
+    List<List<Integer>> lists = new ArrayList<>();
+    List<Integer> list = new ArrayList<>();
+    
+    helper(n, k, 0, lists, list);
+    
+    return lists;
+}
+
+private void helper(int n, int k, int start, List<List<Integer>> lists, List<Integer> list) {
+    if(k==0) {
+        lists.add(new ArrayList<Integer>(list));
+        return ;
+    }
+    for(int i=start; i<n; i++) {
+        list.add(i+1);
+        helper(n, k-1, i+1, lists, list);
+        list.remove(list.size()-1);
+    }
+}
+```
+
 ##### Stack
 1. Valid Parentheses
 Q: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.

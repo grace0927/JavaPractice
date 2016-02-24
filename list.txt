@@ -74,7 +74,7 @@ Wildcard Matching	16.9%	Hard
 // Search a 2D Matrix	33.1%	Medium
 // Sort Colors	34.0%	Medium
 Minimum Window Substring	20.5%	Hard
-Combinations	33.2%	Medium
+// Combinations	33.2%	Medium
 Subsets	30.3%	Medium
 Word Search	22.2%	Medium
 Remove Duplicates from Sorted Array II	31.9%	Medium
