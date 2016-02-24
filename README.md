@@ -1266,6 +1266,54 @@ public void sortColors(int[] nums) {
 }
 ```
 
+12. Remove Duplicates from Sorted Array II
+Q: Follow up for "Remove Duplicates": What if duplicates are allowed at most twice? For example, Given sorted array nums = [1,1,1,2,2,3], Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
+```
+public int removeDuplicates(int[] nums) {
+    if(nums.length<=2) {
+        return nums.length;
+    }
+    
+    int cur=nums[0], pnt=1, mnt=1;
+    while(mnt<=2 && pnt<nums.length) {
+        if(nums[pnt]==cur) {
+            mnt++;
+            if(mnt>2) {
+                break;
+            }
+        } else {
+            cur = nums[pnt];
+            mnt = 1;
+        }
+        pnt++;
+    }
+    for(int i=pnt+1; i<nums.length; i++) {
+        if(nums[i]!=cur) {
+            cur = nums[i];
+            mnt = 1;
+            nums[pnt] = cur;
+            pnt++;
+        } else {
+            if(mnt==1) {
+                nums[pnt] = cur;
+                pnt++;
+            }
+            mnt++;
+        }
+    }
+    
+    return pnt;
+}
+// ref: https://leetcode.com/discuss/42348/3-6-easy-lines-c-java-python-ruby
+public int removeDuplicates(int[] nums) {
+    int i = 0;
+    for (int n : nums)
+        if (i < 2 || n > nums[i-2])
+            nums[i++] = n;
+    return i;
+}
+```
+
 ##### Backtracking
 1. Letter Combinations of a Phone Number
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.
@@ -1603,6 +1651,87 @@ private void helper(int n, int k, int start, List<List<Integer>> lists, List<Int
         helper(n, k-1, i+1, lists, list);
         list.remove(list.size()-1);
     }
+}
+```
+
+10. Subsets
+Q: Given a set of distinct integers, nums, return all possible subsets. Note: Elements in a subset must be in non-descending order. The solution set must not contain duplicate subsets.
+```
+public List<List<Integer>> subsets(int[] nums) {
+    Arrays.sort(nums);
+    List<List<Integer>> lists = new ArrayList<>();
+    List<Integer> list = new ArrayList<>();
+    lists.add(new ArrayList<>(list));
+    
+    helper(nums, 0, lists, list);
+    
+    return lists;
+}
+
+private void helper(int[] nums, int start, List<List<Integer>> lists, List<Integer> list) {
+    if(start==nums.length) {
+        return ;
+    }
+    for(int i=start; i<nums.length; i++) {
+        list.add(nums[i]);
+        lists.add(new ArrayList<>(list));
+        helper(nums, i+1, lists, list);
+        list.remove(list.size()-1);
+    }
+
+// bit manipulation ref: https://leetcode.com/discuss/9213/my-solution-using-bit-manipulation
+public List<List<Integer>> subsets(int[] S) {
+    Arrays.sort(S);
+    int totalNumber = 1 << S.length;
+    List<List<Integer>> collection = new ArrayList<List<Integer>>(totalNumber);
+    for (int i=0; i<totalNumber; i++) {
+        List<Integer> set = new LinkedList<Integer>();
+        for (int j=0; j<S.length; j++) {
+            if ((i & (1<<j)) != 0) {
+                set.add(S[j]);
+            }
+        }
+        collection.add(set);
+    }
+    return collection;
+}
+}
+```
+
+11. Word Search
+Q: Given a 2D board and a word, find if the word exists in the grid. The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+```
+public boolean exist(char[][] board, String word) {
+    for(int i=0; i<board.length; i++) {
+        for(int j=0; j<board[0].length; j++) {
+            if(helper(board, word, i, j, 0)) {
+                return true;
+            }
+        }
+    }
+    
+    return false;
+}
+
+private boolean helper(char[][] board, String word, int row, int col, int idx) {
+    if(word.length()==idx) {
+        return true;
+    }
+    if(row<board.length && row>=0 && 
+        col<board[0].length && col>=0 && 
+        board[row][col]==word.charAt(idx)) {
+        char a = board[row][col];
+        board[row][col] = '.';
+        if(helper(board, word, row-1, col, idx+1) ||
+            helper(board, word, row+1, col, idx+1) ||
+            helper(board, word, row, col-1, idx+1) ||
+            helper(board, word, row, col+1, idx+1)) {
+            return true;
+        }
+        board[row][col] = a;
+    }
+    
+    return false;
 }
 ```
 

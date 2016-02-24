@@ -75,9 +75,9 @@ Wildcard Matching	16.9%	Hard
 // Sort Colors	34.0%	Medium
 Minimum Window Substring	20.5%	Hard
 // Combinations	33.2%	Medium
-Subsets	30.3%	Medium
-Word Search	22.2%	Medium
-Remove Duplicates from Sorted Array II	31.9%	Medium
+// Subsets	30.3%	Medium
+// Word Search	22.2%	Medium
+// Remove Duplicates from Sorted Array II	31.9%	Medium
 Search in Rotated Sorted Array II	31.6%	Medium
 Remove Duplicates from Sorted List II	26.3%	Medium
 Remove Duplicates from Sorted List	36.0%	Easy
