@@ -79,8 +79,8 @@ Minimum Window Substring	20.5%	Hard
 // Word Search	22.2%	Medium
 // Remove Duplicates from Sorted Array II	31.9%	Medium
 Search in Rotated Sorted Array II	31.6%	Medium
-Remove Duplicates from Sorted List II	26.3%	Medium
-Remove Duplicates from Sorted List	36.0%	Easy
+// Remove Duplicates from Sorted List II	26.3%	Medium
+// Remove Duplicates from Sorted List	36.0%	Easy
 Largest Rectangle in Histogram	23.6%	Hard
 Maximal Rectangle	23.0%	Hard
 Partition List	28.8%	Medium

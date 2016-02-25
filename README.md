@@ -307,8 +307,45 @@ private int count(ListNode head) {
 }
 ```
 
-##### String
+5. Remove Duplicates from Sorted List II
+Q: Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. For example, Given 1->2->3->3->4->4->5, return 1->2->5. Given 1->1->1->2->3, return 2->3.
+```
+public ListNode deleteDuplicates(ListNode head) {
+    ListNode dummy = new ListNode(0), prev = dummy, pnt=head;
+    dummy.next = head;
+    while(pnt!=null && pnt.next!=null) {
+        if(pnt.val==pnt.next.val) {
+            int val = pnt.val;
+            while(pnt!=null && pnt.val==val) {
+                pnt = pnt.next;
+            }
+            prev.next = pnt;
+        } else {
+            prev = pnt;
+            pnt = pnt.next;
+        }
+    }
+    return dummy.next;
+}
+```
 
+6. Remove Duplicates from Sorted List
+Q: Given a sorted linked list, delete all duplicates such that each element appear only once. For example, Given 1->1->2, return 1->2. Given 1->1->2->3->3, return 1->2->3.
+```
+public ListNode deleteDuplicates(ListNode head) {
+    ListNode pnt = head;
+    while(pnt!=null && pnt.next!=null) {
+        if(pnt.val==pnt.next.val) {
+            pnt.next = pnt.next.next;
+        } else {
+            pnt = pnt.next;
+        }
+    }
+    return head;
+}
+```
+
+##### String
 1. Longest Palindromic Substring
 Q: Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
 A: My thought is to use dp to store the possible substring that is palindrome. With incresing length, we can mark the later one as the longest palindrome.
