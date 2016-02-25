@@ -1822,6 +1822,34 @@ public String simplifyPath(String path) {
 }
 ```
 
+3. Largest Rectangle in Histogram
+Q: Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram. For example, Given heights = [2,1,5,6,2,3], return 10.
+```
+public int largestRectangleArea(int[] heights) {
+    LinkedList<Integer> idx = new LinkedList<>();
+    int area = 0;
+    for(int i=0; i<heights.length; i++) {
+        if(idx.isEmpty()) {
+            idx.add(i);
+            area = Math.max((i+1)*heights[i], area);
+        } else {
+            while(!idx.isEmpty() && heights[idx.peekLast()]>heights[i]) {
+                int h = heights[idx.pollLast()];
+                int w = idx.isEmpty()?i:i-idx.peekLast()-1;
+                area = Math.max(area, h*w);
+            }
+            idx.add(i);
+        }
+    }
+    while(!idx.isEmpty()) {
+        int h = heights[idx.pollLast()];
+        int w = idx.isEmpty()?heights.length:heights.length-idx.peekLast()-1;
+        area = Math.max(area, h*w);
+    }
+    return area;
+}
+```
+
 ##### Binary Search
 1. Divide Two Integers
 Q: Divide two integers without using multiplication, division and mod operator. If it is overflow, return MAX_INT.
