@@ -32,13 +32,13 @@ Details:
 ## leetcode
 Leetcode Algorithm problems
 
-##### [Hash Table](../../wiki/Hash-Table)
+##### [Hash Table](https://github.com/grace0927/JavaPractice/wiki/Hash-Table)
 1. Two Sum   
 2. Longest Substring Without Repeating Characters   
 3. Valid Sudoku   
 4. Group Anagrams  
 
-##### Linked List
+##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
 2. Merge Two Sorted Lists   
 3. Swap Nodes in Pairs   
@@ -46,7 +46,7 @@ Leetcode Algorithm problems
 5. Remove Duplicates from Sorted List II   
 6. Remove Duplicates from Sorted List   
 
-##### String
+##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
 2. ZigZag Conversion   
 3. Longest Common Prefix   
@@ -57,14 +57,14 @@ Leetcode Algorithm problems
 8. Add Binary   
 9. Text Justification  
 
-##### Math
+##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
 1. Reverse Integer
 2. Palindrome Number
 3. Integer to Roman
 4. Roman to Integer
 5. Permutation Sequence
 
-##### Divide and Conquer
+##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
 2. Merge k Sorted Lists
 
@@ -96,12 +96,12 @@ Leetcode Algorithm problems
 10. Subsets
 11. Word Search
 
-##### Stack
+##### [Stack](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses
 2. Simplify Path
 3. Largest Rectangle in Histogram
 
-##### Binary Search
+##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
 2. Search for a Range
 3. Search Insert Position
@@ -110,7 +110,7 @@ Leetcode Algorithm problems
 6. Sqrt(x)
 7. Search a 2D Matrix
 
-##### Dynamic Programming
+##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
 2. Unique Paths
 3. Unique Paths II
@@ -118,7 +118,7 @@ Leetcode Algorithm problems
 5. Climbing Stairs
 6. Edit Distance
 
-##### Array
+##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
 2. Rotate Image
 3. Spiral Matrix
@@ -130,7 +130,7 @@ Leetcode Algorithm problems
 9. Plus One
 10. Set Matrix Zeroes
 
-##### Greedy
+##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
 2. Jump Game II
 
