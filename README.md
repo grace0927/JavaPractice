@@ -32,7 +32,7 @@ Details:
 ## leetcode
 Leetcode Algorithm problems
 
-##### [Hash Table](Hash-Table)
+##### [Hash Table](wiki/Hash-Table)
 1. Two Sum   
 2. Longest Substring Without Repeating Characters   
 3. Valid Sudoku   
