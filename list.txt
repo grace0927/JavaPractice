@@ -86,7 +86,7 @@ Maximal Rectangle	23.0%	Hard
 // Partition List	28.8%	Medium
 Scramble String	26.0%	Hard
 // Merge Sorted Array	29.7%	Easy
-Gray Code	35.2%	Medium
+// Gray Code	35.2%	Medium
 Subsets II	29.6%	Medium
 Decode Ways	17.1%	Medium
 Reverse Linked List II	27.2%	Medium

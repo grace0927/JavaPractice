@@ -96,6 +96,7 @@ Leetcode Algorithm problems
 9. Combinations
 10. Subsets
 11. Word Search
+12. Gray Code
 
 ##### [Stack](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses
