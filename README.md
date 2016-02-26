@@ -978,404 +978,404 @@ private ListNode mergeTwo(ListNode one, ListNode two) {
 }
 ```
 
-##### Two Pointer
-1. Container With Most Water
-Q: Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
-```
-public int maxArea(int[] height) {
-    int start=0, end=height.length-1, sum=0, h=0;
-    
-    while(start<end) {
-        if(height[start]>height[end]) {
-            h = Math.max(h, height[end]);
-            end--;
-        } else {
-            h = Math.max(h, height[start]);
-            start++;
-        }
-        sum = Math.max(sum, h*(end-start+1));
-    }
-    
-    return sum;
-}
-```
-
-2. 3Sum
-Q: Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
-
-Note:
-Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
-The solution set must not contain duplicate triplets.
-
-```
-public List<List<Integer>> threeSum(int[] nums) {
-    List<List<Integer>> res = new ArrayList<>();
-    Arrays.sort(nums);
-    
-    for(int i=0; i<nums.length-2; i++) {
-        if(i>0 && nums[i]==nums[i-1]) {
-            continue;
-        }
-        int start = i+1;
-        int end = nums.length-1;
+##### [[Two Pointer|Two Pointer]]
+1. Container With Most Water   
+    Q: Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+    ```
+    public int maxArea(int[] height) {
+        int start=0, end=height.length-1, sum=0, h=0;
+        
         while(start<end) {
-            if(start>i+1 && nums[start]==nums[start-1]) {
-                start++;
-                continue;
-            }
-            int sum = nums[start]+nums[end]+nums[i];
-            if(sum==0) {
-                List<Integer> row = new ArrayList<>();
-                row.add(nums[i]);
-                row.add(nums[start++]);
-                row.add(nums[end--]);
-                res.add(row);
-            } else if(sum>0) {
+            if(height[start]>height[end]) {
+                h = Math.max(h, height[end]);
                 end--;
             } else {
+                h = Math.max(h, height[start]);
                 start++;
             }
+            sum = Math.max(sum, h*(end-start+1));
         }
+        
+        return sum;
     }
-    
-    return res;
-}
-```
+    ```
 
-3. 3Sum Closest
-Q: Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
-```
-public int threeSumClosest(int[] nums, int target) {
-    int min = Integer.MAX_VALUE;
-    int res = 0;
-    Arrays.sort(nums);
-    for(int i=0; i<nums.length-2; i++) {
-        if(i>0 && nums[i]==nums[i-1]) {
-            continue;
-        }
-        int start = i+1;
-        int end = nums.length-1;
-        while(start<end) {
-            int sum = nums[i]+nums[start]+nums[end];
-            int diff = Math.abs(sum-target);
-            if(diff<min) {
-                min = diff;
-                res = sum;
-            }
-            if(min==0) {
-                return target;
-            }
-            if(sum>target) {
-                end--;
-            } else {
-                start++;
-            }
-        }
-    }
-    
-    return res;
-}
-```
+2. 3Sum   
+    Q: Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 
-4. 4Sum
-Q: Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+    Note:
+    Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+    The solution set must not contain duplicate triplets.
 
-Note:
-Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d)
-The solution set must not contain duplicate quadruplets.
-```
-public List<List<Integer>> fourSum(int[] nums, int target) {
-    List<List<Integer>> res = new ArrayList<>();
-    Arrays.sort(nums);
-    for(int i=0; i<nums.length-3; i++) {
-        if(i>0 && nums[i]==nums[i-1]) {
-            continue;
-        }
-        for(int j=i+1; j<nums.length-2; j++) {
-            if(j>i+1 && nums[j]==nums[j-1]) {
+    ```
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        
+        for(int i=0; i<nums.length-2; i++) {
+            if(i>0 && nums[i]==nums[i-1]) {
                 continue;
             }
-            int start = j+1;
+            int start = i+1;
             int end = nums.length-1;
             while(start<end) {
-                if(start>j+1 && nums[start]==nums[start-1]) {
+                if(start>i+1 && nums[start]==nums[start-1]) {
                     start++;
                     continue;
                 }
-                int sum = nums[i]+nums[j]+nums[start]+nums[end];
-                if(sum==target) {
-                    List<Integer> entry = new ArrayList<>();
-                    entry.add(nums[i]);
-                    entry.add(nums[j]);
-                    entry.add(nums[start]);
-                    entry.add(nums[end]);
-                    res.add(entry);
-                    start++;
-                    end--;
-                } else if(sum>target) {
+                int sum = nums[start]+nums[end]+nums[i];
+                if(sum==0) {
+                    List<Integer> row = new ArrayList<>();
+                    row.add(nums[i]);
+                    row.add(nums[start++]);
+                    row.add(nums[end--]);
+                    res.add(row);
+                } else if(sum>0) {
                     end--;
                 } else {
                     start++;
                 }
             }
         }
+        
+        return res;
     }
-    return res;
-}
-```
+    ```
 
-5. Remove Nth Node From End of List
-Q: Given a linked list, remove the nth node from the end of list and return its head.
-```
-public ListNode removeNthFromEnd(ListNode head, int n) {
-    ListNode fast = head;
-    for(int i=0; i<=n; i++) {
-        if(fast==null) {
-            return head.next;
-        }
-        fast = fast.next;
-    }
-    
-    ListNode slow = head;
-    while(fast!=null) {
-        fast = fast.next;
-        slow = slow.next;
-    }
-    slow.next = slow.next.next;
-    
-    return head;
-}
-```
-
-6. Remove Duplicates from Sorted Array
-Q: Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this in place with constant memory.
-For example,
-Given input array nums = [1,1,2],
-Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
-```
-public int removeDuplicates(int[] nums) {
-    int len = 0;
-    int pnt = 1;
-    for(int i=len+1; i<nums.length; i++, len++) {
-        while(nums[i]<=nums[i-1]) {
-            if(pnt==nums.length) {
-                return len+1;
+3. 3Sum Closest   
+    Q: Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+    ```
+    public int threeSumClosest(int[] nums, int target) {
+        int min = Integer.MAX_VALUE;
+        int res = 0;
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length-2; i++) {
+            if(i>0 && nums[i]==nums[i-1]) {
+                continue;
             }
-            int tmp = nums[pnt];
-            nums[i] = nums[pnt];
-            nums[pnt++] = tmp;
+            int start = i+1;
+            int end = nums.length-1;
+            while(start<end) {
+                int sum = nums[i]+nums[start]+nums[end];
+                int diff = Math.abs(sum-target);
+                if(diff<min) {
+                    min = diff;
+                    res = sum;
+                }
+                if(min==0) {
+                    return target;
+                }
+                if(sum>target) {
+                    end--;
+                } else {
+                    start++;
+                }
+            }
         }
+        
+        return res;
     }
-    return len+1;
-}
-```
+    ```
 
-7. Remove Element
-Q: Given an array and a value, remove all instances of that value in place and return the new length. The order of elements can be changed. It doesn't matter what you leave beyond the new length.
-```
-public int removeElement(int[] nums, int val) {
-    int cnt = 0;
-    int start = 0;
-    int end = nums.length-1;
-    while(start<end) {
-        if(nums[start]==val) {
-            int tmp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = tmp;
-            end--;
-        } else {
-            cnt++;
-            start++;
-        }
-    }
-    if(start<nums.length && nums[start]!=val) {
-        cnt++;
-    }
-    return cnt;
-}
-```
+4. 4Sum   
+    Q: Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
 
-8. Implement strStr()
-Q: Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
-KMP algorithm ref: https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
-```
-public int strStr(String haystack, String needle) {
-    char[] nee = needle.toCharArray();
-    char[] hay = haystack.toCharArray();
-    int pnt = 0;
-    
-    for(int i=0; i<=hay.length-nee.length; i++) {
-        while(pnt<nee.length && hay[i+pnt]==nee[pnt]) {
-            pnt++;
+    Note:
+    Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d)
+    The solution set must not contain duplicate quadruplets.
+    ```
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length-3; i++) {
+            if(i>0 && nums[i]==nums[i-1]) {
+                continue;
+            }
+            for(int j=i+1; j<nums.length-2; j++) {
+                if(j>i+1 && nums[j]==nums[j-1]) {
+                    continue;
+                }
+                int start = j+1;
+                int end = nums.length-1;
+                while(start<end) {
+                    if(start>j+1 && nums[start]==nums[start-1]) {
+                        start++;
+                        continue;
+                    }
+                    int sum = nums[i]+nums[j]+nums[start]+nums[end];
+                    if(sum==target) {
+                        List<Integer> entry = new ArrayList<>();
+                        entry.add(nums[i]);
+                        entry.add(nums[j]);
+                        entry.add(nums[start]);
+                        entry.add(nums[end]);
+                        res.add(entry);
+                        start++;
+                        end--;
+                    } else if(sum>target) {
+                        end--;
+                    } else {
+                        start++;
+                    }
+                }
+            }
         }
-        if(pnt==nee.length) {
-            return i;
-        }
-        pnt = 0;
+        return res;
     }
-    return -1;
-}
-```
+    ```
 
-9. Trapping Rain Water
-Q: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. For example, Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
-ref: https://leetcode.com/discuss/10046/share-my-short-solution
-```
-public int trap(int[] height) {
-    int left=0, right=0, pntL=0, pntR=height.length-1, sum=0;
-    while(pntL<=pntR) {
-        left = Math.max(left, height[pntL]);
-        right = Math.max(right, height[pntR]);
-        if(left<right) {
-            sum += (left-height[pntL]);
-            pntL++;
-        } else {
-            sum += (right-height[pntR]);
-            pntR--;
+5. Remove Nth Node From End of List   
+    Q: Given a linked list, remove the nth node from the end of list and return its head.
+    ```
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode fast = head;
+        for(int i=0; i<=n; i++) {
+            if(fast==null) {
+                return head.next;
+            }
+            fast = fast.next;
         }
-    }
-    return sum;
-}
-```
-
-10. Rotate List
-Q: Given a list, rotate the list to the right by k places, where k is non-negative.
-```
-public ListNode rotateRight(ListNode head, int k) {
-    if(head==null || head.next==null || k==0) {
-        return head;
-    }
-    ListNode fast = head;
-    int len = 0;
-    while(k>0) {
-        if(fast==null) {
-            fast = head;
-            k %= len;
-            continue;
-        }
-        fast = fast.next;
-        k--;
-        len++;
-    }
-    if(fast!=null) {
+        
         ListNode slow = head;
-        while(fast!=null && fast.next!=null) {
+        while(fast!=null) {
             fast = fast.next;
             slow = slow.next;
         }
-        fast.next = head;
-        head = slow.next;
-        slow.next = null;
+        slow.next = slow.next.next;
+        
+        return head;
     }
-    
-    return head;
-}
-```
+    ```
 
-11. Sort Colors
-Q: Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Note: You are not suppose to use the library's sort function for this problem. Follow up: A rather straight forward solution is a two-pass algorithm using counting sort.
-First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's. Could you come up with an one-pass algorithm using only constant space?
-```
-public void sortColors(int[] nums) {
-    int start = 0, len=nums.length;
-    while(start<len && nums[start]==0) {
-        start++;
-    }
-    int end=len-1, pnt=start;
-    while(pnt<=end) {
-        switch(nums[pnt]) {
-            case 0:
-                nums[pnt] = nums[start];
-                nums[start] = 0;
-                start++;
-                pnt = Math.max(pnt, start);
-                break;
-            case 1:
-                pnt++;
-                break;
-            case 2:
-                nums[pnt] = nums[end];
-                nums[end] = 2;
-                end--;
-                break;
-        }
-    }
-}
-```
-
-12. Remove Duplicates from Sorted Array II
-Q: Follow up for "Remove Duplicates": What if duplicates are allowed at most twice? For example, Given sorted array nums = [1,1,1,2,2,3], Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
-```
-public int removeDuplicates(int[] nums) {
-    if(nums.length<=2) {
-        return nums.length;
-    }
-    
-    int cur=nums[0], pnt=1, mnt=1;
-    while(mnt<=2 && pnt<nums.length) {
-        if(nums[pnt]==cur) {
-            mnt++;
-            if(mnt>2) {
-                break;
+6. Remove Duplicates from Sorted Array   
+    Q: Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this in place with constant memory.
+    For example,
+    Given input array nums = [1,1,2],
+    Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
+    ```
+    public int removeDuplicates(int[] nums) {
+        int len = 0;
+        int pnt = 1;
+        for(int i=len+1; i<nums.length; i++, len++) {
+            while(nums[i]<=nums[i-1]) {
+                if(pnt==nums.length) {
+                    return len+1;
+                }
+                int tmp = nums[pnt];
+                nums[i] = nums[pnt];
+                nums[pnt++] = tmp;
             }
-        } else {
-            cur = nums[pnt];
-            mnt = 1;
         }
-        pnt++;
+        return len+1;
     }
-    for(int i=pnt+1; i<nums.length; i++) {
-        if(nums[i]!=cur) {
-            cur = nums[i];
-            mnt = 1;
-            nums[pnt] = cur;
+    ```
+
+7. Remove Element   
+    Q: Given an array and a value, remove all instances of that value in place and return the new length. The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+    ```
+    public int removeElement(int[] nums, int val) {
+        int cnt = 0;
+        int start = 0;
+        int end = nums.length-1;
+        while(start<end) {
+            if(nums[start]==val) {
+                int tmp = nums[start];
+                nums[start] = nums[end];
+                nums[end] = tmp;
+                end--;
+            } else {
+                cnt++;
+                start++;
+            }
+        }
+        if(start<nums.length && nums[start]!=val) {
+            cnt++;
+        }
+        return cnt;
+    }
+    ```
+
+8. Implement strStr()   
+    Q: Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+    KMP algorithm ref: https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
+    ```
+    public int strStr(String haystack, String needle) {
+        char[] nee = needle.toCharArray();
+        char[] hay = haystack.toCharArray();
+        int pnt = 0;
+        
+        for(int i=0; i<=hay.length-nee.length; i++) {
+            while(pnt<nee.length && hay[i+pnt]==nee[pnt]) {
+                pnt++;
+            }
+            if(pnt==nee.length) {
+                return i;
+            }
+            pnt = 0;
+        }
+        return -1;
+    }
+    ```
+
+9. Trapping Rain Water   
+    Q: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. For example, Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
+    ref: https://leetcode.com/discuss/10046/share-my-short-solution
+    ```
+    public int trap(int[] height) {
+        int left=0, right=0, pntL=0, pntR=height.length-1, sum=0;
+        while(pntL<=pntR) {
+            left = Math.max(left, height[pntL]);
+            right = Math.max(right, height[pntR]);
+            if(left<right) {
+                sum += (left-height[pntL]);
+                pntL++;
+            } else {
+                sum += (right-height[pntR]);
+                pntR--;
+            }
+        }
+        return sum;
+    }
+    ```
+
+10. Rotate List   
+    Q: Given a list, rotate the list to the right by k places, where k is non-negative.
+    ```
+    public ListNode rotateRight(ListNode head, int k) {
+        if(head==null || head.next==null || k==0) {
+            return head;
+        }
+        ListNode fast = head;
+        int len = 0;
+        while(k>0) {
+            if(fast==null) {
+                fast = head;
+                k %= len;
+                continue;
+            }
+            fast = fast.next;
+            k--;
+            len++;
+        }
+        if(fast!=null) {
+            ListNode slow = head;
+            while(fast!=null && fast.next!=null) {
+                fast = fast.next;
+                slow = slow.next;
+            }
+            fast.next = head;
+            head = slow.next;
+            slow.next = null;
+        }
+        
+        return head;
+    }
+    ```
+
+11. Sort Colors   
+    Q: Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Note: You are not suppose to use the library's sort function for this problem. Follow up: A rather straight forward solution is a two-pass algorithm using counting sort.
+    First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's. Could you come up with an one-pass algorithm using only constant space?
+    ```
+    public void sortColors(int[] nums) {
+        int start = 0, len=nums.length;
+        while(start<len && nums[start]==0) {
+            start++;
+        }
+        int end=len-1, pnt=start;
+        while(pnt<=end) {
+            switch(nums[pnt]) {
+                case 0:
+                    nums[pnt] = nums[start];
+                    nums[start] = 0;
+                    start++;
+                    pnt = Math.max(pnt, start);
+                    break;
+                case 1:
+                    pnt++;
+                    break;
+                case 2:
+                    nums[pnt] = nums[end];
+                    nums[end] = 2;
+                    end--;
+                    break;
+            }
+        }
+    }
+    ```
+
+12. Remove Duplicates from Sorted Array II   
+    Q: Follow up for "Remove Duplicates": What if duplicates are allowed at most twice? For example, Given sorted array nums = [1,1,1,2,2,3], Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
+    ```
+    public int removeDuplicates(int[] nums) {
+        if(nums.length<=2) {
+            return nums.length;
+        }
+        
+        int cur=nums[0], pnt=1, mnt=1;
+        while(mnt<=2 && pnt<nums.length) {
+            if(nums[pnt]==cur) {
+                mnt++;
+                if(mnt>2) {
+                    break;
+                }
+            } else {
+                cur = nums[pnt];
+                mnt = 1;
+            }
             pnt++;
-        } else {
-            if(mnt==1) {
+        }
+        for(int i=pnt+1; i<nums.length; i++) {
+            if(nums[i]!=cur) {
+                cur = nums[i];
+                mnt = 1;
                 nums[pnt] = cur;
                 pnt++;
+            } else {
+                if(mnt==1) {
+                    nums[pnt] = cur;
+                    pnt++;
+                }
+                mnt++;
             }
-            mnt++;
         }
+        
+        return pnt;
     }
-    
-    return pnt;
-}
-// ref: https://leetcode.com/discuss/42348/3-6-easy-lines-c-java-python-ruby
-public int removeDuplicates(int[] nums) {
-    int i = 0;
-    for (int n : nums)
-        if (i < 2 || n > nums[i-2])
-            nums[i++] = n;
-    return i;
-}
-```
+    // ref: https://leetcode.com/discuss/42348/3-6-easy-lines-c-java-python-ruby
+    public int removeDuplicates(int[] nums) {
+        int i = 0;
+        for (int n : nums)
+            if (i < 2 || n > nums[i-2])
+                nums[i++] = n;
+        return i;
+    }
+    ```
 
-13. Partition List
-Q: Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. For example, Given 1->4->3->2->5->2 and x = 3, return 1->2->2->4->3->5.
-```
-public ListNode partition(ListNode head, int x) {
-    ListNode dummy = new ListNode(0);
-    dummy.next = head;
-    ListNode pnt = dummy;
-    while(pnt.next!=null && pnt.next.val<x) {
-        pnt = pnt.next;
-    }
-    ListNode fast = pnt.next;
-    while(fast!=null && fast.next!=null) {
-        if(fast.next.val>=x) {
-            fast = fast.next;
-        } else {
-            ListNode tmp = fast.next;
-            fast.next = tmp.next;
-            tmp.next = pnt.next;
-            pnt.next = tmp;
+13. Partition List   
+    Q: Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. For example, Given 1->4->3->2->5->2 and x = 3, return 1->2->2->4->3->5.
+    ```
+    public ListNode partition(ListNode head, int x) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode pnt = dummy;
+        while(pnt.next!=null && pnt.next.val<x) {
             pnt = pnt.next;
         }
+        ListNode fast = pnt.next;
+        while(fast!=null && fast.next!=null) {
+            if(fast.next.val>=x) {
+                fast = fast.next;
+            } else {
+                ListNode tmp = fast.next;
+                fast.next = tmp.next;
+                tmp.next = pnt.next;
+                pnt.next = tmp;
+                pnt = pnt.next;
+            }
+        }
+        return dummy.next;
     }
-    return dummy.next;
-}
-```
+    ```
 
 ##### Backtracking
 1. Letter Combinations of a Phone Number
