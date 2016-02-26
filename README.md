@@ -1351,6 +1351,32 @@ public int removeDuplicates(int[] nums) {
 }
 ```
 
+13. Partition List
+Q: Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. For example, Given 1->4->3->2->5->2 and x = 3, return 1->2->2->4->3->5.
+```
+public ListNode partition(ListNode head, int x) {
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+    ListNode pnt = dummy;
+    while(pnt.next!=null && pnt.next.val<x) {
+        pnt = pnt.next;
+    }
+    ListNode fast = pnt.next;
+    while(fast!=null && fast.next!=null) {
+        if(fast.next.val>=x) {
+            fast = fast.next;
+        } else {
+            ListNode tmp = fast.next;
+            fast.next = tmp.next;
+            tmp.next = pnt.next;
+            pnt.next = tmp;
+            pnt = pnt.next;
+        }
+    }
+    return dummy.next;
+}
+```
+
 ##### Backtracking
 1. Letter Combinations of a Phone Number
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.

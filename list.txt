@@ -83,7 +83,7 @@ Search in Rotated Sorted Array II	31.6%	Medium
 // Remove Duplicates from Sorted List	36.0%	Easy
 // Largest Rectangle in Histogram	23.6%	Hard
 Maximal Rectangle	23.0%	Hard
-Partition List	28.8%	Medium
+// Partition List	28.8%	Medium
 Scramble String	26.0%	Hard
 Merge Sorted Array	29.7%	Easy
 Gray Code	35.2%	Medium
