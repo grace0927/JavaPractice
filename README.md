@@ -82,6 +82,7 @@ Leetcode Algorithm problems
 11. Sort Colors   
 12. Remove Duplicates from Sorted Array II   
 13. Partition List   
+14. Merge Sorted Array
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number

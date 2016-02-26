@@ -85,7 +85,7 @@ Search in Rotated Sorted Array II	31.6%	Medium
 Maximal Rectangle	23.0%	Hard
 // Partition List	28.8%	Medium
 Scramble String	26.0%	Hard
-Merge Sorted Array	29.7%	Easy
+// Merge Sorted Array	29.7%	Easy
 Gray Code	35.2%	Medium
 Subsets II	29.6%	Medium
 Decode Ways	17.1%	Medium
