@@ -44,7 +44,8 @@ Leetcode Algorithm problems
 3. Swap Nodes in Pairs   
 4. Reverse Nodes in k-Group   
 5. Remove Duplicates from Sorted List II   
-6. Remove Duplicates from Sorted List   
+6. Remove Duplicates from Sorted List
+7. Reverse Linked List II
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
@@ -98,6 +99,7 @@ Leetcode Algorithm problems
 11. Word Search
 12. Gray Code
 13. Subsets II
+14. Restore IP Addresses
 
 ##### [Stack](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses
@@ -139,3 +141,6 @@ Leetcode Algorithm problems
 
 ## lintcode
 Lintcode Algorithm problems
+
+##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
+1. Binary Tree Inorder Traversal
