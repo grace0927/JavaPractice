@@ -139,8 +139,12 @@ Leetcode Algorithm problems
 1. Jump Game
 2. Jump Game II
 
+##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
+1. Binary Tree Inorder Traversal
+
+##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
+1. Same Tree
+
 ## lintcode
 Lintcode Algorithm problems
 
-##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
-1. Binary Tree Inorder Traversal

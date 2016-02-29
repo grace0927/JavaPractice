@@ -97,7 +97,7 @@ Unique Binary Search Trees	36.7%	Medium
 Interleaving String	22.0%	Hard
 Validate Binary Search Tree	20.6%	Medium
 Recover Binary Search Tree	25.8%	Hard
-Same Tree	42.7%	Easy
+// Same Tree	42.7%	Easy
 Symmetric Tree	33.2%	Easy
 Binary Tree Level Order Traversal	31.6%	Easy
 Binary Tree Zigzag Level Order Traversal	27.9%	Medium
