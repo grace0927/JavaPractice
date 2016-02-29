@@ -122,6 +122,8 @@ Leetcode Algorithm problems
 4. Minimum Path Sum
 5. Climbing Stairs
 6. Edit Distance
+7. Unique Binary Search Trees
+8. Unique Binary Search Trees II
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -144,6 +146,7 @@ Leetcode Algorithm problems
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree
+2. Validate Binary Search Tree
 
 ## lintcode
 Lintcode Algorithm problems
