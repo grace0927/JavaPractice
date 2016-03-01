@@ -124,6 +124,7 @@ Leetcode Algorithm problems
 6. Edit Distance
 7. Unique Binary Search Trees
 8. Unique Binary Search Trees II
+9. Decode Ways
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
