@@ -148,6 +148,12 @@ Leetcode Algorithm problems
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree
 2. Validate Binary Search Tree
+3. Symmetric Tree
+
+##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
+1. Binary Tree Level Order Traversal
+2. Binary Tree Zigzag Level Order Traversal
+3. Maximum Depth of Binary Tree
 
 ## lintcode
 Lintcode Algorithm problems
