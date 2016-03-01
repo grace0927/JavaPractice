@@ -102,7 +102,7 @@ Recover Binary Search Tree	25.8%	Hard
 // Binary Tree Level Order Traversal	31.6%	Easy
 // Binary Tree Zigzag Level Order Traversal	27.9%	Medium
 // Maximum Depth of Binary Tree	47.1%	Easy
-Construct Binary Tree from Preorder and Inorder Traversal	27.8%	Medium
+// Construct Binary Tree from Preorder and Inorder Traversal	27.8%	Medium
 Construct Binary Tree from Inorder and Postorder Traversal	28.4%	Medium
 Binary Tree Level Order Traversal II	33.0%	Easy
 Convert Sorted Array to Binary Search Tree	36.2%	Medium
