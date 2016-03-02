@@ -151,11 +151,15 @@ Leetcode Algorithm problems
 3. Symmetric Tree
 4. Construct Binary Tree from Preorder and Inorder Traversal
 5. Construct Binary Tree from Inorder and Postorder Traversal
+6. Convert Sorted Array to Binary Search Tree
+7. Balanced Binary Tree
+8. Convert Sorted List to Binary Search Tree
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
 2. Binary Tree Zigzag Level Order Traversal
 3. Maximum Depth of Binary Tree
+4. Binary Tree Level Order Traversal II
 
 ## lintcode
 Lintcode Algorithm problems
