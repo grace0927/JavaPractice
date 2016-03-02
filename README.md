@@ -150,6 +150,7 @@ Leetcode Algorithm problems
 2. Validate Binary Search Tree
 3. Symmetric Tree
 4. Construct Binary Tree from Preorder and Inorder Traversal
+5. Construct Binary Tree from Inorder and Postorder Traversal
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
