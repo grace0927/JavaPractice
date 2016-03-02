@@ -27,7 +27,7 @@ Regular Expression Matching	21.5%	Hard
 // Remove Element	32.9%	Easy
 // Implement strStr()	24.1%	Easy
 // Divide Two Integers	15.4%	Medium
-Substring with Concatenation of All Words	20.4%	Hard
+// Substring with Concatenation of All Words	20.4%	Hard
 // Next Permutation	25.9%	Medium
 // Longest Valid Parentheses	22.0%	Hard
 // Search in Rotated Sorted Array	29.8%	Hard
