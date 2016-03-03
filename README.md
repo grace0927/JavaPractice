@@ -155,6 +155,7 @@ Leetcode Algorithm problems
 6. Convert Sorted Array to Binary Search Tree
 7. Balanced Binary Tree
 8. Convert Sorted List to Binary Search Tree
+9. Minimum Depth of Binary Tree
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal

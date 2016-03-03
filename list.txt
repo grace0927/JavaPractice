@@ -108,7 +108,7 @@ Recover Binary Search Tree	25.8%	Hard
 // Convert Sorted Array to Binary Search Tree	36.2%	Medium
 // Convert Sorted List to Binary Search Tree	29.7%	Medium
 // Balanced Binary Tree	33.3%	Easy
-Minimum Depth of Binary Tree	30.1%	Easy
+// Minimum Depth of Binary Tree	30.1%	Easy
 Path Sum	30.7%	Easy
 Path Sum II	27.7%	Medium
 Flatten Binary Tree to Linked List	30.3%	Medium
