@@ -109,9 +109,9 @@ Recover Binary Search Tree	25.8%	Hard
 // Convert Sorted List to Binary Search Tree	29.7%	Medium
 // Balanced Binary Tree	33.3%	Easy
 // Minimum Depth of Binary Tree	30.1%	Easy
-Path Sum	30.7%	Easy
-Path Sum II	27.7%	Medium
-Flatten Binary Tree to Linked List	30.3%	Medium
+// Path Sum	30.7%	Easy
+// Path Sum II	27.7%	Medium
+// Flatten Binary Tree to Linked List	30.3%	Medium
 Distinct Subsequences	28.2%	Hard
 Populating Next Right Pointers in Each Node	36.4%	Medium
 Populating Next Right Pointers in Each Node II	32.6%	Hard
