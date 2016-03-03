@@ -115,6 +115,7 @@ Leetcode Algorithm problems
 5. Pow(x, n)
 6. Sqrt(x)
 7. Search a 2D Matrix
+8. Search in Rotated Sorted Array II
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
@@ -159,6 +160,7 @@ Leetcode Algorithm problems
 10. Path Sum
 11. Path Sum II
 12. Flatten Binary Tree to Linked List
+13. Recover Binary Search Tree
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
