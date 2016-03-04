@@ -161,6 +161,7 @@ Leetcode Algorithm problems
 11. Path Sum II
 12. Flatten Binary Tree to Linked List
 13. Recover Binary Search Tree
+14. Populating Next Right Pointers in Each Node
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
