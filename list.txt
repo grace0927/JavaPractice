@@ -114,10 +114,10 @@ Interleaving String	22.0%	Hard
 // Flatten Binary Tree to Linked List	30.3%	Medium
 Distinct Subsequences	28.2%	Hard
 // Populating Next Right Pointers in Each Node	36.4%	Medium
-Populating Next Right Pointers in Each Node II	32.6%	Hard
-Pascal's Triangle	32.3%	Easy
-Pascal's Triangle II	31.3%	Easy
-Triangle	29.3%	Medium
+// Populating Next Right Pointers in Each Node II	32.6%	Hard
+// Pascal's Triangle	32.3%	Easy
+// Pascal's Triangle II	31.3%	Easy
+// Triangle	29.3%	Medium
 Best Time to Buy and Sell Stock	35.1%	Medium
 Best Time to Buy and Sell Stock II	41.2%	Medium
 Best Time to Buy and Sell Stock III	25.6%	Hard

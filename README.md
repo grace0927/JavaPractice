@@ -127,6 +127,7 @@ Leetcode Algorithm problems
 7. Unique Binary Search Trees
 8. Unique Binary Search Trees II
 9. Decode Ways
+10. Triangle
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -139,6 +140,8 @@ Leetcode Algorithm problems
 8. Maximum Subarray
 9. Plus One
 10. Set Matrix Zeroes
+11. Pascal's Triangle
+12. Pascal's Triangle II
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
@@ -162,6 +165,7 @@ Leetcode Algorithm problems
 12. Flatten Binary Tree to Linked List
 13. Recover Binary Search Tree
 14. Populating Next Right Pointers in Each Node
+15. Populating Next Right Pointers in Each Node II
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
