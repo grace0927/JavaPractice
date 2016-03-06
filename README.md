@@ -129,6 +129,7 @@ Leetcode Algorithm problems
 8. Unique Binary Search Trees II
 9. Decode Ways
 10. Triangle
+11. Best Time to Buy and Sell Stock
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -147,6 +148,7 @@ Leetcode Algorithm problems
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
 2. Jump Game II
+3. Best Time to Buy and Sell Stock II
 
 ##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
 1. Binary Tree Inorder Traversal
