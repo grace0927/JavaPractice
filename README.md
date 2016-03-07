@@ -175,6 +175,7 @@ Leetcode Algorithm problems
 2. Binary Tree Zigzag Level Order Traversal
 3. Maximum Depth of Binary Tree
 4. Binary Tree Level Order Traversal II
+5. Word Ladder
 
 ## lintcode
 Lintcode Algorithm problems
