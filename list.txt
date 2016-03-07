@@ -126,8 +126,8 @@ Binary Tree Maximum Path Sum	22.8%	Hard
 Word Ladder II	13.5%	Hard
 // Word Ladder	19.6%	Medium
 Longest Consecutive Sequence	31.3%	Hard
-Sum Root to Leaf Numbers	31.9%	Medium
-Surrounded Regions	15.7%	Medium
+// Sum Root to Leaf Numbers	31.9%	Medium
+// Surrounded Regions	15.7%	Medium
 Palindrome Partitioning	27.4%	Medium
 Palindrome Partitioning II	21.2%	Hard
 Clone Graph	24.7%	Medium

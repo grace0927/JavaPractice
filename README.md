@@ -176,6 +176,8 @@ Leetcode Algorithm problems
 3. Maximum Depth of Binary Tree
 4. Binary Tree Level Order Traversal II
 5. Word Ladder
+6. Sum Root to Leaf Numbers
+7. Surrounded Regions
 
 ## lintcode
 Lintcode Algorithm problems
