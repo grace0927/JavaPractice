@@ -130,9 +130,9 @@ Longest Consecutive Sequence	31.3%	Hard
 // Surrounded Regions	15.7%	Medium
 Palindrome Partitioning	27.4%	Medium
 Palindrome Partitioning II	21.2%	Hard
-Clone Graph	24.7%	Medium
-Gas Station	26.8%	Medium
-Candy	21.8%	Hard
+// Clone Graph	24.7%	Medium
+// Gas Station	26.8%	Medium
+// Candy	21.8%	Hard
 Single Number	48.4%	Medium
 Single Number II	36.8%	Medium
 Copy List with Random Pointer	25.9%	Hard

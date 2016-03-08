@@ -149,6 +149,8 @@ Leetcode Algorithm problems
 1. Jump Game
 2. Jump Game II
 3. Best Time to Buy and Sell Stock II
+4. Candy
+5. Gas Station
 
 ##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
 1. Binary Tree Inorder Traversal
@@ -178,6 +180,7 @@ Leetcode Algorithm problems
 5. Word Ladder
 6. Sum Root to Leaf Numbers
 7. Surrounded Regions
+8. Clone Graph
 
 ## lintcode
 Lintcode Algorithm problems
