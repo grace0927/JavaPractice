@@ -133,7 +133,7 @@ Palindrome Partitioning II	21.2%	Hard
 // Clone Graph	24.7%	Medium
 // Gas Station	26.8%	Medium
 // Candy	21.8%	Hard
-Single Number	48.4%	Medium
+// Single Number	48.4%	Medium
 Single Number II	36.8%	Medium
 Copy List with Random Pointer	25.9%	Hard
 Word Break	24.4%	Medium

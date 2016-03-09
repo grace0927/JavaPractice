@@ -182,6 +182,9 @@ Leetcode Algorithm problems
 7. Surrounded Regions
 8. Clone Graph
 
+##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
+1. Single Number
+
 ## lintcode
 Lintcode Algorithm problems
 
