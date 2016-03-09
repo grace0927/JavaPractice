@@ -38,6 +38,7 @@ Leetcode Algorithm problems
 3. Valid Sudoku   
 4. Group Anagrams  
 5. Substring with Concatenation of All Words
+6. Copy List with Random Pointer
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
@@ -130,6 +131,7 @@ Leetcode Algorithm problems
 9. Decode Ways
 10. Triangle
 11. Best Time to Buy and Sell Stock
+12. Word Break
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -184,6 +186,7 @@ Leetcode Algorithm problems
 
 ##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
 1. Single Number
+2. Single Number II
 
 ## lintcode
 Lintcode Algorithm problems
