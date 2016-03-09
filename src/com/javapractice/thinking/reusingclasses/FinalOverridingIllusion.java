@@ -1,7 +1,7 @@
 /**
  * 
  */
-package FinalOverridingIllusion;
+package com.javapractice.thinking.reusingclasses;
 
 /**
  * @author Feng
