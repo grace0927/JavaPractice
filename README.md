@@ -48,6 +48,7 @@ Leetcode Algorithm problems
 5. Remove Duplicates from Sorted List II   
 6. Remove Duplicates from Sorted List
 7. Reverse Linked List II
+8. Reorder List
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
@@ -88,6 +89,7 @@ Leetcode Algorithm problems
 14. Merge Sorted Array
 15. Valid Palindrome
 16. Linked List Cycle
+17. Linked List Cycle II
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
@@ -157,6 +159,8 @@ Leetcode Algorithm problems
 
 ##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
 1. Binary Tree Inorder Traversal
+2. Binary Tree Preorder Traversal
+3. Binary Tree Postorder Traversal
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree
