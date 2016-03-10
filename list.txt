@@ -128,7 +128,7 @@ Word Ladder II	13.5%	Hard
 Longest Consecutive Sequence	31.3%	Hard
 // Sum Root to Leaf Numbers	31.9%	Medium
 // Surrounded Regions	15.7%	Medium
-Palindrome Partitioning	27.4%	Medium
+// Palindrome Partitioning	27.4%	Medium
 Palindrome Partitioning II	21.2%	Hard
 // Clone Graph	24.7%	Medium
 // Gas Station	26.8%	Medium
