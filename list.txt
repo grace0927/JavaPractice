@@ -143,10 +143,10 @@ Word Break II	19.1%	Hard
 // Reorder List	22.2%	Medium
 // Binary Tree Preorder Traversal	38.7%	Medium
 // Binary Tree Postorder Traversal	34.5%	Hard
-LRU Cache	15.7%	Hard
+// LRU Cache	15.7%	Hard
 // Insertion Sort List	28.5%	Medium
 // Sort List	24.0%	Medium
-Max Points on a Line	13.9%	Hard
+// Max Points on a Line	13.9%	Hard
 // Evaluate Reverse Polish Notation	22.9%	Medium
 Reverse Words in a String	15.6%	Medium
 Maximum Product Subarray	21.4%	Medium

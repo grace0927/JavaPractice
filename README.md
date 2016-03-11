@@ -39,6 +39,8 @@ Leetcode Algorithm problems
 4. Group Anagrams  
 5. Substring with Concatenation of All Words
 6. Copy List with Random Pointer
+7. LRU Cache
+8. Max Points on a Line
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
