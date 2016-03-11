@@ -112,6 +112,7 @@ Leetcode Algorithm problems
 1. Valid Parentheses
 2. Simplify Path
 3. Largest Rectangle in Histogram
+4. Evaluate Reverse Polish Notation
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
