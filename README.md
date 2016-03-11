@@ -49,6 +49,8 @@ Leetcode Algorithm problems
 6. Remove Duplicates from Sorted List
 7. Reverse Linked List II
 8. Reorder List
+9. Insertion Sort List
+10. Sort List
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
@@ -194,6 +196,10 @@ Leetcode Algorithm problems
 ##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
 1. Single Number
 2. Single Number II
+
+##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
+1. Insertion Sort List
+
 
 ## lintcode
 Lintcode Algorithm problems
