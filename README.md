@@ -63,7 +63,8 @@ Leetcode Algorithm problems
 6. Multiply Strings   
 7. Length of Last Word   
 8. Add Binary   
-9. Text Justification  
+9. Text Justification
+10. Reverse Words in a String
 
 ##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
 1. Reverse Integer
