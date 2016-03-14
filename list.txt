@@ -153,7 +153,7 @@ Maximum Product Subarray	21.4%	Medium
 Find Minimum in Rotated Sorted Array	35.4%	Medium
 Find Minimum in Rotated Sorted Array II	33.7%	Hard
 Min Stack	21.4%	Easy
-Intersection of Two Linked Lists	30.0%	Easy
+// Intersection of Two Linked Lists	30.0%	Easy
 Find Peak Element	32.7%	Medium
 Maximum Gap	26.0%	Hard
 Compare Version Numbers	16.8%	Easy
