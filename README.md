@@ -118,6 +118,7 @@ Leetcode Algorithm problems
 2. Simplify Path
 3. Largest Rectangle in Histogram
 4. Evaluate Reverse Polish Notation
+5. Min Stack
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
@@ -128,6 +129,8 @@ Leetcode Algorithm problems
 6. Sqrt(x)
 7. Search a 2D Matrix
 8. Search in Rotated Sorted Array II
+9. Find Minimum in Rotated Sorted Array
+10. Find Minimum in Rotated Sorted Array II
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
