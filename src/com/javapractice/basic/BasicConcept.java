@@ -3,6 +3,7 @@
  */
 package com.javapractice.basic;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 // import com.javapractice.thinking.accesscontrol.AccessControl;
@@ -62,6 +63,7 @@ public class BasicConcept {
 	public static void main(String[] args) {
 		BasicConcept test = new BasicConcept();
 		test.calculateInteger();
+		System.out.println(Arrays.toString("Welcome-to-Tutorialspoint.com".split("\\.")));
 		// AccessControl ac = new AccessControl();
 		// System.out.println(ac.a);
 	}
