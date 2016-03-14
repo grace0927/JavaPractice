@@ -53,6 +53,7 @@ Leetcode Algorithm problems
 8. Reorder List
 9. Insertion Sort List
 10. Sort List
+11. Intersection of Two Linked Lists
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
@@ -65,6 +66,7 @@ Leetcode Algorithm problems
 8. Add Binary   
 9. Text Justification
 10. Reverse Words in a String
+11. Compare Version Numbers
 
 ##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
 1. Reverse Integer
