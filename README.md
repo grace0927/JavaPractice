@@ -74,6 +74,7 @@ Leetcode Algorithm problems
 3. Integer to Roman
 4. Roman to Integer
 5. Permutation Sequence
+6. Excel Sheet Column Title
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
