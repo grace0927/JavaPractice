@@ -162,6 +162,7 @@ Leetcode Algorithm problems
 10. Set Matrix Zeroes
 11. Pascal's Triangle
 12. Pascal's Triangle II
+13. Majority Element
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
