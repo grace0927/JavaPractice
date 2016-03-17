@@ -41,6 +41,7 @@ Leetcode Algorithm problems
 6. Copy List with Random Pointer
 7. LRU Cache
 8. Max Points on a Line
+9. Fraction to Recurring Decimal
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
