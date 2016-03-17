@@ -197,6 +197,7 @@ Leetcode Algorithm problems
 13. Recover Binary Search Tree
 14. Populating Next Right Pointers in Each Node
 15. Populating Next Right Pointers in Each Node II
+16. Number of Islands
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
@@ -207,6 +208,7 @@ Leetcode Algorithm problems
 6. Sum Root to Leaf Numbers
 7. Surrounded Regions
 8. Clone Graph
+9. Binary Tree Right Side View
 
 ##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
 1. Single Number
