@@ -77,6 +77,7 @@ Leetcode Algorithm problems
 5. Permutation Sequence
 6. Excel Sheet Column Title
 7. Excel Sheet Column Number
+8. Factorial Trailing Zeroes
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
