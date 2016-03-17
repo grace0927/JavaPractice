@@ -166,6 +166,7 @@ Leetcode Algorithm problems
 11. Pascal's Triangle
 12. Pascal's Triangle II
 13. Majority Element
+14. Rotate Array
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game

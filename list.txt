@@ -167,7 +167,7 @@ Dungeon Game	20.1%	Hard
 Largest Number	18.1%	Medium
 Repeated DNA Sequences	23.8%	Medium
 Best Time to Buy and Sell Stock IV	21.2%	Hard
-Rotate Array	20.3%	Easy
+// Rotate Array	20.3%	Easy
 Reverse Bits	29.1%	Easy
 Number of 1 Bits	37.7%	Easy
 House Robber	33.0%	Easy
