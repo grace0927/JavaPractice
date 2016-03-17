@@ -151,6 +151,7 @@ Leetcode Algorithm problems
 10. Triangle
 11. Best Time to Buy and Sell Stock
 12. Word Break
+13. House Robber
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -210,6 +211,8 @@ Leetcode Algorithm problems
 ##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
 1. Single Number
 2. Single Number II
+3. Reverse Bits
+4. Number of 1 Bits
 
 ##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
 1. Insertion Sort List
