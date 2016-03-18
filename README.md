@@ -125,6 +125,7 @@ Leetcode Algorithm problems
 3. Largest Rectangle in Histogram
 4. Evaluate Reverse Polish Notation
 5. Min Stack
+6. Binary Search Tree Iterator
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
