@@ -45,6 +45,7 @@ Leetcode Algorithm problems
 10. Isomorphic Strings
 11. Count Primes
 12. Happy Number
+13. Repeated DNA Sequences
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
