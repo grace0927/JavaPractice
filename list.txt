@@ -175,9 +175,9 @@ Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Number of Islands	26.4%	Medium
 Bitwise AND of Numbers Range	29.1%	Medium
 Happy Number	35.5%	Easy
-Remove Linked List Elements	27.7%	Easy
-Count Primes	23.2%	Easy
-Isomorphic Strings	28.4%	Easy
+// Remove Linked List Elements	27.7%	Easy
+// Count Primes	23.2%	Easy
+// Isomorphic Strings	28.4%	Easy
 Reverse Linked List	37.8%	Easy
 Course Schedule	25.7%	Medium
 Implement Trie (Prefix Tree)	25.1%	Medium

@@ -42,6 +42,8 @@ Leetcode Algorithm problems
 7. LRU Cache
 8. Max Points on a Line
 9. Fraction to Recurring Decimal
+10. Isomorphic Strings
+11. Count Primes
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
@@ -55,6 +57,7 @@ Leetcode Algorithm problems
 9. Insertion Sort List
 10. Sort List
 11. Intersection of Two Linked Lists
+12. Remove Linked List Elements
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
