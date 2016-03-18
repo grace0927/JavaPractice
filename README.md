@@ -44,6 +44,7 @@ Leetcode Algorithm problems
 9. Fraction to Recurring Decimal
 10. Isomorphic Strings
 11. Count Primes
+12. Happy Number
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
@@ -219,6 +220,7 @@ Leetcode Algorithm problems
 2. Single Number II
 3. Reverse Bits
 4. Number of 1 Bits
+5. Bitwise AND of Numbers Range
 
 ##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
 1. Insertion Sort List

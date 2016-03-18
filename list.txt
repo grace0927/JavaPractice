@@ -173,8 +173,8 @@ Best Time to Buy and Sell Stock IV	21.2%	Hard
 // House Robber	33.0%	Easy
 // Binary Tree Right Side View	32.6%	Medium
 // Number of Islands	26.4%	Medium
-Bitwise AND of Numbers Range	29.1%	Medium
-Happy Number	35.5%	Easy
+// Bitwise AND of Numbers Range	29.1%	Medium
+// Happy Number	35.5%	Easy
 // Remove Linked List Elements	27.7%	Easy
 // Count Primes	23.2%	Easy
 // Isomorphic Strings	28.4%	Easy
