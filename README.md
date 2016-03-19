@@ -60,6 +60,7 @@ Leetcode Algorithm problems
 10. Sort List
 11. Intersection of Two Linked Lists
 12. Remove Linked List Elements
+13. Reverse Linked List
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
