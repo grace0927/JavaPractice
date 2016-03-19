@@ -180,8 +180,8 @@ Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Isomorphic Strings	28.4%	Easy
 // Reverse Linked List	37.8%	Easy
 Course Schedule	25.7%	Medium
-Implement Trie (Prefix Tree)	25.1%	Medium
-Minimum Size Subarray Sum	26.0%	Medium
+// Implement Trie (Prefix Tree)	25.1%	Medium
+// Minimum Size Subarray Sum	26.0%	Medium
 Course Schedule II	20.7%	Medium
 Add and Search Word - Data structure design	20.3%	Medium
 Word Search II	18.1%	Hard
@@ -259,3 +259,7 @@ Odd Even Linked List	37.8%	Easy
 Longest Increasing Path in a Matrix	29.6%	Medium
 Patching Array	27.3%	Medium
 Increasing Triplet Subsequence
+Self Crossing	17.5%	Medium
+Palindrome Pairs	18.1%	Hard
+House Robber III	37.4%	Medium
+Counting Bits	57.8%	Medium

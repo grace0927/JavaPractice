@@ -107,6 +107,7 @@ Leetcode Algorithm problems
 15. Valid Palindrome
 16. Linked List Cycle
 17. Linked List Cycle II
+18. Minimum Size Subarray Sum
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
@@ -159,6 +160,7 @@ Leetcode Algorithm problems
 11. Best Time to Buy and Sell Stock
 12. Word Break
 13. House Robber
+14. Counting Bits
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -228,6 +230,8 @@ Leetcode Algorithm problems
 1. Insertion Sort List
 2. Largest Number
 
+##### [Trie](https://github.com/grace0927/JavaPractice/wiki/Trie)
+1. Implement Trie (Prefix Tree)
 
 ## lintcode
 Lintcode Algorithm problems
