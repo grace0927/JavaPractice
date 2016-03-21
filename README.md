@@ -207,6 +207,7 @@ Leetcode Algorithm problems
 14. Populating Next Right Pointers in Each Node
 15. Populating Next Right Pointers in Each Node II
 16. Number of Islands
+17. Course Schedule
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
