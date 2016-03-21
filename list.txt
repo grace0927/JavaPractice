@@ -183,7 +183,7 @@ Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Implement Trie (Prefix Tree)	25.1%	Medium
 // Minimum Size Subarray Sum	26.0%	Medium
 Course Schedule II	20.7%	Medium
-Add and Search Word - Data structure design	20.3%	Medium
+// Add and Search Word - Data structure design	20.3%	Medium
 Word Search II	18.1%	Hard
 House Robber II	29.5%	Medium
 Shortest Palindrome	18.8%	Hard
