@@ -47,6 +47,8 @@ Leetcode Algorithm problems
 12. Happy Number
 13. Repeated DNA Sequences
 14. Contains Duplicate
+15. Contains Duplicate II
+16. Contains Duplicate III
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
