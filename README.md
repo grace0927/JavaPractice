@@ -238,6 +238,7 @@ Leetcode Algorithm problems
 
 ##### [Trie](https://github.com/grace0927/JavaPractice/wiki/Trie)
 1. Implement Trie (Prefix Tree)
+2. Word Search II
 
 ## lintcode
 Lintcode Algorithm problems

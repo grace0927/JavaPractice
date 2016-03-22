@@ -184,7 +184,7 @@ Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Minimum Size Subarray Sum	26.0%	Medium
 Course Schedule II	20.7%	Medium
 // Add and Search Word - Data structure design	20.3%	Medium
-Word Search II	18.1%	Hard
+// Word Search II	18.1%	Hard
 House Robber II	29.5%	Medium
 Shortest Palindrome	18.8%	Hard
 Kth Largest Element in an Array	31.5%	Medium
