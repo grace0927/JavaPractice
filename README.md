@@ -129,6 +129,7 @@ Leetcode Algorithm problems
 14. Restore IP Addresses
 15. Palindrome Partitioning
 16. Add and Search Word - Data structure design
+17. Combination Sum III
 
 ##### [Stack](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses

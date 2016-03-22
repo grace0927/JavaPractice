@@ -188,7 +188,7 @@ Word Search II	18.1%	Hard
 House Robber II	29.5%	Medium
 Shortest Palindrome	18.8%	Hard
 Kth Largest Element in an Array	31.5%	Medium
-Combination Sum III	34.0%	Medium
+// Combination Sum III	34.0%	Medium
 // Contains Duplicate	40.1%	Easy
 The Skyline Problem	20.9%	Hard
 // Contains Duplicate II	28.9%	Easy
