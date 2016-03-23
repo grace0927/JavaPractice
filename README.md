@@ -88,6 +88,7 @@ Leetcode Algorithm problems
 7. Excel Sheet Column Number
 8. Factorial Trailing Zeroes
 9. Rectangle Area
+10. Basic Calculator
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
@@ -139,6 +140,7 @@ Leetcode Algorithm problems
 4. Evaluate Reverse Polish Notation
 5. Min Stack
 6. Binary Search Tree Iterator
+7. Implement Stack using Queues
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
