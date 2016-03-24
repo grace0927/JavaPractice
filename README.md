@@ -198,6 +198,7 @@ Leetcode Algorithm problems
 2. Binary Tree Preorder Traversal
 3. Binary Tree Postorder Traversal
 4. Count Complete Tree Nodes
+5. Invert Binary Tree
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree

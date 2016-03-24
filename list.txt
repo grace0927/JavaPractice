@@ -198,7 +198,7 @@ Maximal Square	22.6%	Medium
 // Rectangle Area	29.0%	Easy
 // Basic Calculator	20.8%	Medium
 // Implement Stack using Queues	30.4%	Easy
-Invert Binary Tree	43.5%	Easy
+// Invert Binary Tree	43.5%	Easy
 Basic Calculator II	23.5%	Medium
 Summary Ranges	22.9%	Easy
 Majority Element II	25.0%	Medium
