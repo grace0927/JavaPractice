@@ -77,6 +77,7 @@ Leetcode Algorithm problems
 9. Text Justification
 10. Reverse Words in a String
 11. Compare Version Numbers
+12. Basic Calculator II
 
 ##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
 1. Reverse Integer
@@ -185,6 +186,7 @@ Leetcode Algorithm problems
 12. Pascal's Triangle II
 13. Majority Element
 14. Rotate Array
+15. Summary Ranges
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
