@@ -114,6 +114,7 @@ Leetcode Algorithm problems
 16. Linked List Cycle
 17. Linked List Cycle II
 18. Minimum Size Subarray Sum
+19. Palindrome Linked List
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
@@ -142,6 +143,7 @@ Leetcode Algorithm problems
 5. Min Stack
 6. Binary Search Tree Iterator
 7. Implement Stack using Queues
+8. Implement Queue using Stacks
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers

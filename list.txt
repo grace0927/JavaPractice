@@ -204,9 +204,9 @@ Maximal Square	22.6%	Medium
 Majority Element II	25.0%	Medium
 // Kth Smallest Element in a BST	35.7%	Medium
 // Power of Two	34.8%	Easy
-Implement Queue using Stacks	33.9%	Easy
+// Implement Queue using Stacks	33.9%	Easy
 Number of Digit One	23.6%	Medium
-Palindrome Linked List	26.6%	Easy
+// Palindrome Linked List	26.6%	Easy
 Lowest Common Ancestor of a Binary Search Tree	38.0%	Easy
 Lowest Common Ancestor of a Binary Tree	28.5%	Medium
 Delete Node in a Linked List	43.8%	Easy
