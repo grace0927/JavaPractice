@@ -204,6 +204,7 @@ Leetcode Algorithm problems
 4. Count Complete Tree Nodes
 5. Invert Binary Tree
 6. Kth Smallest Element in a BST
+7. Lowest Common Ancestor of a Binary Search Tree
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree
