@@ -201,6 +201,7 @@ Leetcode Algorithm problems
 3. Binary Tree Postorder Traversal
 4. Count Complete Tree Nodes
 5. Invert Binary Tree
+6. Kth Smallest Element in a BST
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree
@@ -238,6 +239,7 @@ Leetcode Algorithm problems
 3. Reverse Bits
 4. Number of 1 Bits
 5. Bitwise AND of Numbers Range
+6. Power of Two
 
 ##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
 1. Insertion Sort List
