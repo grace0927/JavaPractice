@@ -64,6 +64,7 @@ Leetcode Algorithm problems
 11. Intersection of Two Linked Lists
 12. Remove Linked List Elements
 13. Reverse Linked List
+14. Delete Node in a Linked List
 
 ##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
 1. Longest Palindromic Substring   
