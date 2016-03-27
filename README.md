@@ -157,6 +157,7 @@ Leetcode Algorithm problems
 8. Search in Rotated Sorted Array II
 9. Find Minimum in Rotated Sorted Array
 10. Find Minimum in Rotated Sorted Array II
+11. Search a 2D Matrix II
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
@@ -190,6 +191,7 @@ Leetcode Algorithm problems
 13. Majority Element
 14. Rotate Array
 15. Summary Ranges
+16. Product of Array Except Self
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
