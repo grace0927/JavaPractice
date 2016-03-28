@@ -211,7 +211,7 @@ Number of Digit One	23.6%	Medium
 Lowest Common Ancestor of a Binary Tree	28.5%	Medium
 // Delete Node in a Linked List	43.8%	Easy
 // Product of Array Except Self	41.1%	Medium
-Sliding Window Maximum	25.9%	Hard
+// Sliding Window Maximum	25.9%	Hard
 // Search a 2D Matrix II	32.8%	Medium
 Different Ways to Add Parentheses	32.6%	Medium
 // Valid Anagram	40.5%	Easy

@@ -260,6 +260,9 @@ Leetcode Algorithm problems
 1. Implement Trie (Prefix Tree)
 2. Word Search II
 
+##### [Heap](https://github.com/grace0927/JavaPractice/wiki/Heap)
+1. Sliding Window Maximum
+
 ## lintcode
 Lintcode Algorithm problems
 
