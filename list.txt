@@ -216,7 +216,7 @@ Sliding Window Maximum	25.9%	Hard
 Different Ways to Add Parentheses	32.6%	Medium
 Valid Anagram	40.5%	Easy
 Binary Tree Paths	26.8%	Easy
-Add Digits	48.0%	Easy
+// Add Digits	48.0%	Easy
 Single Number III	42.3%	Medium
 Ugly Number	35.7%	Easy
 Ugly Number II	26.3%	Medium
