@@ -250,6 +250,7 @@ Leetcode Algorithm problems
 4. Number of 1 Bits
 5. Bitwise AND of Numbers Range
 6. Power of Two
+7. Single Number III
 
 ##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
 1. Insertion Sort List
