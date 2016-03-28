@@ -91,6 +91,7 @@ Leetcode Algorithm problems
 8. Factorial Trailing Zeroes
 9. Rectangle Area
 10. Basic Calculator
+11. Add Digits
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
