@@ -49,6 +49,7 @@ Leetcode Algorithm problems
 14. Contains Duplicate
 15. Contains Duplicate II
 16. Contains Duplicate III
+17. Valid Anagram
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
@@ -228,6 +229,7 @@ Leetcode Algorithm problems
 15. Populating Next Right Pointers in Each Node II
 16. Number of Islands
 17. Course Schedule
+18. Binary Tree Paths
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal

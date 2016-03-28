@@ -214,8 +214,8 @@ Lowest Common Ancestor of a Binary Tree	28.5%	Medium
 Sliding Window Maximum	25.9%	Hard
 // Search a 2D Matrix II	32.8%	Medium
 Different Ways to Add Parentheses	32.6%	Medium
-Valid Anagram	40.5%	Easy
-Binary Tree Paths	26.8%	Easy
+// Valid Anagram	40.5%	Easy
+// Binary Tree Paths	26.8%	Easy
 // Add Digits	48.0%	Easy
 Single Number III	42.3%	Medium
 Ugly Number	35.7%	Easy
