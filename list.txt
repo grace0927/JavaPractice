@@ -218,9 +218,9 @@ Different Ways to Add Parentheses	32.6%	Medium
 // Binary Tree Paths	26.8%	Easy
 // Add Digits	48.0%	Easy
 // Single Number III	42.3%	Medium
-Ugly Number	35.7%	Easy
-Ugly Number II	26.3%	Medium
-Missing Number	38.9%	Medium
+// Ugly Number	35.7%	Easy
+// Ugly Number II	26.3%	Medium
+// Missing Number	38.9%	Medium
 Integer to English Words	17.9%	Medium
 H-Index	28.5%	Medium
 H-Index II	32.2%	Medium
