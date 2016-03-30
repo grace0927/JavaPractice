@@ -50,6 +50,7 @@ Leetcode Algorithm problems
 15. Contains Duplicate II
 16. Contains Duplicate III
 17. Valid Anagram
+18. H-Index
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   
@@ -80,6 +81,7 @@ Leetcode Algorithm problems
 10. Reverse Words in a String
 11. Compare Version Numbers
 12. Basic Calculator II
+13. Integer to English Words
 
 ##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
 1. Reverse Integer
@@ -120,6 +122,7 @@ Leetcode Algorithm problems
 17. Linked List Cycle II
 18. Minimum Size Subarray Sum
 19. Palindrome Linked List
+20. Move Zeroes
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
@@ -140,7 +143,7 @@ Leetcode Algorithm problems
 16. Add and Search Word - Data structure design
 17. Combination Sum III
 
-##### [Stack](https://github.com/grace0927/JavaPractice/wiki/Stack)
+##### [Stack & Queue](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses
 2. Simplify Path
 3. Largest Rectangle in Histogram
@@ -149,6 +152,7 @@ Leetcode Algorithm problems
 6. Binary Search Tree Iterator
 7. Implement Stack using Queues
 8. Implement Queue using Stacks
+9. Peeking Iterator
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
@@ -163,6 +167,7 @@ Leetcode Algorithm problems
 10. Find Minimum in Rotated Sorted Array II
 11. Search a 2D Matrix II
 12. First Bad Version
+13. H-Index II
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
