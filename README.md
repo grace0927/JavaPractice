@@ -162,6 +162,7 @@ Leetcode Algorithm problems
 9. Find Minimum in Rotated Sorted Array
 10. Find Minimum in Rotated Sorted Array II
 11. Search a 2D Matrix II
+12. First Bad Version
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
