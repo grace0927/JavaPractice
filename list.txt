@@ -225,7 +225,7 @@ Different Ways to Add Parentheses	32.6%	Medium
 // H-Index	28.5%	Medium
 // H-Index II	32.2%	Medium
 // First Bad Version	21.8%	Easy
-Perfect Squares	31.2%	Medium
+// Perfect Squares	31.2%	Medium
 Expression Add Operators	23.1%	Hard
 // Move Zeroes	43.2%	Easy
 // Peeking Iterator	32.8%	Medium
