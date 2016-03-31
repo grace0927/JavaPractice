@@ -51,6 +51,7 @@ Leetcode Algorithm problems
 16. Contains Duplicate III
 17. Valid Anagram
 18. H-Index
+19. Word Pattern
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   

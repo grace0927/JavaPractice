@@ -231,7 +231,7 @@ Expression Add Operators	23.1%	Hard
 // Peeking Iterator	32.8%	Medium
 Find the Duplicate Number	37.5%	Hard
 Game of Life	33.3%	Medium
-Word Pattern	27.9%	Easy
+// Word Pattern	27.9%	Easy
 Nim Game	51.1%	Easy
 Find Median from Data Stream	21.2%	Hard
 Serialize and Deserialize Binary Tree	26.3%	Medium
