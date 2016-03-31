@@ -125,6 +125,7 @@ Leetcode Algorithm problems
 18. Minimum Size Subarray Sum
 19. Palindrome Linked List
 20. Move Zeroes
+21. Find the Duplicate Number
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
