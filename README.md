@@ -98,6 +98,7 @@ Leetcode Algorithm problems
 11. Add Digits
 12. Ugly Number
 13. Ugly Number II
+14. Nim Game
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
@@ -205,6 +206,7 @@ Leetcode Algorithm problems
 15. Summary Ranges
 16. Product of Array Except Self
 17. Missing Number
+18. Game of Life
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
