@@ -228,6 +228,7 @@ Leetcode Algorithm problems
 6. Kth Smallest Element in a BST
 7. Lowest Common Ancestor of a Binary Search Tree
 8. Serialize and Deserialize Binary Tree
+9. Lowest Common Ancestor of a Binary Tree
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree

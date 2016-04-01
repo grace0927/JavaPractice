@@ -208,7 +208,7 @@ Majority Element II	25.0%	Medium
 Number of Digit One	23.6%	Medium
 // Palindrome Linked List	26.6%	Easy
 // Lowest Common Ancestor of a Binary Search Tree	38.0%	Easy
-Lowest Common Ancestor of a Binary Tree	28.5%	Medium
+// Lowest Common Ancestor of a Binary Tree	28.5%	Medium
 // Delete Node in a Linked List	43.8%	Easy
 // Product of Array Except Self	41.1%	Medium
 // Sliding Window Maximum	25.9%	Hard
@@ -258,7 +258,7 @@ Count of Range Sum	24.3%	Hard
 Odd Even Linked List	37.8%	Easy
 Longest Increasing Path in a Matrix	29.6%	Medium
 Patching Array	27.3%	Medium
-Increasing Triplet Subsequence
+Increasing Triplet Subsequence 	33.2%	Medium
 Self Crossing	17.5%	Medium
 Palindrome Pairs	18.1%	Hard
 House Robber III	37.4%	Medium
