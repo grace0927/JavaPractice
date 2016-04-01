@@ -189,6 +189,8 @@ Leetcode Algorithm problems
 13. House Robber
 14. Counting Bits
 15. House Robber II
+16. Range Sum Query - Immutable
+17. Longest Increasing Subsequence
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -225,6 +227,7 @@ Leetcode Algorithm problems
 5. Invert Binary Tree
 6. Kth Smallest Element in a BST
 7. Lowest Common Ancestor of a Binary Search Tree
+8. Serialize and Deserialize Binary Tree
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree

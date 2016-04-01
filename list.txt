@@ -234,11 +234,11 @@ Expression Add Operators	23.1%	Hard
 // Word Pattern	27.9%	Easy
 // Nim Game	51.1%	Easy
 Find Median from Data Stream	21.2%	Hard
-Serialize and Deserialize Binary Tree	26.3%	Medium
+// Serialize and Deserialize Binary Tree	26.3%	Medium
 // Bulls and Cows	28.3%	Easy
-Longest Increasing Subsequence	33.2%	Medium
+// Longest Increasing Subsequence	33.2%	Medium
 Remove Invalid Parentheses	30.7%	Hard
-Range Sum Query - Immutable	24.2%	Easy
+// Range Sum Query - Immutable	24.2%	Easy
 Range Sum Query 2D - Immutable	21.6%	Medium
 Additive Number	24.5%	Medium
 Range Sum Query - Mutable	16.7%	Medium
