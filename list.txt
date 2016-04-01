@@ -235,7 +235,7 @@ Expression Add Operators	23.1%	Hard
 // Nim Game	51.1%	Easy
 Find Median from Data Stream	21.2%	Hard
 Serialize and Deserialize Binary Tree	26.3%	Medium
-Bulls and Cows	28.3%	Easy
+// Bulls and Cows	28.3%	Easy
 Longest Increasing Subsequence	33.2%	Medium
 Remove Invalid Parentheses	30.7%	Hard
 Range Sum Query - Immutable	24.2%	Easy
