@@ -191,6 +191,7 @@ Leetcode Algorithm problems
 15. House Robber II
 16. Range Sum Query - Immutable
 17. Longest Increasing Subsequence
+18. Range Sum Query 2D - Immutable
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
