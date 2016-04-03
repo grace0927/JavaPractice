@@ -262,6 +262,7 @@ Leetcode Algorithm problems
 8. Clone Graph
 9. Binary Tree Right Side View
 10. Perfect Squares
+11. Minimum Height Trees
 
 ##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
 1. Single Number
