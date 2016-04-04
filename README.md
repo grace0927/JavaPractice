@@ -101,6 +101,7 @@ Leetcode Algorithm problems
 13. Ugly Number II
 14. Nim Game
 15. Super Ugly Number
+16. Bulb Switcher
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
@@ -273,6 +274,7 @@ Leetcode Algorithm problems
 5. Bitwise AND of Numbers Range
 6. Power of Two
 7. Single Number III
+8. Maximum Product of Word Lengths
 
 ##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
 1. Insertion Sort List

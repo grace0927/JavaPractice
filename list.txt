@@ -245,11 +245,11 @@ Additive Number	24.5%	Medium
 Best Time to Buy and Sell Stock with Cooldown	35.3%	Medium
 // Minimum Height Trees	25.7%	Medium
 Burst Balloons	33.7%	Hard
-Super Ugly Number	31.7%	Medium
+// Super Ugly Number	31.7%	Medium
 Count of Smaller Numbers After Self	28.5%	Hard
 Remove Duplicate Letters	23.4%	Medium
-Maximum Product of Word Lengths	38.8%	Medium
-Bulb Switcher	39.4%	Medium
+// Maximum Product of Word Lengths	38.8%	Medium
+// Bulb Switcher	39.4%	Medium
 Create Maximum Number	19.2%	Hard
 Coin Change	24.7%	Medium
 Wiggle Sort II	20.9%	Medium
