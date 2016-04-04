@@ -241,7 +241,7 @@ Remove Invalid Parentheses	30.7%	Hard
 // Range Sum Query - Immutable	24.2%	Easy
 // Range Sum Query 2D - Immutable	21.6%	Medium
 Additive Number	24.5%	Medium
-Range Sum Query - Mutable	16.7%	Medium
+// Range Sum Query - Mutable	16.7%	Medium
 Best Time to Buy and Sell Stock with Cooldown	35.3%	Medium
 // Minimum Height Trees	25.7%	Medium
 Burst Balloons	33.7%	Hard

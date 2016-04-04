@@ -100,6 +100,7 @@ Leetcode Algorithm problems
 12. Ugly Number
 13. Ugly Number II
 14. Nim Game
+15. Super Ugly Number
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
