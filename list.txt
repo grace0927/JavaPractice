@@ -253,9 +253,9 @@ Remove Duplicate Letters	23.4%	Medium
 Create Maximum Number	19.2%	Hard
 // Coin Change	24.7%	Medium
 Wiggle Sort II	20.9%	Medium
-Power of Three	35.4%	Easy
+// Power of Three	35.4%	Easy
 Count of Range Sum	24.3%	Hard
-Odd Even Linked List	37.8%	Easy
+// Odd Even Linked List	37.8%	Easy
 Longest Increasing Path in a Matrix	29.6%	Medium
 Patching Array	27.3%	Medium
 Increasing Triplet Subsequence 	33.2%	Medium

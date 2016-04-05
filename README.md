@@ -102,6 +102,7 @@ Leetcode Algorithm problems
 14. Nim Game
 15. Super Ugly Number
 16. Bulb Switcher
+17. Power of Three
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
@@ -129,6 +130,7 @@ Leetcode Algorithm problems
 19. Palindrome Linked List
 20. Move Zeroes
 21. Find the Duplicate Number
+22. Odd Even Linked List
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
