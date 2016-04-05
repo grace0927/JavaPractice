@@ -251,7 +251,7 @@ Remove Duplicate Letters	23.4%	Medium
 // Maximum Product of Word Lengths	38.8%	Medium
 // Bulb Switcher	39.4%	Medium
 Create Maximum Number	19.2%	Hard
-Coin Change	24.7%	Medium
+// Coin Change	24.7%	Medium
 Wiggle Sort II	20.9%	Medium
 Power of Three	35.4%	Easy
 Count of Range Sum	24.3%	Hard
