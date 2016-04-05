@@ -217,6 +217,7 @@ Leetcode Algorithm problems
 16. Product of Array Except Self
 17. Missing Number
 18. Game of Life
+19. Increasing Triplet Subsequence
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
