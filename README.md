@@ -161,6 +161,7 @@ Leetcode Algorithm problems
 7. Implement Stack using Queues
 8. Implement Queue using Stacks
 9. Peeking Iterator
+10. Verify Preorder Serialization of a Binary Tree
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers

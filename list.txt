@@ -258,6 +258,8 @@ Count of Range Sum	24.3%	Hard
 // Odd Even Linked List	37.8%	Easy
 Longest Increasing Path in a Matrix	29.6%	Medium
 Patching Array	27.3%	Medium
+// Verify Preorder Serialization of a Binary Tree	31.5%	Medium
+Reconstruct Itinerary	23.4%	Medium
 // Increasing Triplet Subsequence 	33.2%	Medium
 Self Crossing	17.5%	Medium
 Palindrome Pairs	18.1%	Hard
