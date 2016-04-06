@@ -177,6 +177,7 @@ Leetcode Algorithm problems
 11. Search a 2D Matrix II
 12. First Bad Version
 13. H-Index II
+14. Find Peak Element
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
@@ -198,6 +199,7 @@ Leetcode Algorithm problems
 17. Longest Increasing Subsequence
 18. Range Sum Query 2D - Immutable
 19. Coin Change
+20. Maximal Square
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -291,6 +293,7 @@ Leetcode Algorithm problems
 
 ##### [Heap](https://github.com/grace0927/JavaPractice/wiki/Heap)
 1. Sliding Window Maximum
+2. Kth Largest Element in an Array
 
 ##### [Graph](https://github.com/grace0927/JavaPractice/wiki/Graph)
 1. Course Schedule II
