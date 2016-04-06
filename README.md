@@ -292,6 +292,9 @@ Leetcode Algorithm problems
 ##### [Heap](https://github.com/grace0927/JavaPractice/wiki/Heap)
 1. Sliding Window Maximum
 
+##### [Graph](https://github.com/grace0927/JavaPractice/wiki/Graph)
+1. Course Schedule II
+
 ## lintcode
 Lintcode Algorithm problems
 
