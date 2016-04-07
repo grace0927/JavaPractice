@@ -149,7 +149,7 @@ Word Break II	19.1%	Hard
 // Max Points on a Line	13.9%	Hard
 // Evaluate Reverse Polish Notation	22.9%	Medium
 // Reverse Words in a String	15.6%	Medium
-Maximum Product Subarray	21.4%	Medium
+// Maximum Product Subarray	21.4%	Medium
 // Find Minimum in Rotated Sorted Array	35.4%	Medium
 // Find Minimum in Rotated Sorted Array II	33.7%	Hard
 // Min Stack	21.4%	Easy
@@ -201,7 +201,7 @@ The Skyline Problem	20.9%	Hard
 // Invert Binary Tree	43.5%	Easy
 // Basic Calculator II	23.5%	Medium
 // Summary Ranges	22.9%	Easy
-Majority Element II	25.0%	Medium
+// Majority Element II	25.0%	Medium
 // Kth Smallest Element in a BST	35.7%	Medium
 // Power of Two	34.8%	Easy
 // Implement Queue using Stacks	33.9%	Easy

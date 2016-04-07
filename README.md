@@ -200,6 +200,7 @@ Leetcode Algorithm problems
 18. Range Sum Query 2D - Immutable
 19. Coin Change
 20. Maximal Square
+21. Maximum Product Subarray
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -221,6 +222,7 @@ Leetcode Algorithm problems
 17. Missing Number
 18. Game of Life
 19. Increasing Triplet Subsequence
+20. Majority Element II
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
