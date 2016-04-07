@@ -150,6 +150,7 @@ Leetcode Algorithm problems
 15. Palindrome Partitioning
 16. Add and Search Word - Data structure design
 17. Combination Sum III
+18. Additive Number
 
 ##### [Stack & Queue](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses
@@ -230,6 +231,7 @@ Leetcode Algorithm problems
 3. Best Time to Buy and Sell Stock II
 4. Candy
 5. Gas Station
+6. Patching Array
 
 ##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
 1. Binary Tree Inorder Traversal

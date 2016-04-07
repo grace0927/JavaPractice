@@ -240,7 +240,7 @@ Find Median from Data Stream	21.2%	Hard
 Remove Invalid Parentheses	30.7%	Hard
 // Range Sum Query - Immutable	24.2%	Easy
 // Range Sum Query 2D - Immutable	21.6%	Medium
-Additive Number	24.5%	Medium
+// Additive Number	24.5%	Medium
 // Range Sum Query - Mutable	16.7%	Medium
 Best Time to Buy and Sell Stock with Cooldown	35.3%	Medium
 // Minimum Height Trees	25.7%	Medium
@@ -257,7 +257,7 @@ Wiggle Sort II	20.9%	Medium
 Count of Range Sum	24.3%	Hard
 // Odd Even Linked List	37.8%	Easy
 Longest Increasing Path in a Matrix	29.6%	Medium
-Patching Array	27.3%	Medium
+// Patching Array	27.3%	Medium
 // Verify Preorder Serialization of a Binary Tree	31.5%	Medium
 Reconstruct Itinerary	23.4%	Medium
 // Increasing Triplet Subsequence 	33.2%	Medium
