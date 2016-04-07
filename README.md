@@ -301,6 +301,7 @@ Leetcode Algorithm problems
 
 ##### [Graph](https://github.com/grace0927/JavaPractice/wiki/Graph)
 1. Course Schedule II
+2. Reconstruct Itinerary
 
 ## lintcode
 Lintcode Algorithm problems
