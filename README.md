@@ -103,6 +103,7 @@ Leetcode Algorithm problems
 15. Super Ugly Number
 16. Bulb Switcher
 17. Power of Three
+18. Number of Digit One
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays

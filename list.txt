@@ -205,7 +205,7 @@ The Skyline Problem	20.9%	Hard
 // Kth Smallest Element in a BST	35.7%	Medium
 // Power of Two	34.8%	Easy
 // Implement Queue using Stacks	33.9%	Easy
-Number of Digit One	23.6%	Medium
+// Number of Digit One	23.6%	Medium
 // Palindrome Linked List	26.6%	Easy
 // Lowest Common Ancestor of a Binary Search Tree	38.0%	Easy
 // Lowest Common Ancestor of a Binary Tree	28.5%	Medium
