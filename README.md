@@ -234,6 +234,7 @@ Leetcode Algorithm problems
 4. Candy
 5. Gas Station
 6. Patching Array
+7. Remove Duplicate Letters
 
 ##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
 1. Binary Tree Inorder Traversal
@@ -265,6 +266,7 @@ Leetcode Algorithm problems
 16. Number of Islands
 17. Course Schedule
 18. Binary Tree Paths
+19. Longest Increasing Path in a Matrix
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
@@ -292,6 +294,7 @@ Leetcode Algorithm problems
 ##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
 1. Insertion Sort List
 2. Largest Number
+3. Wiggle Sort II
 
 ##### [Trie](https://github.com/grace0927/JavaPractice/wiki/Trie)
 1. Implement Trie (Prefix Tree)
