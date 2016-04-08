@@ -307,6 +307,7 @@ Leetcode Algorithm problems
 ##### [Heap](https://github.com/grace0927/JavaPractice/wiki/Heap)
 1. Sliding Window Maximum
 2. Kth Largest Element in an Array
+3. Find Median from Data Stream
 
 ##### [Graph](https://github.com/grace0927/JavaPractice/wiki/Graph)
 1. Course Schedule II
