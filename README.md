@@ -104,6 +104,7 @@ Leetcode Algorithm problems
 16. Bulb Switcher
 17. Power of Three
 18. Number of Digit One
+19. Self Crossing
 
 ##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
