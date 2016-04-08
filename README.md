@@ -206,6 +206,7 @@ Leetcode Algorithm problems
 20. Maximal Square
 21. Maximum Product Subarray
 22. Best Time to Buy and Sell Stock with Cooldown
+23. Counting Bits
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
@@ -269,6 +270,7 @@ Leetcode Algorithm problems
 17. Course Schedule
 18. Binary Tree Paths
 19. Longest Increasing Path in a Matrix
+20. House Robber III
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal

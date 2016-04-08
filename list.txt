@@ -263,5 +263,5 @@ Count of Range Sum	24.3%	Hard
 // Increasing Triplet Subsequence 	33.2%	Medium
 // Self Crossing	17.5%	Medium
 Palindrome Pairs	18.1%	Hard
-House Robber III	37.4%	Medium
-Counting Bits	57.8%	Medium
+// House Robber III	37.4%	Medium
+// Counting Bits	57.8%	Medium
