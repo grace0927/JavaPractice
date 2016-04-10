@@ -299,6 +299,7 @@ Leetcode Algorithm problems
 1. Insertion Sort List
 2. Largest Number
 3. Wiggle Sort II
+4. Maximum Gap
 
 ##### [Trie](https://github.com/grace0927/JavaPractice/wiki/Trie)
 1. Implement Trie (Prefix Tree)
