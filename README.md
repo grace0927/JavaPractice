@@ -154,6 +154,7 @@ Leetcode Algorithm problems
 16. Add and Search Word - Data structure design
 17. Combination Sum III
 18. Additive Number
+19. Regular Expression Matching
 
 ##### [Stack & Queue](https://github.com/grace0927/JavaPractice/wiki/Stack)
 1. Valid Parentheses
@@ -207,6 +208,7 @@ Leetcode Algorithm problems
 21. Maximum Product Subarray
 22. Best Time to Buy and Sell Stock with Cooldown
 23. Counting Bits
+24. Wildcard Matching
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
