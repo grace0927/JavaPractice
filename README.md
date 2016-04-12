@@ -53,6 +53,7 @@ Leetcode Algorithm problems
 18. H-Index
 19. Word Pattern
 20. Bulls and Cows
+21. Longest Consecutive Sequence
 
 ##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
 1. Add Two Numbers   

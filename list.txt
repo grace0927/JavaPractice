@@ -125,7 +125,7 @@ Binary Tree Maximum Path Sum	22.8%	Hard
 // Valid Palindrome	23.2%	Easy
 Word Ladder II	13.5%	Hard
 // Word Ladder	19.6%	Medium
-Longest Consecutive Sequence	31.3%	Hard
+// Longest Consecutive Sequence	31.3%	Hard
 // Sum Root to Leaf Numbers	31.9%	Medium
 // Surrounded Regions	15.7%	Medium
 // Palindrome Partitioning	27.4%	Medium
