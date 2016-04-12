@@ -210,6 +210,8 @@ Leetcode Algorithm problems
 23. Counting Bits
 24. Wildcard Matching
 25. Distinct Subsequences
+26. Interleaving String
+27. Scramble String
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive
