@@ -209,6 +209,7 @@ Leetcode Algorithm problems
 22. Best Time to Buy and Sell Stock with Cooldown
 23. Counting Bits
 24. Wildcard Matching
+25. Distinct Subsequences
 
 ##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
 1. First Missing Positive

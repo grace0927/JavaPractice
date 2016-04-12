@@ -112,7 +112,7 @@ Interleaving String	22.0%	Hard
 // Path Sum	30.7%	Easy
 // Path Sum II	27.7%	Medium
 // Flatten Binary Tree to Linked List	30.3%	Medium
-Distinct Subsequences	28.2%	Hard
+// Distinct Subsequences	28.2%	Hard
 // Populating Next Right Pointers in Each Node	36.4%	Medium
 // Populating Next Right Pointers in Each Node II	32.6%	Hard
 // Pascal's Triangle	32.3%	Easy
