@@ -169,6 +169,7 @@ Leetcode Algorithm problems
 8. Implement Queue using Stacks
 9. Peeking Iterator
 10. Verify Preorder Serialization of a Binary Tree
+11. Maximal Rectangle
 
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
