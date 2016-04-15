@@ -282,6 +282,7 @@ Leetcode Algorithm problems
 18. Binary Tree Paths
 19. Longest Increasing Path in a Matrix
 20. House Robber III
+21. Binary Tree Maximum Path Sum
 
 ##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
 1. Binary Tree Level Order Traversal
