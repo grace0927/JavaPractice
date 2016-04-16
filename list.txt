@@ -129,7 +129,6 @@
 // Sum Root to Leaf Numbers	31.9%	Medium
 // Surrounded Regions	15.7%	Medium
 // Palindrome Partitioning	27.4%	Medium
-Palindrome Partitioning II	21.2%	Hard
 // Clone Graph	24.7%	Medium
 // Gas Station	26.8%	Medium
 // Candy	21.8%	Hard
@@ -166,7 +165,6 @@ Palindrome Partitioning II	21.2%	Hard
 // Dungeon Game	20.1%	Hard
 // Largest Number	18.1%	Medium
 // Repeated DNA Sequences	23.8%	Medium
-Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Rotate Array	20.3%	Easy
 // Reverse Bits	29.1%	Easy
 // Number of 1 Bits	37.7%	Easy
@@ -186,11 +184,9 @@ Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Add and Search Word - Data structure design	20.3%	Medium
 // Word Search II	18.1%	Hard
 // House Robber II	29.5%	Medium
-Shortest Palindrome	18.8%	Hard
 // Kth Largest Element in an Array	31.5%	Medium
 // Combination Sum III	34.0%	Medium
 // Contains Duplicate	40.1%	Easy
-The Skyline Problem	20.9%	Hard
 // Contains Duplicate II	28.9%	Easy
 // Contains Duplicate III	18.0%	Medium
 // Maximal Square	22.6%	Medium
@@ -226,7 +222,6 @@ The Skyline Problem	20.9%	Hard
 // H-Index II	32.2%	Medium
 // First Bad Version	21.8%	Easy
 // Perfect Squares	31.2%	Medium
-Expression Add Operators	23.1%	Hard
 // Move Zeroes	43.2%	Easy
 // Peeking Iterator	32.8%	Medium
 // Find the Duplicate Number	37.5%	Hard
@@ -237,24 +232,19 @@ Expression Add Operators	23.1%	Hard
 // Serialize and Deserialize Binary Tree	26.3%	Medium
 // Bulls and Cows	28.3%	Easy
 // Longest Increasing Subsequence	33.2%	Medium
-Remove Invalid Parentheses	30.7%	Hard
 // Range Sum Query - Immutable	24.2%	Easy
 // Range Sum Query 2D - Immutable	21.6%	Medium
 // Additive Number	24.5%	Medium
 // Range Sum Query - Mutable	16.7%	Medium
 // Best Time to Buy and Sell Stock with Cooldown	35.3%	Medium
 // Minimum Height Trees	25.7%	Medium
-Burst Balloons	33.7%	Hard
 // Super Ugly Number	31.7%	Medium
-Count of Smaller Numbers After Self	28.5%	Hard
 // Remove Duplicate Letters	23.4%	Medium
 // Maximum Product of Word Lengths	38.8%	Medium
 // Bulb Switcher	39.4%	Medium
-Create Maximum Number	19.2%	Hard
 // Coin Change	24.7%	Medium
 // Wiggle Sort II	20.9%	Medium
 // Power of Three	35.4%	Easy
-Count of Range Sum	24.3%	Hard
 // Odd Even Linked List	37.8%	Easy
 // Longest Increasing Path in a Matrix	29.6%	Medium
 // Patching Array	27.3%	Medium
@@ -262,6 +252,16 @@ Count of Range Sum	24.3%	Hard
 // Reconstruct Itinerary	23.4%	Medium
 // Increasing Triplet Subsequence 	33.2%	Medium
 // Self Crossing	17.5%	Medium
-Palindrome Pairs	18.1%	Hard
 // House Robber III	37.4%	Medium
 // Counting Bits	57.8%	Medium
+Palindrome Partitioning II	21.2%	Hard
+Best Time to Buy and Sell Stock IV	21.2%	Hard
+Shortest Palindrome	18.8%	Hard
+The Skyline Problem	20.9%	Hard
+Expression Add Operators	23.1%	Hard
+Remove Invalid Parentheses	30.7%	Hard
+Burst Balloons	33.7%	Hard
+Count of Smaller Numbers After Self	28.5%	Hard
+Create Maximum Number	19.2%	Hard
+Count of Range Sum	24.3%	Hard
+Palindrome Pairs	18.1%	Hard
