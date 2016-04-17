@@ -254,6 +254,7 @@
 // Self Crossing	17.5%	Medium
 // House Robber III	37.4%	Medium
 // Counting Bits	57.8%	Medium
+/  Flatten Nested List Iterator	17.5%		Medium
 Palindrome Partitioning II	21.2%	Hard
 Best Time to Buy and Sell Stock IV	21.2%	Hard
 Shortest Palindrome	18.8%	Hard
