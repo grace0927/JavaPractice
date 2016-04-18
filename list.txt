@@ -1,9 +1,9 @@
 [Array]
 /// First Missing Positive
 /// Rotate Image
-Spiral Matrix
+/// Spiral Matrix
 Next Permutation
-Spiral Matrix II
+/// Spiral Matrix II
 Merge Intervals
 Insert Interval
 Maximum Subarray
