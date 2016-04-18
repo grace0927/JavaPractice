@@ -4,10 +4,10 @@
 /// Spiral Matrix
 Next Permutation
 /// Spiral Matrix II
-Merge Intervals
-Insert Interval
-Maximum Subarray
-Plus One
+/// Merge Intervals
+/// Insert Interval
+/// Maximum Subarray
+/// Plus One
 Set Matrix Zeroes
 Pascal's Triangle
 Pascal's Triangle II
