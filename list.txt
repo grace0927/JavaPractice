@@ -1,3 +1,301 @@
+[Array]
+/// First Missing Positive
+Rotate Image
+Spiral Matrix
+Next Permutation
+Spiral Matrix II
+Merge Intervals
+Insert Interval
+Maximum Subarray
+Plus One
+Set Matrix Zeroes
+Pascal's Triangle
+Pascal's Triangle II
+Majority Element
+Rotate Array
+Summary Ranges
+Product of Array Except Self
+Missing Number
+Game of Life
+Increasing Triplet Subsequence
+Majority Element II
+
+[Backtracking]
+Letter Combinations of a Phone Number
+Generate Parentheses
+Sudoku Solver
+Combination Sum
+Combination Sum II
+Permutations
+Permutations II
+N-Queens, N-Queens II
+Combinations
+Subsets
+Word Search
+Gray Code
+Subsets II
+Restore IP Addresses
+Palindrome Partitioning
+Add and Search Word - Data structure design
+Combination Sum III
+Additive Number
+Regular Expression Matching
+Word Break II
+
+[Binary Search]
+Divide Two Integers
+Search for a Range
+Search Insert Position
+Search in Rotated Sorted Array
+Pow(x, n)
+Sqrt(x)
+Search a 2D Matrix
+Search in Rotated Sorted Array II
+Find Minimum in Rotated Sorted Array
+Find Minimum in Rotated Sorted Array II
+Search a 2D Matrix II
+First Bad Version
+H-Index II
+Find Peak Element
+
+[Bit Manipulation]
+Single Number
+Single Number II
+Reverse Bits
+Number of 1 Bits
+Bitwise AND of Numbers Range
+Power of Two
+Single Number III
+Maximum Product of Word Lengths
+
+[BFS]
+Binary Tree Level Order Traversal
+Binary Tree Zigzag Level Order Traversal
+Maximum Depth of Binary Tree
+Binary Tree Level Order Traversal II
+Word Ladder
+Sum Root to Leaf Numbers
+Surrounded Regions
+Clone Graph
+Binary Tree Right Side View
+Perfect Squares
+Minimum Height Trees
+Word Ladder II
+
+[DFS]
+Same Tree
+Validate Binary Search Tree
+Symmetric Tree
+Construct Binary Tree from Preorder and Inorder Traversal
+Construct Binary Tree from Inorder and Postorder Traversal
+Convert Sorted Array to Binary Search Tree
+Balanced Binary Tree
+Convert Sorted List to Binary Search Tree
+Minimum Depth of Binary Tree
+Path Sum
+Path Sum II
+Flatten Binary Tree to Linked List
+Recover Binary Search Tree
+Populating Next Right Pointers in Each Node
+Populating Next Right Pointers in Each Node II
+Number of Islands
+Course Schedule
+Binary Tree Paths
+Longest Increasing Path in a Matrix
+House Robber III
+Binary Tree Maximum Path Sum
+
+[Divide and Conquer]
+Median of Two Sorted Arrays
+Merge k Sorted Lists
+Different Ways to Add Parentheses
+Burst Balloons
+
+[Dynamic Programming]
+Longest Valid Parentheses
+Unique Paths
+Unique Paths II
+Minimum Path Sum
+Climbing Stairs
+Edit Distance
+Unique Binary Search Trees
+Unique Binary Search Trees II
+Decode Ways
+Triangle
+Best Time to Buy and Sell Stock
+Word Break
+House Robber
+Counting Bits
+House Robber II
+Range Sum Query - Immutable
+Longest Increasing Subsequence
+Range Sum Query 2D - Immutable
+Coin Change
+Maximal Square
+Maximum Product Subarray
+Best Time to Buy and Sell Stock with Cooldown
+Counting Bits
+Wildcard Matching
+Distinct Subsequences
+Interleaving String
+Scramble String
+Dungeon Game
+Best Time to Buy and Sell Stock III
+
+[Graph]
+Course Schedule II
+Reconstruct Itinerary
+
+[Greedy]
+Jump Game
+Jump Game II
+Best Time to Buy and Sell Stock II
+Candy
+Gas Station
+Patching Array
+Remove Duplicate Letters
+
+[Hash Table]
+Two Sum   
+Longest Substring Without Repeating Characters   
+Valid Sudoku   
+Group Anagrams  
+Substring with Concatenation of All Words
+Copy List with Random Pointer
+LRU Cache
+Max Points on a Line
+Fraction to Recurring Decimal
+Isomorphic Strings
+Count Primes
+Happy Number
+Repeated DNA Sequences
+Contains Duplicate
+Contains Duplicate II
+Contains Duplicate III
+Valid Anagram
+H-Index
+Word Pattern
+Bulls and Cows
+Longest Consecutive Sequence
+
+[Heap]
+Sliding Window Maximum
+Kth Largest Element in an Array
+Find Median from Data Stream
+
+[Linked List]
+Add Two Numbers   
+Merge Two Sorted Lists   
+Swap Nodes in Pairs   
+Reverse Nodes in k-Group   
+Remove Duplicates from Sorted List II   
+Remove Duplicates from Sorted List
+Reverse Linked List II
+Reorder List
+Insertion Sort List
+Sort List
+Intersection of Two Linked Lists
+Remove Linked List Elements
+Reverse Linked List
+Delete Node in a Linked List
+
+[Math]
+Reverse Integer
+Palindrome Number
+Integer to Roman
+Roman to Integer
+Permutation Sequence
+Excel Sheet Column Title
+Excel Sheet Column Number
+Factorial Trailing Zeroes
+Rectangle Area
+Basic Calculator
+Add Digits
+Ugly Number
+Ugly Number II
+Nim Game
+Super Ugly Number
+Bulb Switcher
+Power of Three
+Number of Digit One
+Self Crossing
+
+[Sort]
+Insertion Sort List
+Largest Number
+Wiggle Sort II
+Maximum Gap
+
+[Stack & Queue]
+Valid Parentheses
+Simplify Path
+Largest Rectangle in Histogram
+Evaluate Reverse Polish Notation
+Min Stack
+Binary Search Tree Iterator
+Implement Stack using Queues
+Implement Queue using Stacks
+Peeking Iterator
+Verify Preorder Serialization of a Binary Tree
+Maximal Rectangle
+Flatten Nested List Iterator
+
+[String]
+Longest Palindromic Substring   
+ZigZag Conversion   
+Longest Common Prefix   
+String to Integer (atoi)   
+Count and Say   
+Multiply Strings   
+Length of Last Word   
+Add Binary   
+Text Justification
+Reverse Words in a String
+Compare Version Numbers
+Basic Calculator II
+Integer to English Words
+
+[Tree]
+Binary Tree Inorder Traversal
+Binary Tree Preorder Traversal
+Binary Tree Postorder Traversal
+Count Complete Tree Nodes
+Invert Binary Tree
+Kth Smallest Element in a BST
+Lowest Common Ancestor of a Binary Search Tree
+Serialize and Deserialize Binary Tree
+Lowest Common Ancestor of a Binary Tree
+
+[Trie]
+Implement Trie (Prefix Tree)
+Word Search II
+
+[Two Pointer]
+Container With Most Water
+3Sum
+3Sum Closest
+4Sum
+Remove Nth Node From End of List
+Remove Duplicates from Sorted Array
+Remove Element
+Implement strStr()
+Trapping Rain Water
+Rotate List
+Sort Colors
+Remove Duplicates from Sorted Array II
+Partition List
+Merge Sorted Array
+Valid Palindrome
+Linked List Cycle
+Linked List Cycle II
+Minimum Size Subarray Sum
+Palindrome Linked List
+Move Zeroes
+Find the Duplicate Number
+Odd Even Linked List
+Minimum Window Substring
+
+[Full List]
 // Two Sum	20.9%	Medium
 // Add Two Numbers	22.1%	Medium
 // Longest Substring Without Repeating Characters	21.4%	Medium

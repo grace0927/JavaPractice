@@ -32,111 +32,27 @@ Details:
 ## leetcode
 Leetcode Algorithm problems
 
-##### [Hash Table](https://github.com/grace0927/JavaPractice/wiki/Hash-Table)
-1. Two Sum   
-2. Longest Substring Without Repeating Characters   
-3. Valid Sudoku   
-4. Group Anagrams  
-5. Substring with Concatenation of All Words
-6. Copy List with Random Pointer
-7. LRU Cache
-8. Max Points on a Line
-9. Fraction to Recurring Decimal
-10. Isomorphic Strings
-11. Count Primes
-12. Happy Number
-13. Repeated DNA Sequences
-14. Contains Duplicate
-15. Contains Duplicate II
-16. Contains Duplicate III
-17. Valid Anagram
-18. H-Index
-19. Word Pattern
-20. Bulls and Cows
-21. Longest Consecutive Sequence
-
-##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
-1. Add Two Numbers   
-2. Merge Two Sorted Lists   
-3. Swap Nodes in Pairs   
-4. Reverse Nodes in k-Group   
-5. Remove Duplicates from Sorted List II   
-6. Remove Duplicates from Sorted List
-7. Reverse Linked List II
-8. Reorder List
-9. Insertion Sort List
-10. Sort List
-11. Intersection of Two Linked Lists
-12. Remove Linked List Elements
-13. Reverse Linked List
-14. Delete Node in a Linked List
-
-##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
-1. Longest Palindromic Substring   
-2. ZigZag Conversion   
-3. Longest Common Prefix   
-4. String to Integer (atoi)   
-5. Count and Say   
-6. Multiply Strings   
-7. Length of Last Word   
-8. Add Binary   
-9. Text Justification
-10. Reverse Words in a String
-11. Compare Version Numbers
-12. Basic Calculator II
-13. Integer to English Words
-
-##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
-1. Reverse Integer
-2. Palindrome Number
-3. Integer to Roman
-4. Roman to Integer
-5. Permutation Sequence
-6. Excel Sheet Column Title
-7. Excel Sheet Column Number
-8. Factorial Trailing Zeroes
-9. Rectangle Area
-10. Basic Calculator
-11. Add Digits
-12. Ugly Number
-13. Ugly Number II
-14. Nim Game
-15. Super Ugly Number
-16. Bulb Switcher
-17. Power of Three
-18. Number of Digit One
-19. Self Crossing
-
-##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
-1. Median of Two Sorted Arrays
-2. Merge k Sorted Lists
-3. Different Ways to Add Parentheses
-4. Burst Balloons
-
-##### [Two Pointer](https://github.com/grace0927/JavaPractice/wiki/Two-Pointer)
-1. Container With Most Water   
-2. 3Sum   
-3. 3Sum Closest   
-4. 4Sum   
-5. Remove Nth Node From End of List   
-6. Remove Duplicates from Sorted Array   
-7. Remove Element   
-8. Implement strStr()   
-9. Trapping Rain Water   
-10. Rotate List   
-11. Sort Colors   
-12. Remove Duplicates from Sorted Array II   
-13. Partition List   
-14. Merge Sorted Array
-15. Valid Palindrome
-16. Linked List Cycle
-17. Linked List Cycle II
-18. Minimum Size Subarray Sum
-19. Palindrome Linked List
-20. Move Zeroes
-21. Find the Duplicate Number
-22. Odd Even Linked List
-23. Minimum Window Substring
+##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
+1. First Missing Positive
+2. Rotate Image
+3. Spiral Matrix
+4. Next Permutation
+5. Spiral Matrix II
+6. Merge Intervals
+7. Insert Interval
+8. Maximum Subarray
+9. Plus One
+10. Set Matrix Zeroes
+11. Pascal's Triangle
+12. Pascal's Triangle II
+13. Majority Element
+14. Rotate Array
+15. Summary Ranges
+16. Product of Array Except Self
+17. Missing Number
+18. Game of Life
+19. Increasing Triplet Subsequence
+20. Majority Element II
 
 ##### [Backtracking](https://github.com/grace0927/JavaPractice/wiki/Backtracking)
 1. Letter Combinations of a Phone Number
@@ -160,20 +76,6 @@ Leetcode Algorithm problems
 19. Regular Expression Matching
 20. Word Break II
 
-##### [Stack & Queue](https://github.com/grace0927/JavaPractice/wiki/Stack)
-1. Valid Parentheses
-2. Simplify Path
-3. Largest Rectangle in Histogram
-4. Evaluate Reverse Polish Notation
-5. Min Stack
-6. Binary Search Tree Iterator
-7. Implement Stack using Queues
-8. Implement Queue using Stacks
-9. Peeking Iterator
-10. Verify Preorder Serialization of a Binary Tree
-11. Maximal Rectangle
-12. Flatten Nested List Iterator
-
 ##### [Binary Search](https://github.com/grace0927/JavaPractice/wiki/Binary-Search)
 1. Divide Two Integers
 2. Search for a Range
@@ -189,6 +91,59 @@ Leetcode Algorithm problems
 12. First Bad Version
 13. H-Index II
 14. Find Peak Element
+
+##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
+1. Single Number
+2. Single Number II
+3. Reverse Bits
+4. Number of 1 Bits
+5. Bitwise AND of Numbers Range
+6. Power of Two
+7. Single Number III
+8. Maximum Product of Word Lengths
+
+##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
+1. Binary Tree Level Order Traversal
+2. Binary Tree Zigzag Level Order Traversal
+3. Maximum Depth of Binary Tree
+4. Binary Tree Level Order Traversal II
+5. Word Ladder
+6. Sum Root to Leaf Numbers
+7. Surrounded Regions
+8. Clone Graph
+9. Binary Tree Right Side View
+10. Perfect Squares
+11. Minimum Height Trees
+12. Word Ladder II
+
+##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
+1. Same Tree
+2. Validate Binary Search Tree
+3. Symmetric Tree
+4. Construct Binary Tree from Preorder and Inorder Traversal
+5. Construct Binary Tree from Inorder and Postorder Traversal
+6. Convert Sorted Array to Binary Search Tree
+7. Balanced Binary Tree
+8. Convert Sorted List to Binary Search Tree
+9. Minimum Depth of Binary Tree
+10. Path Sum
+11. Path Sum II
+12. Flatten Binary Tree to Linked List
+13. Recover Binary Search Tree
+14. Populating Next Right Pointers in Each Node
+15. Populating Next Right Pointers in Each Node II
+16. Number of Islands
+17. Course Schedule
+18. Binary Tree Paths
+19. Longest Increasing Path in a Matrix
+20. House Robber III
+21. Binary Tree Maximum Path Sum
+
+##### [Divide and Conquer](https://github.com/grace0927/JavaPractice/wiki/Divide-and-Conquer)
+1. Median of Two Sorted Arrays
+2. Merge k Sorted Lists
+3. Different Ways to Add Parentheses
+4. Burst Balloons
 
 ##### [Dynamic Programming](https://github.com/grace0927/JavaPractice/wiki/Dynamic-Programming)
 1. Longest Valid Parentheses
@@ -221,27 +176,9 @@ Leetcode Algorithm problems
 28. Dungeon Game
 29. Best Time to Buy and Sell Stock III
 
-##### [Array](https://github.com/grace0927/JavaPractice/wiki/Array)
-1. First Missing Positive
-2. Rotate Image
-3. Spiral Matrix
-4. Next Permutation
-5. Spiral Matrix II
-6. Merge Intervals
-7. Insert Interval
-8. Maximum Subarray
-9. Plus One
-10. Set Matrix Zeroes
-11. Pascal's Triangle
-12. Pascal's Triangle II
-13. Majority Element
-14. Rotate Array
-15. Summary Ranges
-16. Product of Array Except Self
-17. Missing Number
-18. Game of Life
-19. Increasing Triplet Subsequence
-20. Majority Element II
+##### [Graph](https://github.com/grace0927/JavaPractice/wiki/Graph)
+1. Course Schedule II
+2. Reconstruct Itinerary
 
 ##### [Greedy](https://github.com/grace0927/JavaPractice/wiki/Greedy)
 1. Jump Game
@@ -251,6 +188,106 @@ Leetcode Algorithm problems
 5. Gas Station
 6. Patching Array
 7. Remove Duplicate Letters
+
+##### [Hash Table](https://github.com/grace0927/JavaPractice/wiki/Hash-Table)
+1. Two Sum   
+2. Longest Substring Without Repeating Characters   
+3. Valid Sudoku   
+4. Group Anagrams  
+5. Substring with Concatenation of All Words
+6. Copy List with Random Pointer
+7. LRU Cache
+8. Max Points on a Line
+9. Fraction to Recurring Decimal
+10. Isomorphic Strings
+11. Count Primes
+12. Happy Number
+13. Repeated DNA Sequences
+14. Contains Duplicate
+15. Contains Duplicate II
+16. Contains Duplicate III
+17. Valid Anagram
+18. H-Index
+19. Word Pattern
+20. Bulls and Cows
+21. Longest Consecutive Sequence
+
+##### [Heap](https://github.com/grace0927/JavaPractice/wiki/Heap)
+1. Sliding Window Maximum
+2. Kth Largest Element in an Array
+3. Find Median from Data Stream
+
+##### [Linked List](https://github.com/grace0927/JavaPractice/wiki/Linked-List)
+1. Add Two Numbers   
+2. Merge Two Sorted Lists   
+3. Swap Nodes in Pairs   
+4. Reverse Nodes in k-Group   
+5. Remove Duplicates from Sorted List II   
+6. Remove Duplicates from Sorted List
+7. Reverse Linked List II
+8. Reorder List
+9. Insertion Sort List
+10. Sort List
+11. Intersection of Two Linked Lists
+12. Remove Linked List Elements
+13. Reverse Linked List
+14. Delete Node in a Linked List
+
+##### [Math](https://github.com/grace0927/JavaPractice/wiki/Math)
+1. Reverse Integer
+2. Palindrome Number
+3. Integer to Roman
+4. Roman to Integer
+5. Permutation Sequence
+6. Excel Sheet Column Title
+7. Excel Sheet Column Number
+8. Factorial Trailing Zeroes
+9. Rectangle Area
+10. Basic Calculator
+11. Add Digits
+12. Ugly Number
+13. Ugly Number II
+14. Nim Game
+15. Super Ugly Number
+16. Bulb Switcher
+17. Power of Three
+18. Number of Digit One
+19. Self Crossing
+
+##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
+1. Insertion Sort List
+2. Largest Number
+3. Wiggle Sort II
+4. Maximum Gap
+
+##### [Stack & Queue](https://github.com/grace0927/JavaPractice/wiki/Stack)
+1. Valid Parentheses
+2. Simplify Path
+3. Largest Rectangle in Histogram
+4. Evaluate Reverse Polish Notation
+5. Min Stack
+6. Binary Search Tree Iterator
+7. Implement Stack using Queues
+8. Implement Queue using Stacks
+9. Peeking Iterator
+10. Verify Preorder Serialization of a Binary Tree
+11. Maximal Rectangle
+12. Flatten Nested List Iterator
+
+##### [String](https://github.com/grace0927/JavaPractice/wiki/String)
+1. Longest Palindromic Substring   
+2. ZigZag Conversion   
+3. Longest Common Prefix   
+4. String to Integer (atoi)   
+5. Count and Say   
+6. Multiply Strings   
+7. Length of Last Word   
+8. Add Binary   
+9. Text Justification
+10. Reverse Words in a String
+11. Compare Version Numbers
+12. Basic Calculator II
+13. Integer to English Words
 
 ##### [Tree](https://github.com/grace0927/JavaPractice/wiki/Tree)
 1. Binary Tree Inorder Traversal
@@ -263,71 +300,34 @@ Leetcode Algorithm problems
 8. Serialize and Deserialize Binary Tree
 9. Lowest Common Ancestor of a Binary Tree
 
-##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
-1. Same Tree
-2. Validate Binary Search Tree
-3. Symmetric Tree
-4. Construct Binary Tree from Preorder and Inorder Traversal
-5. Construct Binary Tree from Inorder and Postorder Traversal
-6. Convert Sorted Array to Binary Search Tree
-7. Balanced Binary Tree
-8. Convert Sorted List to Binary Search Tree
-9. Minimum Depth of Binary Tree
-10. Path Sum
-11. Path Sum II
-12. Flatten Binary Tree to Linked List
-13. Recover Binary Search Tree
-14. Populating Next Right Pointers in Each Node
-15. Populating Next Right Pointers in Each Node II
-16. Number of Islands
-17. Course Schedule
-18. Binary Tree Paths
-19. Longest Increasing Path in a Matrix
-20. House Robber III
-21. Binary Tree Maximum Path Sum
-
-##### [BFS](https://github.com/grace0927/JavaPractice/wiki/BFS)
-1. Binary Tree Level Order Traversal
-2. Binary Tree Zigzag Level Order Traversal
-3. Maximum Depth of Binary Tree
-4. Binary Tree Level Order Traversal II
-5. Word Ladder
-6. Sum Root to Leaf Numbers
-7. Surrounded Regions
-8. Clone Graph
-9. Binary Tree Right Side View
-10. Perfect Squares
-11. Minimum Height Trees
-12. Word Ladder II
-
-##### [Bit Manipulation](https://github.com/grace0927/JavaPractice/wiki/Bit-Manipulation)
-1. Single Number
-2. Single Number II
-3. Reverse Bits
-4. Number of 1 Bits
-5. Bitwise AND of Numbers Range
-6. Power of Two
-7. Single Number III
-8. Maximum Product of Word Lengths
-
-##### [Sort](https://github.com/grace0927/JavaPractice/wiki/Sort)
-1. Insertion Sort List
-2. Largest Number
-3. Wiggle Sort II
-4. Maximum Gap
-
 ##### [Trie](https://github.com/grace0927/JavaPractice/wiki/Trie)
 1. Implement Trie (Prefix Tree)
 2. Word Search II
 
-##### [Heap](https://github.com/grace0927/JavaPractice/wiki/Heap)
-1. Sliding Window Maximum
-2. Kth Largest Element in an Array
-3. Find Median from Data Stream
-
-##### [Graph](https://github.com/grace0927/JavaPractice/wiki/Graph)
-1. Course Schedule II
-2. Reconstruct Itinerary
+##### [Two Pointer](https://github.com/grace0927/JavaPractice/wiki/Two-Pointer)
+1. Container With Most Water   
+2. 3Sum   
+3. 3Sum Closest   
+4. 4Sum   
+5. Remove Nth Node From End of List   
+6. Remove Duplicates from Sorted Array   
+7. Remove Element   
+8. Implement strStr()   
+9. Trapping Rain Water   
+10. Rotate List   
+11. Sort Colors   
+12. Remove Duplicates from Sorted Array II   
+13. Partition List   
+14. Merge Sorted Array
+15. Valid Palindrome
+16. Linked List Cycle
+17. Linked List Cycle II
+18. Minimum Size Subarray Sum
+19. Palindrome Linked List
+20. Move Zeroes
+21. Find the Duplicate Number
+22. Odd Even Linked List
+23. Minimum Window Substring
 
 ## lintcode
 Lintcode Algorithm problems
