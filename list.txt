@@ -2,7 +2,7 @@
 /// First Missing Positive
 /// Rotate Image
 /// Spiral Matrix
-Next Permutation
+/// Next Permutation
 /// Spiral Matrix II
 /// Merge Intervals
 /// Insert Interval
