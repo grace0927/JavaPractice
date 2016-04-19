@@ -115,6 +115,7 @@ Leetcode Algorithm problems
 10. Perfect Squares
 11. Minimum Height Trees
 12. Word Ladder II
+13. Remove Invalid Parentheses
 
 ##### [DFS](https://github.com/grace0927/JavaPractice/wiki/DFS)
 1. Same Tree

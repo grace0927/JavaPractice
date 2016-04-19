@@ -82,6 +82,7 @@ Binary Tree Right Side View
 Perfect Squares
 Minimum Height Trees
 Word Ladder II
+Remove Invalid Parentheses
 
 [DFS]
 Same Tree
@@ -556,12 +557,12 @@ Minimum Window Substring
 // Counting Bits	57.8%	Medium
 /  Flatten Nested List Iterator	17.5%		Medium
 // Burst Balloons	33.7%	Hard
+// Remove Invalid Parentheses	30.7%	Hard
 Palindrome Partitioning II	21.2%	Hard
 Best Time to Buy and Sell Stock IV	21.2%	Hard
 Shortest Palindrome	18.8%	Hard
 The Skyline Problem	20.9%	Hard
 Expression Add Operators	23.1%	Hard
-Remove Invalid Parentheses	30.7%	Hard
 Count of Smaller Numbers After Self	28.5%	Hard
 Create Maximum Number	19.2%	Hard
 Count of Range Sum	24.3%	Hard
