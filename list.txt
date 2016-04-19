@@ -10,8 +10,8 @@
 /// Plus One
 /// Set Matrix Zeroes
 /// Pascal's Triangle
-Pascal's Triangle II
-Majority Element
+/// Pascal's Triangle II
+/// Majority Element
 Rotate Array
 Summary Ranges
 Product of Array Except Self
@@ -67,6 +67,7 @@ Bitwise AND of Numbers Range
 Power of Two
 Single Number III
 Maximum Product of Word Lengths
+Majority Element
 
 [BFS]
 Binary Tree Level Order Traversal
@@ -110,6 +111,7 @@ Median of Two Sorted Arrays
 Merge k Sorted Lists
 Different Ways to Add Parentheses
 Burst Balloons
+Majority Element
 
 [Dynamic Programming]
 Longest Valid Parentheses
