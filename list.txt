@@ -8,8 +8,8 @@
 /// Insert Interval
 /// Maximum Subarray
 /// Plus One
-Set Matrix Zeroes
-Pascal's Triangle
+/// Set Matrix Zeroes
+/// Pascal's Triangle
 Pascal's Triangle II
 Majority Element
 Rotate Array
