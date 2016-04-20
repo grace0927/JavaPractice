@@ -29,8 +29,8 @@ Generate Parentheses
 /// Permutations
 /// Permutations II
 /// N-Queens 
-N-Queens II
-Combinations
+/// N-Queens II
+/// Combinations
 Subsets
 Word Search
 Gray Code
