@@ -300,6 +300,7 @@ Leetcode Algorithm problems
 7. Lowest Common Ancestor of a Binary Search Tree
 8. Serialize and Deserialize Binary Tree
 9. Lowest Common Ancestor of a Binary Tree
+10. Count of Smaller Numbers After Self
 
 ##### [Trie](https://github.com/grace0927/JavaPractice/wiki/Trie)
 1. Implement Trie (Prefix Tree)
