@@ -27,8 +27,8 @@ Generate Parentheses
 /// Combination Sum
 /// Combination Sum II
 /// Permutations
-Permutations II
-N-Queens 
+/// Permutations II
+/// N-Queens 
 N-Queens II
 Combinations
 Subsets
