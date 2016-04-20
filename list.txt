@@ -21,9 +21,9 @@
 /// Majority Element II
 
 [Backtracking]
-Letter Combinations of a Phone Number
+/// Letter Combinations of a Phone Number
 Generate Parentheses
-Sudoku Solver
+/// Sudoku Solver
 Combination Sum
 Combination Sum II
 Permutations
