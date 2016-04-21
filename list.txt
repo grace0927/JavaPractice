@@ -22,7 +22,7 @@
 
 [Backtracking]
 /// Letter Combinations of a Phone Number
-Generate Parentheses
+/// Generate Parentheses
 /// Sudoku Solver
 /// Combination Sum
 /// Combination Sum II
