@@ -31,8 +31,8 @@ Generate Parentheses
 /// N-Queens 
 /// N-Queens II
 /// Combinations
-Subsets
-Word Search
+/// Subsets
+/// Word Search
 Gray Code
 Subsets II
 Restore IP Addresses
