@@ -36,8 +36,8 @@
 /// Gray Code
 /// Subsets II
 /// Restore IP Addresses
-Palindrome Partitioning
-Add and Search Word - Data structure design
+/// Palindrome Partitioning
+/// Add and Search Word - Data structure design
 Combination Sum III
 Additive Number
 Regular Expression Matching
