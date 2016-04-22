@@ -47,9 +47,9 @@ Regular Expression Matching
 Divide Two Integers
 /// Search for a Range
 /// Search Insert Position
-Search in Rotated Sorted Array
-Pow(x, n)
-Sqrt(x)
+/// Search in Rotated Sorted Array
+/// Pow(x, n)
+/// Sqrt(x)
 Search a 2D Matrix
 Search in Rotated Sorted Array II
 Find Minimum in Rotated Sorted Array
