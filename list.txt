@@ -44,7 +44,7 @@ Regular Expression Matching
 /// Word Break II
 
 [Binary Search]
-Divide Two Integers
+/// Divide Two Integers
 /// Search for a Range
 /// Search Insert Position
 /// Search in Rotated Sorted Array
