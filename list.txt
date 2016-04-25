@@ -56,7 +56,7 @@ Search in Rotated Sorted Array II
 /// Find Minimum in Rotated Sorted Array II
 /// Search a 2D Matrix II
 /// First Bad Version
-H-Index II
+/// H-Index II
 /// Find Peak Element
 
 [Bit Manipulation]
@@ -66,7 +66,7 @@ H-Index II
 /// Number of 1 Bits
 Bitwise AND of Numbers Range
 /// Power of Two
-Single Number III
+/// Single Number III
 Maximum Product of Word Lengths
 Majority Element
 
