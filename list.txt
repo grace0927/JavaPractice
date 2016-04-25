@@ -68,7 +68,7 @@ Bitwise AND of Numbers Range
 /// Power of Two
 /// Single Number III
 Maximum Product of Word Lengths
-Majority Element
+/// Majority Element
 
 [BFS]
 Binary Tree Level Order Traversal
