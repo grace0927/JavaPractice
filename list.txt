@@ -64,17 +64,17 @@ Search in Rotated Sorted Array II
 /// Single Number II
 /// Reverse Bits
 /// Number of 1 Bits
-Bitwise AND of Numbers Range
+/// Bitwise AND of Numbers Range
 /// Power of Two
 /// Single Number III
 /// Maximum Product of Word Lengths
 /// Majority Element
 
 [BFS]
-Binary Tree Level Order Traversal
-Binary Tree Zigzag Level Order Traversal
-Maximum Depth of Binary Tree
-Binary Tree Level Order Traversal II
+/// Binary Tree Level Order Traversal
+/// Binary Tree Zigzag Level Order Traversal
+/// Maximum Depth of Binary Tree
+/// Binary Tree Level Order Traversal II
 Word Ladder
 Sum Root to Leaf Numbers
 Surrounded Regions
