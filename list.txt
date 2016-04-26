@@ -79,8 +79,8 @@ Search in Rotated Sorted Array II
 /// Sum Root to Leaf Numbers
 Surrounded Regions
 Clone Graph
-Binary Tree Right Side View
-Perfect Squares
+/// Binary Tree Right Side View
+/// Perfect Squares
 Minimum Height Trees
 Word Ladder II
 Remove Invalid Parentheses
