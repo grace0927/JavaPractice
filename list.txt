@@ -102,10 +102,10 @@ Recover Binary Search Tree
 /// Populating Next Right Pointers in Each Node
 /// Populating Next Right Pointers in Each Node II
 /// Number of Islands
-Course Schedule
+/// Course Schedule
 /// Binary Tree Paths
 /// Longest Increasing Path in a Matrix
-House Robber III
+/// House Robber III
 Binary Tree Maximum Path Sum
 
 [Divide and Conquer]
