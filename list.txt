@@ -97,9 +97,9 @@ Remove Invalid Parentheses
 /// Minimum Depth of Binary Tree
 /// Path Sum
 /// Path Sum II
-Flatten Binary Tree to Linked List
+/// Flatten Binary Tree to Linked List
 Recover Binary Search Tree
-Populating Next Right Pointers in Each Node
+/// Populating Next Right Pointers in Each Node
 Populating Next Right Pointers in Each Node II
 Number of Islands
 Course Schedule
