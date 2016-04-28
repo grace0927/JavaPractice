@@ -106,7 +106,7 @@ Recover Binary Search Tree
 /// Binary Tree Paths
 /// Longest Increasing Path in a Matrix
 /// House Robber III
-Binary Tree Maximum Path Sum
+/// Binary Tree Maximum Path Sum
 
 [Divide and Conquer]
 Median of Two Sorted Arrays
