@@ -100,11 +100,11 @@ Remove Invalid Parentheses
 /// Flatten Binary Tree to Linked List
 Recover Binary Search Tree
 /// Populating Next Right Pointers in Each Node
-Populating Next Right Pointers in Each Node II
-Number of Islands
+/// Populating Next Right Pointers in Each Node II
+/// Number of Islands
 Course Schedule
-Binary Tree Paths
-Longest Increasing Path in a Matrix
+/// Binary Tree Paths
+/// Longest Increasing Path in a Matrix
 House Robber III
 Binary Tree Maximum Path Sum
 
