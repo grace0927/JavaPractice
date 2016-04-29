@@ -110,17 +110,16 @@ Recover Binary Search Tree
 
 [Divide and Conquer]
 Median of Two Sorted Arrays
-Merge k Sorted Lists
-Different Ways to Add Parentheses
+/// Merge k Sorted Lists
+/// Different Ways to Add Parentheses
 Burst Balloons
-Majority Element
 
 [Dynamic Programming]
 Longest Valid Parentheses
-Unique Paths
-Unique Paths II
-Minimum Path Sum
-Climbing Stairs
+/// Unique Paths
+/// Unique Paths II
+/// Minimum Path Sum
+/// Climbing Stairs
 Edit Distance
 Unique Binary Search Trees
 Unique Binary Search Trees II
