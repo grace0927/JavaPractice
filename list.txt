@@ -112,7 +112,7 @@ Recover Binary Search Tree
 Median of Two Sorted Arrays
 /// Merge k Sorted Lists
 /// Different Ways to Add Parentheses
-Burst Balloons
+/// Burst Balloons
 
 [Dynamic Programming]
 Longest Valid Parentheses
