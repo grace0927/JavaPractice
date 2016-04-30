@@ -120,7 +120,7 @@ Median of Two Sorted Arrays
 /// Unique Paths II
 /// Minimum Path Sum
 /// Climbing Stairs
-Edit Distance
+/// Edit Distance
 Unique Binary Search Trees
 Unique Binary Search Trees II
 Decode Ways
