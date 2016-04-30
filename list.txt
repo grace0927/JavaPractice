@@ -122,15 +122,15 @@ Median of Two Sorted Arrays
 /// Climbing Stairs
 /// Edit Distance
 /// Unique Binary Search Trees
-Unique Binary Search Trees II
+/// Unique Binary Search Trees II
 Decode Ways
 Triangle
 Best Time to Buy and Sell Stock
 Word Break
-House Robber
+/// House Robber
 Counting Bits
 House Robber II
-Range Sum Query - Immutable
+/// Range Sum Query - Immutable
 Longest Increasing Subsequence
 Range Sum Query 2D - Immutable
 Coin Change
