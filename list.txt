@@ -126,9 +126,9 @@ Median of Two Sorted Arrays
 Decode Ways
 /// Triangle
 /// Best Time to Buy and Sell Stock
-Word Break
+/// Word Break
 /// House Robber
-Counting Bits
+/// Counting Bits
 House Robber II
 /// Range Sum Query - Immutable
 Longest Increasing Subsequence
