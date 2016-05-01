@@ -123,7 +123,7 @@ Median of Two Sorted Arrays
 /// Edit Distance
 /// Unique Binary Search Trees
 /// Unique Binary Search Trees II
-Decode Ways
+/// Decode Ways
 /// Triangle
 /// Best Time to Buy and Sell Stock
 /// Word Break
