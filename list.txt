@@ -131,7 +131,7 @@ Median of Two Sorted Arrays
 /// Counting Bits
 /// House Robber II
 /// Range Sum Query - Immutable
-Longest Increasing Subsequence
+/// Longest Increasing Subsequence
 /// Range Sum Query 2D - Immutable
 /// Coin Change
 /// Maximal Square
