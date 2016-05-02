@@ -137,8 +137,8 @@ Median of Two Sorted Arrays
 /// Maximal Square
 /// Maximum Product Subarray
 Best Time to Buy and Sell Stock with Cooldown
-Wildcard Matching
-Distinct Subsequences
+/// Wildcard Matching
+/// Distinct Subsequences
 Interleaving String
 Scramble String
 Dungeon Game
