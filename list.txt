@@ -141,11 +141,11 @@ Best Time to Buy and Sell Stock with Cooldown
 /// Distinct Subsequences
 Interleaving String
 Scramble String
-Dungeon Game
+/// Dungeon Game
 Best Time to Buy and Sell Stock III
 
 [Graph]
-Course Schedule II
+/// Course Schedule II
 Reconstruct Itinerary
 
 [Greedy]
