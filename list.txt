@@ -146,10 +146,10 @@ Best Time to Buy and Sell Stock III
 
 [Graph]
 /// Course Schedule II
-Reconstruct Itinerary
+/// Reconstruct Itinerary
 
 [Greedy]
-Jump Game
+/// Jump Game
 Jump Game II
 Best Time to Buy and Sell Stock II
 Candy
