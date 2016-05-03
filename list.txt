@@ -150,10 +150,10 @@ Best Time to Buy and Sell Stock III
 
 [Greedy]
 /// Jump Game
-Jump Game II
-Best Time to Buy and Sell Stock II
-Candy
-Gas Station
+/// Jump Game II
+/// Best Time to Buy and Sell Stock II
+/// Candy
+/// Gas Station
 Patching Array
 Remove Duplicate Letters
 
