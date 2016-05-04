@@ -158,8 +158,8 @@ Patching Array
 Remove Duplicate Letters
 
 [Hash Table]
-Two Sum   
-Longest Substring Without Repeating Characters   
+/// Two Sum   
+/// Longest Substring Without Repeating Characters   
 Valid Sudoku   
 Group Anagrams  
 Substring with Concatenation of All Words
