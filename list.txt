@@ -165,8 +165,8 @@ Remove Duplicate Letters
 Substring with Concatenation of All Words
 /// Copy List with Random Pointer
 LRU Cache
-Max Points on a Line
-Fraction to Recurring Decimal
+/// Max Points on a Line
+/// Fraction to Recurring Decimal
 Isomorphic Strings
 Count Primes
 Happy Number
