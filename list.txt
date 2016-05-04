@@ -167,8 +167,8 @@ Substring with Concatenation of All Words
 LRU Cache
 /// Max Points on a Line
 /// Fraction to Recurring Decimal
-Isomorphic Strings
-Count Primes
+/// Isomorphic Strings
+/// Count Primes
 Happy Number
 Repeated DNA Sequences
 Contains Duplicate
