@@ -142,7 +142,7 @@ Best Time to Buy and Sell Stock with Cooldown
 /// Interleaving String
 /// Scramble String
 /// Dungeon Game
-Best Time to Buy and Sell Stock III
+/// Best Time to Buy and Sell Stock III
 
 [Graph]
 /// Course Schedule II
@@ -155,7 +155,7 @@ Best Time to Buy and Sell Stock III
 /// Candy
 /// Gas Station
 Patching Array
-Remove Duplicate Letters
+/// Remove Duplicate Letters
 
 [Hash Table]
 /// Two Sum   
