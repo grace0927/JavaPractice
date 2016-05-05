@@ -175,10 +175,10 @@ LRU Cache
 /// Contains Duplicate II
 /// Contains Duplicate III
 /// Valid Anagram
-H-Index
+/// H-Index
 /// Word Pattern
 /// Bulls and Cows
-Longest Consecutive Sequence
+/// Longest Consecutive Sequence
 
 [Heap]
 Sliding Window Maximum
