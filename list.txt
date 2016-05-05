@@ -173,11 +173,11 @@ LRU Cache
 /// Repeated DNA Sequences
 /// Contains Duplicate
 /// Contains Duplicate II
-Contains Duplicate III
+/// Contains Duplicate III
 /// Valid Anagram
 H-Index
 /// Word Pattern
-Bulls and Cows
+/// Bulls and Cows
 Longest Consecutive Sequence
 
 [Heap]
