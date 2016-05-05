@@ -158,10 +158,10 @@ Patching Array
 /// Remove Duplicate Letters
 
 [Hash Table]
-/// Two Sum   
+/// Two Sum
 /// Longest Substring Without Repeating Characters   
-/// Valid Sudoku   
-/// Group Anagrams  
+/// Valid Sudoku 
+/// Group Anagrams
 Substring with Concatenation of All Words
 /// Copy List with Random Pointer
 LRU Cache
@@ -169,14 +169,14 @@ LRU Cache
 /// Fraction to Recurring Decimal
 /// Isomorphic Strings
 /// Count Primes
-Happy Number
-Repeated DNA Sequences
-Contains Duplicate
-Contains Duplicate II
+/// Happy Number
+/// Repeated DNA Sequences
+/// Contains Duplicate
+/// Contains Duplicate II
 Contains Duplicate III
-Valid Anagram
+/// Valid Anagram
 H-Index
-Word Pattern
+/// Word Pattern
 Bulls and Cows
 Longest Consecutive Sequence
 
