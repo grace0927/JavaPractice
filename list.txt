@@ -181,9 +181,9 @@ LRU Cache
 /// Longest Consecutive Sequence
 
 [Heap]
-Sliding Window Maximum
-Kth Largest Element in an Array
-Find Median from Data Stream
+/// Sliding Window Maximum
+/// Kth Largest Element in an Array
+/// Find Median from Data Stream
 
 [Linked List]
 /// Add Two Numbers
