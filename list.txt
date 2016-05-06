@@ -190,9 +190,9 @@ Find Median from Data Stream
 /// Merge Two Sorted Lists   
 /// Swap Nodes in Pairs   
 Reverse Nodes in k-Group 
-Remove Duplicates from Sorted List II   
+/// Remove Duplicates from Sorted List II   
 /// Remove Duplicates from Sorted List
-Reverse Linked List II
+/// Reverse Linked List II
 Reorder List
 Insertion Sort List
 Sort List
