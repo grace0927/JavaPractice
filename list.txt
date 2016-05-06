@@ -189,11 +189,11 @@ LRU Cache
 /// Add Two Numbers
 /// Merge Two Sorted Lists   
 /// Swap Nodes in Pairs   
-Reverse Nodes in k-Group 
+/// Reverse Nodes in k-Group 
 /// Remove Duplicates from Sorted List II   
 /// Remove Duplicates from Sorted List
 /// Reverse Linked List II
-Reorder List
+/// Reorder List
 Insertion Sort List
 Sort List
 Intersection of Two Linked Lists
