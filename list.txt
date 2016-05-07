@@ -196,14 +196,14 @@ LRU Cache
 /// Reorder List
 Insertion Sort List
 Sort List
-Intersection of Two Linked Lists
-Remove Linked List Elements
-Reverse Linked List
-Delete Node in a Linked List
+/// Intersection of Two Linked Lists
+/// Remove Linked List Elements
+/// Reverse Linked List
+/// Delete Node in a Linked List
 
 [Math]
-Reverse Integer
-Palindrome Number
+/// Reverse Integer
+/// Palindrome Number
 Integer to Roman
 Roman to Integer
 Permutation Sequence
