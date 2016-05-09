@@ -210,12 +210,12 @@ Permutation Sequence
 /// Excel Sheet Column Title
 /// Excel Sheet Column Number
 /// Factorial Trailing Zeroes
-Rectangle Area
+/// Rectangle Area
 Basic Calculator
-Add Digits
-Ugly Number
+/// Add Digits
+/// Ugly Number
 Ugly Number II
-Nim Game
+/// Nim Game
 Super Ugly Number
 Bulb Switcher
 Power of Three
