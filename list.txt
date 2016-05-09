@@ -204,9 +204,9 @@ LRU Cache
 [Math]
 /// Reverse Integer
 /// Palindrome Number
-Integer to Roman
+/// Integer to Roman
 /// Roman to Integer
-Permutation Sequence
+/// Permutation Sequence
 /// Excel Sheet Column Title
 /// Excel Sheet Column Number
 /// Factorial Trailing Zeroes
