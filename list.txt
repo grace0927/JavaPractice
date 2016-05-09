@@ -194,7 +194,7 @@ LRU Cache
 /// Remove Duplicates from Sorted List
 /// Reverse Linked List II
 /// Reorder List
-Insertion Sort List
+/// Insertion Sort List
 Sort List
 /// Intersection of Two Linked Lists
 /// Remove Linked List Elements
@@ -207,9 +207,9 @@ Sort List
 Integer to Roman
 Roman to Integer
 Permutation Sequence
-Excel Sheet Column Title
-Excel Sheet Column Number
-Factorial Trailing Zeroes
+/// Excel Sheet Column Title
+/// Excel Sheet Column Number
+/// Factorial Trailing Zeroes
 Rectangle Area
 Basic Calculator
 Add Digits
