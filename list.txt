@@ -195,7 +195,7 @@ LRU Cache
 /// Reverse Linked List II
 /// Reorder List
 /// Insertion Sort List
-Sort List
+/// Sort List
 /// Intersection of Two Linked Lists
 /// Remove Linked List Elements
 /// Reverse Linked List
@@ -205,7 +205,7 @@ Sort List
 /// Reverse Integer
 /// Palindrome Number
 Integer to Roman
-Roman to Integer
+/// Roman to Integer
 Permutation Sequence
 /// Excel Sheet Column Title
 /// Excel Sheet Column Number
