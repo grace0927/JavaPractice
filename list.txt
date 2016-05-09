@@ -214,9 +214,9 @@ LRU Cache
 Basic Calculator
 /// Add Digits
 /// Ugly Number
-Ugly Number II
+/// Ugly Number II
 /// Nim Game
-Super Ugly Number
+/// Super Ugly Number
 Bulb Switcher
 Power of Three
 Number of Digit One
