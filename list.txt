@@ -217,8 +217,8 @@ Basic Calculator
 /// Ugly Number II
 /// Nim Game
 /// Super Ugly Number
-Bulb Switcher
-Power of Three
+/// Bulb Switcher
+/// Power of Three
 Number of Digit One
 Self Crossing
 
