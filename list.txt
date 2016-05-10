@@ -231,7 +231,7 @@ Basic Calculator
 [Stack & Queue]
 /// Valid Parentheses
 /// Simplify Path
-Largest Rectangle in Histogram
+/// Largest Rectangle in Histogram
 /// Evaluate Reverse Polish Notation
 /// Min Stack
 Binary Search Tree Iterator
