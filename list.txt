@@ -233,7 +233,7 @@ Basic Calculator
 /// Simplify Path
 Largest Rectangle in Histogram
 /// Evaluate Reverse Polish Notation
-Min Stack
+/// Min Stack
 Binary Search Tree Iterator
 Implement Stack using Queues
 Implement Queue using Stacks
