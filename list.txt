@@ -220,12 +220,12 @@ Basic Calculator
 /// Bulb Switcher
 /// Power of Three
 /// Number of Digit One
-Self Crossing
+/// Self Crossing
 
 [Sort]
 /// Insertion Sort List
 /// Largest Number
-Wiggle Sort II
+/// Wiggle Sort II
 /// Maximum Gap
 
 [Stack & Queue]
