@@ -219,20 +219,20 @@ Basic Calculator
 /// Super Ugly Number
 /// Bulb Switcher
 /// Power of Three
-Number of Digit One
+/// Number of Digit One
 Self Crossing
 
 [Sort]
 /// Insertion Sort List
-Largest Number
+/// Largest Number
 Wiggle Sort II
-Maximum Gap
+/// Maximum Gap
 
 [Stack & Queue]
 /// Valid Parentheses
-Simplify Path
+/// Simplify Path
 Largest Rectangle in Histogram
-Evaluate Reverse Polish Notation
+/// Evaluate Reverse Polish Notation
 Min Stack
 Binary Search Tree Iterator
 Implement Stack using Queues
