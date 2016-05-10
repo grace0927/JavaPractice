@@ -234,9 +234,9 @@ Basic Calculator
 /// Largest Rectangle in Histogram
 /// Evaluate Reverse Polish Notation
 /// Min Stack
-Binary Search Tree Iterator
-Implement Stack using Queues
-Implement Queue using Stacks
+/// Binary Search Tree Iterator
+/// Implement Stack using Queues
+/// Implement Queue using Stacks
 Peeking Iterator
 Verify Preorder Serialization of a Binary Tree
 Maximal Rectangle
