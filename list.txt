@@ -223,13 +223,13 @@ Number of Digit One
 Self Crossing
 
 [Sort]
-Insertion Sort List
+/// Insertion Sort List
 Largest Number
 Wiggle Sort II
 Maximum Gap
 
 [Stack & Queue]
-Valid Parentheses
+/// Valid Parentheses
 Simplify Path
 Largest Rectangle in Histogram
 Evaluate Reverse Polish Notation
