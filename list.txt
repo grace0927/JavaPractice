@@ -237,14 +237,14 @@ Basic Calculator
 /// Binary Search Tree Iterator
 /// Implement Stack using Queues
 /// Implement Queue using Stacks
-Peeking Iterator
-Verify Preorder Serialization of a Binary Tree
+/// Peeking Iterator
+/// Verify Preorder Serialization of a Binary Tree
 Maximal Rectangle
 Flatten Nested List Iterator
 
 [String]
 Longest Palindromic Substring
-ZigZag Conversion
+/// ZigZag Conversion
 /// Longest Common Prefix
 String to Integer (atoi)
 /// Count and Say
