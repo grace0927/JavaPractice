@@ -239,8 +239,8 @@ Basic Calculator
 /// Implement Queue using Stacks
 /// Peeking Iterator
 /// Verify Preorder Serialization of a Binary Tree
-Maximal Rectangle
-Flatten Nested List Iterator
+/// Maximal Rectangle
+/// Flatten Nested List Iterator
 
 [String]
 Longest Palindromic Substring
