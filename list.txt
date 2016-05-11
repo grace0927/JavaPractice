@@ -243,14 +243,14 @@ Maximal Rectangle
 Flatten Nested List Iterator
 
 [String]
-Longest Palindromic Substring   
-ZigZag Conversion   
-Longest Common Prefix   
-String to Integer (atoi)   
-Count and Say   
-Multiply Strings   
-Length of Last Word   
-Add Binary   
+Longest Palindromic Substring
+ZigZag Conversion
+/// Longest Common Prefix
+String to Integer (atoi)
+/// Count and Say
+/// Multiply Strings
+Length of Last Word
+Add Binary
 Text Justification
 Reverse Words in a String
 Compare Version Numbers
