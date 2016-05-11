@@ -246,7 +246,7 @@ Basic Calculator
 /// Longest Palindromic Substring
 /// ZigZag Conversion
 /// Longest Common Prefix
-String to Integer (atoi)
+/// String to Integer (atoi)
 /// Count and Say
 /// Multiply Strings
 /// Length of Last Word
