@@ -252,15 +252,15 @@ Basic Calculator
 /// Length of Last Word
 /// Add Binary
 Text Justification
-Reverse Words in a String
+/// Reverse Words in a String
 /// Compare Version Numbers
 Basic Calculator II
 Integer to English Words
 
 [Tree]
-Binary Tree Inorder Traversal
-Binary Tree Preorder Traversal
-Binary Tree Postorder Traversal
+/// Binary Tree Inorder Traversal
+/// Binary Tree Preorder Traversal
+/// Binary Tree Postorder Traversal
 Count Complete Tree Nodes
 /// Invert Binary Tree
 Kth Smallest Element in a BST
