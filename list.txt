@@ -251,11 +251,11 @@ Basic Calculator
 /// Multiply Strings
 /// Length of Last Word
 /// Add Binary
-Text Justification
+/// Text Justification
 /// Reverse Words in a String
 /// Compare Version Numbers
 Basic Calculator II
-Integer to English Words
+/// Integer to English Words
 
 [Tree]
 /// Binary Tree Inorder Traversal
