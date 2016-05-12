@@ -250,10 +250,10 @@ Basic Calculator
 /// Count and Say
 /// Multiply Strings
 /// Length of Last Word
-Add Binary
+/// Add Binary
 Text Justification
 Reverse Words in a String
-Compare Version Numbers
+/// Compare Version Numbers
 Basic Calculator II
 Integer to English Words
 
@@ -262,7 +262,7 @@ Binary Tree Inorder Traversal
 Binary Tree Preorder Traversal
 Binary Tree Postorder Traversal
 Count Complete Tree Nodes
-Invert Binary Tree
+/// Invert Binary Tree
 Kth Smallest Element in a BST
 Lowest Common Ancestor of a Binary Search Tree
 Serialize and Deserialize Binary Tree
