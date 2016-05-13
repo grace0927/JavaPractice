@@ -265,7 +265,7 @@ Basic Calculator II
 /// Invert Binary Tree
 /// Kth Smallest Element in a BST
 /// Lowest Common Ancestor of a Binary Search Tree
-Serialize and Deserialize Binary Tree
+/// Serialize and Deserialize Binary Tree
 Lowest Common Ancestor of a Binary Tree
 
 [Trie]
