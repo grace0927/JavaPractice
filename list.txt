@@ -261,21 +261,21 @@ Basic Calculator II
 /// Binary Tree Inorder Traversal
 /// Binary Tree Preorder Traversal
 /// Binary Tree Postorder Traversal
-Count Complete Tree Nodes
+/// Count Complete Tree Nodes
 /// Invert Binary Tree
 Kth Smallest Element in a BST
-Lowest Common Ancestor of a Binary Search Tree
+/// Lowest Common Ancestor of a Binary Search Tree
 Serialize and Deserialize Binary Tree
 Lowest Common Ancestor of a Binary Tree
 
 [Trie]
-Implement Trie (Prefix Tree)
+/// Implement Trie (Prefix Tree)
 Word Search II
 
 [Two Pointer]
 Container With Most Water
-3Sum
-3Sum Closest
+/// 3Sum
+/// 3Sum Closest
 4Sum
 Remove Nth Node From End of List
 Remove Duplicates from Sorted Array
