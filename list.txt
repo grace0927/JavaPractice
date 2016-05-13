@@ -266,7 +266,7 @@ Basic Calculator II
 /// Kth Smallest Element in a BST
 /// Lowest Common Ancestor of a Binary Search Tree
 /// Serialize and Deserialize Binary Tree
-Lowest Common Ancestor of a Binary Tree
+/// Lowest Common Ancestor of a Binary Tree
 
 [Trie]
 /// Implement Trie (Prefix Tree)
