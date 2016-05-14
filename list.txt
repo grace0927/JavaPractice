@@ -280,16 +280,16 @@ Basic Calculator II
 /// Remove Nth Node From End of List
 /// Remove Duplicates from Sorted Array
 /// Remove Element
-Implement strStr()
+/// Implement strStr()
 Trapping Rain Water
-Rotate List
-Sort Colors
+/// Rotate List
+/// Sort Colors
 Remove Duplicates from Sorted Array II
-Partition List
-Merge Sorted Array
-Valid Palindrome
-Linked List Cycle
-Linked List Cycle II
+/// Partition List
+/// Merge Sorted Array
+/// Valid Palindrome
+/// Linked List Cycle
+/// Linked List Cycle II
 Minimum Size Subarray Sum
 Palindrome Linked List
 Move Zeroes
