@@ -291,8 +291,8 @@ Remove Duplicates from Sorted Array II
 /// Linked List Cycle
 /// Linked List Cycle II
 Minimum Size Subarray Sum
-Palindrome Linked List
-Move Zeroes
+/// Palindrome Linked List
+/// Move Zeroes
 Find the Duplicate Number
 Odd Even Linked List
 Minimum Window Substring
