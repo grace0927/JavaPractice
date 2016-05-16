@@ -284,17 +284,17 @@ Basic Calculator II
 Trapping Rain Water
 /// Rotate List
 /// Sort Colors
-Remove Duplicates from Sorted Array II
+/// Remove Duplicates from Sorted Array II
 /// Partition List
 /// Merge Sorted Array
 /// Valid Palindrome
 /// Linked List Cycle
 /// Linked List Cycle II
-Minimum Size Subarray Sum
+/// Minimum Size Subarray Sum
 /// Palindrome Linked List
 /// Move Zeroes
-Find the Duplicate Number
-Odd Even Linked List
+/// Find the Duplicate Number
+/// Odd Even Linked List
 Minimum Window Substring
 
 [Full List]
