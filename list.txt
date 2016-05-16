@@ -281,7 +281,7 @@ Basic Calculator II
 /// Remove Duplicates from Sorted Array
 /// Remove Element
 /// Implement strStr()
-Trapping Rain Water
+/// Trapping Rain Water
 /// Rotate List
 /// Sort Colors
 /// Remove Duplicates from Sorted Array II
