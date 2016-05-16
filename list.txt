@@ -154,7 +154,7 @@ Best Time to Buy and Sell Stock with Cooldown
 /// Best Time to Buy and Sell Stock II
 /// Candy
 /// Gas Station
-Patching Array
+/// Patching Array
 /// Remove Duplicate Letters
 
 [Hash Table]
