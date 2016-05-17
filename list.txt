@@ -99,7 +99,7 @@ Power of Four
 /// Path Sum
 /// Path Sum II
 /// Flatten Binary Tree to Linked List
-Recover Binary Search Tree
+/// Recover Binary Search Tree
 /// Populating Next Right Pointers in Each Node
 /// Populating Next Right Pointers in Each Node II
 /// Number of Islands
