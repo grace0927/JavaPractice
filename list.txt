@@ -69,6 +69,7 @@ Search in Rotated Sorted Array II
 /// Single Number III
 /// Maximum Product of Word Lengths
 /// Majority Element
+Power of Four
 
 [BFS]
 /// Binary Tree Level Order Traversal
@@ -162,7 +163,7 @@ Best Time to Buy and Sell Stock with Cooldown
 /// Longest Substring Without Repeating Characters   
 /// Valid Sudoku 
 /// Group Anagrams
-Substring with Concatenation of All Words
+/// Substring with Concatenation of All Words
 /// Copy List with Random Pointer
 LRU Cache
 /// Max Points on a Line
@@ -221,6 +222,7 @@ Basic Calculator
 /// Power of Three
 /// Number of Digit One
 /// Self Crossing
+Integer Break
 
 [Sort]
 /// Insertion Sort List
@@ -256,6 +258,7 @@ Basic Calculator
 /// Compare Version Numbers
 /// Basic Calculator II
 /// Integer to English Words
+Reverse String
 
 [Tree]
 /// Binary Tree Inorder Traversal
@@ -296,6 +299,7 @@ Basic Calculator
 /// Find the Duplicate Number
 /// Odd Even Linked List
 /// Minimum Window Substring
+Reverse Vowels of a String
 
 [Full List]
 // Two Sum	20.9%	Medium
@@ -558,10 +562,10 @@ Basic Calculator
 // Burst Balloons	33.7%	Hard
 // Remove Invalid Parentheses	30.7%	Hard
 // Count of Smaller Numbers After Self	28.5%	Hard
-Power of Four	33.4%		Easy
-Integer Break	40.7%		Medium
-Reverse String	59.9%		Easy
-Reverse Vowels of a String	35.9%		Easy
+// Power of Four	33.4%		Easy
+// Integer Break	40.7%		Medium
+// Reverse String	59.9%		Easy
+// Reverse Vowels of a String	35.9%		Easy
 Palindrome Partitioning II	21.2%	Hard
 Best Time to Buy and Sell Stock IV	21.2%	Hard
 Shortest Palindrome	18.8%	Hard
