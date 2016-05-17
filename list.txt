@@ -51,7 +51,7 @@
 /// Pow(x, n)
 /// Sqrt(x)
 /// Search a 2D Matrix
-Search in Rotated Sorted Array II
+/// Search in Rotated Sorted Array II
 /// Find Minimum in Rotated Sorted Array
 /// Find Minimum in Rotated Sorted Array II
 /// Search a 2D Matrix II
@@ -558,7 +558,7 @@ Reverse Vowels of a String
 // Self Crossing	17.5%	Medium
 // House Robber III	37.4%	Medium
 // Counting Bits	57.8%	Medium
-/  Flatten Nested List Iterator	17.5%		Medium
+//  Flatten Nested List Iterator	17.5%		Medium
 // Burst Balloons	33.7%	Hard
 // Remove Invalid Parentheses	30.7%	Hard
 // Count of Smaller Numbers After Self	28.5%	Hard
