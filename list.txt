@@ -575,3 +575,4 @@ Create Maximum Number	19.2%	Hard
 Count of Range Sum	24.3%	Hard
 Palindrome Pairs	18.1%	Hard
 Top K Frequent Elements	42.7%		Medium
+Intersection of Two Arrays	47.2%		Easy
