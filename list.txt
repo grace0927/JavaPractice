@@ -110,7 +110,7 @@ Power of Four
 /// Binary Tree Maximum Path Sum
 
 [Divide and Conquer]
-Median of Two Sorted Arrays
+/// Median of Two Sorted Arrays
 /// Merge k Sorted Lists
 /// Different Ways to Add Parentheses
 /// Burst Balloons
