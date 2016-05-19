@@ -114,6 +114,7 @@ Power of Four
 /// Merge k Sorted Lists
 /// Different Ways to Add Parentheses
 /// Burst Balloons
+Count of Range Sum
 
 [Dynamic Programming]
 /// Longest Valid Parentheses
@@ -566,13 +567,13 @@ Reverse Vowels of a String
 // Integer Break	40.7%		Medium
 // Reverse String	59.9%		Easy
 // Reverse Vowels of a String	35.9%		Easy
+// Count of Range Sum	24.3%	Hard
 Palindrome Partitioning II	21.2%	Hard
 Best Time to Buy and Sell Stock IV	21.2%	Hard
 Shortest Palindrome	18.8%	Hard
 The Skyline Problem	20.9%	Hard
 Expression Add Operators	23.1%	Hard
 Create Maximum Number	19.2%	Hard
-Count of Range Sum	24.3%	Hard
 Palindrome Pairs	18.1%	Hard
 Top K Frequent Elements	42.7%		Medium
 Intersection of Two Arrays	47.2%		Easy
