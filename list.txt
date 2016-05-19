@@ -145,6 +145,7 @@ Count of Range Sum
 /// Scramble String
 /// Dungeon Game
 /// Best Time to Buy and Sell Stock III
+Palindrome Partitioning II
 
 [Graph]
 /// Course Schedule II
@@ -568,7 +569,7 @@ Reverse Vowels of a String
 // Reverse String	59.9%		Easy
 // Reverse Vowels of a String	35.9%		Easy
 // Count of Range Sum	24.3%	Hard
-Palindrome Partitioning II	21.2%	Hard
+// Palindrome Partitioning II	21.2%	Hard
 Best Time to Buy and Sell Stock IV	21.2%	Hard
 Shortest Palindrome	18.8%	Hard
 The Skyline Problem	20.9%	Hard
