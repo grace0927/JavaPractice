@@ -263,6 +263,7 @@ Integer Break
 /// Basic Calculator II
 /// Integer to English Words
 Reverse String
+Shortest Palindrome
 
 [Tree]
 /// Binary Tree Inorder Traversal
@@ -574,8 +575,8 @@ Reverse Vowels of a String
 // Palindrome Partitioning II	21.2%	Hard
 // Expression Add Operators	23.1%	Hard
 // The Skyline Problem	20.9%	Hard
+// Shortest Palindrome	18.8%	Hard
 Best Time to Buy and Sell Stock IV	21.2%	Hard
-Shortest Palindrome	18.8%	Hard
 Create Maximum Number	19.2%	Hard
 Palindrome Pairs	18.1%	Hard
 Top K Frequent Elements	42.7%		Medium
