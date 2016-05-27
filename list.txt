@@ -186,6 +186,7 @@ Create Maximum Number
 /// Bulls and Cows
 /// Longest Consecutive Sequence
 Palindrome Pairs
+Top K Frequent Elements
 
 [Heap]
 /// Sliding Window Maximum
@@ -582,6 +583,6 @@ Reverse Vowels of a String
 // Best Time to Buy and Sell Stock IV	21.2%	Hard
 // Create Maximum Number	19.2%	Hard
 // Palindrome Pairs	18.1%	Hard
-Top K Frequent Elements	42.7%		Medium
+// Top K Frequent Elements	42.7%		Medium
 Intersection of Two Arrays	47.2%		Easy
 Intersection of Two Arrays II	43.0%		Easy
