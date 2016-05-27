@@ -161,6 +161,7 @@ Best Time to Buy and Sell Stock IV
 /// Gas Station
 /// Patching Array
 /// Remove Duplicate Letters
+Create Maximum Number
 
 [Hash Table]
 /// Two Sum
@@ -578,7 +579,7 @@ Reverse Vowels of a String
 // The Skyline Problem	20.9%	Hard
 // Shortest Palindrome	18.8%	Hard
 // Best Time to Buy and Sell Stock IV	21.2%	Hard
-Create Maximum Number	19.2%	Hard
+// Create Maximum Number	19.2%	Hard
 Palindrome Pairs	18.1%	Hard
 Top K Frequent Elements	42.7%		Medium
 Intersection of Two Arrays	47.2%		Easy
