@@ -187,6 +187,8 @@ Create Maximum Number
 /// Longest Consecutive Sequence
 Palindrome Pairs
 Top K Frequent Elements
+Intersection of Two Arrays
+Intersection of Two Arrays II
 
 [Heap]
 /// Sliding Window Maximum
@@ -567,7 +569,7 @@ Reverse Vowels of a String
 // Self Crossing	17.5%	Medium
 // House Robber III	37.4%	Medium
 // Counting Bits	57.8%	Medium
-//  Flatten Nested List Iterator	17.5%		Medium
+// Flatten Nested List Iterator	17.5%		Medium
 // Burst Balloons	33.7%	Hard
 // Remove Invalid Parentheses	30.7%	Hard
 // Count of Smaller Numbers After Self	28.5%	Hard
@@ -584,5 +586,6 @@ Reverse Vowels of a String
 // Create Maximum Number	19.2%	Hard
 // Palindrome Pairs	18.1%	Hard
 // Top K Frequent Elements	42.7%		Medium
-Intersection of Two Arrays	47.2%		Easy
-Intersection of Two Arrays II	43.0%		Easy
+// Intersection of Two Arrays	47.2%		Easy
+// Intersection of Two Arrays II	43.0%		Easy
+Data Stream as Disjoint Intervals	32.8%		Hard
