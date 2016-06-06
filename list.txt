@@ -1,6 +1,6 @@
 [Array]
-/// First Missing Positive
-/// Rotate Image
+//// First Missing Positive
+//// Rotate Image
 /// Spiral Matrix
 /// Next Permutation
 /// Spiral Matrix II
