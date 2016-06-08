@@ -58,7 +58,8 @@ public class TopKFrequentElements {
     // https://leetcode.com/discuss/100581/java-o-n-solution-bucket-sort
     public List<Integer> topKFrequentBucketSort(int[] nums, int k) {
 
-        List<Integer>[] bucket = new List[nums.length + 1];
+        @SuppressWarnings("unchecked")
+		List<Integer>[] bucket = new List[nums.length + 1];
         Map<Integer, Integer> frequencyMap = new HashMap<Integer, Integer>();
 
         for (int n : nums) {
