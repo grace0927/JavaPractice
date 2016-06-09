@@ -2,8 +2,8 @@
 //// First Missing Positive
 //// Rotate Image
 //// Spiral Matrix
-/// Next Permutation
-/// Spiral Matrix II
+//// Next Permutation
+//// Spiral Matrix II
 /// Merge Intervals
 /// Insert Interval
 /// Maximum Subarray

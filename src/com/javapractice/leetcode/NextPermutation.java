@@ -65,5 +65,34 @@ public class NextPermutation {
 		    }
 		}
     }
-
+	
+	// neat code in round 4
+    public void round4(int[] nums) {
+        int n=nums.length, pnt=n-1;
+        while(pnt>0 && nums[pnt]<=nums[pnt-1]) {
+            pnt--;
+        }
+        if(pnt==0) {
+            reverse(nums, 0, n-1);
+        } else {
+            int i=pnt;
+            while(i<n && nums[i]>nums[pnt-1]) {
+                i++;
+            }
+            swap(nums, pnt-1, i-1);
+            reverse(nums, pnt, n-1);
+        }
+    }
+    
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+    
+    private void reverse(int[] nums, int start, int end) {
+        while(start<end) {
+            swap(nums, start++, end--);
+        }
+    }
 }

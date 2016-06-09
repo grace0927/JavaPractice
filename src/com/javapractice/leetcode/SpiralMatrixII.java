@@ -72,4 +72,25 @@ public class SpiralMatrixII {
         return res;
     }
 
+    public int[][] round4(int n) {
+        int[][] res = new int[n][n];
+        int ns=0, num=1;
+        while(n>ns) {
+            for(int i=ns; i<n; i++) {
+                res[ns][i] = num++;
+            }
+            for(int i=ns+1; i<n; i++) {
+                res[i][n-1] = num++;
+            }
+            for(int i=n-2; i>=ns; i--) {
+                res[n-1][i] = num++;
+            }
+            for(int i=n-2; i>ns; i--) {
+                res[i][ns] = num++;
+            }
+            ns++;
+            n--;
+        }
+        return res;
+    }
 }
