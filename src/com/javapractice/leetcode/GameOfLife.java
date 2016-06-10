@@ -68,4 +68,36 @@ public class GameOfLife {
         }
         return 0;
     }
+    
+    public void round4(int[][] board) {
+        median(board);
+        next(board);
+    }
+    private void median(int[][] board) {
+        for(int i=0; i<board.length; i++) {
+            for(int j=0; j<board[0].length; j++) {
+                if(live(board, i, j)) {
+                    board[i][j] += 2;
+                }
+            }
+        }
+    }
+    private void next(int[][] board) {
+        for(int i=0; i<board.length; i++) {
+            for(int j=0; j<board[0].length; j++) {
+                board[i][j] >>= 1;
+            }
+        }
+    }
+    private boolean live(int[][] board, int r, int c) {
+        int live = -board[r][c];
+        for(int i=-1; i<2; i++) {
+            for(int j=-1; j<2; j++) {
+                if(r+i>=0 && r+i<board.length && c+j>=0 && c+j<board[0].length) {
+                    live += board[r+i][c+j] & 1;
+                }
+            }
+        }
+        return (board[r][c]==1&&live==2) || (live==3);
+    }
 }

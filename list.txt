@@ -14,9 +14,9 @@
 //// Majority Element
 //// Rotate Array
 //// Summary Ranges
-/// Product of Array Except Self
-/// Missing Number
-/// Game of Life
+//// Product of Array Except Self
+//// Missing Number
+//// Game of Life
 /// Increasing Triplet Subsequence
 /// Majority Element II
 
