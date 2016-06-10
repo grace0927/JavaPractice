@@ -79,5 +79,15 @@ public class MaximumSubarray {
         	return Math.max(Math.max(leftMax, rightMax), midMax);
         }
     }
+	
+    public int round4(int[] nums) {
+        int local=0, global=Integer.MIN_VALUE;
+        for(int i=0; i<nums.length; i++) {
+            local += nums[i];
+            global = Math.max(global, local);
+            local = (local>0)?local:0;
+        }
+        return global;
+    }
 
 }
