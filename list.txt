@@ -17,8 +17,8 @@
 //// Product of Array Except Self
 //// Missing Number
 //// Game of Life
-/// Increasing Triplet Subsequence
-/// Majority Element II
+//// Increasing Triplet Subsequence
+//// Majority Element II
 
 [Backtracking]
 /// Letter Combinations of a Phone Number
