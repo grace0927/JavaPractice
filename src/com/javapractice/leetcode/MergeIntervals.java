@@ -5,6 +5,8 @@ package com.javapractice.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
@@ -61,5 +63,33 @@ public class MergeIntervals {
 		res.add(temp);
 		
 		return res;
+    }
+	
+    public List<Interval> round4(List<Interval> intervals) {
+        Collections.sort(intervals, new Comparator<Interval>(){
+            public int compare(Interval a, Interval b) {
+                return (a.start==b.start)?b.end-a.end:a.start-b.start;
+            }
+        });
+        List<Interval> list = new ArrayList<>();
+        Interval pnt = null;
+        for(Interval i:intervals) {
+            if(pnt==null) {
+                pnt = i;
+            } else {
+                if(i.start!=pnt.start) {
+                    if(i.start>pnt.end) {
+                        list.add(new Interval(pnt.start, pnt.end));
+                        pnt = i;
+                    } else {
+                        pnt.end = Math.max(i.end, pnt.end);
+                    }
+                }
+            }
+        }
+        if(pnt!=null) {
+            list.add(pnt);
+        }
+        return list;
     }
 }

@@ -4,8 +4,8 @@
 //// Spiral Matrix
 //// Next Permutation
 //// Spiral Matrix II
-/// Merge Intervals
-/// Insert Interval
+//// Merge Intervals
+//// Insert Interval
 /// Maximum Subarray
 /// Plus One
 /// Set Matrix Zeroes
