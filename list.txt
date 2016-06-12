@@ -589,3 +589,5 @@ Reverse Vowels of a String
 // Intersection of Two Arrays	47.2%		Easy
 // Intersection of Two Arrays II	43.0%		Easy
 // Data Stream as Disjoint Intervals	32.8%		Hard
+Russian Doll Envelopes	27.7%		Hard
+Design Twitter	28.4%		Hard
