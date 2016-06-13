@@ -28,13 +28,13 @@
 //// Combination Sum II
 //// Permutations
 //// Permutations II
-/// N-Queens 
-/// N-Queens II
-/// Combinations
-/// Subsets
-/// Word Search
-/// Gray Code
-/// Subsets II
+//// N-Queens 
+//// N-Queens II
+//// Combinations
+//// Subsets
+//// Word Search
+//// Gray Code
+//// Subsets II
 /// Restore IP Addresses
 /// Palindrome Partitioning
 /// Add and Search Word - Data structure design
