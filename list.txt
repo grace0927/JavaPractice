@@ -37,8 +37,8 @@
 //// Subsets II
 //// Restore IP Addresses
 //// Palindrome Partitioning
-/// Add and Search Word - Data structure design
-/// Combination Sum III
+//// Add and Search Word - Data structure design
+//// Combination Sum III
 /// Additive Number
 /// Regular Expression Matching
 /// Word Break II
@@ -46,7 +46,7 @@ Expression Add Operators
 
 [Binary Search]
 /// Divide Two Integers
-/// Search for a Range
+//// Search for a Range
 /// Search Insert Position
 /// Search in Rotated Sorted Array
 /// Pow(x, n)
