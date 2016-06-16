@@ -58,16 +58,16 @@
 //// Search a 2D Matrix II
 //// First Bad Version
 /// H-Index II
-/// Find Peak Element
+//// Find Peak Element
 
 [Bit Manipulation]
-/// Single Number
-/// Single Number II
-/// Reverse Bits
-/// Number of 1 Bits
+//// Single Number
+//// Single Number II
+//// Reverse Bits
+//// Number of 1 Bits
 /// Bitwise AND of Numbers Range
-/// Power of Two
-/// Single Number III
+//// Power of Two
+//// Single Number III
 /// Maximum Product of Word Lengths
 /// Majority Element
 Power of Four
