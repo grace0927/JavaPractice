@@ -73,8 +73,8 @@
 /// Power of Four
 
 [BFS]
-/// Binary Tree Level Order Traversal
-/// Binary Tree Zigzag Level Order Traversal
+//// Binary Tree Level Order Traversal
+//// Binary Tree Zigzag Level Order Traversal
 /// Maximum Depth of Binary Tree
 /// Binary Tree Level Order Traversal II
 /// Word Ladder
