@@ -88,9 +88,9 @@
 /// Remove Invalid Parentheses
 
 [DFS]
-/// Same Tree
+//// Same Tree
 /// Validate Binary Search Tree
-/// Symmetric Tree
+//// Symmetric Tree
 /// Construct Binary Tree from Preorder and Inorder Traversal
 /// Construct Binary Tree from Inorder and Postorder Traversal
 /// Convert Sorted Array to Binary Search Tree
