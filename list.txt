@@ -95,10 +95,10 @@
 /// Construct Binary Tree from Inorder and Postorder Traversal
 //// Convert Sorted Array to Binary Search Tree
 //// Balanced Binary Tree
-/// Convert Sorted List to Binary Search Tree
-/// Minimum Depth of Binary Tree
-/// Path Sum
-/// Path Sum II
+//// Convert Sorted List to Binary Search Tree
+//// Minimum Depth of Binary Tree
+//// Path Sum
+//// Path Sum II
 /// Flatten Binary Tree to Linked List
 /// Recover Binary Search Tree
 /// Populating Next Right Pointers in Each Node
