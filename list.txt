@@ -91,8 +91,8 @@
 //// Same Tree
 /// Validate Binary Search Tree
 //// Symmetric Tree
-/// Construct Binary Tree from Preorder and Inorder Traversal
-/// Construct Binary Tree from Inorder and Postorder Traversal
+//// Construct Binary Tree from Preorder and Inorder Traversal
+//// Construct Binary Tree from Inorder and Postorder Traversal
 //// Convert Sorted Array to Binary Search Tree
 //// Balanced Binary Tree
 //// Convert Sorted List to Binary Search Tree
