@@ -57,7 +57,7 @@
 //// Find Minimum in Rotated Sorted Array II
 //// Search a 2D Matrix II
 //// First Bad Version
-/// H-Index II
+//// H-Index II
 //// Find Peak Element
 
 [Bit Manipulation]
