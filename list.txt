@@ -59,6 +59,8 @@
 //// First Bad Version
 //// H-Index II
 //// Find Peak Element
+// Data Stream as Disjoint Intervals
+/ Valid Perfect Square
 
 [Bit Manipulation]
 //// Single Number
@@ -71,6 +73,7 @@
 //// Maximum Product of Word Lengths
 //// Majority Element
 /// Power of Four
+/ Sum of Two Integers
 
 [BFS]
 //// Binary Tree Level Order Traversal
@@ -115,7 +118,7 @@
 /// Merge k Sorted Lists
 /// Different Ways to Add Parentheses
 /// Burst Balloons
-Count of Range Sum
+// Count of Range Sum
 
 [Dynamic Programming]
 /// Longest Valid Parentheses
@@ -146,8 +149,9 @@ Count of Range Sum
 /// Scramble String
 /// Dungeon Game
 /// Best Time to Buy and Sell Stock III
-Palindrome Partitioning II
-Best Time to Buy and Sell Stock IV
+// Palindrome Partitioning II
+// Best Time to Buy and Sell Stock IV
+/ Russian Doll Envelopes
 
 [Graph]
 /// Course Schedule II
@@ -161,7 +165,7 @@ Best Time to Buy and Sell Stock IV
 /// Gas Station
 /// Patching Array
 /// Remove Duplicate Letters
-Create Maximum Number
+// Create Maximum Number
 
 [Hash Table]
 /// Two Sum
@@ -185,16 +189,17 @@ Create Maximum Number
 /// Word Pattern
 /// Bulls and Cows
 /// Longest Consecutive Sequence
-Palindrome Pairs
-Top K Frequent Elements
-Intersection of Two Arrays
-Intersection of Two Arrays II
+// Palindrome Pairs
+// Top K Frequent Elements
+// Intersection of Two Arrays
+// Intersection of Two Arrays II
+/ Design Twitter
 
 [Heap]
 /// Sliding Window Maximum
 /// Kth Largest Element in an Array
 /// Find Median from Data Stream
-The Skyline Problem
+// The Skyline Problem
 
 [Linked List]
 /// Add Two Numbers
@@ -232,7 +237,7 @@ The Skyline Problem
 /// Power of Three
 /// Number of Digit One
 /// Self Crossing
-Integer Break
+// Integer Break
 
 [Sort]
 /// Insertion Sort List
@@ -268,8 +273,8 @@ Integer Break
 /// Compare Version Numbers
 /// Basic Calculator II
 /// Integer to English Words
-Reverse String
-Shortest Palindrome
+// Reverse String
+// Shortest Palindrome
 
 [Tree]
 /// Binary Tree Inorder Traversal
@@ -310,7 +315,7 @@ Shortest Palindrome
 /// Find the Duplicate Number
 /// Odd Even Linked List
 /// Minimum Window Substring
-Reverse Vowels of a String
+// Reverse Vowels of a String
 
 [Full List]
 // Two Sum	20.9%	Medium
@@ -589,12 +594,13 @@ Reverse Vowels of a String
 // Intersection of Two Arrays	47.2%		Easy
 // Intersection of Two Arrays II	43.0%		Easy
 // Data Stream as Disjoint Intervals	32.8%		Hard
-Russian Doll Envelopes	27.7%		Hard
-Design Twitter	28.4%		Hard
+/ Russian Doll Envelopes	27.7%		Hard
+/ Design Twitter	28.4%		Hard
+/ Valid Perfect Square	36.2%		Medium
+/ Sum of Two Integers	51.6%		Easy
 Max Sum of Rectangle No Larger Than K	28.5%		Hard
+Count Numbers with Unique Digits	42.6%		Medium
 Water and Jug Problem	21.2%		Medium
 Largest Divisible Subset	29.9%		Medium
-Valid Perfect Square	36.2%		Medium
-// Sum of Two Integers	51.6%		Easy
 Super Pow	30.1%		Medium
 Find K Pairs with Smallest Sums	26.5%		Medium
