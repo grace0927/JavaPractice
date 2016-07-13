@@ -152,6 +152,7 @@
 // Palindrome Partitioning II
 // Best Time to Buy and Sell Stock IV
 / Russian Doll Envelopes
+/ Count Numbers with Unique Digits
 
 [Graph]
 /// Course Schedule II
@@ -602,7 +603,7 @@
 / Sum of Two Integers	51.6%		Easy
 / Find K Pairs with Smallest Sums	26.5%		Medium
 / Water and Jug Problem	21.2%		Medium
+/ Count Numbers with Unique Digits	42.6%		Medium
 Max Sum of Rectangle No Larger Than K	28.5%		Hard
-Count Numbers with Unique Digits	42.6%		Medium
 Largest Divisible Subset	29.9%		Medium
 Super Pow	30.1%		Medium
