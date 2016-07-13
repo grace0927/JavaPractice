@@ -136,7 +136,7 @@
 //// House Robber
 //// Counting Bits
 /// House Robber II
-/// Range Sum Query - Immutable
+//// Range Sum Query - Immutable
 /// Longest Increasing Subsequence
 /// Range Sum Query 2D - Immutable
 /// Coin Change
