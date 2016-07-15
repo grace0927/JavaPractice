@@ -138,7 +138,7 @@
 //// House Robber II
 //// Range Sum Query - Immutable
 //// Longest Increasing Subsequence
-/// Range Sum Query 2D - Immutable
+//// Range Sum Query 2D - Immutable
 /// Coin Change
 /// Maximal Square
 /// Maximum Product Subarray
