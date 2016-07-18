@@ -61,6 +61,7 @@
 //// Find Peak Element
 // Data Stream as Disjoint Intervals
 / Valid Perfect Square
+/ Guess Number Higher or Lower
 
 [Bit Manipulation]
 //// Single Number
@@ -604,6 +605,8 @@
 / Find K Pairs with Smallest Sums	26.5%		Medium
 / Water and Jug Problem	21.2%		Medium
 / Count Numbers with Unique Digits	42.6%		Medium
+/ Guess Number Higher or Lower	31.7%		Easy
 Max Sum of Rectangle No Larger Than K	28.5%		Hard
 Largest Divisible Subset	29.9%		Medium
 Super Pow	30.1%		Medium
+Guess Number Higher or Lower II	27.5%		Medium
