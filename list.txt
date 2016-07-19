@@ -140,7 +140,7 @@
 //// Range Sum Query - Immutable
 //// Longest Increasing Subsequence
 //// Range Sum Query 2D - Immutable
-/// Coin Change
+//// Coin Change
 /// Maximal Square
 /// Maximum Product Subarray
 /// Best Time to Buy and Sell Stock with Cooldown
