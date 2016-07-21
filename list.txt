@@ -142,7 +142,7 @@
 //// Range Sum Query 2D - Immutable
 //// Coin Change
 //// Maximal Square
-/// Maximum Product Subarray
+//// Maximum Product Subarray
 /// Best Time to Buy and Sell Stock with Cooldown
 /// Wildcard Matching
 /// Distinct Subsequences
