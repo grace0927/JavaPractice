@@ -172,7 +172,7 @@
 
 [Hash Table]
 //// Two Sum
-/// Longest Substring Without Repeating Characters   
+//// Longest Substring Without Repeating Characters
 /// Valid Sudoku 
 /// Group Anagrams
 /// Substring with Concatenation of All Words
