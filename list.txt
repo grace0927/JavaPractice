@@ -182,7 +182,7 @@
 /// Fraction to Recurring Decimal
 //// Isomorphic Strings
 /// Count Primes
-/// Happy Number
+//// Happy Number
 /// Repeated DNA Sequences
 /// Contains Duplicate
 /// Contains Duplicate II
