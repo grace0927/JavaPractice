@@ -181,7 +181,7 @@
 /// Max Points on a Line
 /// Fraction to Recurring Decimal
 //// Isomorphic Strings
-/// Count Primes
+//// Count Primes
 //// Happy Number
 /// Repeated DNA Sequences
 /// Contains Duplicate
