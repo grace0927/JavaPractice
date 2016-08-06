@@ -180,12 +180,12 @@
 //// Isomorphic Strings
 //// Count Primes
 //// Happy Number
+//// Contains Duplicate II
 /// Substring with Concatenation of All Words
 /// LRU Cache
 /// Max Points on a Line
 /// Fraction to Recurring Decimal
 /// Repeated DNA Sequences
-/// Contains Duplicate II
 /// Contains Duplicate III
 /// Valid Anagram
 /// H-Index
