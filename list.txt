@@ -181,11 +181,11 @@
 //// Count Primes
 //// Happy Number
 //// Contains Duplicate II
+//// Repeated DNA Sequences
 /// Substring with Concatenation of All Words
 /// LRU Cache
 /// Max Points on a Line
 /// Fraction to Recurring Decimal
-/// Repeated DNA Sequences
 /// Contains Duplicate III
 /// Valid Anagram
 /// H-Index
