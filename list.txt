@@ -182,6 +182,7 @@
 //// Happy Number
 //// Contains Duplicate II
 //// Repeated DNA Sequences
+//// Bulls and Cows
 /// Substring with Concatenation of All Words
 /// LRU Cache
 /// Max Points on a Line
@@ -190,7 +191,6 @@
 /// Valid Anagram
 /// H-Index
 /// Word Pattern
-/// Bulls and Cows
 /// Longest Consecutive Sequence
 // Palindrome Pairs
 // Top K Frequent Elements
