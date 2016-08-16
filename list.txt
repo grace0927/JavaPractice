@@ -211,6 +211,7 @@
 //// Swap Nodes in Pairs
 //// Remove Duplicates from Sorted List
 //// Remove Duplicates from Sorted List II
+//// Reverse Linked List
 /// Reverse Nodes in k-Group
 /// Reverse Linked List II
 /// Reorder List
@@ -218,7 +219,6 @@
 /// Sort List
 /// Intersection of Two Linked Lists
 /// Remove Linked List Elements
-/// Reverse Linked List
 /// Delete Node in a Linked List
 
 [Math]
