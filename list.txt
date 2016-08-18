@@ -197,6 +197,7 @@
 // Intersection of Two Arrays
 // Intersection of Two Arrays II
 / Design Twitter
+/ Ransom Note
 
 [Heap]
 /// Sliding Window Maximum
@@ -608,8 +609,15 @@
 / Count Numbers with Unique Digits	42.6%		Medium
 / Guess Number Higher or Lower	31.7%		Easy
 / Combination Sum IV	38.9%		Medium
+/ Ransom Note	45.7%		Easy
 Max Sum of Rectangle No Larger Than K	28.5%		Hard
 Largest Divisible Subset	29.9%		Medium
 Super Pow	30.1%		Medium
 Guess Number Higher or Lower II	27.5%		Medium
 Wiggle Subsequence	35.9%		Medium
+Kth Smallest Element in a Sorted Matrix	40.8%		Medium
+Insert Delete GetRandom O(1)	34.5%		Hard
+Insert Delete GetRandom O(1) - Duplicates allowed	30.8%		Hard
+Linked List Random Node	47.3%		Medium
+Shuffle an Array	45.5%		Medium
+Mini Parser	27.6%		Medium
