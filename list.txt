@@ -215,7 +215,7 @@
 //// Reverse Linked List
 //// Reverse Linked List II
 //// Reverse Nodes in k-Group
-/// Reorder List
+//// Reorder List
 /// Insertion Sort List
 /// Sort List
 /// Intersection of Two Linked Lists
