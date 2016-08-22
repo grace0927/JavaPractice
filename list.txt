@@ -217,8 +217,8 @@
 //// Reverse Nodes in k-Group
 //// Reorder List
 //// Insertion Sort List
+//// Intersection of Two Linked Lists
 /// Sort List
-/// Intersection of Two Linked Lists
 /// Remove Linked List Elements
 /// Delete Node in a Linked List
 
