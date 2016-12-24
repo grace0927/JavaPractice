@@ -2,7 +2,7 @@
 title: Java Practice
 email: cellphone2008@gmail.com
 description: > # this is java practice wiki site
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/JavaPractice" # the subpath of your site, e.g. /blog/
 url: "https://grace0927.github.io" # the base hostname & protocol for your site
 theme: jekyll-theme-midnight
 github_username:  grace0927
