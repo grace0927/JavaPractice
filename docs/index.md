@@ -34,7 +34,7 @@ Details:
 ## leetcode
 Leetcode Algorithm problems
 
-##### [Array]({{ site.url }}/leetcode/Array)
+##### [Array]({{ site.baseurl }}/leetcode/Array)
 1. First Missing Positive
 2. Rotate Image
 3. Spiral Matrix
@@ -56,7 +56,7 @@ Leetcode Algorithm problems
 19. Increasing Triplet Subsequence
 20. Majority Element II
 
-##### [Backtracking]({{ site.url }}/leetcode/Backtracking)
+##### [Backtracking]({{ site.baseurl }}/leetcode/Backtracking)
 1. Letter Combinations of a Phone Number
 2. Generate Parentheses
 3. Sudoku Solver
@@ -78,7 +78,7 @@ Leetcode Algorithm problems
 19. Regular Expression Matching
 20. Word Break II
 
-##### [Binary Search]({{ site.url }}/leetcode/Binary-Search)
+##### [Binary Search]({{ site.baseurl }}/leetcode/Binary-Search)
 1. Divide Two Integers
 2. Search for a Range
 3. Search Insert Position
@@ -94,7 +94,7 @@ Leetcode Algorithm problems
 13. H-Index II
 14. Find Peak Element
 
-##### [Bit Manipulation]({{ site.url }}/leetcode/Bit-Manipulation)
+##### [Bit Manipulation]({{ site.baseurl }}/leetcode/Bit-Manipulation)
 1. Single Number
 2. Single Number II
 3. Reverse Bits
@@ -104,7 +104,7 @@ Leetcode Algorithm problems
 7. Single Number III
 8. Maximum Product of Word Lengths
 
-##### [BFS]({{ site.url }}/leetcode/BFS)
+##### [BFS]({{ site.baseurl }}/leetcode/BFS)
 1. Binary Tree Level Order Traversal
 2. Binary Tree Zigzag Level Order Traversal
 3. Maximum Depth of Binary Tree
@@ -119,7 +119,7 @@ Leetcode Algorithm problems
 12. Word Ladder II
 13. Remove Invalid Parentheses
 
-##### [DFS]({{ site.url }}/leetcode/DFS)
+##### [DFS]({{ site.baseurl }}/leetcode/DFS)
 1. Same Tree
 2. Validate Binary Search Tree
 3. Symmetric Tree
@@ -142,13 +142,13 @@ Leetcode Algorithm problems
 20. House Robber III
 21. Binary Tree Maximum Path Sum
 
-##### [Divide and Conquer]({{ site.url }}/leetcode/Divide-and-Conquer)
+##### [Divide and Conquer]({{ site.baseurl }}/leetcode/Divide-and-Conquer)
 1. Median of Two Sorted Arrays
 2. Merge k Sorted Lists
 3. Different Ways to Add Parentheses
 4. Burst Balloons
 
-##### [Dynamic Programming]({{ site.url }}/leetcode/Dynamic-Programming)
+##### [Dynamic Programming]({{ site.baseurl }}/leetcode/Dynamic-Programming)
 1. Longest Valid Parentheses
 2. Unique Paths
 3. Unique Paths II
@@ -179,11 +179,11 @@ Leetcode Algorithm problems
 28. Dungeon Game
 29. Best Time to Buy and Sell Stock III
 
-##### [Graph]({{ site.url }}/leetcode/Graph)
+##### [Graph]({{ site.baseurl }}/leetcode/Graph)
 1. Course Schedule II
 2. Reconstruct Itinerary
 
-##### [Greedy]({{ site.url }}/leetcode/Greedy)
+##### [Greedy]({{ site.baseurl }}/leetcode/Greedy)
 1. Jump Game
 2. Jump Game II
 3. Best Time to Buy and Sell Stock II
@@ -192,7 +192,7 @@ Leetcode Algorithm problems
 6. Patching Array
 7. Remove Duplicate Letters
 
-##### [Hash Table]({{ site.url }}/leetcode/Hash-Table)
+##### [Hash Table]({{ site.baseurl }}/leetcode/Hash-Table)
 1. Two Sum   
 2. Longest Substring Without Repeating Characters   
 3. Valid Sudoku   
@@ -215,12 +215,12 @@ Leetcode Algorithm problems
 20. Bulls and Cows
 21. Longest Consecutive Sequence
 
-##### [Heap]({{ site.url }}/leetcode/Heap)
+##### [Heap]({{ site.baseurl }}/leetcode/Heap)
 1. Sliding Window Maximum
 2. Kth Largest Element in an Array
 3. Find Median from Data Stream
 
-##### [Linked List]({{ site.url }}/leetcode/Linked-List)
+##### [Linked List]({{ site.baseurl }}/leetcode/Linked-List)
 1. Add Two Numbers   
 2. Merge Two Sorted Lists   
 3. Swap Nodes in Pairs   
@@ -236,7 +236,7 @@ Leetcode Algorithm problems
 13. Reverse Linked List
 14. Delete Node in a Linked List
 
-##### [Math]({{ site.url }}/leetcode/Math)
+##### [Math]({{ site.baseurl }}/leetcode/Math)
 1. Reverse Integer
 2. Palindrome Number
 3. Integer to Roman
@@ -257,13 +257,13 @@ Leetcode Algorithm problems
 18. Number of Digit One
 19. Self Crossing
 
-##### [Sort]({{ site.url }}/leetcode/Sort)
+##### [Sort]({{ site.baseurl }}/leetcode/Sort)
 1. Insertion Sort List
 2. Largest Number
 3. Wiggle Sort II
 4. Maximum Gap
 
-##### [Stack & Queue]({{ site.url }}/leetcode/Stack)
+##### [Stack & Queue]({{ site.baseurl }}/leetcode/Stack)
 1. Valid Parentheses
 2. Simplify Path
 3. Largest Rectangle in Histogram
@@ -277,7 +277,7 @@ Leetcode Algorithm problems
 11. Maximal Rectangle
 12. Flatten Nested List Iterator
 
-##### [String]({{ site.url }}/leetcode/String)
+##### [String]({{ site.baseurl }}/leetcode/String)
 1. Longest Palindromic Substring   
 2. ZigZag Conversion   
 3. Longest Common Prefix   
@@ -292,7 +292,7 @@ Leetcode Algorithm problems
 12. Basic Calculator II
 13. Integer to English Words
 
-##### [Tree]({{ site.url }}/leetcode/Tree)
+##### [Tree]({{ site.baseurl }}/leetcode/Tree)
 1. Binary Tree Inorder Traversal
 2. Binary Tree Preorder Traversal
 3. Binary Tree Postorder Traversal
@@ -304,11 +304,11 @@ Leetcode Algorithm problems
 9. Lowest Common Ancestor of a Binary Tree
 10. Count of Smaller Numbers After Self
 
-##### [Trie]({{ site.url }}/leetcode/Trie)
+##### [Trie]({{ site.baseurl }}/leetcode/Trie)
 1. Implement Trie (Prefix Tree)
 2. Word Search II
 
-##### [Two Pointer]({{ site.url }}/leetcode/Two-Pointer)
+##### [Two Pointer]({{ site.baseurl }}/leetcode/Two-Pointer)
 1. Container With Most Water   
 2. 3Sum   
 3. 3Sum Closest   
