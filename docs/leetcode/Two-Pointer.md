@@ -25,7 +25,7 @@
 23. [Minimum Window Substring](#minimum-window-substring)
 24. [Reverse Vowels of a String](#reverse-vowels-of-a-string)
 
-##Container With Most Water   
+## Container With Most Water   
 Q: Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
 ```
 public int maxArea(int[] height) {
@@ -46,7 +46,7 @@ public int maxArea(int[] height) {
 }
 ```
 
-## 3Sum   
+##  3Sum   
 Q: Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 
 Note:
@@ -88,7 +88,7 @@ public List<List<Integer>> threeSum(int[] nums) {
 }
 ```
 
-## 3Sum Closest   
+##  3Sum Closest   
 Q: Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 ```
 public int threeSumClosest(int[] nums, int target) {
@@ -123,7 +123,7 @@ public int threeSumClosest(int[] nums, int target) {
 }
 ```
 
-## 4Sum   
+##  4Sum   
 Q: Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
 
 Note:
@@ -170,7 +170,7 @@ public List<List<Integer>> fourSum(int[] nums, int target) {
 }
 ```
 
-## Remove Nth Node From End of List   
+##  Remove Nth Node From End of List   
 Q: Given a linked list, remove the nth node from the end of list and return its head.
 ```
 public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -193,7 +193,7 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 }
 ```
 
-## Remove Duplicates from Sorted Array   
+##  Remove Duplicates from Sorted Array   
 Q: Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this in place with constant memory.
 For example,
 Given input array nums = [1,1,2],
@@ -216,7 +216,7 @@ public int removeDuplicates(int[] nums) {
 }
 ```
 
-## Remove Element   
+##  Remove Element   
 Q: Given an array and a value, remove all instances of that value in place and return the new length. The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 ```
 public int removeElement(int[] nums, int val) {
@@ -241,7 +241,7 @@ public int removeElement(int[] nums, int val) {
 }
 ```
 
-## Implement strStr()   
+##  Implement strStr()   
 Q: Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 KMP algorithm ref: https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
 ```
@@ -263,7 +263,7 @@ public int strStr(String haystack, String needle) {
 }
 ```
 
-## Trapping Rain Water   
+##  Trapping Rain Water   
 Q: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. For example, Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 ref: https://leetcode.com/discuss/10046/share-my-short-solution
 ```
@@ -284,7 +284,7 @@ public int trap(int[] height) {
 }
 ```
 
-## Rotate List   
+##  Rotate List   
 Q: Given a list, rotate the list to the right by k places, where k is non-negative.
 ```
 public ListNode rotateRight(ListNode head, int k) {
@@ -318,7 +318,7 @@ public ListNode rotateRight(ListNode head, int k) {
 }
 ```
 
-## Sort Colors   
+##  Sort Colors   
 Q: Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Note: You are not suppose to use the library's sort function for this problem. Follow up: A rather straight forward solution is a two-pass algorithm using counting sort.
 First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's. Could you come up with an one-pass algorithm using only constant space?
 ```
@@ -349,7 +349,7 @@ public void sortColors(int[] nums) {
 }
 ```
 
-## Remove Duplicates from Sorted Array II   
+##  Remove Duplicates from Sorted Array II   
 Q: Follow up for "Remove Duplicates": What if duplicates are allowed at most twice? For example, Given sorted array nums = [1,1,1,2,2,3], Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
 ```
 public int removeDuplicates(int[] nums) {
@@ -397,7 +397,7 @@ public int removeDuplicates(int[] nums) {
 }
 ```
 
-## Partition List   
+##  Partition List   
 Q: Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. For example, Given 1->4->3->2->5->2 and x = 3, return 1->2->2->4->3->5.
 ```
 public ListNode partition(ListNode head, int x) {
@@ -423,7 +423,7 @@ public ListNode partition(ListNode head, int x) {
 }
 ```
 
-## Merge Sorted Array
+##  Merge Sorted Array
 Q: Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.   
 Note:   
 You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.   
@@ -445,7 +445,7 @@ public void merge(int[] nums1, int m, int[] nums2, int n) {
 }
 ```
 
-## Valid Palindrome
+##  Valid Palindrome
 Q: Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases. Have you consider that the string might be empty? This is a good question to ask during an interview.   
 ```
 public boolean isPalindrome(String s) {
@@ -472,7 +472,7 @@ private boolean isValid(char a) {
 }
 ```
 
-## Linked List Cycle
+##  Linked List Cycle
 Q: Given a linked list, determine if it has a cycle in it.   
 ```
 public boolean hasCycle(ListNode head) {
@@ -488,7 +488,7 @@ public boolean hasCycle(ListNode head) {
 }
 ```
 
-## Linked List Cycle II
+##  Linked List Cycle II
 Q: Given a linked list, return the node where the cycle begins. If there is no cycle, return null.   
 ```
 public ListNode detectCycle(ListNode head) {
@@ -509,7 +509,7 @@ public ListNode detectCycle(ListNode head) {
 }
 ```
 
-## Minimum Size Subarray Sum
+##  Minimum Size Subarray Sum
 Q: Given an array of n positive integers and a positive integer s, find the minimal length of a subarray of which the sum ≥ s. If there isn't one, return 0 instead.   
 ```
 // O(n)
@@ -539,7 +539,7 @@ private int solveNLogN(int s, int[] nums) {
 }
 ```
 
-##Palindrome Linked List
+## Palindrome Linked List
 Q: Given a singly linked list, determine if it is a palindrome. Follow up: Could you do it in O(n) time and O(1) space?   
 ```
 public boolean isPalindrome(ListNode head) {
@@ -564,7 +564,7 @@ public boolean isPalindrome(ListNode head) {
 }
 ```
 
-##Move Zeroes
+## Move Zeroes
 Q: Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements. You must do this in-place without making a copy of the array. Minimize the total number of operations.   
 ```
 public void moveZeroes(int[] nums) {
@@ -582,7 +582,7 @@ public void moveZeroes(int[] nums) {
 }
 ```
 
-##Find the Duplicate Number
+## Find the Duplicate Number
 Q: Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one. Note: You must not modify the array (assume the array is read only). You must use only constant, O(1) extra space. Your runtime complexity should be less than O(n2). There is only one duplicate number in the array, but it could be repeated more than once.   
 ```
 // can further improve to binary search
@@ -618,7 +618,7 @@ public int findDuplicate(int[] nums) {
 }
 ```
 
-##Odd Even Linked List
+## Odd Even Linked List
 Q: Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.   
 ```
 public ListNode oddEvenList(ListNode head) {
@@ -639,7 +639,7 @@ public ListNode oddEvenList(ListNode head) {
 }
 ```
 
-##Minimum Window Substring
+## Minimum Window Substring
 Q: Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). Note: If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.   
 ```
 public String minWindow(String s, String t) {
@@ -683,7 +683,7 @@ public String minWindow(String s, String t) {
 }
 ```
 
-##Reverse Vowels of a String
+## Reverse Vowels of a String
 Q: Write a function that takes a string as input and reverse only the vowels of a string.   
 ```
 public String reverseVowels(String s) {

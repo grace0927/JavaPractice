@@ -7,7 +7,7 @@
 5. [Count of Range Sum](#count-of-range-sum)
 6. [The Skyline Problem](#the-skyline-problem)
 
-##Median of Two Sorted Arrays   
+## Median of Two Sorted Arrays   
 Q: There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).   
 ```
 public double findMedianSortedArrays(int A[], int B[]) {
@@ -55,7 +55,7 @@ public int findMedian(int A[], int B[], int k, int startA, int endA, int startB,
 }
 ```
 
-##Merge k Sorted Lists   
+## Merge k Sorted Lists   
 Q: Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.   
 heap solution ref: https://leetcode.com/discuss/9279/a-java-solution-based-on-priority-queue   
 ```
@@ -103,7 +103,7 @@ private ListNode mergeTwo(ListNode one, ListNode two) {
 }
 ```
 
-##Different Ways to Add Parentheses
+## Different Ways to Add Parentheses
 Q: Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.   
 ```
 public List<Integer> diffWaysToCompute(String input) {
@@ -146,7 +146,7 @@ private int op(int a, char op, int b) {
 }
 ```
 
-##Burst Balloons
+## Burst Balloons
 Q: Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent. Find the maximum coins you can collect by bursting the balloons wisely. Note:  (1) You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can not burst them. (2) 0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100   
 ```
 public int maxCoins(int[] nums) {
@@ -176,7 +176,7 @@ private int helper(int[] nums, int[][] cache, int start, int end) {
 }
 ```
 
-##Count of Range Sum
+## Count of Range Sum
 Q: Given an integer array nums, return the number of range sums that lie in [lower, upper] inclusive. Range sum S(i, j) is defined as the sum of the elements in nums between indices i and j (i ≤ j), inclusive. Note: A naive algorithm of O(n2) is trivial. You MUST do better than that.   
 ```
 public int countRangeSum(int[] nums, int lower, int upper) {
@@ -258,7 +258,7 @@ private int binarySearchEx(long[] arr, long target) {
 }
 ```
 
-##The Skyline Problem
+## The Skyline Problem
 Q: A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. Now suppose you are given the locations and height of all the buildings as shown on a cityscape photo (Figure A), write a program to output the skyline formed by these buildings collectively (Figure B). The geometric information of each building is represented by a triplet of integers [Li, Ri, Hi], where Li and Ri are the x coordinates of the left and right edge of the ith building, respectively, and Hi is its height. It is guaranteed that 0 ≤ Li, Ri ≤ INT_MAX, 0 < Hi ≤ INT_MAX, and Ri - Li > 0. You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height 0. For instance, the dimensions of all buildings in Figure A are recorded as: [ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ] . The output is a list of "key points" (red dots in Figure B) in the format of [ [x1,y1], [x2, y2], [x3, y3], ... ] that uniquely defines a skyline. A key point is the left endpoint of a horizontal line segment. Note that the last key point, where the rightmost building ends, is merely used to mark the termination of the skyline, and always has zero height. Also, the ground in between any two adjacent buildings should be considered part of the skyline contour. For instance, the skyline in Figure B should be represented as:[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ]. Notes: The number of buildings in any input list is guaranteed to be in the range [0, 10000]. The input list is already sorted in ascending order by the left x position Li. The output list must be sorted by the x position. There must be no consecutive horizontal lines of equal height in the output skyline. For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged into one in the final output as such: [...[2 3], [4 5], [12 7], ...]   
 dc solution: https://leetcode.com/discuss/40963/share-my-divide-and-conquer-java-solution-464-ms   
 ```

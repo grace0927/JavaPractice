@@ -3,7 +3,7 @@
 1. [Implement Trie (Prefix Tree)](#implement-trie-prefix-tree)
 2. [Word Search II](#word-search-ii)
 
-## Implement Trie (Prefix Tree)
+##  Implement Trie (Prefix Tree)
 Q: Implement a trie with insert, search, and startsWith methods. You may assume that all inputs are consist of lowercase letters a-z.   
 ```
 class TrieNode {
@@ -74,7 +74,7 @@ public class Trie {
 // trie.search("key");
 ```
 
-##Word Search II
+## Word Search II
 Q: Given a 2D board and a list of words from the dictionary, find all words in the board. Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word. You may assume that all inputs are consist of lowercase letters a-z.   
 ```
 class TrieNode {

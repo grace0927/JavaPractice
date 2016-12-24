@@ -27,7 +27,7 @@
 25. [Intersection of Two Arrays II](#intersection-of-two-arrays-ii)
 
 
-##Two Sum
+## Two Sum
 Q: Given an array of integers, find two numbers such that they add up to a specific target number.   
 A: use HashMap to map value to its index. O(n)   
 lookup map for target-value. O(1)   
@@ -50,7 +50,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-##Longest Substring Without Repeating Characters    
+## Longest Substring Without Repeating Characters    
 Q: Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.   
 A: use hash map to record each character latest index. mark starting point of current substring. calculate length and compare   
 
@@ -73,7 +73,7 @@ public int lengthOfLongestSubstring(String s) {
 }
 ```
 
-##Valid Sudoku
+## Valid Sudoku
 Q: Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules. The Sudoku board could be partially filled, where empty cells are filled with the character '.'. A partially filled sudoku which is valid. Note: A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.   
 ```
 public boolean isValidSudoku(char[][] board) {
@@ -123,7 +123,7 @@ private boolean isValid(char[][] board, int row, int col, char val) {
 }
 ```
 
-##Group Anagrams
+## Group Anagrams
 Q:Given an array of strings, group anagrams together. For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], Return:   
 [   
   ["ate", "eat","tea"],   
@@ -154,7 +154,7 @@ public List<List<String>> groupAnagrams(String[] strs) {
 }
 ```
 
-##Substring with Concatenation of All Words
+## Substring with Concatenation of All Words
 Q: You are given a string, s, and a list of words, words, that are all of the same length. Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.   
 ```
 public List<Integer> findSubstring(String s, String[] words) {
@@ -215,7 +215,7 @@ public List<Integer> findSubstring(String s, String[] words) {
 }
 ```
 
-##Copy List with Random Pointer
+## Copy List with Random Pointer
 Q: A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list.   
 ```
 public RandomListNode copyRandomList(RandomListNode head) {
@@ -244,7 +244,7 @@ public RandomListNode copyRandomList(RandomListNode head) {
 }
 ```
 
-## LRU Cache
+##  LRU Cache
 Q: Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and set. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.   
 ```
 public class LRUCache {
@@ -282,7 +282,7 @@ public class LRUCache {
 }
 ```
 
-## Max Points on a Line
+##  Max Points on a Line
 Q: Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.   
 ```
 public int maxPoints(Point[] points) {
@@ -318,7 +318,7 @@ private boolean equals(Point a, Point b) {
 }
 ```
 
-## Fraction to Recurring Decimal
+##  Fraction to Recurring Decimal
 Q: Given two integers representing the numerator and denominator of a fraction, return the fraction in string format. If the fractional part is repeating, enclose the repeating part in parentheses.   
 ```
 public String fractionToDecimal(int numerator, int denominator) {
@@ -349,7 +349,7 @@ public String fractionToDecimal(int numerator, int denominator) {
 }
 ```
 
-##Isomorphic Strings
+## Isomorphic Strings
 Q: Given two strings s and t, determine if they are isomorphic. Two strings are isomorphic if the characters in s can be replaced to get t. All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.   
 ```
 public boolean isIsomorphic(String s, String t) {
@@ -370,7 +370,7 @@ public boolean isIsomorphic(String s, String t) {
 }
 ```
 
-## Count Primes
+##  Count Primes
 Q: Count the number of prime numbers less than a non-negative number, n.   
 ```
 public int countPrimes(int n) {
@@ -388,7 +388,7 @@ public int countPrimes(int n) {
 }
 ```
 
-##Happy Number
+## Happy Number
 Q: Write an algorithm to determine if a number is "happy". A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.   
 ```
 public boolean isHappy(int n) {
@@ -409,7 +409,7 @@ public boolean isHappy(int n) {
 }
 ```
 
-## Repeated DNA Sequences
+##  Repeated DNA Sequences
 Q: All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.   
 ```
 public List<String> findRepeatedDnaSequences(String s) {
@@ -426,7 +426,7 @@ public List<String> findRepeatedDnaSequences(String s) {
 }
 ```
 
-##Contains Duplicate
+## Contains Duplicate
 Q: Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.   
 ```
 public boolean containsDuplicate(int[] nums) {
@@ -441,7 +441,7 @@ public boolean containsDuplicate(int[] nums) {
 }
 ```
 
-##Contains Duplicate II
+## Contains Duplicate II
 Q: Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k.   
 ```
 public boolean containsNearbyDuplicate(int[] nums, int k) {
@@ -459,7 +459,7 @@ public boolean containsNearbyDuplicate(int[] nums, int k) {
 }
 ```
 
-##Contains Duplicate III
+## Contains Duplicate III
 Q: Given an array of integers, find out whether there are two distinct indices i and j in the array such that the difference between nums[i] and nums[j] is at most t and the difference between i and j is at most k.   
 ```
 // bucket sort
@@ -507,7 +507,7 @@ public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
 }
 ```
 
-##Valid Anagram
+## Valid Anagram
 Q: Given two strings s and t, write a function to determine if t is an anagram of s. Note: You may assume the string contains only lowercase alphabets. Follow up: What if the inputs contain unicode characters? How would you adapt your solution to such case?   
 ```
 public boolean isAnagram(String s, String t) {
@@ -528,7 +528,7 @@ public boolean isAnagram(String s, String t) {
 }
 ```
 
-##H-Index
+## H-Index
 Q: Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index. According to the definition of h-index on Wikipedia: "A scientist has index h if h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each." For example, given citations = [3, 0, 6, 1, 5], which means the researcher has 5 papers in total and each of them had received 3, 0, 6, 1, 5 citations respectively. Since the researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations each, his h-index is 3. Note: If there are several possible values for h, the maximum one is taken as the h-index.   
 ```
 public int hIndex(int[] citations) {
@@ -551,7 +551,7 @@ public int hIndex(int[] citations) {
 }
 ```
 
-##Word Pattern
+## Word Pattern
 Q: Given a pattern and a string str, find if str follows the same pattern. Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str. Notes: You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.   
 ```
 public boolean wordPattern(String pattern, String str) {
@@ -577,7 +577,7 @@ public boolean wordPattern(String pattern, String str) {
 }
 ```
 
-##Bulls and Cows
+## Bulls and Cows
 Q: You are playing the following Bulls and Cows game with your friend: You write down a number and ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called "bulls") and how many digits match the secret number but locate in the wrong position (called "cows"). Your friend will use successive guesses and hints to eventually derive the secret number. For example: Secret number:  "1807" Friend's guess: "7810" Hint: 1 bull and 3 cows. (The bull is 8, the cows are 0, 1 and 7.) Write a function to return a hint according to the secret number and friend's guess, use A to indicate the bulls and B to indicate the cows. In the above example, your function should return "1A3B". Please note that both secret number and friend's guess may contain duplicate digits, for example: Secret number:  "1123"Friend's guess: "0111" In this case, the 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow, and your function should return "1A1B". You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.   
 ```
 public String getHint(String secret, String guess) {
@@ -603,7 +603,7 @@ public String getHint(String secret, String guess) {
 }
 ```
 
-##Longest Consecutive Sequence
+## Longest Consecutive Sequence
 Q: Given an unsorted array of integers, find the length of the longest consecutive elements sequence. Your algorithm should run in O(n) complexity.   
 ```
 public int longestConsecutive(int[] nums) {
@@ -689,7 +689,7 @@ public int longestConsecutive(int[] num) {
 }
 ```
 
-##Palindrome Pairs
+## Palindrome Pairs
 Q: Given a list of unique words. Find all pairs of distinct indices (i, j) in the given list, so that the concatenation of the two words, i.e. words[i] + words[j] is a palindrome.   
 ```
 public List<List<Integer>> palindromePairs(String[] words) {
@@ -738,7 +738,7 @@ private boolean isPalindrome(String s) {
 }
 ```
 
-##Top K Frequent Elements
+## Top K Frequent Elements
 Q: Given a non-empty array of integers, return the k most frequent elements.   
 more sol ref: https://leetcode.com/discuss/100713/3-ways-to-solve-this-problem   
 ```
@@ -776,7 +776,7 @@ public List<Integer> topKFrequent(int[] nums, int k) {
 }
 ```
 
-##Intersection of Two Arrays
+## Intersection of Two Arrays
 Q: Given two arrays, write a function to compute their intersection. Note: Each element in the result must be unique. The result can be in any order.   
 ```
 // Hash Table
@@ -820,7 +820,7 @@ public int[] intersection(int[] nums1, int[] nums2) {
 }
 ```
 
-##Intersection of Two Arrays II
+## Intersection of Two Arrays II
 Q: Given two arrays, write a function to compute their intersection. Note: Each element in the result should appear as many times as it shows in both arrays. The result can be in any order. Follow up: What if the given array is already sorted? How would you optimize your algorithm? What if nums1's size is small compared to num2's size? Which algorithm is better? What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?   
 ```
 public int[] intersect(int[] nums1, int[] nums2) {

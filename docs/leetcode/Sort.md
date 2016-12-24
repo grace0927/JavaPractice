@@ -6,7 +6,7 @@
 4. [Maximum Gap](#maximum-gap)
 
 
-##Insertion Sort List
+## Insertion Sort List
 Q: Sort a linked list using insertion sort.   
 ```
 public ListNode insertionSortList(ListNode head) {
@@ -36,7 +36,7 @@ public ListNode insertionSortList(ListNode head) {
 }
 ```
 
-## Largest Number
+##  Largest Number
 Q: Given a list of non negative integers, arrange them such that they form the largest number. For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330. Note: The result may be very large, so you need to return a string instead of an integer.   
 ```
 public String largestNumber(int[] nums) {
@@ -59,7 +59,7 @@ public String largestNumber(int[] nums) {
 }
 ```
 
-##Wiggle Sort II
+## Wiggle Sort II
 Q: Given an unsorted array nums, reorder it such that nums[0] < nums[1] > nums[2] < nums[3].... Note: You may assume all input has valid answer. Follow Up: Can you do it in O(n) time and/or in-place with O(1) extra space?   
 better sol ref: https://leetcode.com/discuss/77115/o-n-time-o-1-space-solution-with-detail-explanations   
 ```
@@ -88,7 +88,7 @@ public void wiggleSort(int[] nums) {
 }
 ```
 
-##Maximum Gap
+## Maximum Gap
 Q: Given an unsorted array, find the maximum difference between the successive elements in its sorted form. Try to solve it in linear time/space. Return 0 if the array contains less than 2 elements. You may assume all elements in the array are non-negative integers and fit in the 32-bit signed integer range.   
 ```
 // bucket sort

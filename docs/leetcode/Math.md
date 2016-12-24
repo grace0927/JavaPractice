@@ -21,7 +21,7 @@
 19. [Self Crossing](#self-crossing)
 20. [Integer Break](#integer-break)
 
-##Reverse Integer   
+## Reverse Integer   
 Q: Reverse digits of an integer.   
 Example1: x = 123, return 321   
 Example2: x = -123, return -321   
@@ -47,7 +47,7 @@ public int reverse(int x) {
 }
 ```
 
-##Palindrome Number   
+## Palindrome Number   
 Q: Determine whether an integer is a palindrome. Do this without extra space.   
 A: reverse the number and compare.   
 Better Idea:  
@@ -72,7 +72,7 @@ public long reverse(int x) {
 }
 ```
 
-##Integer to Roman   
+## Integer to Roman   
 Q: Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.   
 ```
 public String intToRoman(int num) {
@@ -116,7 +116,7 @@ public String intToRoman(int num) {
 }
 ```
 
-##Roman to Integer   
+## Roman to Integer   
 Q: Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.   
 ```
 public int romanToInt(String s) {
@@ -162,7 +162,7 @@ public int romanToInt(String s) {
 }
 ```
 
-##Permutation Sequence   
+## Permutation Sequence   
 Q: The set [1,2,3,…,n] contains a total of n! unique permutations. Given n and k, return the kth permutation sequence. Note: Given n will be between 1 and 9 inclusive.   
 ```
 public String getPermutation(int n, int k) {
@@ -189,7 +189,7 @@ public String getPermutation(int n, int k) {
 }
 ```
 
-##Excel Sheet Column Title
+## Excel Sheet Column Title
 Q: Given a positive integer, return its corresponding column title as appear in an Excel sheet.   
 ```
 public String convertToTitle(int n) {
@@ -202,7 +202,7 @@ public String convertToTitle(int n) {
 }
 ```
 
-##Excel Sheet Column Number
+## Excel Sheet Column Number
 Q: Given a column title as appear in an Excel sheet, return its corresponding column number.   
 ```
 public int titleToNumber(String s) {
@@ -215,7 +215,7 @@ public int titleToNumber(String s) {
 }
 ```
 
-##Factorial Trailing Zeroes
+## Factorial Trailing Zeroes
 Q: Given an integer n, return the number of trailing zeroes in n!. Note: Your solution should be in logarithmic time complexity.   
 ```
 public int trailingZeroes(int n) {
@@ -228,7 +228,7 @@ public int trailingZeroes(int n) {
 }
 ```
 
-##Rectangle Area
+## Rectangle Area
 Q: Find the total area covered by two rectilinear rectangles in a 2D plane. Each rectangle is defined by its bottom left corner and top right corner as shown in the figure. Rectangle Area Assume that the total area is never beyond the maximum possible value of int.     
 ```
 public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
@@ -243,7 +243,7 @@ public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
 }
 ```
 
-## Basic Calculator
+##  Basic Calculator
 Q: Implement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces . You may assume that the given expression is always valid.   
 ```
 public int calculate(String s) {
@@ -294,7 +294,7 @@ private String helper(String c, char b, String a) {
 }
 ```
 
-##Add Digits
+## Add Digits
 Q: Given a non-negative integer num, repeatedly add all its digits until the result has only one digit. Follow up: Could you do it without any loop/recursion in O(1) runtime?    
 ```
 public int addDigits(int num) {
@@ -310,7 +310,7 @@ public int addDigits(int num) {
 }
 ```
 
-##Ugly Number
+## Ugly Number
 Q: Write a program to check whether a given number is an ugly number. Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For example, 6, 8 are ugly while 14 is not ugly since it includes another prime factor 7. Note that 1 is typically treated as an ugly number.   
 ```
 public boolean isUgly(int num) {
@@ -330,7 +330,7 @@ private int helper(int num, int prime) {
 }
 ```
 
-##Ugly Number II
+## Ugly Number II
 Q: Write a program to find the n-th ugly number. Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For example, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly numbers. Note that 1 is typically treated as an ugly number.   
 ```
 public int nthUglyNumber(int n) {
@@ -355,7 +355,7 @@ public int nthUglyNumber(int n) {
 }
 ```
 
-##Nim Game
+## Nim Game
 Q: You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones. Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap. For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.   
 ```
 public boolean canWinNim(int n) {
@@ -363,7 +363,7 @@ public boolean canWinNim(int n) {
 }
 ```
 
-##Super Ugly Number
+## Super Ugly Number
 Q: Write a program to find the nth super ugly number. Super ugly numbers are positive numbers whose all prime factors are in the given prime list primes of size k. For example, [1, 2, 4, 7, 8, 13, 14, 16, 19, 26, 28, 32] is the sequence of the first 12 super ugly numbers given primes = [2, 7, 13, 19] of size 4. Note: (1) 1 is a super ugly number for any given primes. (2) The given numbers in primes are in ascending order. (3) 0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.   
 more solution ref: https://leetcode.com/discuss/81411/java-three-methods-23ms-58ms-with-heap-performance-explained   
 ```
@@ -393,7 +393,7 @@ public int nthSuperUglyNumber(int n, int[] primes) {
 }
 ```
 
-##Bulb Switcher
+## Bulb Switcher
 Q: There are n bulbs that are initially off. You first turn on all the bulbs. Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb. Find how many bulbs are on after n rounds.   
 ```
 public int bulbSwitch(int n) {
@@ -410,7 +410,7 @@ public int bulbSwitch(int n) {
 }
 ```
 
-##Power of Three
+## Power of Three
 Q: Given an integer, write a function to determine if it is a power of three.Follow up: Could you do it without using any loop / recursion?   
 good ref: https://leetcode.com/discuss/78532/summary-all-solutions-new-method-included-at-15-30pm-jan-8th   
 ```
@@ -422,7 +422,7 @@ public boolean isPowerOfThree(int n) {
 }
 ```
 
-##Number of Digit One
+## Number of Digit One
 Q: Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.   
 ```
 public int countDigitOne(int n) {
@@ -443,7 +443,7 @@ public int countDigitOne(int n) {
 }
 ```
 
-##Self Crossing
+## Self Crossing
 Q: You are given an array x of n positive numbers. You start at point (0,0) and moves x[0] metres to the north, then x[1] metres to the west, x[2] metres to the south, x[3] metres to the east and so on. In other words, after each move your direction changes counter-clockwise. Write a one-pass algorithm with O(1) extra space to determine, if your path crosses itself, or not.   
 ```
 public boolean isSelfCrossing(int[] x) {
@@ -463,7 +463,7 @@ public boolean isSelfCrossing(int[] x) {
 }
 ```
 
-##Integer Break
+## Integer Break
 Q: Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers. Return the maximum product you can get.   
 ```
 public int integerBreak(int n) {

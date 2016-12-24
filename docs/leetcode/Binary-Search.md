@@ -15,7 +15,7 @@
 13. [H-Index II](#h-index-ii)
 14. [Find Peak Element](#find-peak-element)
 
-##Divide Two Integers   
+## Divide Two Integers   
 Q: Divide two integers without using multiplication, division and mod operator. If it is overflow, return MAX_INT.   
 ```
 public int divide(int dividend, int divisor) {
@@ -67,7 +67,7 @@ public int divide(int dividend, int divisor) {
 }
 ```
 
-##Search for a Range   
+## Search for a Range   
 Q: Given a sorted array of integers, find the starting and ending position of a given target value. Your algorithm's runtime complexity must be in the order of O(log n). If the target is not found in the array, return [-1, -1].   
 For example,   
 Given [5, 7, 7, 8, 8, 10] and target value 8,   
@@ -109,7 +109,7 @@ private int findTarget(int[] nums, int target, boolean direction) {
 }
 ```
 
-##Search Insert Position   
+## Search Insert Position   
 Q: Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. You may assume no duplicates in the array.   
 Here are few examples.   
 [1,3,5,6], 5 → 2   
@@ -137,7 +137,7 @@ public int searchInsert(int[] nums, int target) {
 }
 ```
 
-##Search in Rotated Sorted Array   
+## Search in Rotated Sorted Array   
 Q: Suppose a sorted array is rotated at some pivot unknown to you beforehand. (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2). You are given a target value to search. If found in the array return its index, otherwise return -1. You may assume no duplicate exists in the array.   
 ```
 public int search(int[] nums, int target) {
@@ -181,7 +181,7 @@ private int binarySearch(int[] nums, int target, int start, int end) {
 }
 ```
 
-##Pow(x, n)   
+## Pow(x, n)   
 Q: Implement pow(x, n).   
 ```
 public double myPow(double x, int n) {
@@ -227,7 +227,7 @@ public int mySqrt(int x) {
 }
 ```
 
-##Search a 2D Matrix   
+## Search a 2D Matrix   
 Q: Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted from left to right. The first integer of each row is greater than the last integer of the previous row.   
 ```
 public boolean searchMatrix(int[][] matrix, int target) {
@@ -272,7 +272,7 @@ private int search(int[] arr, int target) {
 }
 ```
 
-## Search in Rotated Sorted Array II
+##  Search in Rotated Sorted Array II
 Q: Follow up for "Search in Rotated Sorted Array": What if duplicates are allowed? Would this affect the run-time complexity? How and why? Write a function to determine if a given target is in the array.   
 ```
 public boolean search(int[] nums, int target) {
@@ -321,7 +321,7 @@ private boolean binarySearch(int[] nums, int target, int start, int end) {
 }
 ```
 
-##Find Minimum in Rotated Sorted Array
+## Find Minimum in Rotated Sorted Array
 Q: Suppose a sorted array is rotated at some pivot unknown to you beforehand. (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2). Find the minimum element.   
 ```
 public int findMin(int[] nums) {
@@ -338,7 +338,7 @@ public int findMin(int[] nums) {
 }
 ```
 
-##Find Minimum in Rotated Sorted Array II
+## Find Minimum in Rotated Sorted Array II
 Q: Suppose a sorted array is rotated at some pivot unknown to you beforehand. (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2). Find the minimum element. The array may contain duplicates.   
 ```
 public int findMin(int[] nums) {
@@ -361,7 +361,7 @@ private int helper(int[] nums, int start, int end) {
 }
 ```
 
-##Search a 2D Matrix II
+## Search a 2D Matrix II
 Q: Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted in ascending from left to right. Integers in each column are sorted in ascending from top to bottom.   
 ```
 public boolean searchMatrix(int[][] matrix, int target) {
@@ -396,7 +396,7 @@ private boolean binarySearch(int[] row, int target) {
 }
 ```
 
-##First Bad Version
+## First Bad Version
 Q: You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad. You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.   
 ```
 public int firstBadVersion(int n) {
@@ -416,7 +416,7 @@ public int firstBadVersion(int n) {
 }
 ```
 
-##H-Index II
+## H-Index II
 Q: Follow up for H-Index: What if the citations array is sorted in ascending order? Could you optimize your algorithm?   
 ```
 public int hIndex(int[] citations) {
@@ -482,7 +482,7 @@ public int hIndex(int[] citations) {
 }
 ```
 
-##Find Peak Element
+## Find Peak Element
 Q: A peak element is an element that is greater than its neighbors. Given an input array where num[i] ≠ num[i+1], find a peak element and return its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is fine. You may imagine that num[-1] = num[n] = -∞.   
 ```
 public int findPeakElement(int[] nums) {

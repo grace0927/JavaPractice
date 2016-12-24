@@ -1,4 +1,4 @@
-#Array
+# Array
 
 1. [First Missing Positive](#first-missing-positive)
 2. [Rotate Image](#rotate-image)
@@ -21,45 +21,44 @@
 19. [Increasing Triplet Subsequence](#increasing-triplet-subsequence)
 20. [Majority Element II](#majority-element-ii)
 
-##First Missing Positive   
+##  First Missing Positive   
 Q: Given an unsorted integer array, find the first missing positive integer. For example, Given [1,2,0] return 3, and [3,4,-1,1] return 2. Your algorithm should run in O(n) time and uses constant space.   
-```
-public int firstMissingPositive(int[] nums) {
-    for(int i=0; i<nums.length; i++) {
-        while(nums[i]!=i+1 && nums[i]<=nums.length && nums[i]>0 && nums[i]!=nums[nums[i]-1]) {
-            int tmp = nums[i];
-            nums[i] = nums[tmp-1];
-            nums[tmp-1] = tmp;
-        }
-    }
-    for(int i=0; i<nums.length; i++) {
-        if(nums[i]!=i+1) {
-            return i+1;
-        }
-    }
-    return nums.length+1;
-}
-```
 
-##Rotate Image   
+    public int firstMissingPositive(int[] nums) {
+        for(int i=0; i<nums.length; i++) {
+            while(nums[i]!=i+1 && nums[i]<=nums.length && nums[i]>0 && nums[i]!=nums[nums[i]-1]) {
+                int tmp = nums[i];
+                nums[i] = nums[tmp-1];
+                nums[tmp-1] = tmp;
+            }
+        }
+        for(int i=0; i<nums.length; i++) {
+            if(nums[i]!=i+1) {
+                return i+1;
+            }
+        }
+        return nums.length+1;
+    }
+
+##  Rotate Image   
 Q: You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise).   
-```
-public void rotate(int[][] matrix) {
-    int n = matrix.length;
-    for(int i=0; i<n/2; i++) {
-        int boundary = n-i-1;
-        for(int j=i; j<boundary; j++) {
-            int tmp = matrix[i][j];
-            matrix[i][j] = matrix[n-j-1][i];
-            matrix[n-j-1][i] = matrix[boundary][n-j-1];
-            matrix[boundary][n-j-1] = matrix[j][boundary];
-            matrix[j][boundary] = tmp;
+
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        for(int i=0; i<n/2; i++) {
+            int boundary = n-i-1;
+            for(int j=i; j<boundary; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[n-j-1][i];
+                matrix[n-j-1][i] = matrix[boundary][n-j-1];
+                matrix[boundary][n-j-1] = matrix[j][boundary];
+                matrix[j][boundary] = tmp;
+            }
         }
     }
-}
-```
 
-##Spiral Matrix   
+
+##  Spiral Matrix   
 Q: Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.   
 ```
 public List<Integer> spiralOrder(int[][] matrix) {
@@ -119,7 +118,7 @@ public List<Integer> spiralOrder(int[][] matrix) {
 }
 ```
 
-##Next Permutation   
+##  Next Permutation   
 Q:Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers. If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order). The replacement must be in-place, do not allocate extra memory. Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.   
 ```
 public void nextPermutation(int[] nums) {
@@ -156,7 +155,7 @@ private void swap(int[] nums, int i, int j) {
 }
 ```
 
-##Spiral Matrix II   
+##  Spiral Matrix II   
 Q: Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.   
 ```
 public int[][] generateMatrix(int n) {
@@ -208,7 +207,7 @@ public int[][] generateMatrix(int n) {
 }
 ```
 
-##Merge Intervals   
+##  Merge Intervals   
 Q: Given a collection of intervals, merge all overlapping intervals.   
 good ref: https://leetcode.com/discuss/13953/a-simple-java-solution   
 ```
@@ -243,7 +242,7 @@ public List<Interval> merge(List<Interval> intervals) {
 }
 ```
 
-##Insert Interval   
+##  Insert Interval   
 Q: Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.   
 ```
 public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
@@ -312,7 +311,7 @@ public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
 }
 ```
 
-##Maximum Subarray   
+##  Maximum Subarray   
 Q: Find the contiguous subarray within an array (containing at least one number) which has the largest sum. For example, given the array [−2,1,−3,4,−1,2,1,−5,4], the contiguous subarray [4,−1,2,1] has the largest sum = 6.   
 ```
 public int maxSubArray(int[] nums) {
@@ -330,7 +329,7 @@ public int maxSubArray(int[] nums) {
 }
 ```
 
-##Plus One   
+##  Plus One   
 Q: Given a non-negative number represented as an array of digits, plus one to the number. The digits are stored such that the most significant digit is at the head of the list.   
 ```
 public int[] plusOne(int[] digits) {
@@ -349,7 +348,7 @@ public int[] plusOne(int[] digits) {
 }
 ```
 
-##Set Matrix Zeroes   
+##  Set Matrix Zeroes   
 Q: Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.   
 ```
 public void setZeroes(int[][] matrix) {
@@ -385,7 +384,7 @@ public void setZeroes(int[][] matrix) {
 }
 ```
 
-##Pascal's Triangle
+##  Pascal's Triangle
 Q: Given numRows, generate the first numRows of Pascal's triangle.   
 ```
 public List<List<Integer>> generate(int numRows) {
@@ -408,7 +407,7 @@ public List<List<Integer>> generate(int numRows) {
 }
 ```
 
-##Pascal's Triangle II
+##  Pascal's Triangle II
 Q: Given an index k, return the kth row of the Pascal's triangle. For example, given k = 3, Return [1,3,3,1]. Note: Could you optimize your algorithm to use only O(k) extra space?   
 ```
 public List<Integer> getRow(int rowIndex) {
@@ -428,7 +427,7 @@ public List<Integer> getRow(int rowIndex) {
 }
 ```
 
-## Majority Element
+##   Majority Element
 Q: Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority element always exist in the array. 
 ref for multiple solutions: https://leetcode.com/discuss/42929/6-suggested-solutions-in-c-with-explanations     
 ```
@@ -439,7 +438,7 @@ public int majorityElement(int[] nums) {
 }
 ```
 
-##Rotate Array
+##  Rotate Array
 Q: Rotate an array of n elements to the right by k steps.   
 ```
 // rotate one by one
@@ -472,7 +471,7 @@ public void rotate(int[] nums, int k) {
 }
 ```
 
-## Summary Ranges
+##   Summary Ranges
 Q: Given a sorted integer array without duplicates, return the summary of its ranges.   
 ```
 public List<String> summaryRanges(int[] nums) {
@@ -495,7 +494,7 @@ public List<String> summaryRanges(int[] nums) {
 }
 ```
 
-##Product of Array Except Self
+##  Product of Array Except Self
 Q: Given an array of n integers where n > 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Solve it without division and in O(n). For example, given [1,2,3,4], return [24,12,8,6]. Follow up: Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)   
 ```
 public int[] productExceptSelf(int[] nums) {
@@ -514,7 +513,7 @@ public int[] productExceptSelf(int[] nums) {
 }
 ```
 
-##Missing Number
+##  Missing Number
 Q: Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?   
 ```
 public int missingNumber(int[] nums) {
@@ -537,7 +536,7 @@ public int missingNumber(int[] nums) {
 }
 ```
 
-##Game of Life
+##  Game of Life
 Q: According to the Wikipedia's article: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970." Given a board with m by n cells, each cell has an initial state live (1) or dead (0). Each cell interacts with its eight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article): Any live cell with fewer than two live neighbors dies, as if caused by under-population. Any live cell with two or three live neighbors lives on to the next generation. Any live cell with more than three live neighbors dies, as if by over-population.. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction. Write a function to compute the next state (after one update) of the board given its current state. Follow up: Could you solve it in-place? Remember that the board needs to be updated at the same time: You cannot update some cells first and then use their updated values to update other cells. In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?   
 ```
 public void gameOfLife(int[][] board) {
@@ -576,7 +575,7 @@ private void helper(int[][] board, int row, int col) {
 }
 ```
 
-##Increasing Triplet Subsequence
+##  Increasing Triplet Subsequence
 Q: Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array. Formally the function should: Return true if there exists i, j, k such that arr[i] < arr[j] < arr[k] given 0 ≤ i < j < k ≤ n-1 else return false. Your algorithm should run in O(n) time complexity and O(1) space complexity.   
 ```
 public boolean increasingTriplet(int[] nums) {
@@ -600,7 +599,7 @@ public boolean increasingTriplet(int[] nums) {
 }
 ```
 
-##Majority Element II
+##  Majority Element II
 Q: Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.   
 good ref: http://www.geeksforgeeks.org/majority-element/   
 https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm   

@@ -10,7 +10,7 @@
 8. [Maximum Product of Word Lengths](#maximum-product-of-word-lengths)
 9. [Power of Four](#power-of-four)
 
-##Single Number
+## Single Number
 Q: Given an array of integers, every element appears twice except for one. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?   
 ```
 public int singleNumber(int[] nums) {
@@ -22,7 +22,7 @@ public int singleNumber(int[] nums) {
 }
 ```
 
-##Single Number II
+## Single Number II
 Q: Given an array of integers, every element appears three times except for one. Find that single one.   
 ```
 public int singleNumber(int[] nums) {
@@ -42,7 +42,7 @@ public int singleNumber(int[] nums) {
 }
 ```
 
-##Reverse Bits
+## Reverse Bits
 Q: Reverse bits of a given 32 bits unsigned integer. If this function is called many times, how would you optimize it?(use hash map)   
 ```
 // you need treat n as an unsigned value
@@ -59,7 +59,7 @@ public int reverseBits(int n) {
 }
 ```
 
-## Number of 1 Bits
+##  Number of 1 Bits
 Q: Write a function that takes an unsigned integer and returns the number of ’1' bits it has (also known as the Hamming weight).   
 ```
 // you need to treat n as an unsigned value
@@ -73,7 +73,7 @@ public int hammingWeight(int n) {
 }
 ```
 
-## Bitwise AND of Numbers Range
+##  Bitwise AND of Numbers Range
 Q: Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.   
 ```
 public int rangeBitwiseAnd(int m, int n) {
@@ -96,7 +96,7 @@ public int rangeBitwiseAnd(int m, int n) {
 }
 ```
 
-##Power of Two
+## Power of Two
 Q: Given an integer, write a function to determine if it is a power of two.   
 ```
 public boolean isPowerOfTwo(int n) {
@@ -104,7 +104,7 @@ public boolean isPowerOfTwo(int n) {
 }
 ```
 
-##Single Number III
+## Single Number III
 Q: Given an array of numbers nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. The order of the result is not important. So in the above example, [5, 3] is also correct. Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?   
 ```
 public int[] singleNumber(int[] nums) {
@@ -150,7 +150,7 @@ public int[] singleNumber(int[] nums) {
 }
 ```
 
-##Maximum Product of Word Lengths
+## Maximum Product of Word Lengths
 Q: Given a string array words, find the maximum value of length(word[i]) * length(word[j]) where the two words do not share common letters. You may assume that each word will contain only lower case letters. If no such two words exist, return 0.   
 ```
 public int maxProduct(String[] words) {
@@ -175,7 +175,7 @@ public int maxProduct(String[] words) {
 }
 ```
 
-##Power of Four
+## Power of Four
 Q: Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 ```
 public boolean isPowerOfFour(int num) {

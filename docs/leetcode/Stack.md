@@ -13,7 +13,7 @@
 11. [Maximal Rectangle](#maximal-rectangle)
 12. [Flatten Nested List Iterator](#flatten-nested-list-iterator)
 
-##Valid Parentheses   
+## Valid Parentheses   
 Q: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.   
 ```
 public boolean isValid(String s) {
@@ -32,7 +32,7 @@ public boolean isValid(String s) {
 }
 ```
 
-##Simplify Path   
+## Simplify Path   
 Q: Given an absolute path for a file (Unix-style), simplify it.   
 ```
 public String simplifyPath(String path) {
@@ -62,7 +62,7 @@ public String simplifyPath(String path) {
 }
 ```
 
-##Largest Rectangle in Histogram   
+## Largest Rectangle in Histogram   
 Q: Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram. For example, Given heights = [2,1,5,6,2,3], return 10.   
 ```
 public int largestRectangleArea(int[] heights) {
@@ -90,7 +90,7 @@ public int largestRectangleArea(int[] heights) {
 }
 ```
 
-##Min Stack
+## Min Stack
 Q: Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. push(x) -- Push element x onto stack. pop() -- Removes the element on top of the stack. top() -- Get the top element. getMin() -- Retrieve the minimum element in the stack.   
 ```
 class MinStack {
@@ -121,7 +121,7 @@ class MinStack {
 }
 ```
 
-##Evaluate Reverse Polish Notation
+## Evaluate Reverse Polish Notation
 Q: Evaluate the value of an arithmetic expression in Reverse Polish Notation.Valid operators are +, -, *, /. Each operand may be an integer or another expression.   
 ```
 public int evalRPN(String[] tokens) {
@@ -160,7 +160,7 @@ private String cal(String as, String bs, String op) {
 }
 ```
 
-##Binary Search Tree Iterator
+## Binary Search Tree Iterator
 Q: Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST. Calling next() will return the next smallest number in the BST. Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.   
 ```
 public class BSTIterator {
@@ -192,7 +192,7 @@ public class BSTIterator {
 }
 ```
 
-##Implement Stack using Queues
+## Implement Stack using Queues
 Q: Implement the following operations of a stack using queues. push(x) -- Push element x onto stack. pop() -- Removes the element on top of the stack. top() -- Get the top element. empty() -- Return whether the stack is empty. Notes: You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid. Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue. You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).   
 ```
 class MyStack {
@@ -227,7 +227,7 @@ class MyStack {
 }
 ```
 
-##Implement Queue using Stacks
+## Implement Queue using Stacks
 Q: Implement the following operations of a queue using stacks. push(x) -- Push element x to the back of queue. pop() -- Removes the element from in front of queue. peek() -- Get the front element. empty() -- Return whether the queue is empty. Notes: You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid. Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack. You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).   
 ```
 class MyQueue {
@@ -262,7 +262,7 @@ class MyQueue {
 }
 ```
 
-##Peeking Iterator
+## Peeking Iterator
 Q: Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next(). Follow up: How would you extend your design to be generic and work with all types, not just integer?   
 ```
 class PeekingIterator implements Iterator<Integer> {
@@ -294,7 +294,7 @@ class PeekingIterator implements Iterator<Integer> {
 }
 ```
 
-##Verify Preorder Serialization of a Binary Tree
+## Verify Preorder Serialization of a Binary Tree
 Q: One way to serialize a binary tree is to use pre-order traversal. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as #.   
 better sol ref: https://leetcode.com/discuss/83824/7-lines-easy-java-solution   
 ```
@@ -321,7 +321,7 @@ public boolean isValidSerialization(String preorder) {
 }
 ```
 
-##Maximal Rectangle
+## Maximal Rectangle
 Q: Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.   
 dp ref: https://leetcode.com/discuss/20240/share-my-dp-solution   
 ```
@@ -374,7 +374,7 @@ private int area(int[] h) {
 }
 ```
 
-##Flatten Nested List Iterator 
+## Flatten Nested List Iterator 
 Q: Given a nested list of integers, implement an iterator to flatten it. Each element is either an integer, or a list -- whose elements may also be integers or other lists.   
 ```
 /**

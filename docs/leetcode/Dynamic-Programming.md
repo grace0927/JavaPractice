@@ -32,7 +32,7 @@
 30. [Palindrome Partitioning II](#palindrome-partitioning-ii)
 31. [Best Time to Buy and Sell Stock IV](#best-time-to-buy-and-sell-stock-iv)
 
-##Longest Valid Parentheses   
+## Longest Valid Parentheses   
 Q: Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring. For "(()", the longest valid parentheses substring is "()", which has length = 2. Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.   
 ```
 public int longestValidParentheses(String s) {
@@ -60,7 +60,7 @@ public int longestValidParentheses(String s) {
 }
 ```
 
-##Unique Paths   
+## Unique Paths   
 Q: A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there?   
 ```
 public int uniquePaths(int m, int n) {
@@ -85,7 +85,7 @@ public int uniquePaths(int m, int n) {
 }
 ```
 
-##Unique Paths II   
+## Unique Paths II   
 Q: Follow up for "Unique Paths": Now consider if some obstacles are added to the grids. How many unique paths would there be? An obstacle and empty space is marked as 1 and 0 respectively in the grid.   
 ```
 public int uniquePathsWithObstacles(int[][] obstacleGrid) {
@@ -123,7 +123,7 @@ public int uniquePathsWithObstacles(int[][] obstacleGrid) {
 }
 ```
 
-##Minimum Path Sum   
+## Minimum Path Sum   
 Q: Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Note: You can only move either down or right at any point in time.   
 ```
 public int minPathSum(int[][] grid) {
@@ -146,7 +146,7 @@ public int minPathSum(int[][] grid) {
 }
 ```
 
-##Climbing Stairs   
+## Climbing Stairs   
 Q: You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?   
 ```
 public int climbStairs(int n) {
@@ -165,7 +165,7 @@ public int climbStairs(int n) {
 }
 ```
 
-##Edit Distance   
+## Edit Distance   
 Q: Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. (each operation is counted as 1 step.) You have the following 3 operations permitted on a word: a) Insert a character b) Delete a character c) Replace a character   
 ```
 public int minDistance(String word1, String word2) {
@@ -189,7 +189,7 @@ public int minDistance(String word1, String word2) {
 }
 ```
 
-##Unique Binary Search Trees
+## Unique Binary Search Trees
 Q: Given n, how many structurally unique BST's (binary search trees) that store values 1...n?   
 ```
 public int numTrees(int n) {
@@ -205,7 +205,7 @@ public int numTrees(int n) {
 }
 ```
 
-##Unique Binary Search Trees II
+## Unique Binary Search Trees II
 Q: Given n, generate all structurally unique BST's (binary search trees) that store values 1...n.   
 ```
 public List<TreeNode> generateTrees(int n) {
@@ -245,7 +245,7 @@ private List<TreeNode> helper(int start, int end) {
 }
 ```
 
-##Decode Ways
+## Decode Ways
 Q: A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -> 1 'B' -> 2 ...' Z' -> 26 Given an encoded message containing digits, determine the total number of ways to decode it.   
 ```
 public int numDecodings(String s) {
@@ -265,7 +265,7 @@ public int numDecodings(String s) {
 }
 ```
 
-##Triangle
+## Triangle
 Q: Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below. Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.   
 ```
 public int minimumTotal(List<List<Integer>> triangle) {
@@ -287,7 +287,7 @@ public int minimumTotal(List<List<Integer>> triangle) {
 }
 ```
 
-## Best Time to Buy and Sell Stock
+##  Best Time to Buy and Sell Stock
 Q: Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.   
 ```
 public int maxProfit(int[] prices) {
@@ -303,7 +303,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-##Word Break
+## Word Break
 Q: Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence of one or more dictionary words.   
 ```
 public boolean wordBreak(String s, Set<String> wordDict) {
@@ -325,7 +325,7 @@ public boolean wordBreak(String s, Set<String> wordDict) {
 }
 ```
 
-##House Robber
+## House Robber
 Q: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night. Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.   
 ```
 public int rob(int[] nums) {
@@ -342,7 +342,7 @@ public int rob(int[] nums) {
 }
 ```
 
-##Counting Bits
+## Counting Bits
 Q: Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array. Follow up: It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass? Space complexity should be O(n). Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.   
 ```
 // O(n*sizeof(integer))
@@ -371,7 +371,7 @@ public int[] countBits(int num) {
 }
 ```
 
-##House Robber II
+## House Robber II
 Q: Note: This is an extension of House Robber. After robbing those houses on that street, the thief has found himself a new place for his thievery so that he will not get too much attention. This time, all houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, the security system for these houses remain the same as for those in the previous street. Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.   
 ```
 public int rob(int[] nums) {
@@ -393,7 +393,7 @@ public int rob(int[] nums) {
 }
 ```
 
-##Range Sum Query - Immutable
+## Range Sum Query - Immutable
 Q: Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive. Note: You may assume that the array does not change. There are many calls to sumRange function.   
 ```
 public class NumArray {
@@ -412,7 +412,7 @@ public class NumArray {
 }
 ```
 
-##Longest Increasing Subsequence
+## Longest Increasing Subsequence
 Q: Given an unsorted array of integers, find the length of longest increasing subsequence. Your algorithm should run in O(n2) complexity. Follow up: Could you improve it to O(n log n) time complexity?   
 better solution ref: https://leetcode.com/discuss/67609/short-java-solution-using-dp-o-n-log-n   
 ```
@@ -431,7 +431,7 @@ public int lengthOfLIS(int[] nums) {
 }
 ```
 
-##Range Sum Query 2D - Immutable
+## Range Sum Query 2D - Immutable
 Q: Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2). You may assume that the matrix does not change. There are many calls to sumRegion function. You may assume that row1 ≤ row2 and col1 ≤ col2.   
 ```
 public class NumMatrix {
@@ -466,7 +466,7 @@ public class NumMatrix {
 
 ```
 
-##Coin Change
+## Coin Change
 Q: You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. You may assume that you have an infinite number of each kind of coin.    
 good solution ref: https://leetcode.com/discuss/76217/java-both-iterative-recursive-solutions-with-explanations   
 ```
@@ -499,7 +499,7 @@ private int helper(int[] coins, int amount, int[] dp) {
 }
 ```
 
-##Maximal Square
+## Maximal Square
 Q: Given a 2D binary matrix filled with 0's and 1's, find the largest square containing all 1's and return its area.   
 ```
 public int maximalSquare(char[][] matrix) {
@@ -529,7 +529,7 @@ public int maximalSquare(char[][] matrix) {
 }
 ```
 
-##Maximum Product Subarray
+## Maximum Product Subarray
 Q: Find the contiguous subarray within an array (containing at least one number) which has the largest product.   
 ```
 public int maxProduct(int[] nums) {
@@ -555,7 +555,7 @@ public int maxProduct(int[] nums) {
 }
 ```
 
-##Best Time to Buy and Sell Stock with Cooldown
+## Best Time to Buy and Sell Stock with Cooldown
 Q: Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions: You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again). After you sell your stock, you cannot buy stock on next day. (ie, cooldown 1 day)   
 good ref: https://leetcode.com/discuss/71354/share-my-thinking-process   
 https://leetcode.com/discuss/72030/share-my-dp-solution-by-state-machine-thinking   
@@ -593,7 +593,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-##Counting Bits
+## Counting Bits
 Q: Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array. Follow up: It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass? Space complexity should be O(n). Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.   
 ```
 public int[] countBits(int num) {
@@ -619,7 +619,7 @@ public int[] countBits(int num) {
 }
 ```
 
-##Wildcard Matching
+## Wildcard Matching
 Q: Implement wildcard pattern matching with support for '?' and '*'. '?' Matches any single character. '*' Matches any sequence of characters (including the empty sequence). The matching should cover the entire input string (not partial).   
 good ref: https://leetcode.com/discuss/52274/three-solutions-iterative-16ms-180ms-modified-recursion-88ms   
 ```
@@ -671,7 +671,7 @@ public boolean isMatch(String s, String p) {
 }
 ```
 
-##Distinct Subsequences
+## Distinct Subsequences
 Q: Given a string S and a string T, count the number of distinct subsequences of T in S. A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ACE" is a subsequence of "ABCDE" while "AEC" is not). Here is an example: S = "rabbbit", T = "rabbit" Return 3.   
 ```
 public int numDistinct(String s, String t) {
@@ -695,7 +695,7 @@ public int numDistinct(String s, String t) {
 }
 ```
 
-##Interleaving String
+## Interleaving String
 Q: Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.   
 good ref: https://leetcode.com/discuss/70689/summary-of-solutions-bfs-dfs-dp    
 ```
@@ -730,7 +730,7 @@ public boolean isInterleave(String s1, String s2, String s3) {
 }
 ```
 
-##Scramble String
+## Scramble String
 Q: Given a string s1, we may represent it as a binary tree by partitioning it to two non-empty substrings recursively. Given two strings s1 and s2 of the same length, determine if s2 is a scrambled string of s1.    
 ```
 public boolean isScramble(String s1, String s2) {
@@ -763,7 +763,7 @@ public boolean isScramble(String s1, String s2) {
 }
 ```
 
-##Dungeon Game
+## Dungeon Game
 Q: The demons had captured the princess (P) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight (K) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess. The knight has an initial health point represented by a positive integer. If at any point his health point drops to 0 or below, he dies immediately. Some of the rooms are guarded by demons, so the knight loses health (negative integers) upon entering these rooms; other rooms are either empty (0's) or contain magic orbs that increase the knight's health (positive integers). In order to reach the princess as quickly as possible, the knight decides to move only rightward or downward in each step. Write a function to determine the knight's minimum initial health so that he is able to rescue the princess. Notes: The knight's health has no upper bound. Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.   
 ```
 public int calculateMinimumHP(int[][] dungeon) {
@@ -792,7 +792,7 @@ public int calculateMinimumHP(int[][] dungeon) {
 }
 ```
 
-##Best Time to Buy and Sell Stock III
+## Best Time to Buy and Sell Stock III
 Q: Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most two transactions.   
 ```
 public int maxProfit(int[] prices) {
@@ -823,7 +823,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-##Palindrome Partitioning II
+## Palindrome Partitioning II
 Q: Given a string s, partition s such that every substring of the partition is a palindrome. Return the minimum cuts needed for a palindrome partitioning of s.   
 good ref: https://leetcode.com/discuss/9476/solution-does-not-need-table-palindrome-right-uses-only-space   
 ```
@@ -860,7 +860,7 @@ public int minCut(String s) {
 }
 ```
 
-##Best Time to Buy and Sell Stock IV
+## Best Time to Buy and Sell Stock IV
 Q: Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most k transactions. Note:You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).   
 ```
 public int maxProfit(int k, int[] prices) {

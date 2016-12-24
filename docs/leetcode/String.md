@@ -15,7 +15,7 @@
 14. [Reverse String](#reverse-string)
 15. [Shortest Palindrome](#shortest-palindrome)
 
-##Longest Palindromic Substring
+## Longest Palindromic Substring
 Q: Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.   
 A: My thought is to use dp to store the possible substring that is palindrome. With incresing length, we can mark the later one as the longest palindrome.   
 ```
@@ -377,7 +377,7 @@ public List<String> fullJustify(String[] words, int maxWidth) {
 }
 ```
 
-##Reverse Words in a String
+## Reverse Words in a String
 Q: Given an input string, reverse the string word by word.
 ```
 public String reverseWords(String s) {
@@ -406,7 +406,7 @@ public String reverseWords(String s) {
 }
 ```
 
-## Compare Version Numbers
+##  Compare Version Numbers
 Q: Compare two version numbers version1 and version2. If version1 > version2 return 1, if version1 < version2 return -1, otherwise return 0. You may assume that the version strings are non-empty and contain only digits and the . character. The . character does not represent a decimal point and is used to separate number sequences.   
 ```
 public int compareVersion(String version1, String version2) {
@@ -437,7 +437,7 @@ public int compareVersion(String version1, String version2) {
 }
 ```
 
-##Basic Calculator II
+## Basic Calculator II
 Q: Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators and empty spaces . The integer division should truncate toward zero. You may assume that the given expression is always valid.   
 ```
 class OperatorFactory {
@@ -540,7 +540,7 @@ public class Solution {
 }
 ```
 
-##Integer to English Words
+## Integer to English Words
 Q: Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.   
 ```
 public String numberToWords(int num) {
@@ -586,7 +586,7 @@ private String say(int num) {
 }
 ```
 
-##Reverse String
+## Reverse String
 Q: Write a function that takes a string as input and returns the string reversed.   
 ```
 public String reverseString(String s) {
@@ -598,7 +598,7 @@ public String reverseString(String s) {
 }
 ```
 
-##Shortest Palindrome
+## Shortest Palindrome
 Q: Given a string S, you are allowed to convert it to a palindrome by adding characters in front of it. Find and return the shortest palindrome you can find by performing this transformation.   
 advance sol ref: https://leetcode.com/discuss/64309/clean-kmp-solution-with-super-detailed-explanation   
 ```

@@ -3,7 +3,7 @@
 1. [Course Schedule II](#course-schedule-ii)
 2. [Reconstruct Itinerary](#reconstruct-itinerary)
 
-## Course Schedule II
+##  Course Schedule II
 Q: There are a total of n courses you have to take, labeled from 0 to n - 1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses. There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.    
 good dfs solution: https://leetcode.com/discuss/35605/two-ac-solution-in-java-using-bfs-and-dfs-with-explanation   
 ```
@@ -52,7 +52,7 @@ private int[] convert(ArrayList<Integer> res) {
 }
 ```
 
-##Reconstruct Itinerary
+## Reconstruct Itinerary
 Q: Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary ["JFK", "LGA"] has a smaller lexical order than ["JFK", "LGB"]. All airports are represented by three capital letters (IATA code). You may assume all tickets form at least one valid itinerary.   
 good ref: https://leetcode.com/discuss/84659/short-ruby-python-java-c   
 ```

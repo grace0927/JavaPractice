@@ -22,7 +22,7 @@
 20. [Word Break II](#word-break-ii)
 21. [Expression Add Operators](#expression-add-operators)
 
-##Letter Combinations of a Phone Number   
+## Letter Combinations of a Phone Number   
 Q: Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below.   
 ```
 public List<String> letterCombinations(String digits) {
@@ -60,7 +60,7 @@ public List<String> helper(String digits, HashMap<Integer, char[]> map) {
 }
 ```
 
-##Generate Parentheses   
+## Generate Parentheses   
 Q: Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: "((()))", "(()())", "(())()", "()(())", "()()()"   
 ```
 public List<String> generateParenthesis(int n) {
@@ -92,7 +92,7 @@ private void helper(int left, int right, StringBuilder sb, List<String> list) {
 }
 ```
 
-##Sudoku Solver   
+## Sudoku Solver   
 Q: Write a program to solve a Sudoku puzzle by filling the empty cells. Empty cells are indicated by the character '.'. You may assume that there will be only one unique solution.   
 ```
 public void solveSudoku(char[][] board) {
@@ -152,7 +152,7 @@ private boolean isValid(char[][] board, int row, int col, char val) {
 }
 ```
 
-##Combination Sum   
+## Combination Sum   
 Q: Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times. Note: All numbers (including target) will be positive integers. Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak). The solution set must not contain duplicate combinations. For example, given candidate set 2,3,6,7 and target 7, A solution set is: [7] [2, 2, 3]    
 ```
 public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -185,7 +185,7 @@ private void helper(List<List<Integer>> list, ArrayList<Integer> row, int[] cand
 }
 ```
 
-##Combination Sum II   
+## Combination Sum II   
 Q: Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. Each number in C may only be used once in the combination. Note: All numbers (including target) will be positive integers. Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak). The solution set must not contain duplicate combinations. For example, given candidate set 10,1,2,7,6,1,5 and target 8, A solution set is: [1, 7] [1, 2, 5] [2, 6] [1, 1, 6]    
 ```
 public List<List<Integer>> combinationSum2(int[] candidates, int target) {
@@ -224,7 +224,7 @@ private void helper(List<List<Integer>> list, ArrayList<Integer> row, int[] cand
 }
 ```
 
-##Permutations   
+## Permutations   
 Q: Given a collection of distinct numbers, return all possible permutations. For example,[1,2,3] have the following permutations: [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].   
 ```
 public List<List<Integer>> permute(int[] nums) {
@@ -249,7 +249,7 @@ private void helper(List<List<Integer>> lists, LinkedList<Integer> list, int[] n
 }
 ```
 
-##Permutations II   
+## Permutations II   
 Q:
 ```
 public List<List<Integer>> permuteUnique(int[] nums) {
@@ -280,7 +280,7 @@ private void helper(List<List<Integer>> lists, int[] nums, int start) {
 }
 ```
 
-##N-Queens, N-Queens II   
+## N-Queens, N-Queens II   
 Q: The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.   
 ```
 public List<List<String>> solveNQueens(int n) {
@@ -336,7 +336,7 @@ private boolean isValid(boolean[][] visit, int row, int col) {
 }
 ```
 
-##Combinations   
+## Combinations   
 Q: Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.   
 ```
 public List<List<Integer>> combine(int n, int k) {
@@ -361,7 +361,7 @@ private void helper(int n, int k, int start, List<List<Integer>> lists, List<Int
 }
 ```
 
-##Subsets   
+## Subsets   
 Q: Given a set of distinct integers, nums, return all possible subsets. Note: Elements in a subset must be in non-descending order. The solution set must not contain duplicate subsets.   
 ```
 public List<List<Integer>> subsets(int[] nums) {
@@ -405,7 +405,7 @@ public List<List<Integer>> subsets(int[] S) {
 }
 ```
 
-##Word Search   
+## Word Search   
 Q: Given a 2D board and a word, find if the word exists in the grid. The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.   
 ```
 public boolean exist(char[][] board, String word) {
@@ -442,7 +442,7 @@ private boolean helper(char[][] board, String word, int row, int col, int idx) {
 }
 ```
 
-## Gray Code
+##  Gray Code
 The gray code is a binary numeral system where two successive values differ in only one bit. Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.   
 
 For example, given n = 2, return [0,1,3,2]. Its gray code sequence is:   
@@ -473,7 +473,7 @@ public List<Integer> grayCode(int n) {
 }
 ```
 
-## Subsets II
+##  Subsets II
 Q: Given a collection of integers that might contain duplicates, nums, return all possible subsets. Note: Elements in a subset must be in non-descending order. The solution set must not contain duplicate subsets.
 ```
 public List<List<Integer>> subsetsWithDup(int[] nums) {
@@ -501,7 +501,7 @@ private void helper(List<List<Integer>> lists, LinkedList<Integer> list, int[] n
 }
 ```
 
-## Restore IP Addresses
+##  Restore IP Addresses
 Q: Given a string containing only digits, restore it by returning all possible valid IP address combinations.   
 ```
 public List<String> restoreIpAddresses(String s) {
@@ -531,7 +531,7 @@ private void helper(List<String> list, StringBuilder sb, int start, int cnt) {
 }
 ```
 
-##Palindrome Partitioning
+## Palindrome Partitioning
 Q: Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.   
 ```
 public List<List<String>> partition(String s) {
@@ -565,7 +565,7 @@ private boolean isPalindrome(String s) {
 }
 ```
 
-##Add and Search Word - Data structure design
+## Add and Search Word - Data structure design
 Q: Design a data structure that supports the following two operations: void addWord(word) bool search(word) search(word) can search a literal word or a regular expression string containing only letters a-z or .. A . means it can represent any one letter.   
 ```
 public class WordDictionary {
@@ -625,7 +625,7 @@ public class WordDictionary {
 }
 ```
 
-##Combination Sum III
+## Combination Sum III
 Q: Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers. Ensure that numbers within the set are sorted in ascending order.   
 ```
 public List<List<Integer>> combinationSum3(int k, int n) {
@@ -649,7 +649,7 @@ private void helper(List<List<Integer>> lists, List<Integer> list, int k, int n,
 }
 ```
 
-##Additive Number
+## Additive Number
 Q: Additive number is a string whose digits can form additive sequence. A valid additive sequence should contain at least three numbers. Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two. Note: Numbers in the additive sequence cannot have leading zeros, so sequence 1, 2, 03 or 1, 02, 3 is invalid. Given a string containing only digits '0'-'9', write a function to determine if it's an additive number. Follow up: How would you handle overflow for very large input integers?   
 ```
 public boolean isAdditiveNumber(String num) {
@@ -698,7 +698,7 @@ private String helper(String a, String b, int n) {
 }
 ```
 
-##Regular Expression Matching
+## Regular Expression Matching
 Q: Implement regular expression matching with support for '.' and '*'. '.' Matches any single character. '*' Matches zero or more of the preceding element. The matching should cover the entire input string (not partial).   
 ```
 // backtracking
@@ -794,7 +794,7 @@ public boolean isMatch(String s, String p) {
 }
 ```
 
-##Word Break II
+## Word Break II
 Q: Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.   
 ```
 public List<String> wordBreak(String s, Set<String> wordDict) {
@@ -830,7 +830,7 @@ private void helper(List<String> list, String s, Set<String> dict, StringBuilder
 }
 ```
 
-##Expression Add Operators
+## Expression Add Operators
 Q: Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or * between the digits so they evaluate to the target value.   
 ```
 public List<String> addOperators(String num, int target) {

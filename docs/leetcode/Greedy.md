@@ -9,7 +9,7 @@
 7. [Remove Duplicate Letters](#remove-duplicate-letters)
 8. [Create Maximum Number](#create-maximum-number)
 
-##Jump Game   
+## Jump Game   
 Q: Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. For example:A = [2,3,1,1,4], return true.A = [3,2,1,0,4], return false.   
 ```
 public boolean canJump(int[] nums) {
@@ -27,7 +27,7 @@ public boolean canJump(int[] nums) {
 }
 ```
 
-##Jump Game II   
+## Jump Game II   
 Q: Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Your goal is to reach the last index in the minimum number of jumps.   
 For example:   
 Given array A = [2,3,1,1,4]   
@@ -52,7 +52,7 @@ public int jump(int[] nums) {
 }
 ```
 
-##Best Time to Buy and Sell Stock II
+## Best Time to Buy and Sell Stock II
 Q: Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).   
 ```
 public int maxProfit(int[] prices) {
@@ -64,7 +64,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-##Candy
+## Candy
 Q: There are N children standing in a line. Each child is assigned a rating value. You are giving candies to these children subjected to the following requirements: Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. What is the minimum candies you must give?   
 ```
 public int candy(int[] ratings) {
@@ -92,7 +92,7 @@ public int candy(int[] ratings) {
 }
 ```
 
-## Gas Station
+##  Gas Station
 Q: There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station's index if you can travel around the circuit once, otherwise return -1. Note: The solution is guaranteed to be unique.   
 ```
 public int canCompleteCircuit(int[] gas, int[] cost) {
@@ -114,7 +114,7 @@ public int canCompleteCircuit(int[] gas, int[] cost) {
 }
 ```
 
-##Patching Array
+## Patching Array
 Q: Given a sorted positive integer array nums and an integer n, add/patch elements to the array such that any number in range [1, n] inclusive can be formed by the sum of some elements in the array. Return the minimum number of patches required.   
 good ref: https://leetcode.com/discuss/83272/share-my-thinking-process   
 ```
@@ -134,7 +134,7 @@ public int minPatches(int[] nums, int n) {
 }
 ```
 
-##Remove Duplicate Letters
+## Remove Duplicate Letters
 Q: Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.   
 ```
 public String removeDuplicateLetters(String s) {
@@ -166,7 +166,7 @@ public String removeDuplicateLetters(String s) {
 }
 ```
 
-##Create Maximum Number
+## Create Maximum Number
 Q: Given two arrays of length m and n with digits 0-9 representing two numbers. Create the maximum number of length k <= m + n from digits of the two. The relative order of the digits from the same array must be preserved. Return an array of the k digits. You should try to optimize your time and space complexity.   
 ```
 public int[] maxNumber(int[] nums1, int[] nums2, int k) {

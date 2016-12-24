@@ -11,7 +11,7 @@
 9. [Lowest Common Ancestor of a Binary Tree](#lowest-common-ancestor-of-a-binary-tree)
 10. [Count of Smaller Numbers After Self](#count-of-smaller-numbers-after-self)
 
-## Binary Tree Inorder Traversal
+##  Binary Tree Inorder Traversal
 Q: Given a binary tree, return the inorder traversal of its nodes' values. Note: Recursive solution is trivial, could you do it iteratively?   
 ```
 // recursive
@@ -55,7 +55,7 @@ public List<Integer> inorderTraversal(TreeNode root) {
 }
 ```
 
-##Binary Tree Preorder Traversal
+## Binary Tree Preorder Traversal
 Q: Given a binary tree, return the preorder traversal of its nodes' values.   
 ```
 public List<Integer> preorderTraversal(TreeNode root) {
@@ -78,7 +78,7 @@ public List<Integer> preorderTraversal(TreeNode root) {
 }
 ```
 
-##Binary Tree Postorder Traversal
+## Binary Tree Postorder Traversal
 Q: Given a binary tree, return the postorder traversal of its nodes' values.   
 ```
 public List<Integer> postorderTraversal(TreeNode root) {
@@ -101,7 +101,7 @@ public List<Integer> postorderTraversal(TreeNode root) {
 }
 ```
 
-##Count Complete Tree Nodes
+## Count Complete Tree Nodes
 Q: Given a complete binary tree, count the number of nodes. Definition of a complete binary tree from Wikipedia: In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.   
 ```
 public int countNodes(TreeNode root) {
@@ -132,7 +132,7 @@ public int sum(int height) {
 }
 ```
 
-## Invert Binary Tree
+##  Invert Binary Tree
 Q: Invert a binary tree.   
 ```
 public TreeNode invertTree(TreeNode root) {
@@ -147,7 +147,7 @@ public TreeNode invertTree(TreeNode root) {
 }
 ```
 
-## Kth Smallest Element in a BST
+##  Kth Smallest Element in a BST
 Q: Given a binary search tree, write a function kthSmallest to find the kth smallest element in it. Note: You may assume k is always valid, 1 ≤ k ≤ BST's total elements. Follow up: What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?   
 better solution ref: http://www.geeksforgeeks.org/find-k-th-smallest-element-in-bst-order-statistics-in-bst/   
 ```
@@ -166,7 +166,7 @@ private void preorder(TreeNode root, List<Integer> list) {
 }
 ```
 
-##Lowest Common Ancestor of a Binary Search Tree
+## Lowest Common Ancestor of a Binary Search Tree
 Q: Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”   
 ```
 public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -177,7 +177,7 @@ public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 }
 ```
 
-##Serialize and Deserialize Binary Tree
+## Serialize and Deserialize Binary Tree
 Q: Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment. Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.   
 ```
 // Encodes a tree to a single string.
@@ -225,7 +225,7 @@ public TreeNode deserialize(String data) {
 }
 ```
 
-##Lowest Common Ancestor of a Binary Tree
+## Lowest Common Ancestor of a Binary Tree
 Q: Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”   
 ```
 public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -252,7 +252,7 @@ private boolean find(TreeNode root, TreeNode p) {
 }
 ```
 
-##Count of Smaller Numbers After Self
+## Count of Smaller Numbers After Self
 Q: You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].   
 good ref: http://bookshadow.com/weblog/2015/12/06/leetcode-count-of-smaller-numbers-after-self/    
 ```

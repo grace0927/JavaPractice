@@ -182,7 +182,7 @@ public ListNode deleteDuplicates(ListNode head) {
 }
 ```
 
-##Remove Duplicates from Sorted List   
+## Remove Duplicates from Sorted List   
 Q: Given a sorted linked list, delete all duplicates such that each element appear only once. For example, Given 1->1->2, return 1->2. Given 1->1->2->3->3, return 1->2->3.   
 ```
 public ListNode deleteDuplicates(ListNode head) {
@@ -198,7 +198,7 @@ public ListNode deleteDuplicates(ListNode head) {
 }
 ```
 
-##Reverse Linked List II
+## Reverse Linked List II
 Q: Reverse a linked list from position m to n. Do it in-place and in one-pass.   
 For example:   
 Given 1->2->3->4->5->NULL, m = 2 and n = 4,   
@@ -234,7 +234,7 @@ public ListNode reverseBetween(ListNode head, int m, int n) {
 }
 ```
 
-##Reorder List
+## Reorder List
 Q: Given a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→… You must do this in-place without altering the nodes' values.   
 ```
 public void reorderList(ListNode head) {
@@ -272,7 +272,7 @@ public void reorderList(ListNode head) {
 }
 ```
 
-## Insertion Sort List
+##  Insertion Sort List
 Q: Sort a linked list using insertion sort.   
 ```
 public ListNode insertionSortList(ListNode head) {
@@ -302,7 +302,7 @@ public ListNode insertionSortList(ListNode head) {
 }
 ```
 
-## Sort List
+##  Sort List
 Q: Sort a linked list in O(n log n) time using constant space complexity.   
 ```
 public ListNode sortList(ListNode head) {
@@ -344,7 +344,7 @@ public ListNode sortList(ListNode head) {
 }
 ```
 
-## Intersection of Two Linked Lists
+##  Intersection of Two Linked Lists
 Q: Write a program to find the node at which the intersection of two singly linked lists begins. If the two linked lists have no intersection at all, return null. The linked lists must retain their original structure after the function returns. You may assume there are no cycles anywhere in the entire linked structure. Your code should preferably run in O(n) time and use only O(1) memory.   
 ```
 public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -369,7 +369,7 @@ public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 }
 ```
 
-##Remove Linked List Elements
+## Remove Linked List Elements
 Q: Remove all elements from a linked list of integers that have value val.   
 ```
 public ListNode removeElements(ListNode head, int val) {
@@ -387,7 +387,7 @@ public ListNode removeElements(ListNode head, int val) {
 }
 ```
 
-## Reverse Linked List
+##  Reverse Linked List
 Q: Reverse a singly linked list.   
 ```
 // iteratively
@@ -413,7 +413,7 @@ public ListNode reverseList(ListNode head) {
 }
 ```
 
-##Delete Node in a Linked List
+## Delete Node in a Linked List
 Q: Write a function to delete a node (except the tail) in a singly linked list, given only access to that node. Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.   
 ```
 public void deleteNode(ListNode node) {

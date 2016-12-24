@@ -14,7 +14,7 @@
 12. [Word Ladder II](#word-ladder-ii)
 13. [Remove Invalid Parentheses](#remove-invalid-parentheses)
 
-## Binary Tree Level Order Traversal
+##  Binary Tree Level Order Traversal
 Q: Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).   
 ```
 public List<List<Integer>> levelOrder(TreeNode root) {
@@ -43,7 +43,7 @@ public List<List<Integer>> levelOrder(TreeNode root) {
 }
 ```
 
-## Binary Tree Zigzag Level Order Traversal
+##  Binary Tree Zigzag Level Order Traversal
 Q: Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).   
 ```
 public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
@@ -84,7 +84,7 @@ public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 }
 ```
 
-## Maximum Depth of Binary Tree
+##  Maximum Depth of Binary Tree
 Q: Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.   
 ```
 // BFS
@@ -122,7 +122,7 @@ public int maxDepth(TreeNode root) {
 }
 ```
 
-## Binary Tree Level Order Traversal II
+##  Binary Tree Level Order Traversal II
 Q: Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).   
 ```
 public List<List<Integer>> levelOrderBottom(TreeNode root) {
@@ -153,7 +153,7 @@ public List<List<Integer>> levelOrderBottom(TreeNode root) {
 }
 ```
 
-## Word Ladder
+##  Word Ladder
 Q: Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time Each intermediate word must exist in the word list For example, Given: beginWord = "hit" endWord = "cog" wordList = ["hot","dot","dog","lot","log"] As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog", return its length 5. Note: Return 0 if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters.   
 ```
 public int ladderLength(String beginWord, String endWord, Set<String> wordList) {
@@ -190,7 +190,7 @@ public int ladderLength(String beginWord, String endWord, Set<String> wordList) 
 }
 ```
 
-## Sum Root to Leaf Numbers
+##  Sum Root to Leaf Numbers
 Q: Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number. An example is the root-to-leaf path 1->2->3 which represents the number 123.Find the total sum of all root-to-leaf numbers.   
 ```
 public int sumNumbers(TreeNode root) {
@@ -217,7 +217,7 @@ public int sumNumbers(TreeNode root) {
 }
 ```
 
-## Surrounded Regions
+##  Surrounded Regions
 Q: Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'. A region is captured by flipping all 'O's into 'X's in that surrounded region.   
 ```
 public void solve(char[][] board) {
@@ -265,7 +265,7 @@ private void validate(char[][] board, int r, int c, LinkedList<Integer> queR, Li
 }
 ```
 
-## Clone Graph
+##  Clone Graph
 Q: Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors. Nodes are labeled uniquely.   
 ```
 public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
@@ -298,7 +298,7 @@ public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
 }
 ```
 
-##Binary Tree Right Side View
+## Binary Tree Right Side View
 Q: Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.   
 ```
 public List<Integer> rightSideView(TreeNode root) {
@@ -327,7 +327,7 @@ public List<Integer> rightSideView(TreeNode root) {
 }
 ```
 
-##Perfect Squares
+## Perfect Squares
 Q: Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n. For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.   
 good ref: https://leetcode.com/discuss/58056/summary-of-different-solutions-bfs-static-and-mathematics   
 ```
@@ -360,7 +360,7 @@ public int numSquares(int n) {
 }
 ```
 
-##Minimum Height Trees
+## Minimum Height Trees
 Q: For a undirected graph with tree characteristics, we can choose any node as the root. The result graph is then a rooted tree. Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs). Given such a graph, write a function to find all the MHTs and return a list of their root labels. Format The graph contains n nodes which are labeled from 0 to n - 1. You will be given the number n and a list of undirected edges (each edge is a pair of labels). You can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.   
 ```
 public List<Integer> findMinHeightTrees(int n, int[][] edges) {
@@ -410,7 +410,7 @@ private HashSet<Integer> helper(int[] ret, boolean[] visit) {
 }
 ```
 
-##Word Ladder II
+## Word Ladder II
 Q: Given two words (beginWord and endWord), and a dictionary's word list, find all shortest transformation sequence(s) from beginWord to endWord, such that: Only one letter can be changed at a time Each intermediate word must exist in the word list Note: All words have the same length. All words contain only lowercase alphabetic characters.      
 good ref: https://leetcode.com/discuss/64808/my-concise-java-solution-based-on-bfs-and-dfs   
 ```
@@ -466,7 +466,7 @@ public List<List<String>> findLadders(String beginWord, String endWord, Set<Stri
 }
 ```
 
-##Remove Invalid Parentheses
+## Remove Invalid Parentheses
 Q: Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results. Note: The input string may contain letters other than the parentheses ( and ).   
 dfs ref: http://algobox.org/remove-invalid-parentheses/   
 ```

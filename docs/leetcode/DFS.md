@@ -22,7 +22,7 @@
 20. [House Robber III](#house-robber-iii)
 21. [Binary Tree Maximum Path Sum](#binary-tree-maximum-path-sum)
 
-## Same Tree
+##  Same Tree
 Q: Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value.   
 ```
 public boolean isSameTree(TreeNode p, TreeNode q) {
@@ -36,7 +36,7 @@ public boolean isSameTree(TreeNode p, TreeNode q) {
 }
 ```
 
-## Validate Binary Search Tree
+##  Validate Binary Search Tree
 Q: Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node's key. The right subtree of a node contains only nodes with keys greater than the node's key. Both the left and right subtrees must also be binary search trees.   
 ```
 public boolean isValidBST(TreeNode root) {
@@ -83,7 +83,7 @@ public boolean isValidBSTHelper(TreeNode root, long minVal, long maxVal) {
 // iterative one ref: https://leetcode.com/discuss/22234/my-java-inorder-iteration-solution
 ```
 
-##Symmetric Tree
+## Symmetric Tree
 Q: Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).   
 ```
 // recursive
@@ -147,7 +147,7 @@ public boolean isSymmetric(TreeNode root) {
 }
 ```
 
-##Construct Binary Tree from Preorder and Inorder Traversal
+## Construct Binary Tree from Preorder and Inorder Traversal
 Q: Given preorder and inorder traversal of a tree, construct the binary tree. You may assume that duplicates do not exist in the tree.   
 ```
 // iterative
@@ -209,7 +209,7 @@ private TreeNode helper(int pnt, int is, int ie, int[] preorder, HashMap<Integer
 ```
 
 
-##Construct Binary Tree from Inorder and Postorder Traversal
+## Construct Binary Tree from Inorder and Postorder Traversal
 Q: Given inorder and postorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree.   
 ```
 // recursive
@@ -240,7 +240,7 @@ private TreeNode helper(int[] postorder, int ps, int pe, int is, int ie, HashMap
 }
 ```
 
-## Convert Sorted Array to Binary Search Tree
+##  Convert Sorted Array to Binary Search Tree
 Q: Given an array where elements are sorted in ascending order, convert it to a height balanced BST.   
 ```
 public TreeNode sortedArrayToBST(int[] nums) {
@@ -261,7 +261,7 @@ private TreeNode helper(int[] nums, int s, int e) {
 }
 ```
 
-##Balanced Binary Tree
+## Balanced Binary Tree
 Q: Given a binary tree, determine if it is height-balanced. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
 ```
 public boolean isBalanced(TreeNode root) {
@@ -283,7 +283,7 @@ private boolean helper(TreeNode node, HashMap<TreeNode, Integer> map) {
 }
 ```
 
-##Convert Sorted List to Binary Search Tree
+## Convert Sorted List to Binary Search Tree
 Q: Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.   
 ```
 public TreeNode sortedListToBST(ListNode head) {
@@ -317,7 +317,7 @@ private TreeNode helper(ListNode head, int cnt) {
 }
 ```
 
-## Minimum Depth of Binary Tree
+##  Minimum Depth of Binary Tree
 Q: Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.   
 ```
 public int minDepth(TreeNode root) {
@@ -334,7 +334,7 @@ public int minDepth(TreeNode root) {
 }
 ```
 
-##Path Sum
+## Path Sum
 Q: Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.   
 ```
 public boolean hasPathSum(TreeNode root, int sum) {
@@ -347,7 +347,7 @@ public boolean hasPathSum(TreeNode root, int sum) {
 }
 ```
 
-## Path Sum II
+##  Path Sum II
 Q: Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.   
 ```
 public List<List<Integer>> pathSum(TreeNode root, int sum) {
@@ -378,7 +378,7 @@ private void helper(List<List<Integer>> lists, LinkedList<Integer> list, TreeNod
 }
 ```
 
-## Flatten Binary Tree to Linked List
+##  Flatten Binary Tree to Linked List
 Q: Given a binary tree, flatten it to a linked list in-place.   
 ```
 public void flatten(TreeNode root) {
@@ -397,7 +397,7 @@ public void flatten(TreeNode root) {
 }
 ```
 
-## Recover Binary Search Tree
+##  Recover Binary Search Tree
 Q: Two elements of a binary search tree (BST) are swapped by mistake. Recover the tree without changing its structure. Note: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?   
 ```
 // inorder traversal
@@ -436,7 +436,7 @@ private void swap(TreeNode a, TreeNode b) {
 // ref: https://leetcode.com/discuss/26310/detail-explain-about-morris-traversal-finds-incorrect-pointer
 ```
 
-##Populating Next Right Pointers in Each Node
+## Populating Next Right Pointers in Each Node
 Q: Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL. Initially, all next pointers are set to NULL. You may only use constant extra space.
 You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).   
 ```
@@ -468,7 +468,7 @@ public void connect(TreeLinkNode root) {
 }
 ```
 
-## Populating Next Right Pointers in Each Node II
+##  Populating Next Right Pointers in Each Node II
 Q: Follow up for problem "Populating Next Right Pointers in Each Node". What if the given tree could be any binary tree? Would your previous solution still work? Note: You may only use constant extra space.   
 ```
 public void connect(TreeLinkNode root) {
@@ -515,7 +515,7 @@ public void connect(TreeLinkNode root) {
 }
 ```
 
-## Number of Islands
+##  Number of Islands
 Q: Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.   
 ```
 public int numIslands(char[][] grid) {
@@ -549,7 +549,7 @@ private void flip(char[][] grid, int i, int j) {
 }
 ```
 
-## Course Schedule
+##  Course Schedule
 Q: There are a total of n courses you have to take, labeled from 0 to n - 1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? ref: https://en.wikipedia.org/wiki/Topological_sorting#Algorithms   
 ```
 public boolean canFinish(int numCourses, int[][] prerequisites) {
@@ -590,7 +590,7 @@ private boolean valid(boolean[] visit, int node, HashMap<Integer, LinkedList<Int
 }
 ```
 
-##Binary Tree Paths
+## Binary Tree Paths
 Q: Given a binary tree, return all root-to-leaf paths.   
 ```
 public List<String> binaryTreePaths(TreeNode root) {
@@ -629,7 +629,7 @@ public List<String> binaryTreePaths(TreeNode root) {
 }
 ```
 
-##Longest Increasing Path in a Matrix
+## Longest Increasing Path in a Matrix
 Q: Given an integer matrix, find the length of the longest increasing path. From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).   
 ```
 public int longestIncreasingPath(int[][] matrix) {
@@ -676,7 +676,7 @@ private void helper(int[][] matrix, int[][] dp, int r, int c) {
 }
 ```
 
-##House Robber III
+## House Robber III
 Q: The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the "root." Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that "all houses in this place forms a binary tree". It will automatically contact the police if two directly-linked houses were broken into on the same night. Determine the maximum amount of money the thief can rob tonight without alerting the police.   
 good improve ref: https://leetcode.com/discuss/91899/step-by-step-tackling-of-the-problem   
 ```
@@ -699,7 +699,7 @@ public int rob(TreeNode root) {
 }
 ```
 
-##Binary Tree Maximum Path Sum
+## Binary Tree Maximum Path Sum
 Q: Given a binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path does not need to go through the root.   
 ```
 public int maxPathSum(TreeNode root) {
