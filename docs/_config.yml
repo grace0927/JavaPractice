@@ -9,6 +9,7 @@ github_username:  grace0927
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 kramdown:
   input: GFM
