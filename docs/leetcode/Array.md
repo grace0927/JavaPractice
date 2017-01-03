@@ -25,47 +25,48 @@
 Q: Given an unsorted integer array, find the first missing positive integer. For example, Given `[1,2,0]` return `3`, and `[3,4,-1,1]` return `2`. Your algorithm should run in `O(n)` time and uses constant space.     
 
 {% highlight java linenos %}
-public int firstMissingPositive( int[] nums ) {
-    // sort array first o(n)
-    sortArray( nums );
-    
-    // find by scan array o(n)
-    return scanArray( nums );
-}
-
-public void sortArray( int[] nums ) {
-    for( int i=0; i<nums.length; i++ ) {
-        while( nums[i]!=i+1 && nums[i]<=nums.length && nums[i]>0 && nums[i]!=nums[nums[i]-1] ) {
-            swap( nums, i, nums[i]-1 );
-        }
+    public int firstMissingPositive( int[] nums ) {
+        // sort array first o(n)
+        sortArray( nums );
+        
+        // find by scan array o(n)
+        return scanArray( nums );
     }
-}
 
-public int scanArray( int[] nums ) {
-    for( int i=0; i<nums.length; i++ ) {
-        if( nums[i]!=i+1 ) {
-            return i+1;
+    public void sortArray( int[] nums ) {
+        for( int i=0; i<nums.length; i++ ) {
+            while( nums[i]!=i+1 && nums[i]<=nums.length && nums[i]>0 && nums[i]!=nums[nums[i]-1] ) {
+                swap( nums, i, nums[i]-1 );
+            }
         }
     }
 
-    return nums.length+1;
-}
+    public int scanArray( int[] nums ) {
+        for( int i=0; i<nums.length; i++ ) {
+            if( nums[i]!=i+1 ) {
+                return i+1;
+            }
+        }
 
-public void swap( int[] nums, int i, int j ) {
-    int tmp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = tmp;
-}
+        return nums.length+1;
+    }
+
+    public void swap( int[] nums, int i, int j ) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
 {% endhighlight %}
 
 ##  Rotate Image   
 Q: You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise).   
 
-    public void rotate(int[][] matrix) {
+{% highlight java linenos %}
+    public void rotate( int[][] matrix ) {
         int n = matrix.length;
-        for(int i=0; i<n/2; i++) {
+        for( int i=0; i<n/2; i++ ) {
             int boundary = n-i-1;
-            for(int j=i; j<boundary; j++) {
+            for( int j=i; j<boundary; j++ ) {
                 int tmp = matrix[i][j];
                 matrix[i][j] = matrix[n-j-1][i];
                 matrix[n-j-1][i] = matrix[boundary][n-j-1];
@@ -74,7 +75,7 @@ Q: You are given an n x n 2D matrix representing an image. Rotate the image by 9
             }
         }
     }
-
+{% endhighlight %}
 
 ##  Spiral Matrix   
 Q: Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.   
