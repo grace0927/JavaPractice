@@ -79,100 +79,117 @@ Q: You are given an n x n 2D matrix representing an image. Rotate the image by 9
 
 ##  Spiral Matrix   
 Q: Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.   
-```
-public List<Integer> spiralOrder(int[][] matrix) {
-    List<Integer> list = new ArrayList<>();
-    if(matrix.length==0 || matrix[0].length==0) {
+
+{% highlight java linenos %}
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> list = new ArrayList<>();
+        if(matrix.length==0 || matrix[0].length==0) {
+            return list;
+        }
+        int maxR=matrix.length-1, minR=0;
+        int maxC=matrix[0].length-1, minC=0;
+        int pnt=0, pntR=0, pntC=0, side=0;
+        int max=(maxC+1)*(maxR+1);
+        
+        while(pnt<max) {
+            list.add(matrix[pntR][pntC]);
+            switch(side) {
+                case 0:
+                    if(pntC==maxC) {
+                        pntR++;
+                        side=1;
+                        minR++;
+                    } else {
+                        pntC++;
+                    }
+                    break;
+                case 1:
+                    if(pntR==maxR) {
+                        pntC--;
+                        side=2;
+                    } else {
+                        pntR++;
+                    }
+                    break;
+                case 2:
+                    if(pntC==minC) {
+                        pntR--;
+                        side=3;
+                    } else {
+                        pntC--;
+                    }
+                    break;
+                case 3:
+                    if(pntR==minR) {
+                        pntC++;
+                        side=0;
+                        maxR--;
+                        minC++;
+                        maxC--;
+                    } else {
+                        pntR--;
+                    }
+                    break;
+            }
+            pnt++;
+        }
+        
         return list;
     }
-    int maxR=matrix.length-1, minR=0;
-    int maxC=matrix[0].length-1, minC=0;
-    int pnt=0, pntR=0, pntC=0, side=0;
-    int max=(maxC+1)*(maxR+1);
-    
-    while(pnt<max) {
-        list.add(matrix[pntR][pntC]);
-        switch(side) {
-            case 0:
-                if(pntC==maxC) {
-                    pntR++;
-                    side=1;
-                    minR++;
-                } else {
-                    pntC++;
-                }
-                break;
-            case 1:
-                if(pntR==maxR) {
-                    pntC--;
-                    side=2;
-                } else {
-                    pntR++;
-                }
-                break;
-            case 2:
-                if(pntC==minC) {
-                    pntR--;
-                    side=3;
-                } else {
-                    pntC--;
-                }
-                break;
-            case 3:
-                if(pntR==minR) {
-                    pntC++;
-                    side=0;
-                    maxR--;
-                    minC++;
-                    maxC--;
-                } else {
-                    pntR--;
-                }
-                break;
-        }
-        pnt++;
-    }
-    
-    return list;
-}
-```
+{% endhighlight %}
 
 ##  Next Permutation   
 Q:Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers. If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order). The replacement must be in-place, do not allocate extra memory. Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.   
-```
-public void nextPermutation(int[] nums) {
-    int pnt = nums.length-2;
-    // find abnormal idx
-    while(pnt>=0 && nums[pnt]>=nums[pnt+1]) {
-        pnt--;
+
+{% highlight java linenos %}
+    public void nextPermutation(int[] nums) {
+        // find abnormal idx
+        int start = findAbnormalIndex( nums );
+        
+        // swap abnormal idx when there is one
+        if(start>=0) {
+            swapAbnormalIndex(nums, start);
+        }
+        
+        // reverse tail
+        reverseArray(nums, start+1, nums.length-1);
     }
-    
-    // swap abnormal idx when there is one
-    int start = pnt;
-    if(start>=0) {
+
+    private int findAbnormalIndex(int[] nums) {
+        int pnt = nums.length-2;
+
+        // find abnormal idx
+        while(pnt>=0 && nums[pnt]>=nums[pnt+1]) {
+            pnt--;
+        }
+
+        return pnt;
+    }
+
+    private void swapAbnormalIndex(int[] nums, int idx) {
         pnt = nums.length-1;
+
         while(nums[start]>=nums[pnt]) {
             pnt--;
         }
+
         swap(nums, pnt, start);
     }
-    
-    // reverse tail
-    start++;
-    pnt = nums.length-1;
-    while(start<pnt) {
-        swap(nums, start, pnt);
-        start++;
-        pnt--;
-    }
-}
 
-private void swap(int[] nums, int i, int j) {
-    int tmp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = tmp;
-}
-```
+    private void reverseArray(int[] nums, int start, int end) {
+        while(start<pnt) {
+            swap(nums, start, pnt);
+            start++;
+            pnt--;
+        }
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+{% endhighlight %}
 
 ##  Spiral Matrix II   
 Q: Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.   
