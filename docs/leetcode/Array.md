@@ -193,342 +193,361 @@ Q:Implement next permutation, which rearranges numbers into the lexicographicall
 
 ##  Spiral Matrix II   
 Q: Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.   
-```
-public int[][] generateMatrix(int n) {
-    int side = 0, max = n-1, min = 0, len = n*n, pnt = 1, row=0, col=0;
-    int[][] res = new int[n][n];
-    
-    while(pnt<=len) {
-        res[row][col] = pnt;
-        switch(side) {
-            case 0:
-                if(col==max) {
-                    side = 1;
-                    row++;
-                } else {
-                    col++;
-                }
-                break;
-            case 1:
-                if(row==max) {
-                    side = 2;
-                    col--;
-                } else {
-                    row++;
-                }
-                break;
-            case 2:
-                if(col==min) {
-                    side = 3;
-                    row--;
-                    min++;
-                } else {
-                    col--;
-                }
-                break;
-            case 3:
-                if(row==min) {
-                    side = 0;
-                    col++;
-                    max--;
-                } else {
-                    row--;
-                }
-                break;
+
+{% highlight java linenos %}
+    public int[][] generateMatrix(int n) {
+        int side = 0, max = n-1, min = 0, len = n*n, pnt = 1, row=0, col=0;
+        int[][] res = new int[n][n];
+        
+        while(pnt<=len) {
+            res[row][col] = pnt;
+            switch(side) {
+                case 0:
+                    if(col==max) {
+                        side = 1;
+                        row++;
+                    } else {
+                        col++;
+                    }
+                    break;
+                case 1:
+                    if(row==max) {
+                        side = 2;
+                        col--;
+                    } else {
+                        row++;
+                    }
+                    break;
+                case 2:
+                    if(col==min) {
+                        side = 3;
+                        row--;
+                        min++;
+                    } else {
+                        col--;
+                    }
+                    break;
+                case 3:
+                    if(row==min) {
+                        side = 0;
+                        col++;
+                        max--;
+                    } else {
+                        row--;
+                    }
+                    break;
+            }
+            pnt++;
         }
-        pnt++;
+        
+        return res;
     }
-    
-    return res;
-}
-```
+{% endhighlight %}
 
 ##  Merge Intervals   
 Q: Given a collection of intervals, merge all overlapping intervals.   
 good ref: https://leetcode.com/discuss/13953/a-simple-java-solution   
-```
-public List<Interval> merge(List<Interval> intervals) {
-    HashMap<Integer, Integer> map = new HashMap<>();
-    for(Interval interval:intervals) {
-        if(!map.containsKey(interval.start)) {
-            map.put(interval.start, interval.end);
-        } else {
-            map.put(interval.start, Math.max(map.get(interval.start),interval.end));
-        }
-    }
-    
-    LinkedList<Interval> list = new LinkedList<>();
-    Integer[] set = new Integer[map.size()];
-    map.keySet().toArray(set);
-    Arrays.sort(set);
-    for(Integer key:set) {
-        if(list.isEmpty()) {
-            list.add(new Interval(key, map.get(key)));
-        } else {
-            if(key>list.peekLast().end) {
-                list.add(new Interval(key, map.get(key)));
+
+{% highlight java linenos %}
+    public List<Interval> merge(List<Interval> intervals) {
+        // first pass to store interval start point to its furest
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(Interval interval:intervals) {
+            if(!map.containsKey(interval.start)) {
+                map.put(interval.start, interval.end);
             } else {
-                Interval last = list.pollLast();
-                list.add(new Interval(last.start, Math.max(last.end, map.get(key))));
+                map.put(interval.start, Math.max(map.get(interval.start),interval.end));
             }
         }
+        
+        LinkedList<Interval> list = new LinkedList<>();
+        Integer[] set = new Integer[map.size()];
+
+        // sort start points
+        map.keySet().toArray(set);
+        Arrays.sort(set);
+
+        // second pass to compare start point with previous end point, and merge
+        for(Integer key:set) {
+            if(list.isEmpty()) {
+                list.add(new Interval(key, map.get(key)));
+            } else {
+                if(key>list.peekLast().end) {
+                    list.add(new Interval(key, map.get(key)));
+                } else {
+                    Interval last = list.pollLast();
+                    list.add(new Interval(last.start, Math.max(last.end, map.get(key))));
+                }
+            }
+        }
+        
+        return list;
     }
-    
-    return list;
-}
-```
+{% endhighlight %}
 
 ##  Insert Interval   
 Q: Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.   
-```
-public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
-    LinkedList<Interval> list = new LinkedList<>();
-    for(Interval interval:intervals) {
-        if(newInterval.start>interval.end) {
-            list.add(interval);
-        } else if(newInterval.end<interval.start) {
-            if(list.isEmpty() || list.peekLast().end<newInterval.start) {
-                list.add(newInterval);
+
+{% highlight java linenos %}
+    // use stack to push one by one, merge interval if needed.
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        LinkedList<Interval> list = new LinkedList<>();
+        for(Interval interval:intervals) {
+            if(newInterval.start>interval.end) {
+                list.add(interval);
+            } else if(newInterval.end<interval.start) {
+                if(list.isEmpty() || list.peekLast().end<newInterval.start) {
+                    list.add(newInterval);
+                }
+                list.add(interval);
+            }else {
+                if(!list.isEmpty() && list.peekLast().end>newInterval.start) {
+                    Interval prev = list.pollLast();
+                    list.add(new Interval(prev.start, Math.max(prev.end, interval.end)));
+                } else {
+                    list.add(new Interval(Math.min(interval.start, newInterval.start), 
+                        Math.max(interval.end, newInterval.end)));
+                }
             }
-            list.add(interval);
-        }else {
-            if(!list.isEmpty() && list.peekLast().end>newInterval.start) {
-                Interval prev = list.pollLast();
-                list.add(new Interval(prev.start, Math.max(prev.end, interval.end)));
-            } else {
-                list.add(new Interval(Math.min(interval.start, newInterval.start), 
-                    Math.max(interval.end, newInterval.end)));
+        }
+        if(list.isEmpty() || list.peekLast().end<newInterval.start) {
+            list.add(newInterval);
+        }
+        return list;
+    }
+    // more concise
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        int pnt=0;
+        
+        while(pnt<intervals.size() && intervals.get(pnt).end<newInterval.start) {
+            pnt++;
+        }
+        while(pnt<intervals.size() && intervals.get(pnt).start<=newInterval.end) {
+            newInterval.start = Math.min(newInterval.start, intervals.get(pnt).start);
+            newInterval.end = Math.max(newInterval.end, intervals.get(pnt).end);
+            intervals.remove(pnt);
+        }
+        intervals.add(pnt, newInterval);
+        
+        return intervals;
+    }
+    // use iterator
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        ListIterator<Interval> iter = intervals.listIterator();
+        
+        while(iter.hasNext()) {
+            Interval cur = iter.next();
+            if(cur.start>newInterval.end) {
+                iter.previous();
+                break;
+            }
+            if(cur.end<newInterval.start) {
+                continue;
+            }
+            if(cur.start<=newInterval.end) {
+                newInterval.start = Math.min(newInterval.start, cur.start);
+                newInterval.end = Math.max(newInterval.end, cur.end);
+                iter.remove();    
             }
         }
+        iter.add(newInterval);
+        
+        return intervals;
     }
-    if(list.isEmpty() || list.peekLast().end<newInterval.start) {
-        list.add(newInterval);
-    }
-    return list;
-}
-// more concise
-public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
-    int pnt=0;
-    
-    while(pnt<intervals.size() && intervals.get(pnt).end<newInterval.start) {
-        pnt++;
-    }
-    while(pnt<intervals.size() && intervals.get(pnt).start<=newInterval.end) {
-        newInterval.start = Math.min(newInterval.start, intervals.get(pnt).start);
-        newInterval.end = Math.max(newInterval.end, intervals.get(pnt).end);
-        intervals.remove(pnt);
-    }
-    intervals.add(pnt, newInterval);
-    
-    return intervals;
-}
-// use iterator
-public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
-    ListIterator<Interval> iter = intervals.listIterator();
-    
-    while(iter.hasNext()) {
-        Interval cur = iter.next();
-        if(cur.start>newInterval.end) {
-            iter.previous();
-            break;
-        }
-        if(cur.end<newInterval.start) {
-            continue;
-        }
-        if(cur.start<=newInterval.end) {
-            newInterval.start = Math.min(newInterval.start, cur.start);
-            newInterval.end = Math.max(newInterval.end, cur.end);
-            iter.remove();    
-        }
-    }
-    iter.add(newInterval);
-    
-    return intervals;
-}
-```
+{% endhighlight %}
 
 ##  Maximum Subarray   
 Q: Find the contiguous subarray within an array (containing at least one number) which has the largest sum. For example, given the array [−2,1,−3,4,−1,2,1,−5,4], the contiguous subarray [4,−1,2,1] has the largest sum = 6.   
-```
-public int maxSubArray(int[] nums) {
-    int max = nums[0], sum = nums[0];
-    
-    for(int i=1; i<nums.length; i++) {
-        if(sum<0) {
-            sum = 0;
+
+{% highlight java linenos %}
+    public int maxSubArray(int[] nums) {
+        int max = nums[0], sum = nums[0];
+        
+        // loop over array to have sub sum. drop the prev sum if it is under zero.
+        for(int i=1; i<nums.length; i++) {
+            if(sum<0) {
+                sum = 0;
+            }
+            sum += nums[i];
+            max = Math.max(max, sum);
         }
-        sum += nums[i];
-        max = Math.max(max, sum);
+        
+        return max;
     }
-    
-    return max;
-}
-```
+{% endhighlight %}
 
 ##  Plus One   
 Q: Given a non-negative number represented as an array of digits, plus one to the number. The digits are stored such that the most significant digit is at the head of the list.   
-```
-public int[] plusOne(int[] digits) {
-    int pnt = digits.length-1;
-    while(pnt>=0 && digits[pnt]==9) {
-        digits[pnt] = 0;
-        pnt--;
+
+{% highlight java linenos %}
+    public int[] plusOne(int[] digits) {
+        int pnt = digits.length-1;
+        // loop from left to right to find the position of valid plus
+        while(pnt>=0 && digits[pnt]==9) {
+            digits[pnt] = 0;
+            pnt--;
+        }
+        if(pnt<0) {
+            int[] res = new int[digits.length+1];
+            res[0] = 1;
+            return res;
+        }
+        digits[pnt]++;
+        return digits;
     }
-    if(pnt<0) {
-        int[] res = new int[digits.length+1];
-        res[0] = 1;
-        return res;
-    }
-    digits[pnt]++;
-    return digits;
-}
-```
+{% endhighlight %}
 
 ##  Set Matrix Zeroes   
 Q: Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.   
-```
-public void setZeroes(int[][] matrix) {
-    int row = matrix.length;
-    int col = matrix[0].length;
-    boolean[] rows = new boolean[row];
-    boolean[] cols = new boolean[col];
-    
-    for(int i=0; i<row; i++) {
-        for(int j=0; j<col; j++) {
-            if(matrix[i][j] == 0) {
-                rows[i] = true;
-                cols[j] = true;
-            }
-        }
-    }
-    
-    for(int i=0; i<row; i++) {
-        if(rows[i]) {
+
+{% highlight java linenos %}
+    public void setZeroes(int[][] matrix) {
+        int row = matrix.length;
+        int col = matrix[0].length;
+        boolean[] rows = new boolean[row];
+        boolean[] cols = new boolean[col];
+        
+        for(int i=0; i<row; i++) {
             for(int j=0; j<col; j++) {
-                matrix[i][j] = 0;
+                if(matrix[i][j] == 0) {
+                    rows[i] = true;
+                    cols[j] = true;
+                }
+            }
+        }
+        
+        for(int i=0; i<row; i++) {
+            if(rows[i]) {
+                for(int j=0; j<col; j++) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        
+        for(int i=0; i<col; i++) {
+            if(cols[i]) {
+                for(int j=0; j<row; j++) {
+                    matrix[j][i] = 0;
+                }
             }
         }
     }
-    
-    for(int i=0; i<col; i++) {
-        if(cols[i]) {
-            for(int j=0; j<row; j++) {
-                matrix[j][i] = 0;
-            }
-        }
-    }
-}
-```
+{% endhighlight %}
 
 ##  Pascal's Triangle
 Q: Given numRows, generate the first numRows of Pascal's triangle.   
-```
-public List<List<Integer>> generate(int numRows) {
-    LinkedList<List<Integer>> lists = new LinkedList<>();
-    if(numRows>0) {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        lists.add(list);
-        for(int i=2; i<=numRows; i++) {
-            ArrayList<Integer> row = new ArrayList<>();
-            row.add(1);
-            for(int j=0; j<i-2; j++) {
-                row.add(lists.peekLast().get(j)+lists.peekLast().get(j+1));
+
+{% highlight java linenos %}
+    public List<List<Integer>> generate(int numRows) {
+        LinkedList<List<Integer>> lists = new LinkedList<>();
+        if(numRows>0) {
+            List<Integer> list = new ArrayList<>();
+            list.add(1);
+            lists.add(list);
+            for(int i=2; i<=numRows; i++) {
+                ArrayList<Integer> row = new ArrayList<>();
+                row.add(1);
+                for(int j=0; j<i-2; j++) {
+                    row.add(lists.peekLast().get(j)+lists.peekLast().get(j+1));
+                }
+                row.add(1);
+                lists.add(row);
             }
-            row.add(1);
-            lists.add(row);
         }
+        return lists;
     }
-    return lists;
-}
-```
+{% endhighlight %}
 
 ##  Pascal's Triangle II
 Q: Given an index k, return the kth row of the Pascal's triangle. For example, given k = 3, Return [1,3,3,1]. Note: Could you optimize your algorithm to use only O(k) extra space?   
-```
-public List<Integer> getRow(int rowIndex) {
-    if(rowIndex<0) {
-        return null;
-    }
-    Integer[] res = new Integer[rowIndex+1];
-    res[0] = 1;
-    for(int i=1; i<=rowIndex; i++) {
-        res[i] = 0;
-        for(int j=i; j>0; j--) {
-            res[j] += res[j-1]; 
+
+{% highlight java linenos %}
+    public List<Integer> getRow(int rowIndex) {
+        if(rowIndex<0) {
+            return null;
         }
+        Integer[] res = new Integer[rowIndex+1];
+        res[0] = 1;
+        for(int i=1; i<=rowIndex; i++) {
+            res[i] = 0;
+            for(int j=i; j>0; j--) {
+                res[j] += res[j-1]; 
+            }
+        }
+        
+        return Arrays.asList(res);
     }
-    
-    return Arrays.asList(res);
-}
-```
+{% endhighlight %}
 
 ##   Majority Element
 Q: Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority element always exist in the array. 
 ref for multiple solutions: https://leetcode.com/discuss/42929/6-suggested-solutions-in-c-with-explanations     
-```
+{% highlight java linenos %}
 public int majorityElement(int[] nums) {
     int n = nums.length;
     Arrays.sort(nums);
     return nums[n/2];
 }
-```
+{% endhighlight %}
 
 ##  Rotate Array
 Q: Rotate an array of n elements to the right by k steps.   
-```
-// rotate one by one
-public void rotate(int[] nums, int k) {
-    k %= nums.length;
-    int[] res = new int[k];
-    for(int i=0; i<k; i++) {
-        int n=nums[i], step=k;
-        while(i+step<nums.length) {
-            int tmp = nums[i+step];
-            nums[i+step] = n;
-            n = tmp;
-            step += k;
+
+{% highlight java linenos %}
+    // rotate one by one
+    public void rotate(int[] nums, int k) {
+        k %= nums.length;
+        int[] res = new int[k];
+        for(int i=0; i<k; i++) {
+            int n=nums[i], step=k;
+            while(i+step<nums.length) {
+                int tmp = nums[i+step];
+                nums[i+step] = n;
+                n = tmp;
+                step += k;
+            }
+            res[(i+step)%nums.length] = n;
         }
-        res[(i+step)%nums.length] = n;
+        for(int i=0; i<k; i++) {
+            nums[i] = res[i];
+        }
     }
-    for(int i=0; i<k; i++) {
-        nums[i] = res[i];
+
+    public void rotate(int[] nums, int k) {
+        k %= nums.length;
+        int[] res = new int[nums.length];
+        for(int i=0; i<nums.length; i++) {
+            res[(i+k)%nums.length] = nums[i];
+        }
+        for(int i=0; i<nums.length; i++) {
+            nums[i] = res[i];
+        }
     }
-}
-public void rotate(int[] nums, int k) {
-    k %= nums.length;
-    int[] res = new int[nums.length];
-    for(int i=0; i<nums.length; i++) {
-        res[(i+k)%nums.length] = nums[i];
-    }
-    for(int i=0; i<nums.length; i++) {
-        nums[i] = res[i];
-    }
-}
-```
+{% endhighlight %}
 
 ##   Summary Ranges
 Q: Given a sorted integer array without duplicates, return the summary of its ranges.   
-```
-public List<String> summaryRanges(int[] nums) {
-    List<String> list = new ArrayList<>();
-    if(nums.length==0) {
+
+{% highlight java linenos %}
+    public List<String> summaryRanges(int[] nums) {
+        List<String> list = new ArrayList<>();
+        if(nums.length==0) {
+            return list;
+        }
+        int cur=nums[0], start=nums[0];
+        for(int i=1; i<nums.length; i++) {
+            if(nums[i]!=cur+1) {
+                String s = (start==cur)?""+cur:""+start+"->"+cur;
+                list.add(s);
+                start = nums[i];
+            }
+            cur = nums[i];
+        }
+        String s = (start==cur)?""+cur:""+start+"->"+cur;
+        list.add(s);
         return list;
     }
-    int cur=nums[0], start=nums[0];
-    for(int i=1; i<nums.length; i++) {
-        if(nums[i]!=cur+1) {
-            String s = (start==cur)?""+cur:""+start+"->"+cur;
-            list.add(s);
-            start = nums[i];
-        }
-        cur = nums[i];
-    }
-    String s = (start==cur)?""+cur:""+start+"->"+cur;
-    list.add(s);
-    return list;
-}
-```
+{% endhighlight %}
 
 ##  Product of Array Except Self
 Q: Given an array of n integers where n > 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Solve it without division and in O(n). For example, given [1,2,3,4], return [24,12,8,6]. Follow up: Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)   
