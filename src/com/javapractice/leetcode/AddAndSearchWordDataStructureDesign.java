@@ -24,12 +24,12 @@ import java.util.HashMap;
  *
  */
 public class AddAndSearchWordDataStructureDesign {
-    private Node root = new Node('#');
+	private Node root = new Node('#');
 
-    // Adds a word into the data structure.
-    public void addWord(String word) {
-        Node pnt = root;
-        for(int i=0; i<word.length(); i++) {
+	// Adds a word into the data structure.
+	public void addWord(String word) {
+		Node pnt = root;
+		for(int i=0; i<word.length(); i++) {
 			char cur = word.charAt(i);
 			if(!pnt.map.containsKey(cur)) {
 				Node node = new Node(cur);
@@ -42,13 +42,13 @@ public class AddAndSearchWordDataStructureDesign {
 		if(!pnt.map.containsKey('#')) {
 			pnt.map.put('#', new Node('#'));
 		}
-    }
+	}
 
-    // Returns if the word is in the data structure. A word could
-    // contain the dot character '.' to represent any one letter.
-    public boolean search(String word) {
-        return searchUtil(root, word);
-    }
+	// Returns if the word is in the data structure. A word could
+	// contain the dot character '.' to represent any one letter.
+	public boolean search(String word) {
+		return searchUtil(root, word);
+	}
 	
 	public boolean searchUtil(Node root, String word) {
 		if(word.length()==0) {
@@ -82,6 +82,6 @@ public class AddAndSearchWordDataStructureDesign {
 			this.val = val;
 			map = new HashMap<>();
 		}
-        
-    }
+		
+	}
 }
