@@ -3,8 +3,6 @@
  */
 package com.javapractice.leetcode;
 
-import java.util.HashMap;
-
 /**
  * @author jianyu
  * https://leetcode.com/problems/battleships-in-a-board/
