@@ -28,7 +28,7 @@
 //// Combination Sum II
 //// Permutations
 //// Permutations II
-//// N-Queens 
+//// N-Queens
 //// N-Queens II
 //// Combinations
 //// Subsets
@@ -173,7 +173,7 @@
 [Hash Table]
 //// Two Sum
 //// Longest Substring Without Repeating Characters
-//// Valid Sudoku 
+//// Valid Sudoku
 //// Group Anagrams
 //// Contains Duplicate
 //// Copy List with Random Pointer
@@ -613,6 +613,7 @@
 / "Hamming Distance", "71.6%", "Easy"
 / "Fizz Buzz", "58.2%", "Easy"
 / "Battleships in a Board", "60.5%", "Medium"
+/ "Max Consecutive Ones", "56.3%", "Easy"
 "Max Sum of Rectangle No Larger Than K", "28.5%", "", "Hard"
 "Largest Divisible Subset", "29.9%", "", "Medium"
 "Super Pow", "30.1%", "", "Medium"
