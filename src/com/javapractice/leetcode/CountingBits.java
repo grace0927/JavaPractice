@@ -31,4 +31,17 @@ public class CountingBits {
 		}
 		return res;
 	}
+
+	// use java SE lib
+	public int[] countBits(int num) {
+		// default is 0
+		int[] res = new int[num+1];
+
+		// loop over to calculate count
+		for(int i=1; i<=num; i++) {
+			res[i] = res[i - Integer.highestOneBit(i)] + 1;
+		}
+
+		return res;
+	}
 }
