@@ -13,7 +13,7 @@ package com.javapractice.leetcode;
  * You may assume the array's length is at most 10,000.
  *
  */
-public class CountingBits {
+public class MinimumMovesToEqualArrayElementsII {
 	public int minMoves2(int[] nums) {
 		// init variables
 		int start=0, end=nums.length-1, moves=0;
