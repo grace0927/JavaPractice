@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author jianyu
  * https://leetcode.com/problems/fizz-buzz/
@@ -12,10 +15,10 @@ package com.javapractice.leetcode;
  * For numbers which are multiples of both three and five output “FizzBuzz”.
  *
  */
-public class AddBinary {
+public class FizzBuzz {
 	public List<String> fizzBuzz(int n) {
 		List<String> list = new ArrayList<>();
-		
+
 		for(int i=1; i<=n; i++) {
 			if( i%15 == 0 ) {
 				list.add( "FizzBuzz" );
@@ -27,7 +30,7 @@ public class AddBinary {
 				list.add( Integer.toString( i ) );
 			}
 		}
-		
+
 		return list;
 	}
 }

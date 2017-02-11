@@ -17,7 +17,7 @@ package com.javapractice.leetcode;
  * there are no adjacent battleships.
  *
  */
-public class AddAndSearchWordDataStructureDesign {
+public class BattleshipsInABoard {
 	public int countBattleships(char[][] board) {
 		// corner case check
 		if(board.length==0 || board[0].length==0) {

@@ -3,6 +3,10 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.PriorityQueue;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/sort-characters-by-frequency/
@@ -29,9 +33,9 @@ public class SortCharactersByFrequency {
 		// init variables
 		HashMap<Character, Node> map = new HashMap<>();
 		PriorityQueue<Node> heap = new PriorityQueue<>(s.length(), new Comparator<Node>(){
-		   public int compare(Node a, Node b) {
-			   return b.count - a.count;
-		   }
+			public int compare(Node a, Node b) {
+				return b.count - a.count;
+			}
 		});
 		StringBuilder sb = new StringBuilder();
 

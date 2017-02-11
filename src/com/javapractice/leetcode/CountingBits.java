@@ -33,7 +33,7 @@ public class CountingBits {
 	}
 
 	// use java SE lib
-	public int[] countBits(int num) {
+	public int[] countBitsUseLib(int num) {
 		// default is 0
 		int[] res = new int[num+1];
 
