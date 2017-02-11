@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author jianyu
+ * @author Jianyu Feng
  *
  */
 package com.javapractice.lintcode;
