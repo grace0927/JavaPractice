@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  */
 public class ProductOfArrayExceptSelfTest {
 	@Test
-	public void testProductExceptSelf(int[] nums) {
+	public void testProductExceptSelf() {
 		ProductOfArrayExceptSelf test = new ProductOfArrayExceptSelf();
 
 		int[] input = new int[]{1,2,3,4};
