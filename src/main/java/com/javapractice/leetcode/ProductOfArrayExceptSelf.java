@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://leetcode.com/problems/product-of-array-except-self/
  * Given an array of n integers where n > 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
  * Solve it without division and in O(n).
@@ -13,20 +13,31 @@ package com.javapractice.leetcode;
  *
  */
 public class ProductOfArrayExceptSelf {
-    public int[] productExceptSelf(int[] nums) {
-        int len = nums.length;
-        int[] front = new int[len];
-        for(int i=0; i<len; i++) {
-            front[i] = (i==0)?nums[0]:front[i-1]*nums[i];
-        }
-        for(int i=len-2; i>=0; i--) {
-            nums[i] = nums[i+1]*nums[i];
-        }
-        nums[0] = nums[1];
-        for(int i=1; i<len-1; i++) {
-            nums[i] = front[i-1]*nums[i+1];
-        }
-        nums[len-1] = front[len-2];
-        return nums;
-    }
+	public int[] productExceptSelf(int[] nums) {
+		// corner case
+		if(nums.length==0) {
+			return nums;
+		}
+
+		// init variables
+		int[] res = new int[nums.length];
+
+		// loop over to calculate product left to right
+		for(int i=0; i<nums.length; i++) {
+			res[i] = (i==0) ? nums[i] : res[i-1]*nums[i];
+		}
+
+		// loop over to calculate product right to left
+		for(int i=nums.length-2; i>=0; i--) {
+			nums[i] = nums[i+1] * nums[i];
+		}
+
+		// loop over to get product except self
+		for(int i=nums.length-1; i>0; i--) {
+			res[i] = (i==nums.length-1) ? res[i-1] : res[i-1] * nums[i+1];
+		}
+		res[0] = nums[1];
+
+		return res;
+	}
 }
