@@ -32,6 +32,7 @@ public class TopKFrequentElements {
 			this.cnt = cnt;
 		}
 	}
+
 	public List<Integer> topKFrequent(int[] nums, int k) {
 		HashMap<Integer, Node> map = new HashMap<>();
 		LinkedList<Node> list = new LinkedList<>();
@@ -58,6 +59,7 @@ public class TopKFrequentElements {
 
 		return res;
 	}
+
 	// O(n) bucket sort
 	// https://leetcode.com/discuss/100581/java-o-n-solution-bucket-sort
 	public List<Integer> topKFrequentBucketSort(int[] nums, int k) {
