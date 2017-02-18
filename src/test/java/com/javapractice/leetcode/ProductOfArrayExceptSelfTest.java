@@ -3,8 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import static org.junit.Assert.assertArrayEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * @author Jianyu Feng
@@ -19,6 +20,6 @@ public class ProductOfArrayExceptSelfTest {
 		int[] expected = new int[]{24,12,8,6};
 		int[] result = test.productExceptSelf(input);
 
-		assertArrayEquals(expected, output);
+		assertArrayEquals(expected, result);
 	}
 }

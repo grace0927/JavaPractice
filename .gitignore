@@ -46,3 +46,4 @@ Temporary Items
 *.prefs
 
 .settings/org.eclipse.jdt.core.prefs
+/target/
