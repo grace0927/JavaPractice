@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/linked-list-random-node/
@@ -13,13 +15,13 @@ package com.javapractice.leetcode;
  * Could you solve this efficiently without using extra space?
  *
  */
-public class CountingBits {
+public class LinkedListRandomNode {
 	HashMap<Integer, Integer> map = new HashMap<>();
 	int index = 0;
 
 	/** @param head The linked list's head.
 		Note that the head is guaranteed to be not null, so it contains at least one node. */
-	public Solution(ListNode head) {
+	public LinkedListRandomNode(ListNode head) {
 		while(head!=null) {
 			this.map.put(this.index++, head.val);
 			head = head.next;

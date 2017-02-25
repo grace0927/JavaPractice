@@ -3,9 +3,8 @@
  */
 package com.javapractice.leetcode;
 
-import static org.junit.Assert.assertArrayEquals;
-
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * @author Jianyu Feng
@@ -16,17 +15,17 @@ public class CountNumbersWithUniqueDigitsTest {
 	public void testCountNumbersWithUniqueDigits() {
 		CountNumbersWithUniqueDigits test = new CountNumbersWithUniqueDigits();
 
-		assertArrayEquals(test.countNumbersWithUniqueDigits(0), 1);
-		assertArrayEquals(test.countNumbersWithUniqueDigits(2), 91);
-		assertArrayEquals(test.countNumbersWithUniqueDigits(12), 8877691);
+		assertEquals(test.countNumbersWithUniqueDigits(0), 1);
+		assertEquals(test.countNumbersWithUniqueDigits(2), 91);
+		assertEquals(test.countNumbersWithUniqueDigits(12), 8877691);
 	}
 
 	@Test
 	public void testCountNumbersWithUniqueDigitsConstantTime() {
 		CountNumbersWithUniqueDigits test = new CountNumbersWithUniqueDigits();
 
-		assertArrayEquals(test.countNumbersWithUniqueDigitsConstantTime(0), 1);
-		assertArrayEquals(test.countNumbersWithUniqueDigitsConstantTime(2), 91);
-		assertArrayEquals(test.countNumbersWithUniqueDigitsConstantTime(12), 8877691);
+		assertEquals(test.countNumbersWithUniqueDigitsConstantTime(0), 1);
+		assertEquals(test.countNumbersWithUniqueDigitsConstantTime(2), 91);
+		assertEquals(test.countNumbersWithUniqueDigitsConstantTime(12), 8877691);
 	}
 }
