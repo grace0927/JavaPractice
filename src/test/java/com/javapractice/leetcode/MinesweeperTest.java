@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  */
 public class MinesweeperTest {
 	@Test
-	public void testMinesweeper() {
+	public void testUpdateBoard() {
 		char[][] originalBoard = new char[][] {{"EEEEE"},{"EEMEE"},{"EEEEE"},{"EEEEE"}};
 		int[] click = new int[] {3, 0};
 		String[] expected = new String[] {"B1E1B", "B1M1B", "B111B", "BBBBB"};
