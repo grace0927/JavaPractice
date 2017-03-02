@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author jianyu
  *
  * https://oj.leetcode.com/problems/binary-tree-inorder-traversal/
- * 
+ *
  * Given a binary tree, return the inorder traversal of its nodes' values.
  * For example:
  * Given binary tree {1,#,2,3},
@@ -32,27 +32,85 @@ import java.util.ArrayList;
  *     \
  *      5
  * The above binary tree is serialized as "{1,2,3,#,#,4,#,#,5}".
- * 
+ *
  */
 
 public class InorderTraversalBinaryTree {
-
 	public ArrayList<Integer> inorderTraversal(TreeNode root) {
-        ArrayList<Integer> res = new ArrayList<>();
-        if(root == null) {
-        } else if(root.left == null && root.right != null) {
-            res.add(root.val);
-            res.addAll(inorderTraversal(root.right));
-        } else if(root.left != null && root.right == null) {
-            res.addAll(inorderTraversal(root.left));
-            res.add(root.val);
-        } else if(root.left == null && root.right == null) {
-            res.add(root.val);
-        } else {
-            res.addAll(inorderTraversal(root.left));
-            res.add(root.val);
-            res.addAll(inorderTraversal(root.right));
-        }
-        return res;
-    }
+		ArrayList<Integer> res = new ArrayList<>();
+		if(root == null) {
+		} else if(root.left == null && root.right != null) {
+			res.add(root.val);
+			res.addAll(inorderTraversal(root.right));
+		} else if(root.left != null && root.right == null) {
+			res.addAll(inorderTraversal(root.left));
+			res.add(root.val);
+		} else if(root.left == null && root.right == null) {
+			res.add(root.val);
+		} else {
+			res.addAll(inorderTraversal(root.left));
+			res.add(root.val);
+			res.addAll(inorderTraversal(root.right));
+		}
+		return res;
+	}
+
+	public List<Integer> inorderTraversalRecursive(TreeNode root) {
+		List<Integer> list = new ArrayList<>();
+
+		traversalHelper(list, root);
+
+		return list;
+	}
+
+	public void traversalHelper(List<Integer> list, TreeNode node) {
+		if (node!=null) {
+			traversalHelper(list, node.left);
+			list.add(node.val);
+			traversalHelper(list, node.right);
+		}
+	}
+
+	public List<Integer> inorderTraversalIteratively(TreeNode root) {
+		List<Integer> list = new ArrayList<>();
+		Stack<TreeNode> stack = new Stack<>();
+
+		if (root!=null) {
+			stack.push(root);
+		}
+
+		while (!stack.isEmpty()) {
+			while (stack.peek().left!=null) {
+				TreeNode left = stack.peek().left;
+				stack.peek().left = null;
+				stack.push(left);
+			}
+			TreeNode node = stack.pop();
+			list.add(node.val);
+			if (node.right!=null) {
+				stack.push(node.right);
+			}
+		}
+
+		return list;
+	}
+
+	public List<Integer> inorderTraversalIterativelyWithoutNodeChange(TreeNode root) {
+		List<Integer> list = new ArrayList<Integer>();
+
+		Stack<TreeNode> stack = new Stack<TreeNode>();
+		TreeNode current = root;
+
+		while (current!=null || !stack.empty()){
+			while (current!=null){
+				stack.add(current);
+				current = current.left;
+			}
+			current = stack.pop();
+			list.add(current.val);
+			current = current.right;
+		}
+
+		return list;
+	}
 }
