@@ -16,6 +16,6 @@ public class FourSumIITest {
 		int[][] input = new int[][] { {-1,1,1,1,-1}, {0,-1,-1,0,1}, {-1,-1,1,-1,-1}, {0,1,0,-1,-1} };
 		FourSumII test = new FourSumII();
 
-		assertEquals( test.foursumcount(input), 132 );
+		assertEquals( test.fourSumCount(input[0], input[1], input[2], input[3]), 132 );
 	}
 }
