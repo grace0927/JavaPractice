@@ -4,7 +4,7 @@
 package com.javapractice.leetcode;
 
 /**
- * @author Feng
+ * @author Jianyu Feng
  * https://leetcode.com/problems/count-numbers-with-unique-digits/
  * Given a non-negative integer n, count all numbers with unique digits, x,
  * where 0 ≤ x < 10n.
