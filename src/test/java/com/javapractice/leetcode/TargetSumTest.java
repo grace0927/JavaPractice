@@ -12,10 +12,10 @@ import static org.junit.Assert.*;
  */
 public class TargetSumTest {
 	@Test
-	public void testFourSumCount() {
+	public void testFindTargetSumWays() {
 		int[] input = new int[] {1, 1, 1, 1, 1};
 		TargetSum test = new TargetSum();
 
-		assertEquals( test.findTargetSumWays(input), 5 );
+		assertEquals( test.findTargetSumWays(input, 3), 5 );
 	}
 }

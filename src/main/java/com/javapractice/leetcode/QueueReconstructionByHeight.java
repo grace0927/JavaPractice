@@ -3,6 +3,12 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/count-numbers-with-unique-digits/
@@ -62,7 +68,7 @@ public class QueueReconstructionByHeight {
 	}
 
 	// https://discuss.leetcode.com/topic/60394/easy-concept-with-python-c-java-solution/4
-	public int[][] reconstructQueue(int[][] people) {
+	public int[][] reconstructQueueInsertSort(int[][] people) {
 		//pick up the tallest guy first
 		//when insert the next tall guy, just need to insert him into kth position
 		//repeat until all people are inserted into list

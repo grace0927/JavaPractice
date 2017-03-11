@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/count-numbers-with-unique-digits/

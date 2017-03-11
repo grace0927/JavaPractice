@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+import java.util.Random;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/count-numbers-with-unique-digits/
@@ -14,7 +17,7 @@ public class EncodeAndDecodeTinyURL {
 	private char[] charSet = new char[62];
 	private HashMap<String, String> urlMap = new HashMap<>();
 
-	public Codec() {
+	public EncodeAndDecodeTinyURL() {
 		addCharSource('0', '9', 0);
 		addCharSource('a', 'z', 10);
 		addCharSource('A', 'Z', 36);

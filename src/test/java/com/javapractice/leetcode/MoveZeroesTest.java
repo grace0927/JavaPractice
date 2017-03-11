@@ -18,8 +18,8 @@ public class MoveZeroesTest {
 
 		int[] input = new int[]{ 0, 1, 0, 3, 12 };
 		int[] expected = new int[]{ 1, 3, 12, 0, 0 };
-		int[] result = test.moveZeroes(input);
+		test.moveZeroes(input);
 
-		assertArrayEquals(expected, result);
+		assertArrayEquals( input, expected );
 	}
 }

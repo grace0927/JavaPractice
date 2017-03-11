@@ -12,10 +12,10 @@ import static org.junit.Assert.*;
  */
 public class EncodeAndDecodeTinyURLTest {
 	@Test
-	public void testFourSumCount() {
+	public void testDecodeEncode() {
 		EncodeAndDecodeTinyURL test = new EncodeAndDecodeTinyURL();
 		String testUrl = "https://foo_url/tinyurl";
 
-		assertEquals( test.decode(this.encode(testUrl)), testUrl );
+		assertEquals( test.decode( test.encode(testUrl) ), testUrl );
 	}
 }
