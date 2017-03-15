@@ -1,14 +1,14 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author Feng
+ * @author Jianyu Feng
  * https://leetcode.com/problems/odd-even-linked-list/
- * Given a singly linked list, group all odd nodes together followed by the even nodes. 
+ * Given a singly linked list, group all odd nodes together followed by the even nodes.
  * Please note here we are talking about the node number and not the value in the nodes.
- * You should try to do it in place. The program should run in O(1) space complexity and 
+ * You should try to do it in place. The program should run in O(1) space complexity and
  * O(nodes) time complexity.
  * Example:
  * Given 1->2->3->4->5->NULL,
@@ -19,22 +19,23 @@ package com.javapractice.leetcode;
  *
  */
 public class OddEvenLinkedList {
-    public ListNode oddEvenList(ListNode head) {
-        if(head==null) {
-            return head;
-        }
-        ListNode odd = head;
-        ListNode even = head.next;
-        ListNode tmp = even;
-        
-        while(odd.next!=null && odd.next.next!=null) {
-            odd.next = odd.next.next;
-            odd = odd.next;
-            even.next = even.next.next;
-            even = even.next;
-        }
-        odd.next = tmp;
-        
-        return head;
-    }
+	public ListNode oddEvenList(ListNode head) {
+		if(head==null) {
+			return head;
+		}
+
+		ListNode odd = head;
+		ListNode even = head.next;
+		ListNode tmp = even;
+
+		while(odd.next!=null && odd.next.next!=null) {
+			odd.next = odd.next.next;
+			odd = odd.next;
+			even.next = even.next.next;
+			even = even.next;
+		}
+		odd.next = tmp;
+
+		return head;
+	}
 }
