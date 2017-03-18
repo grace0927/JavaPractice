@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+
 /**
  * @author Feng
  * https://leetcode.com/problems/maximum-product-of-word-lengths/
