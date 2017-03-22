@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://leetcode.com/problems/invert-binary-tree/
  * Invert a binary tree.
  *      4
@@ -12,7 +12,7 @@ package com.javapractice.leetcode;
  *   2     7
  *  / \   / \
  * 1   3 6   9
- * 
+ *
  * to
  *      4
  *    /   \
@@ -22,13 +22,13 @@ package com.javapractice.leetcode;
  *
  */
 public class InvertBinaryTree {
-    public TreeNode invertTree(TreeNode root) {
-        if(root == null) {
-            return root;
-        }
-        TreeNode right = root.right;
-        root.right = invertTree(root.left);
-        root.left = invertTree(right);
-        return root;
-    }
+	public TreeNode invertTree(TreeNode root) {
+		if (root!=null) {
+			TreeNode right = root.right;
+			root.right = invertTree(root.left);
+			root.left = invertTree(right);
+		}
+
+		return root;
+	}
 }
