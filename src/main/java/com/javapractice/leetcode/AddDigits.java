@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://leetcode.com/problems/add-digits/
  * Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
  * For example:
@@ -13,20 +13,21 @@ package com.javapractice.leetcode;
  *
  */
 public class AddDigits {
-    public int addDigits(int num) {
-        while(num>=10) {
-            int sum = 0;
-            while(num/10 > 0) {
-                sum += num%10;
-                num /= 10;
-            }
-            sum += num%10;
-            num = sum;
-        }
-        return num;
-    }
-    
-    public int addDigitsMath(int num) {
-    	return (num<10)?num:(num%9==0)?9:num%9;
-    }
+	public int addDigits(int num) {
+		while(num>=10) {
+			int sum = 0;
+			while(num/10 > 0) {
+				sum += num%10;
+				num /= 10;
+			}
+			sum += num%10;
+			num = sum;
+		}
+
+		return num;
+	}
+
+	public int addDigitsMath(int num) {
+		return (num<10)?num:(num%9==0)?9:num%9;
+	}
 }
