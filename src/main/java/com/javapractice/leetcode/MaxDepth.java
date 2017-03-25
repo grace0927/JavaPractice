@@ -4,6 +4,9 @@
 
 package com.javapractice.leetcode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  *
  * @author Jianyu Feng
@@ -45,7 +48,7 @@ public class MaxDepth {
 		return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
 
-	public int maxDepth(TreeNode root) {
+	public int maxDepthIter(TreeNode root) {
 		int depth = 0;
 		Queue<TreeNode> level = new LinkedList<>();
 
