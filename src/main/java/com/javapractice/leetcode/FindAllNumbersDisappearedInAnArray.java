@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/

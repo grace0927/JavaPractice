@@ -15,6 +15,6 @@ public class RansomNoteTest {
 	public void testCanConstruct() {
 		RansomNote test = new RansomNote();
 
-		assertTrue( test.canConstruct('a', 'aab') );
+		assertTrue( test.canConstruct("a", "aab") );
 	}
 }

@@ -3,9 +3,8 @@
  */
 package com.javapractice.leetcode;
 
-import static org.junit.Assert.assertArrayEquals;
-
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * @author Jianyu Feng
@@ -18,6 +17,6 @@ public class SingleNumberTest {
 
 		int[] input = new int[]{ 1, 2, 2 };
 
-		assertArrayEquals(test.singleNumber(input), 1);
+		assertEquals(test.singleNumber(input), 1);
 	}
 }

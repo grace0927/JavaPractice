@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+import java.util.Stack;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/next-greater-element-i/

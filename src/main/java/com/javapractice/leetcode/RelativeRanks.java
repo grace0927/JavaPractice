@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/relative-ranks/
