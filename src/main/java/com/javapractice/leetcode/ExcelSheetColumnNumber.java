@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -19,11 +19,21 @@ package com.javapractice.leetcode;
  *
  */
 public class ExcelSheetColumnNumber {
+	public int titleToNumberOld(String s) {
+		int sum = 0;
+		for(int i=0; i<s.length(); i++) {
+			sum = sum*26+s.charAt(i)-64;
+		}
+		return sum;
+	}
+
 	public int titleToNumber(String s) {
-        int sum = 0;
-        for(int i=0; i<s.length(); i++) {
-            sum = sum*26+s.charAt(i)-64;
-        }
-        return sum;
-    }
+		int sum = 0;
+
+		for (char c:s.toCharArray()) {
+			sum = sum*26 + c - 'A' + 1;
+		}
+
+		return sum;
+	}
 }
