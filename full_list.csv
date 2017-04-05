@@ -225,6 +225,7 @@
 "Range Sum Query 2D - Immutable", "21.6%", "Medium"
 "Ransom Note", "45.7%", "Easy"
 "Reconstruct Itinerary", "23.4%", "Medium"
+"Reconstruct Original Digits from English", "43.1%", "Medium"
 "Recover Binary Search Tree", "25.8%", "Hard"
 "Rectangle Area", "29.0%", "Easy"
 "Regular Expression Matching", "21.5%", "Hard"
