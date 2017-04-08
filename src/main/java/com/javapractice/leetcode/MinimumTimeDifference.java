@@ -3,6 +3,10 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Comparator;
+import java.util.List;
+import java.util.PriorityQueue;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/minimum-time-difference/

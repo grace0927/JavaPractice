@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/reconstruct-original-digits-from-english/

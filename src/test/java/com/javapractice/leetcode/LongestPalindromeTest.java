@@ -15,6 +15,6 @@ public class LongestPalindromeTest {
 	public void testLongestPalindrome() {
 		LongestPalindrome test = new LongestPalindrome();
 
-		assertEquals( test.longestPalindrome("abccccdd"), 7 )
+		assertEquals( test.longestPalindrome("abccccdd"), 7 );
 	}
 }
