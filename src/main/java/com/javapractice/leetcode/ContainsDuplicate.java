@@ -4,6 +4,7 @@
 package com.javapractice.leetcode;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * @author jianyu
@@ -29,7 +30,7 @@ public class ContainsDuplicate {
 	}
 
 	public boolean containsDuplicate(int[] nums) {
-		HashSet<Integer> set = new HashSet();
+		HashSet<Integer> set = new HashSet<>();
 
 		for (int i:nums) {
 			if (set.contains(i)) {
