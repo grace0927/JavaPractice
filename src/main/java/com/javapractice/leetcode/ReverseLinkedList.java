@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -12,10 +12,11 @@ import java.util.Stack;
  *
  */
 public class ReverseLinkedList {
-    public ListNode reverseListStack(ListNode head) {
-        if(head==null || head.next==null) {
+	public ListNode reverseListStack(ListNode head) {
+		if(head==null || head.next==null) {
 			return head;
 		}
+
 		Stack<ListNode> stack = new Stack<>();
 		while(head!=null) {
 			stack.push(head);
@@ -28,14 +29,15 @@ public class ReverseLinkedList {
 			pnt = stack.pop();
 		}
 		pnt.next = null;
+
 		return head;
-    }
-    
-    public ListNode reverseList(ListNode head) {
-        if(head==null || head.next==null) {
+	}
+
+	public ListNode reverseListOld(ListNode head) {
+		if(head==null || head.next==null) {
 			return head;
 		}
-		
+
 		ListNode last = head;
 		head = head.next;
 		last.next = null;
@@ -46,20 +48,37 @@ public class ReverseLinkedList {
 			head = pnt;
 		}
 		head.next = last;
-		
+
 		return head;
-    }
-    
-    public ListNode reverseListRec(ListNode head) {
-        if(head==null || head.next==null) {
+	}
+
+	public ListNode reverseList(ListNode head) {
+		ListNode prev=null;
+
+		while (head!=null && head.next!=null) {
+			ListNode tmp = head.next;
+			head.next = prev;
+			prev = head;
+			head = tmp;
+		}
+
+		if (head!=null) {
+			head.next = prev;
+		}
+
+		return head;
+	}
+
+	public ListNode reverseListRec(ListNode head) {
+		if(head==null || head.next==null) {
 			return head;
 		}
-		
+
 		ListNode pnt = head.next;
 		head.next = null;
 		ListNode res = reverseList(pnt);
 		pnt.next = head;
-		
+
 		return res;
-    }
+	}
 }
