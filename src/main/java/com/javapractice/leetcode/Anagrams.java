@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -9,8 +9,19 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * @author feng
+ * @author Jianyu Feng
+ * https://leetcode.com/problems/anagrams/
  * Given an array of strings, return all groups of strings that are anagrams.
+ * Note: All inputs will be in lower-case.
+ * Update:
+ * Given an array of strings, group anagrams together.
+ * For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"],
+ * Return:
+ * [
+ *   ["ate", "eat","tea"],
+ *   ["nat","tan"],
+ *   ["bat"]
+ * ]
  * Note: All inputs will be in lower-case.
  *
  */
@@ -28,11 +39,11 @@ public class Anagrams implements Solution {
 		System.out.println(anagrams(b));
 		System.out.println(anagrams(c));
 	}
-	
+
 	public List<String> anagrams(String[] strs) {
         List<String> result = new ArrayList<>();
         HashMap<String, String> map = new HashMap<>();
-        
+
         for(int i=0; i<strs.length; i++) {
             String cur = strs[i];
             Integer[] val = new Integer[26];
@@ -50,8 +61,30 @@ public class Anagrams implements Solution {
                 result.add(cur);
             }
         }
-        
+
         return result;
     }
 
+    public List<List<String>> groupAnagrams(String[] strs) {
+        List<List<String>> lists = new ArrayList<>();
+        HashMap<String, List<String>> map = new HashMap<>();
+
+        for (String str:strs) {
+            char[] arr = str.toCharArray();
+            Arrays.sort(arr);
+            String s = new String(arr);
+
+            if (!map.containsKey(s)) {
+                map.put(s, new ArrayList<>());
+            }
+
+            map.get(s).add(str);
+        }
+
+        for (List<String> list:map.values()) {
+            lists.add(list);
+        }
+
+        return lists;
+    }
 }
