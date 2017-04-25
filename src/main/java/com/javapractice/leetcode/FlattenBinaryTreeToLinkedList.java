@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -27,18 +27,19 @@ package com.javapractice.leetcode;
  *             \
  *              6
  * Hints:
- * If you notice carefully in the flattened tree, 
+ * If you notice carefully in the flattened tree,
  * each node's right child points to the next node of a pre-order traversal.
  *
  */
 public class FlattenBinaryTreeToLinkedList {
-    public void flatten(TreeNode root) {
+	public void flatten(TreeNode root) {
 		if(root == null) {
 			return ;
 		}
-        flattenUtil(root);
-    }
-	
+
+		helper(root); // flattenUtil(root);
+	}
+
 	public TreeNode flattenUtil(TreeNode root) {
 		if(root.left == null && root.right == null) {
 			return root;
@@ -60,4 +61,21 @@ public class FlattenBinaryTreeToLinkedList {
 		}
 	}
 
+	protected TreeNode helper(TreeNode root) {
+		TreeNode right=root.right, leftEnd=root, rightEnd=root;
+
+		if (root.left!=null) {
+			leftEnd = helper(root.left);
+			root.right = root.left;
+			root.left = null;
+			rightEnd = leftEnd;
+		}
+
+		if (right!=null) {
+			rightEnd = helper(right);
+			leftEnd.right = right;
+		}
+
+		return rightEnd;
+	}
 }
