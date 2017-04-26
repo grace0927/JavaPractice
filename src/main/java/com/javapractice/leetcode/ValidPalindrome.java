@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -16,41 +16,65 @@ package com.javapractice.leetcode;
  *
  */
 public class ValidPalindrome {
-	public boolean isPalindrome(String s) {
-        if(s == null) {
-            return true;
-        }
-        StringBuilder ret = new StringBuilder();
-        for(int i=0; i<s.length(); i++) {
-            char cur = s.charAt(i);
-            if(cur >= 'a' && cur <= 'z') {
-                ret.append(cur);
-            }
-            if(cur >= 'A' && cur <= 'Z') {
-                ret.append((char)(cur+32));
-            }
-            if(cur >= '0' && cur <= '9') {
-                ret.append(cur);
-            }
-        }
-        
-        return isPalindromeUtil(ret.toString());
-    }
-    
-    public boolean isPalindromeUtil(String s) {
-        if(s.length() < 2) {
-            return true;
-        }
-        int start = 0; 
-        int end = s.length()-1;
-        while(start < end) {
-            if(s.charAt(start) != s.charAt(end)) {
-                return false;
-            }
-            start++;
-            end--;
-        }
-        return true;
-    }
+	public boolean isPalindromeOld(String s) {
+		if(s == null) {
+			return true;
+		}
+		StringBuilder ret = new StringBuilder();
+		for(int i=0; i<s.length(); i++) {
+			char cur = s.charAt(i);
+			if(cur >= 'a' && cur <= 'z') {
+				ret.append(cur);
+			}
+			if(cur >= 'A' && cur <= 'Z') {
+				ret.append((char)(cur+32));
+			}
+			if(cur >= '0' && cur <= '9') {
+				ret.append(cur);
+			}
+		}
 
+		return isPalindromeUtil(ret.toString());
+	}
+
+	public boolean isPalindromeUtil(String s) {
+		if(s.length() < 2) {
+			return true;
+		}
+		int start = 0;
+		int end = s.length()-1;
+		while(start < end) {
+			if(s.charAt(start) != s.charAt(end)) {
+				return false;
+			}
+			start++;
+			end--;
+		}
+		return true;
+	}
+
+	public boolean isPalindrome(String s) {
+		char[] array = trim(s);
+		int i=0, j=array.length-1;
+
+		while (i<j) {
+			if (array[i++]!=array[j--]) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	protected char[] trim(String s) {
+		StringBuilder sb = new StringBuilder();
+
+		for (char c:s.toLowerCase().toCharArray()) {
+			if ((c>='a' && c<='z') || (c>='0' && c<='9')) {
+				sb.append(c);
+			}
+		}
+
+		return sb.toString().toCharArray();
+	}
 }
