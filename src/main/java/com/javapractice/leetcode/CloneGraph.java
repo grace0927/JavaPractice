@@ -1,12 +1,12 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 import java.util.HashMap;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://oj.leetcode.com/problems/clone-graph/
  * Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  * OJ's undirected graph serialization:
@@ -29,12 +29,12 @@ import java.util.HashMap;
 public class CloneGraph {
 	private HashMap<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
 
-    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+	public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
 		if(node == null) {
 			return null;
 		}
-		
-        UndirectedGraphNode result = new UndirectedGraphNode(node.label);
+
+		UndirectedGraphNode result = new UndirectedGraphNode(node.label);
 		for(UndirectedGraphNode cur:node.neighbors) {
 			if(cur != node) {
 				if(map.containsKey(cur)) {
@@ -47,7 +47,38 @@ public class CloneGraph {
 			}
 		}
 		map.put(node, result);
-		
+
 		return result;
-    }
+	}
+
+	public UndirectedGraphNode cloneGraphIterative(UndirectedGraphNode root) {
+		HashMap<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
+		Queue<UndirectedGraphNode> queue = new LinkedList<>();
+		if (root!=null) {
+			queue.add(root);
+		}
+
+		while (!queue.isEmpty()) {
+			UndirectedGraphNode node = queue.poll();
+			if (!map.containsKey(node)) {
+				UndirectedGraphNode clone = new UndirectedGraphNode(node.label);
+				map.put(node, clone);
+			}
+			for (UndirectedGraphNode neighbor:node.neighbors) {
+				if (!map.containsKey(neighbor)) {
+					queue.add(neighbor);
+				}
+			}
+		}
+
+		for (UndirectedGraphNode node:map.keySet()) {
+			List<UndirectedGraphNode> cloneNeighbors = new ArrayList<>();
+			for (UndirectedGraphNode neighbor:node.neighbors) {
+				cloneNeighbors.add(map.get(neighbor));
+			}
+			map.get(node).neighbors = cloneNeighbors;
+		}
+
+		return map.containsKey(root) ? map.get(root) : null;
+	}
 }
