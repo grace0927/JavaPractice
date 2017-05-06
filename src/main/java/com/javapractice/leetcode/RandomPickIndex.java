@@ -3,6 +3,11 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/random-pick-index/
