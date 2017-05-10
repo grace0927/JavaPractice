@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -11,16 +11,16 @@ package com.javapractice.leetcode;
  *
  */
 public class ImplementTriePrefixTree {
-    private TrieNode root;
+	private TrieNode root;
 
-    public ImplementTriePrefixTree() {
-        root = new TrieNode();
-    }
+	public ImplementTriePrefixTree() {
+		root = new TrieNode();
+	}
 
-    // Inserts a word into the trie.
-    public void insert(String word) {
+	// Inserts a word into the trie.
+	public void insert(String word) {
 		TrieNode pnt = root;
-        for(int i=0; i<word.length(); i++) {
+		for(int i=0; i<word.length(); i++) {
 			Character cur = word.charAt(i);
 			if(pnt.map.containsKey(cur)) {
 				pnt = pnt.map.get(cur);
@@ -31,11 +31,11 @@ public class ImplementTriePrefixTree {
 			}
 		}
 		pnt.map.put('#', new TrieNode('#'));
-    }
+	}
 
-    // Returns if the word is in the trie.
-    public boolean search(String word) {
-        TrieNode pnt = root;
+	// Returns if the word is in the trie.
+	public boolean search(String word) {
+		TrieNode pnt = root;
 		for(int i=0; i<word.length(); i++) {
 			Character cur = word.charAt(i);
 			if(!pnt.map.containsKey(cur)) {
@@ -44,12 +44,12 @@ public class ImplementTriePrefixTree {
 			pnt = pnt.map.get(cur);
 		}
 		return pnt.map.containsKey('#');
-    }
+	}
 
-    // Returns if there is any word in the trie
-    // that starts with the given prefix.
-    public boolean startsWith(String prefix) {
-        TrieNode pnt = root;
+	// Returns if there is any word in the trie
+	// that starts with the given prefix.
+	public boolean startsWith(String prefix) {
+		TrieNode pnt = root;
 		for(int i=0; i<prefix.length(); i++) {
 			Character cur = prefix.charAt(i);
 			if(!pnt.map.containsKey(cur)) {
@@ -58,5 +58,5 @@ public class ImplementTriePrefixTree {
 			pnt = pnt.map.get(cur);
 		}
 		return true;
-    }
+	}
 }
