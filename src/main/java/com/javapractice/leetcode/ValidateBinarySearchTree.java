@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+
 /**
  * @author Jianyu Feng
  * https://oj.leetcode.com/problems/validate-binary-search-tree/

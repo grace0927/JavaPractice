@@ -17,7 +17,7 @@ package com.javapractice.leetcode;
 public class FirstBadVersion extends VersionControl {
 	public int firstBadVersion(int n) {
 		if(isBadVersion(1)) {
-			return start;
+			return 1;
 		}
 
 		int start = 1, end = n;
