@@ -1,12 +1,12 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 import java.util.Stack;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://oj.leetcode.com/problems/reverse-linked-list-ii/
  * Reverse a linked list from position m to n. Do it in-place and in one-pass.
  * For example:
@@ -14,23 +14,23 @@ import java.util.Stack;
  * return 1->4->3->2->5->NULL.
  * Note:
  * Given m, n satisfy the following condition:
- * 1 �� m �� n �� length of list.
+ * 1 <= m <= n <= length of list.
  *
  */
 public class ReverseLinkedListII {
-	public ListNode reverseBetween(ListNode head, int m, int n) {
-        if(head == null || head.next == null) {
+	public ListNode reverseBetweenStack(ListNode head, int m, int n) {
+		if(head == null || head.next == null) {
 			return head;
 		}
-		
+
 		ListNode top = new ListNode(-1);
 		top.next = head;
-		
+
 		ListNode cur = top;
 		for(int i=0; i<m-1; i++) {
 			cur = cur.next;
 		}
-		
+
 		ListNode start = cur;
 		cur = cur.next;
 		Stack<ListNode> stack = new Stack<>();
@@ -45,7 +45,7 @@ public class ReverseLinkedListII {
 				stack.push(temp);
 			}
 		}
-		
+
 		ListNode end = cur;
 		ListNode last = stack.pop();
 		start.next = last;
@@ -54,5 +54,29 @@ public class ReverseLinkedListII {
 		}
 		last.next = end;
 		return top.next;
-    }
+	}
+
+	public ListNode reverseBetween(ListNode head, int m, int n) {
+		ListNode dummy=new ListNode(0), prev=dummy, slow=dummy, fast=dummy;
+		dummy.next = head;
+
+		for (int i=0; i<m; i++) {
+			prev = slow;
+			slow = slow.next;
+			fast = fast.next;
+		}
+
+		ListNode tmp = null;
+		for (int i=m; i<=n; i++) {
+			ListNode next = fast.next;
+			fast.next = tmp;
+			tmp = fast;
+			fast = next;
+		}
+
+		prev.next = tmp;
+		slow.next = fast;
+
+		return dummy.next;
+	}
 }
