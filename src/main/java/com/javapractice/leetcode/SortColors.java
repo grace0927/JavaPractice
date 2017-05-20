@@ -67,7 +67,7 @@ public class SortColors {
 	}
 
 	// one-pass way
-	public void sortColorsAlternate(int[] A) {
+	public void sortColorsAlternate(int[] nums) {
 		// special case: array without value
 		if (nums==null) {
 			return ;
