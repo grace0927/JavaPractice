@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author jianyu
  *
@@ -67,8 +70,8 @@ public class PopulatingNextRightPointers {
 					root.right.next = root.next.left;
 				}
 			}
-			connect(root.right);
-			connect(root.left);
+			connectRecursive(root.right);
+			connectRecursive(root.left);
 		}
 	}
 
@@ -102,8 +105,8 @@ public class PopulatingNextRightPointers {
 			return ;
 		}
 
-		connect(root.left);
-		connect(root.right);
+		connectRecursive(root.left);
+		connectRecursive(root.right);
 
 		root.next = null;
 		TreeLinkNode left=root.left, right=root.right;

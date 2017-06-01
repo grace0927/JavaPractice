@@ -11,7 +11,7 @@ package com.javapractice.leetcode;
  */
 
 public class RemoveDuplicatesFromSortedList {
-	public ListNode deleteDuplicates(ListNode head) {
+	public ListNode deleteDuplicatesOld(ListNode head) {
 		if(head == null) {
 			return head;
 		} else if(head.next == null) {

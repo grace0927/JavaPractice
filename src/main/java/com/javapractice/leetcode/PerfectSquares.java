@@ -3,6 +3,8 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashSet;
+
 /**
  * @author Feng
  * https://leetcode.com/problems/perfect-squares/
