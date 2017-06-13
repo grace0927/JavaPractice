@@ -3,6 +3,10 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
