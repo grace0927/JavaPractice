@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
@@ -12,19 +12,32 @@ package com.javapractice.leetcode;
  *
  */
 public class UglyNumber {
-    public boolean isUgly(int num) {
-        if(num == 0) {
-            return false;
-        }
-        while(num%2 == 0) {
-            num /= 2;
-        }
-        while(num%3 == 0) {
-            num /= 3;
-        }
-        while(num%5 == 0) {
-            num /= 5;
-        }
-        return num==1;
-    }
+	public boolean isUglyOld(int num) {
+		if(num == 0) {
+			return false;
+		}
+		while(num%2 == 0) {
+			num /= 2;
+		}
+		while(num%3 == 0) {
+			num /= 3;
+		}
+		while(num%5 == 0) {
+			num /= 5;
+		}
+		return num==1;
+	}
+
+	public boolean isUgly(int num) {
+		if (num>0) {
+			int[] base = new int[]{2, 3, 5};
+			for (int i=0; i<base.length; i++) {
+				while ((num%base[i]) == 0) {
+					num /= base[i];
+				}
+			}
+		}
+
+		return num==1;
+	}
 }
