@@ -1,14 +1,14 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 import java.util.HashMap;
 
 /**
- * @author Feng
+ * @author Jianyu Feng
  * https://leetcode.com/problems/range-sum-query-immutable/
- * Given an integer array nums, 
+ * Given an integer array nums,
  * find the sum of the elements between indices i and j (i ≤ j), inclusive.
  * Example:
  * Given nums = [-2, 0, 3, -5, 2, -1]
@@ -21,27 +21,27 @@ import java.util.HashMap;
  *
  */
 public class NumArray {
-    private HashMap<Integer, Integer> sums;
-    // private int[] sums;
+	private HashMap<Integer, Integer> sums;
+	// private int[] sums;
 
-    public NumArray(int[] nums) {
-        sums = new HashMap<>();
-        sums.put(-1, 0);
-        
-        for(int i=0; i<nums.length; i++) {
-            sums.put(i, sums.get(i-1)+nums[i]);
-        }
-        /*
-         * sums = new int[nums.length+1];
-         * sums[0] = 0;
-         * for(int i=1; i<=nums.length; i++) {
-         * 	sums[i] = sums[i-1]+nums[i-1];
-         * }
-         */
-    }
+	public NumArray(int[] nums) {
+		sums = new HashMap<>();
+		sums.put(-1, 0);
 
-    public int sumRange(int i, int j) {
-        return sums.get(j) - sums.get(i-1);
-        // return sums[j+1]-sums[i];
-    }
+		for(int i=0; i<nums.length; i++) {
+			sums.put(i, sums.get(i-1)+nums[i]);
+		}
+		/*
+		 * sums = new int[nums.length+1];
+		 * sums[0] = 0;
+		 * for(int i=1; i<=nums.length; i++) {
+		 * 	sums[i] = sums[i-1]+nums[i-1];
+		 * }
+		 */
+	}
+
+	public int sumRange(int i, int j) {
+		return sums.get(j) - sums.get(i-1);
+		// return sums[j+1]-sums[i];
+	}
 }
