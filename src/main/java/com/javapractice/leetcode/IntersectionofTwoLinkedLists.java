@@ -1,18 +1,18 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://oj.leetcode.com/problems/intersection-of-two-linked-lists/
  * Write a program to find the node at which the intersection of two singly linked lists begins.
  * For example, the following two linked lists:
- * A:          a1 �� a2
- *                    �K
- *                     c1 �� c2 �� c3
- *                    �J
- * B:     b1 �� b2 �� b3
+ * A:          a1 -> a2
+ *                    \
+ *                     c1 -> c2 -> c3
+ *                    /
+ * B:     b1 -> b2 -> b3
  * begin to intersect at node c1.
  * Notes:
  * If the two linked lists have no intersection at all, return null.
@@ -22,14 +22,14 @@ package com.javapractice.leetcode;
  *
  */
 public class IntersectionofTwoLinkedLists {
-	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if(headA == null || headB == null) {
+	public ListNode getIntersectionNodeOld(ListNode headA, ListNode headB) {
+		if(headA == null || headB == null) {
 			return null;
 		}
-		
+
 		ListNode tempA = headA;
 		ListNode tempB = headB;
-		
+
 		while(tempA != null && tempB != null) {
 			if(tempA == tempB) {
 				return tempA;
@@ -37,7 +37,7 @@ public class IntersectionofTwoLinkedLists {
 			tempA = tempA.next;
 			tempB = tempB.next;
 		}
-		
+
 		if(tempA == null && tempB == null) {
 			return null;
 		} else if(tempA == null && tempB != null) {
@@ -65,5 +65,38 @@ public class IntersectionofTwoLinkedLists {
 			}
 			return tempB;
 		}
-    }
+	}
+
+	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+		int lenA=length(headA), lenB=length(headB);
+
+		while (lenA<lenB) {
+			headB = headB.next;
+			lenB--;
+		}
+		while (lenA>lenB) {
+			headA = headA.next;
+			lenA--;
+		}
+
+		while (headA!=null && headB!=null) {
+			if (headA==headB) {
+				return headA;
+			}
+			headA = headA.next;
+			headB = headB.next;
+		}
+
+		return headA;
+	}
+
+	protected int length(ListNode head) {
+		int len=0;
+		while(head!=null) {
+			head = head.next;
+			len++;
+		}
+
+		return len;
+	}
 }
