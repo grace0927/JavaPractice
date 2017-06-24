@@ -3,6 +3,9 @@
  */
 package com.javapractice.leetcode;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 /**
  * @author Jianyu Feng
  * https://leetcode.com/problems/k-diff-pairs-in-an-array/
