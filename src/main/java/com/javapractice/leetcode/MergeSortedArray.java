@@ -1,24 +1,24 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://oj.leetcode.com/problems/merge-sorted-array/
  * Given two sorted integer arrays A and B, merge B into A as one sorted array.
  * Note:
- * You may assume that A has enough space (size that is greater or equal to m + n) 
+ * You may assume that A has enough space (size that is greater or equal to m + n)
  * to hold additional elements from B. The number of elements initialized in A and B are m
  * and n respectively.
  *
  */
 public class MergeSortedArray {
-    public void merge(int A[], int m, int B[], int n) {
-        int[] temp = new int[m];
-        for(int i=0; i<m; i++) {
-            temp[i] = A[i];
-        }
+	public void mergeOld(int A[], int m, int B[], int n) {
+		int[] temp = new int[m];
+		for(int i=0; i<m; i++) {
+			temp[i] = A[i];
+		}
 		int indexA = 0;
 		int indexB = 0;
 		while(indexA < m && indexB < n) {
@@ -33,38 +33,55 @@ public class MergeSortedArray {
 		if(indexA == m) {
 			while(indexB < n) {
 				A[indexA+indexB] = B[indexB];
-				indexB++;	
+				indexB++;
 			}
 		}
 		if(indexB == n) {
 			while(indexA < m) {
 				A[indexA+indexB] = temp[indexA];
-				indexA++;	
+				indexA++;
 			}
 		}
-    }
-    
-    public void mergeInPlace(int A[], int m, int B[], int n) {
-        int indexA = m-1;
-        int indexB = n-1;
-        int indexM = m+n-1;
-        
-        while(indexM >= 0 && indexB >= 0 && indexA >= 0) {
-            if(A[indexA] > B[indexB]) {
-                A[indexM] = A[indexA];
-                indexM--;
-                indexA--;
-            } else {
-                A[indexM] = B[indexB];
-                indexM--;
-                indexB--;
-            }
-        }
-        if(indexA == -1 && indexB != -1) {
-            while(indexB >= 0) {
-                A[indexB] = B[indexB];
-                indexB--;
-            }
-        }
-    }
+	}
+
+	public void mergeInPlace(int A[], int m, int B[], int n) {
+		int indexA = m-1;
+		int indexB = n-1;
+		int indexM = m+n-1;
+
+		while(indexM >= 0 && indexB >= 0 && indexA >= 0) {
+			if(A[indexA] > B[indexB]) {
+				A[indexM] = A[indexA];
+				indexM--;
+				indexA--;
+			} else {
+				A[indexM] = B[indexB];
+				indexM--;
+				indexB--;
+			}
+		}
+		if(indexA == -1 && indexB != -1) {
+			while(indexB >= 0) {
+				A[indexB] = B[indexB];
+				indexB--;
+			}
+		}
+	}
+
+	public void merge(int[] nums1, int m, int[] nums2, int n) {
+		while (n>0 && m>0) {
+			if (nums1[m-1]>nums2[n-1]) {
+				nums1[m+n-1] = nums1[m-1];
+				m--;
+			} else {
+				nums1[m+n-1] = nums2[n-1];
+				n--;
+			}
+		}
+
+		while (n>0) {
+			nums1[n-1] = nums2[n-1];
+			n--;
+		}
+	}
 }
