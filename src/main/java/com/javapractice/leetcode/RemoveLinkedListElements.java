@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package com.javapractice.leetcode;
 
 /**
- * @author jianyu
+ * @author Jianyu Feng
  * https://leetcode.com/problems/remove-linked-list-elements/
  * Remove all elements from a linked list of integers that have value val.
  * Example
@@ -13,8 +13,8 @@ package com.javapractice.leetcode;
  *
  */
 public class RemoveLinkedListElements {
-    public ListNode removeElements(ListNode head, int val) {
-        while(head!=null && head.val==val) {
+	public ListNode removeElementsOld(ListNode head, int val) {
+		while(head!=null && head.val==val) {
 			head = head.next;
 		}
 		if(head == null) {
@@ -28,5 +28,20 @@ public class RemoveLinkedListElements {
 			pnt = pnt.next;
 		}
 		return head;
-    }
+	}
+
+	public ListNode removeElements(ListNode head, int val) {
+		ListNode dummy = new ListNode(0), prev=dummy, pnt=head;
+		dummy.next = head;
+		while (pnt!=null) {
+			if (pnt.val==val) {
+				prev.next = pnt.next;
+			} else {
+				prev = pnt;
+			}
+			pnt = pnt.next;
+		}
+
+		return dummy.next;
+	}
 }
