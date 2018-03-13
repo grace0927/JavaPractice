@@ -63,9 +63,6 @@ public class RegisterStatus {
     }
     
     public RegisterStatus() {
-    // Just for testing we hard-code the persons here:
-        //users.add(new User("SWTI248", "offline"));
-        //users.add(new User("SWTI243", "offline"));
     }
     
     private void notifyListeners(Object object, String userName, String oldValue, String newValue) {
