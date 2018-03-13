@@ -22,7 +22,7 @@ public class HTTPDemo {
     
     // HTTP POST request
     private void sendPost() throws Exception {
-        String url = "http://troubleticket.xrainbow.com/xrainbow/ttx.php";
+        String url = "";
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
@@ -32,7 +32,7 @@ public class HTTPDemo {
         con.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
         con.setRequestProperty("Connection","close");
         
-        String urlParameters = "cmd=newticket&do=1&xSite=XRainbow&CustomerCode=SEAWOLF&name=System&email=monitor@seawolftech.com&subject=System Alert";
+        String urlParameters = "";
  
         // Send post request
         con.setDoOutput(true);
